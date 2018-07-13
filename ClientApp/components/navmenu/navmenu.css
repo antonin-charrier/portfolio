@@ -23,6 +23,13 @@
     padding-left: 15px;
 }
 
+#language {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
 @media (min-width: 768px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
