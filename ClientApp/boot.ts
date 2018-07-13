@@ -6,9 +6,10 @@ Vue.use(VueRouter);
 
 const routes = [
     { path: '/', component: require('./components/home/home.vue.html') },
-    { path: '/counter', component: require('./components/counter/counter.vue.html') },
-    { path: '/fetchdata', component: require('./components/fetchdata/fetchdata.vue.html') },
-    { path: '/test', component: require('./components/test/test.vue.html') }
+    { path: '/projects', component: require('./components/projects/projects.vue.html') },
+    { path: '/galt', component: require('./components/projects/galt/galt.vue.html') },
+    { path: '/visionsafety', component: require('./components/projects/visionsafety/visionsafety.vue.html') },
+    { path: '/skills', component: require('./components/skills/skills.vue.html') }
 ];
 
 new Vue({

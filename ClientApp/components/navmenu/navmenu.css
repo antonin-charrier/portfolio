@@ -19,6 +19,10 @@
     z-index: 1;
 }
 
+.sub-nav {
+    padding-left: 15px;
+}
+
 @media (min-width: 768px) {
     /* On small screens, convert the nav menu to a vertical sidebar */
     .main-nav {
