@@ -13,6 +13,15 @@
 
   <ItemGroup>
     <None Remove="ClientApp\components\shared\i18n.config.ts" />
+    <None Remove="ClientApp\src\i18n\en\en.ts" />
+    <None Remove="ClientApp\src\i18n\en\galt.ts" />
+    <None Remove="ClientApp\src\i18n\en\home.ts" />
+    <None Remove="ClientApp\src\i18n\en\navmenu.ts" />
+    <None Remove="ClientApp\src\i18n\fr\fr.ts" />
+    <None Remove="ClientApp\src\i18n\fr\galt.ts" />
+    <None Remove="ClientApp\src\i18n\fr\home.ts" />
+    <None Remove="ClientApp\src\i18n\fr\navmenu.ts" />
+    <None Remove="ClientApp\src\i18n\i18n.ts" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,6 +34,18 @@
 
   <ItemGroup>
     <None Include="wwwroot\src\galt.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\en.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\galt.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\home.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\navmenu.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\fr.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\galt.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\home.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\navmenu.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\i18n.ts" />
   </ItemGroup>
 
   <Target Name="DebugRunWebpack" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('wwwroot\dist') ">

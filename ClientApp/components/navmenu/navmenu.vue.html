@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <router-link to="/" :exact="true">
-                    <p class="navbar-brand">Antonin CHARRIER</p>
+                    <p class="navbar-brand">{{ $t("navmenu.home")}}</p>
                 </router-link>
             </div>
             <div class="clearfix"></div>
@@ -17,39 +17,39 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <router-link to="/projects">
-                            <span class="glyphicon glyphicon-briefcase"></span> Projects
+                            <span class="glyphicon glyphicon-briefcase"></span> {{ $t("navmenu.projects")}}
                         </router-link>
                         <ul class="nav navbar-nav sub-nav">
                             <li>
                                 <router-link to="/galt">
-                                    <span class="glyphicon glyphicon-folder-open"></span> Galt
+                                    <span class="glyphicon glyphicon-folder-open"></span> {{ $t("navmenu.galt")}}
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/visionsafety">
-                                    <span class="glyphicon glyphicon-folder-open"></span> VisionSafety
+                                    <span class="glyphicon glyphicon-folder-open"></span> {{ $t("navmenu.visionSafety")}}
                                 </router-link>
                             </li>
                         </ul>
                     </li>
                     <li>
                         <router-link to="/skills">
-                            <span class="glyphicon glyphicon-ok"></span> Skills
+                            <span class="glyphicon glyphicon-ok"></span> {{ $t("navmenu.skills")}}
                         </router-link>
                         <ul class="nav navbar-nav sub-nav">
                             <li>
                                 <router-link to="/autonomy">
-                                    <span class="glyphicon glyphicon-ok-circle"></span> Autonomy
+                                    <span class="glyphicon glyphicon-ok-circle"></span> {{ $t("navmenu.autonomy")}}
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/android">
-                                    <span class="glyphicon glyphicon-ok-circle"></span> Android
+                                    <span class="glyphicon glyphicon-ok-circle"></span> {{ $t("navmenu.android")}}
                                 </router-link>
                             </li>
                             <li>
                                 <router-link to="/front-end">
-                                    <span class="glyphicon glyphicon-ok-circle"></span> Front end frameworks
+                                    <span class="glyphicon glyphicon-ok-circle"></span> {{ $t("navmenu.front")}}
                                 </router-link>
                             </li>
                         </ul>
@@ -58,7 +58,7 @@
             </div>
             <div class="btn-group btn-group-sm" id="language">
                 <button type="button" v-for="locale in locales" class="btn" 
-                        v-on:click="setLocale(locale)" v-bind:class="{ 'btn-primary' : isActive2(locale) }">{{locale.toUpperCase()}}</button>
+                        v-on:click="setLocale(locale)" v-bind:class="{ 'btn-primary' : isCurrentLanguage(locale) }">{{locale.toUpperCase()}}</button>
             </div>
         </div>
     </div>

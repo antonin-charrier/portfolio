@@ -3,6 +3,7 @@ import 'bootstrap';
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import VueI18n from 'vue-i18n';
+import I18N from "./src/i18n/i18n"
 Vue.use(VueRouter);
 Vue.use(VueI18n);
 
@@ -17,43 +18,9 @@ const routes = [
     { path: '/front-end', component: require('./components/skills/front-end/front-end.vue.html') }
 ];
 
-const messages = {
-    en: {
-        home: {
-            title: "Antonin CHARRIER",
-            subtitle: "Web and Android developper",
-            hello: "Hello, I'm Antonin. I'm a full stack developper who builds web and Android apps. " +
-                "I studied during five years at",
-            intech: "IN'TECH engineering school",
-            paris: "in Paris, France.",
-            check: "You can check some of the",
-            projects: "projects",
-            worked: "I worked on or some of the",
-            skills: "skills",
-            acquired: "I acquired working on these projects."
-        }
-    },
-    fr: {
-        home: {
-            title: "Antonin CHARRIER",
-            subtitle: "Développeur web et Android",
-            hello: "Bonjour, je m'apelle Antonin. Je suis un développeur full stack qui crée des applications web et Android. " +
-                "J'ai étudié pendant cinq ans à",
-            intech: "l'école supérieure IN'TECH",
-            paris: " à Paris.",
-            check: "Vous pouvez regarder quelques un des",
-            projects: "projets",
-            worked: "sur lesquels j'ai travaillé ou bien certaines",
-            skills: "compétences",
-            acquired: "que j'ai acquises en travaillant sur ces projets."
-
-        }
-    }
-}
-
 const i18n = new VueI18n({
     locale: 'en',
-    messages,
+    messages: I18N.strings
 });
 
 new Vue({

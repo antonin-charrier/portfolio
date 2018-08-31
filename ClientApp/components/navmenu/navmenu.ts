@@ -9,7 +9,7 @@ export default class NavMenuComponent extends Vue {
         'fr'
     ];
 
-   isActive2(locale: string) {
+   isCurrentLanguage(locale: string) {
         return locale === this.$i18n.locale;
     };
 
