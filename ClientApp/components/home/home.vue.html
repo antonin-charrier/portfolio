@@ -1,24 +1,30 @@
 <template>
     <div>
-        <h1>Antonin CHARRIER</h1>
-        <h3>Web and Android developper</h3>
-        <br/>
+        <h1>{{ $t("home.title")}}</h1>
+        <h3>{{ $t("home.subtitle")}}</h3>
+        <br />
         <div>
-            Hello, I'm Antonin. I'm a full stack developper who builds web and Android apps. I studied during five years at IN'TECH engineering school
-            in Paris, France.
+            {{ $t("home.hello")}}
+            <a target="_blank" href="https://www.intechinfo.fr">
+                {{ $t("home.intech")}}
+                <span class="glyphicon glyphicon-new-window"></span>
+            </a>
+            {{ $t("home.paris")}}
             <br />
             <br />
-            You can check out some of the
+            {{ $t("home.check")}}
             <router-link to="/projects">
-                projects
+                {{ $t("home.projects")}}
                 <span class="glyphicon glyphicon-new-window"></span>
             </router-link>
-            I worked on or some of the
+            {{ $t("home.worked")}}
             <router-link to="/skills">
-                skills
+                {{ $t("home.skills")}}
                 <span class="glyphicon glyphicon-new-window"></span>
             </router-link>
-            I acquired working on these projects.
+            {{ $t("home.acquired")}}
         </div>
     </div>
 </template>
+
+<script src="./home.ts"></script>

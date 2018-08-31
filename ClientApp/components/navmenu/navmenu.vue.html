@@ -56,7 +56,10 @@
                     </li>
                 </ul>
             </div>
-            <img id="language" src="src/uk.png" title="Sorry, only English is available yet... :/" />
+            <div class="btn-group btn-group-sm" id="language">
+                <button type="button" v-for="locale in locales" class="btn" 
+                        v-on:click="setLocale(locale)" v-bind:class="{ 'btn-primary' : isActive2(locale) }">{{locale.toUpperCase()}}</button>
+            </div>
         </div>
     </div>
 </template>
