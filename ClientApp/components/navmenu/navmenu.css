@@ -23,11 +23,13 @@
     padding-left: 15px;
 }
 
-#language {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    cursor: pointer;
+@media (max-width: 768px) {
+    #language {
+        position: absolute;
+        top: 10px;
+        right: 80px;
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 768px) {
@@ -66,5 +68,12 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+    }
+
+    #language {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        cursor: pointer;
     }
 }
