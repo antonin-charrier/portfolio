@@ -17,10 +17,14 @@
     <None Remove="ClientApp\src\i18n\en\galt.ts" />
     <None Remove="ClientApp\src\i18n\en\home.ts" />
     <None Remove="ClientApp\src\i18n\en\navmenu.ts" />
+    <None Remove="ClientApp\src\i18n\en\projects.ts" />
+    <None Remove="ClientApp\src\i18n\en\visionSafety.ts" />
     <None Remove="ClientApp\src\i18n\fr\fr.ts" />
     <None Remove="ClientApp\src\i18n\fr\galt.ts" />
     <None Remove="ClientApp\src\i18n\fr\home.ts" />
     <None Remove="ClientApp\src\i18n\fr\navmenu.ts" />
+    <None Remove="ClientApp\src\i18n\fr\projects.ts" />
+    <None Remove="ClientApp\src\i18n\fr\visionSafety.ts" />
     <None Remove="ClientApp\src\i18n\i18n.ts" />
   </ItemGroup>
 
@@ -38,10 +42,14 @@
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\src\i18n\en\en.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\projects.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\visionSafety.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\galt.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\home.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\navmenu.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\fr.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\projects.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\visionSafety.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\galt.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\home.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\navmenu.ts" />
