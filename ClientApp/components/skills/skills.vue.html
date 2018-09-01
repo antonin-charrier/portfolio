@@ -1,15 +1,15 @@
 <template>
     <div>
-        <h1>Skills</h1>
+        <h1>{{ $t("skills.skills")}}</h1>
 
-        <p>Here are some human and technical skills that I have been recognized for through my different projects:</p>
+        <p>{{ $t("skills.some")}}</p>
 
         <router-link to="/autonomy">
             <div class="col-lg-3 col-md-4 col-sm-4 col-xs-6">
                 <div class="hovereffect">
                     <img class="img-responsive" src="src/autonomy.png" alt="">
                     <div class="overlay">
-                        <p>I am able to work in plain autonomy on my projects.</p>
+                        <p>{{ $t("skills.autonomy")}}</p>
                     </div>
                 </div>
             </div>
@@ -19,7 +19,7 @@
                 <div class="hovereffect">
                     <img class="img-responsive" src="src/android.png" alt="">
                     <div class="overlay">
-                        <p>I worked on several Android applications, using both native Android with Java and native Xamarin.</p>
+                        <p>{{ $t("skills.android")}}</p>
                     </div>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                 <div class="hovereffect">
                     <img class="img-responsive" src="src/front-end.png" alt="">
                     <div class="overlay">
-                        <p>I am experienced with front end frameworks such as Angular and Vue.js.</p>
+                        <p>{{ $t("skills.frontEnd")}}</p>
                     </div>
                 </div>
             </div>
