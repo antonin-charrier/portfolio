@@ -30,6 +30,10 @@
         right: 80px;
         cursor: pointer;
     }
+
+    .sub-nav {
+        padding-left: 30px;
+    }
 }
 
 @media (min-width: 768px) {
