@@ -8,6 +8,6 @@
         autonomy: "Autonomy",
         android: "Android",
         front: "Front end frameworks",
-        contact: "Contact"
+        contact: "Contact and CV"
     }
 }

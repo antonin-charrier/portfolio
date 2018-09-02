@@ -1,6 +1,6 @@
 ﻿export default class Contact {
     static strings: any = {
-        title: "Contact",
+        title: "Contact and CV",
         contact: "You can contact me on my email adress:",
         mail: "charrier<dot>antonin<at>yahoo<dot>fr",
         also: "You can also send me a message on ",
