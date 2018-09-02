@@ -7,6 +7,7 @@
         skills: "Compétences",
         autonomy: "Autonomie",
         android: "Android",
-        front: "Frameworks front end"
+        front: "Frameworks front end",
+        contact: "Contact"
     }
 }

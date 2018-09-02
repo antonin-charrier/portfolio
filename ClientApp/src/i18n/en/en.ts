@@ -7,6 +7,7 @@ import Android from "./android";
 import FrontEnd from "./frontEnd";
 import Skills from "./skills";
 import Autonomy from "./autonomy";
+import Contact from "./contact";
 
 export default class En {
     static strings: any = {
@@ -18,6 +19,7 @@ export default class En {
         android: Android.strings,
         frontEnd: FrontEnd.strings,
         skills: Skills.strings,
-        autonomy: Autonomy.strings
+        autonomy: Autonomy.strings,
+        contact: Contact.strings
     }
 }
