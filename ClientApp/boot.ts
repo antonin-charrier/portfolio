@@ -20,7 +20,7 @@ const routes = [
 ];
 
 const i18n = new VueI18n({
-    locale: window.navigator.language === 'fr' ? 'en' : 'fr',
+    locale: window.navigator.language.match(new RegExp("^fr")) ? 'fr' : 'en',
     messages: I18N.strings
 });
 
