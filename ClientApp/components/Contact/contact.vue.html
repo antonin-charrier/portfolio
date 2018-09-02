@@ -9,7 +9,7 @@
             <br />
             <br />
             {{ $t("contact.also")}}
-            <a target="_blank" v-bind:href="link()">
+            <a target="_blank" v-bind:href="linkedin()">
                 {{ $t("contact.linkedin")}}
                 <span class="glyphicon glyphicon-new-window"></span>
             </a>
@@ -17,7 +17,7 @@
             <br />
             {{ $t("contact.cv")}}
             <br />
-            <object id="cv" data="/src/cv.pdf" type="application/pdf">
+            <object id="cv" v-bind:data="'/src/' + cvSrc()" type="application/pdf">
                 <i>
                     {{ $t("contact.support")}}
                     <a href="/src/cv.pdf" download="CV_Antonin_CHARRIER.pdf">
