@@ -4,15 +4,17 @@
 
         <div class="fill">
             {{ $t("contact.contact")}}
-            <br />
-            {{ $t("contact.mail")}}
+            <a href="mailto:charrier<dot>antonin<at>yahoo<dot>fr">
+                {{ $t("contact.mail")}}
+                <span class="glyphicon glyphicon-send"></span>
+            </a>.
             <br />
             <br />
             {{ $t("contact.also")}}
             <a target="_blank" v-bind:href="linkedin()">
                 {{ $t("contact.linkedin")}}
                 <span class="glyphicon glyphicon-new-window"></span>
-            </a>
+            </a>.
             <br />
             <br />
             {{ $t("contact.cv")}}
@@ -20,7 +22,7 @@
             <object id="cv" v-bind:data="'/src/' + cvSrc()" type="application/pdf">
                 <i>
                     {{ $t("contact.support")}}
-                    <a href="/src/cv.pdf" download="CV_Antonin_CHARRIER.pdf">
+                    <a v-bind:href="/src/ + cvSrc()" v-bind:download="cvSrc()">
                         {{ $t("contact.download")}}
                         <span class="glyphicon glyphicon-download-alt"></span>
                     </a>{{ $t("contact.instead")}}
