@@ -19,6 +19,7 @@
     <None Remove="ClientApp\src\i18n\en\en.ts" />
     <None Remove="ClientApp\src\i18n\en\frontEnd.ts" />
     <None Remove="ClientApp\src\i18n\en\galt.ts" />
+    <None Remove="ClientApp\src\i18n\en\hobbies.ts" />
     <None Remove="ClientApp\src\i18n\en\home.ts" />
     <None Remove="ClientApp\src\i18n\en\navmenu.ts" />
     <None Remove="ClientApp\src\i18n\en\projects.ts" />
@@ -30,6 +31,7 @@
     <None Remove="ClientApp\src\i18n\fr\fr.ts" />
     <None Remove="ClientApp\src\i18n\fr\frontEnd.ts" />
     <None Remove="ClientApp\src\i18n\fr\galt.ts" />
+    <None Remove="ClientApp\src\i18n\fr\hobbies.ts" />
     <None Remove="ClientApp\src\i18n\fr\home.ts" />
     <None Remove="ClientApp\src\i18n\fr\navmenu.ts" />
     <None Remove="ClientApp\src\i18n\fr\projects.ts" />
@@ -58,6 +60,7 @@
     <TypeScriptCompile Include="ClientApp\src\i18n\en\en.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\android.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\projects.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\en\hobbies.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\visionSafety.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\galt.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\en\home.ts" />
@@ -69,6 +72,7 @@
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\skills.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\frontEnd.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\projects.ts" />
+    <TypeScriptCompile Include="ClientApp\src\i18n\fr\hobbies.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\visionSafety.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\galt.ts" />
     <TypeScriptCompile Include="ClientApp\src\i18n\fr\home.ts" />

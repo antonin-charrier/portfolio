@@ -16,6 +16,7 @@ const routes = [
     { path: '/autonomy', component: require('./components/skills/autonomy/autonomy.vue.html') },
     { path: '/android', component: require('./components/skills/android/android.vue.html') },
     { path: '/front-end', component: require('./components/skills/front-end/front-end.vue.html') },
+    { path: '/hobbies', component: require('./components/hobbies/hobbies.vue.html') },
     { path: '/contact', component: require('./components/contact/contact.vue.html') }
 ];
 

@@ -7,6 +7,7 @@ import Android from "./android";
 import FrontEnd from "./frontEnd";
 import Skills from "./skills";
 import Autonomy from "./autonomy";
+import Hobbies from "./hobbies";
 import Contact from "./contact";
 
 export default class En {
@@ -20,6 +21,7 @@ export default class En {
         frontEnd: FrontEnd.strings,
         skills: Skills.strings,
         autonomy: Autonomy.strings,
+        hobbies: Hobbies.strings,
         contact: Contact.strings
     }
 }
