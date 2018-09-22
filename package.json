@@ -1,5 +1,5 @@
 {
-  "name": "Portfolio",
+  "name": "antonin-charrier-portfolio",
   "private": true,
   "version": "0.0.0",
   "devDependencies": {
@@ -16,15 +16,14 @@
     "style-loader": "^0.13.1",
     "typescript": "^2.2.1",
     "url-loader": "^0.5.7",
-    "vue": "^2.2.2",
-    "vue-loader": "^11.1.4",
-    "vue-property-decorator": "^5.0.1",
-    "vue-router": "^2.3.0",
-    "vue-template-compiler": "^2.2.2",
-    "webpack": "^2.2.0",
-    "webpack-hot-middleware": "^2.12.2"
+    "vue": "2.5.17",
+    "vue-i18n": "8.1.0",
+    "vue-loader": "15.4.1",
+    "vue-property-decorator": "7.0.0",
+    "vue-router": "3.0.1",
+    "vue-template-compiler": "2.5.17",
+    "webpack": "4.17.2",
+    "webpack-hot-middleware": "2.23.1"
   },
-  "dependencies": {
-    "pdfjs-dist": "^2.0.489"
-  }
+  "dependencies": {}
 }
