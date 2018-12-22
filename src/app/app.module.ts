@@ -15,8 +15,8 @@ import { FeaturesModule } from './features/features.module';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule,
-    FeaturesModule
+    FeaturesModule,
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]
