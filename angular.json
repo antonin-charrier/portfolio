@@ -32,6 +32,36 @@
             "scripts": []
           },
           "configurations": {
+            "production-fr": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "aot": true,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "outputPath": "dist/portfolio-fr/",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/portfolio-fr/",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -64,6 +94,9 @@
             "browserTarget": "portfolio:build"
           },
           "configurations": {
+            "fr": {
+              "browserTarget": "portfolio:build:fr"
+            },
             "production": {
               "browserTarget": "portfolio:build:production"
             }

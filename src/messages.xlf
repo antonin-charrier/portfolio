@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="homeLink" datatype="html">
+        <source>Home</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the home page</note>
+        <note priority="1" from="meaning">home link</note>
+      </trans-unit>
+      <trans-unit id="projectsLink" datatype="html">
+        <source>Projects</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the projects page</note>
+        <note priority="1" from="meaning">projects link</note>
+      </trans-unit>
+      <trans-unit id="callCenterLink" datatype="html">
+        <source>Call center</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the call center page</note>
+        <note priority="1" from="meaning">call-center link</note>
+      </trans-unit>
+      <trans-unit id="eMonthlyLink" datatype="html">
+        <source>eMonthly</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the eMonthly page</note>
+        <note priority="1" from="meaning">e-monthly link</note>
+      </trans-unit>
+      <trans-unit id="galtLink" datatype="html">
+        <source>Galt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Galt page</note>
+        <note priority="1" from="meaning">galt link</note>
+      </trans-unit>
+      <trans-unit id="visionSafetyLink" datatype="html">
+        <source>VisionSafety</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the VisionSafety page</note>
+        <note priority="1" from="meaning">vision-safety link</note>
+      </trans-unit>
+      <trans-unit id="webAgentLink" datatype="html">
+        <source>WebAgent</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the WebAgent page</note>
+        <note priority="1" from="meaning">web-agent link</note>
+      </trans-unit>
+      <trans-unit id="technicalSkillsLink" datatype="html">
+        <source>Technical skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the technical skills page</note>
+        <note priority="1" from="meaning">technical-skills link</note>
+      </trans-unit>
+      <trans-unit id="androidLink" datatype="html">
+        <source>Android</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Android page</note>
+        <note priority="1" from="meaning">android link</note>
+      </trans-unit>
+      <trans-unit id="dotNetCoreWebApiLink" datatype="html">
+        <source>.NET Core Web API</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the .NET Core Web API page</note>
+        <note priority="1" from="meaning">dot-net-core-web-api link</note>
+      </trans-unit>
+      <trans-unit id="financialAssessmentsLink" datatype="html">
+        <source>Financial assessments</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the financial assessments page</note>
+        <note priority="1" from="meaning">financial-assessments link</note>
+      </trans-unit>
+      <trans-unit id="frontEndLink" datatype="html">
+        <source>Front end</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the front end page</note>
+        <note priority="1" from="meaning">front-end link</note>
+      </trans-unit>
+      <trans-unit id="notionsOfArchitectureLink" datatype="html">
+        <source>Notions of architecture</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the notions of architecture page</note>
+        <note priority="1" from="meaning">notions-of-architecture link</note>
+      </trans-unit>
+      <trans-unit id="humanSkillsLink" datatype="html">
+        <source>Human skills</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the human skills page</note>
+        <note priority="1" from="meaning">human-skills link</note>
+      </trans-unit>
+      <trans-unit id="autonomyLink" datatype="html">
+        <source>Autonomy</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the autonomy page</note>
+        <note priority="1" from="meaning">autonomy link</note>
+      </trans-unit>
+      <trans-unit id="creativityLink" datatype="html">
+        <source>Creativity</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">52</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the creativity page</note>
+        <note priority="1" from="meaning">creativity link</note>
+      </trans-unit>
+      <trans-unit id="knowledgeSharingLink" datatype="html">
+        <source>Knowledge sharing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the knowledge-sharing page</note>
+        <note priority="1" from="meaning">knowledge-sharing link</note>
+      </trans-unit>
+      <trans-unit id="languagesLink" datatype="html">
+        <source>Languages</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the languages page</note>
+        <note priority="1" from="meaning">languages link</note>
+      </trans-unit>
+      <trans-unit id="teamLeadingLink" datatype="html">
+        <source>Team leading</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the team leading page</note>
+        <note priority="1" from="meaning">team-leading link</note>
+      </trans-unit>
+      <trans-unit id="hobbiesLink" datatype="html">
+        <source>Hobbies</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">66</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the hobbies page</note>
+        <note priority="1" from="meaning">hobbies link</note>
+      </trans-unit>
+      <trans-unit id="contactLink" datatype="html">
+        <source>Contact</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the contact page</note>
+        <note priority="1" from="meaning">contact link</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
