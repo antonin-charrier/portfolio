@@ -212,6 +212,20 @@
         <note priority="1" from="description">The link that redirects to the contact page</note>
         <note priority="1" from="meaning">contact link</note>
       </trans-unit>
+      <trans-unit id="wipLink" datatype="html">
+        <source>
+          Work in progress
+        </source>
+        <target>
+          Travail en cours
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/wip/wip.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the work in progress page</note>
+        <note priority="1" from="meaning">wip link</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
