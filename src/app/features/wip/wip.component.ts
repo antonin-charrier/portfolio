@@ -12,4 +12,7 @@ export class WipComponent implements OnInit {
   ngOnInit() {
   }
 
+  scrollToTestDiv() {
+    document.querySelector('#test-div').scrollIntoView();
+  }
 }

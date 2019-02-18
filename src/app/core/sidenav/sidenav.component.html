@@ -1,27 +1,108 @@
+<mat-action-list>
+  <mat-list-item [routerLink]="['']" >
+    <mat-icon matListIcon>home</mat-icon>
+    <p matLine i18n="home link|The link that redirects to the home page@@homeLink">Home</p>
+  </mat-list-item>
+  <mat-list-item [routerLink]="['projects']" >
+    <mat-icon matListIcon>work</mat-icon>
+    <p matLine i18n="projects link|The link that redirects to the projects page@@projectsLink">Projects</p>
+    <button mat-icon-button (click)="isProjectsExpanded = !isProjectsExpanded; $event.stopPropagation()">
+      <mat-icon *ngIf="!isProjectsExpanded">expand_more</mat-icon>
+      <mat-icon *ngIf="isProjectsExpanded">expand_less</mat-icon>
+    </button>
+  </mat-list-item>
+  <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
+    <mat-list-item [routerLink]="['projects/call-center']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="call-center link|The link that redirects to the call center page@@callCenterLink">Call center</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/e-monthly']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="e-monthly link|The link that redirects to the eMonthly page@@eMonthlyLink">eMonthly</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/galt']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="galt link|The link that redirects to the Galt page@@galtLink">Galt</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/vision-safety']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="vision-safety link|The link that redirects to the VisionSafety page@@visionSafetyLink">VisionSafety</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/web-agent']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="web-agent link|The link that redirects to the WebAgent page@@webAgentLink">WebAgent</p>
+    </mat-list-item>
+  </mat-action-list>
+  <mat-list-item [routerLink]="['technical-skills']" >
+    <mat-icon matListIcon>build</mat-icon>
+    <p matLine i18n="technical-skills link|The link that redirects to the technical skills page@@technicalSkillsLink">Technical skills</p>
+    <button mat-icon-button (click)="isTechnicalSkillsExpanded = !isTechnicalSkillsExpanded; $event.stopPropagation()">
+      <mat-icon *ngIf="!isTechnicalSkillsExpanded">expand_more</mat-icon>
+      <mat-icon *ngIf="isTechnicalSkillsExpanded">expand_less</mat-icon>
+    </button>
+  </mat-list-item>
+  <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
+    <mat-list-item [routerLink]="['technical-skills/android']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="android link|The link that redirects to the Android page@@androidLink">Android</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="dot-net-core-web-api link|The link that redirects to the .NET Core Web API page@@dotNetCoreWebApiLink">.NET Core Web API</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['technical-skills/financial-assessments']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="financial-assessments link|The link that redirects to the financial assessments page@@financialAssessmentsLink">Financial assessments</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['technical-skills/front-end']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="front-end link|The link that redirects to the front end page@@frontEndLink">Front end</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="notions-of-architecture link|The link that redirects to the notions of architecture page@@notionsOfArchitectureLink">Notions of architecture</p>
+    </mat-list-item>
+  </mat-action-list>  
+  <mat-list-item [routerLink]="['human-skills']" >
+    <mat-icon matListIcon>assignment_ind</mat-icon>
+    <p matLine i18n="human-skills link|The link that redirects to the human skills page@@humanSkillsLink">Human skills</p>
+    <button mat-icon-button (click)="isHumanSkillsExpanded = !isHumanSkillsExpanded; $event.stopPropagation()">
+      <mat-icon *ngIf="!isHumanSkillsExpanded">expand_more</mat-icon>
+      <mat-icon *ngIf="isHumanSkillsExpanded">expand_less</mat-icon>
+    </button>
+  </mat-list-item>
+  <mat-action-list mat-list-item class="sublist" *ngIf="isHumanSkillsExpanded">
+    <mat-list-item [routerLink]="['projects/call-center']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="call-center link|The link that redirects to the call center page@@callCenterLink">Call center</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/e-monthly']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="e-monthly link|The link that redirects to the eMonthly page@@eMonthlyLink">eMonthly</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/galt']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="galt link|The link that redirects to the Galt page@@galtLink">Galt</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/vision-safety']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="vision-safety link|The link that redirects to the VisionSafety page@@visionSafetyLink">VisionSafety</p>
+    </mat-list-item>
+    <mat-list-item [routerLink]="['projects/web-agent']">
+      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+      <p matLine i18n="web-agent link|The link that redirects to the WebAgent page@@webAgentLink">WebAgent</p>
+    </mat-list-item>
+  </mat-action-list>   <mat-list-item [routerLink]="['hobbies']" >
+    <mat-icon matListIcon>videogame_asset</mat-icon>
+    <p matLine i18n="hobbies link|The link that redirects to the hobbies page@@hobbiesLink">Hobbies</p>
+  </mat-list-item>
+  <mat-list-item [routerLink]="['contact']" >
+    <mat-icon matListIcon>email</mat-icon>
+    <p matLine i18n="hobbies link|The link that redirects to the hobbies page@@hobbiesLink">Contact</p>
+  </mat-list-item>
+</mat-action-list>
+
 <ul>
-  <li>
-    <a [routerLink]="['']" i18n="home link|The link that redirects to the home page@@homeLink">Home</a>
-  </li>
-  <li>
-    <a [routerLink]="['projects']" i18n="projects link|The link that redirects to the projects page@@projectsLink">Projects</a>
-    <ul>
-      <li>
-        <a [routerLink]="['projects/call-center']" i18n="call-center link|The link that redirects to the call center page@@callCenterLink">Call center</a>
-      </li>
-      <li>
-        <a [routerLink]="['projects/e-monthly']" i18n="e-monthly link|The link that redirects to the eMonthly page@@eMonthlyLink">eMonthly</a>
-      </li>
-      <li>
-        <a [routerLink]="['projects/galt']" i18n="galt link|The link that redirects to the Galt page@@galtLink">Galt</a>
-      </li>
-      <li>
-        <a [routerLink]="['projects/vision-safety']" i18n="vision-safety link|The link that redirects to the VisionSafety page@@visionSafetyLink">VisionSafety</a>
-      </li>
-      <li>
-        <a [routerLink]="['projects/web-agent']" i18n="web-agent link|The link that redirects to the WebAgent page@@webAgentLink">WebAgent</a>
-      </li>              
-    </ul>
-  </li>
   <li>
     <a [routerLink]="['technical-skills']" i18n="technical-skills link|The link that redirects to the technical skills page@@technicalSkillsLink">Technical skills</a>
     <ul>
@@ -61,11 +142,5 @@
           <a [routerLink]="['human-skills/team-leading']" i18n="team-leading link|The link that redirects to the team leading page@@teamLeadingLink">Team leading</a>
         </li>              
       </ul>  
-  </li>
-  <li>
-    <a [routerLink]="['hobbies']" i18n="hobbies link|The link that redirects to the hobbies page@@hobbiesLink">Hobbies</a>
-  </li>
-  <li>
-    <a [routerLink]="['contact']" i18n="contact link|The link that redirects to the contact page@@contactLink">Contact</a>
   </li>
 </ul>

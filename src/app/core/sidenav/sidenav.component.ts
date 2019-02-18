@@ -10,4 +10,8 @@ export class SidenavComponent {
   constructor(
     public router: Router
   ) { }
+
+  private isProjectsExpanded: boolean;
+  private isTechnicalSkillsExpanded: boolean;
+  private isHumanSkillsExpanded: boolean;
 }

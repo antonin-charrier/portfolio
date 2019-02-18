@@ -16,6 +16,9 @@
 *.launch
 .settings/
 *.sublime-workspace
+.vs/*
+obj/*
+bin/*
 
 # IDE - VSCode
 .vscode/*
@@ -38,3 +41,5 @@ testem.log
 .DS_Store
 Thumbs.db
 .vscode/tasks.json
+Portfolio.csproj.user
+Properties/launchSettings.json
