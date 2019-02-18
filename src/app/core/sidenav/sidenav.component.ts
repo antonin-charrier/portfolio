@@ -11,7 +11,7 @@ export class SidenavComponent {
     public router: Router
   ) { }
 
-  private isProjectsExpanded: boolean;
-  private isTechnicalSkillsExpanded: boolean;
-  private isHumanSkillsExpanded: boolean;
+  isProjectsExpanded: boolean;
+  isTechnicalSkillsExpanded: boolean;
+  isHumanSkillsExpanded: boolean;
 }
