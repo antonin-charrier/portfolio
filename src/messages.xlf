@@ -6,7 +6,7 @@
         <source>Home</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">3</context>
+          <context context-type="linenumber">4</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the home page</note>
         <note priority="1" from="meaning">home link</note>
@@ -15,7 +15,7 @@
         <source>Projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">6</context>
+          <context context-type="linenumber">8</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the projects page</note>
         <note priority="1" from="meaning">projects link</note>
@@ -24,7 +24,7 @@
         <source>Call center</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">17</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the call center page</note>
         <note priority="1" from="meaning">call-center link</note>
@@ -33,7 +33,7 @@
         <source>eMonthly</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">12</context>
+          <context context-type="linenumber">21</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the eMonthly page</note>
         <note priority="1" from="meaning">e-monthly link</note>
@@ -42,7 +42,7 @@
         <source>Galt</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="linenumber">25</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the Galt page</note>
         <note priority="1" from="meaning">galt link</note>
@@ -51,7 +51,7 @@
         <source>VisionSafety</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">29</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the VisionSafety page</note>
         <note priority="1" from="meaning">vision-safety link</note>
@@ -60,7 +60,7 @@
         <source>WebAgent</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">21</context>
+          <context context-type="linenumber">33</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the WebAgent page</note>
         <note priority="1" from="meaning">web-agent link</note>
@@ -69,7 +69,7 @@
         <source>Technical skills</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">38</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the technical skills page</note>
         <note priority="1" from="meaning">technical-skills link</note>
@@ -78,7 +78,7 @@
         <source>Android</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">29</context>
+          <context context-type="linenumber">47</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the Android page</note>
         <note priority="1" from="meaning">android link</note>
@@ -87,7 +87,7 @@
         <source>.NET Core Web API</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">32</context>
+          <context context-type="linenumber">51</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the .NET Core Web API page</note>
         <note priority="1" from="meaning">dot-net-core-web-api link</note>
@@ -96,7 +96,7 @@
         <source>Financial assessments</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">35</context>
+          <context context-type="linenumber">55</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the financial assessments page</note>
         <note priority="1" from="meaning">financial-assessments link</note>
@@ -105,7 +105,7 @@
         <source>Front end</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">38</context>
+          <context context-type="linenumber">59</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the front end page</note>
         <note priority="1" from="meaning">front-end link</note>
@@ -114,7 +114,7 @@
         <source>Notions of architecture</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">41</context>
+          <context context-type="linenumber">63</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the notions of architecture page</note>
         <note priority="1" from="meaning">notions-of-architecture link</note>
@@ -123,7 +123,7 @@
         <source>Human skills</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">46</context>
+          <context context-type="linenumber">68</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the human skills page</note>
         <note priority="1" from="meaning">human-skills link</note>
@@ -132,7 +132,7 @@
         <source>Autonomy</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">49</context>
+          <context context-type="linenumber">77</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the autonomy page</note>
         <note priority="1" from="meaning">autonomy link</note>
@@ -141,7 +141,7 @@
         <source>Creativity</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">81</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the creativity page</note>
         <note priority="1" from="meaning">creativity link</note>
@@ -150,7 +150,7 @@
         <source>Knowledge sharing</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">55</context>
+          <context context-type="linenumber">85</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the knowledge-sharing page</note>
         <note priority="1" from="meaning">knowledge-sharing link</note>
@@ -159,7 +159,7 @@
         <source>Languages</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">58</context>
+          <context context-type="linenumber">89</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the languages page</note>
         <note priority="1" from="meaning">languages link</note>
@@ -168,7 +168,7 @@
         <source>Team leading</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">93</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the team leading page</note>
         <note priority="1" from="meaning">team-leading link</note>
@@ -177,7 +177,7 @@
         <source>Hobbies</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">66</context>
+          <context context-type="linenumber">97</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the hobbies page</note>
         <note priority="1" from="meaning">hobbies link</note>
@@ -186,10 +186,109 @@
         <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/core/sidenav/sidenav.component.html</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">101</context>
         </context-group>
         <note priority="1" from="description">The link that redirects to the contact page</note>
         <note priority="1" from="meaning">contact link</note>
+      </trans-unit>
+      <trans-unit id="eMonthlyTitle" datatype="html">
+        <source>eMonthly</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">The title of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly title</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySubtitle" datatype="html">
+        <source>Architecting an Angular project</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">The subtitle of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly subtitle</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan1" datatype="html">
+        <source>After working on several </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <note priority="1" from="description">The first span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span1</note>
+      </trans-unit>
+      <trans-unit id="eMonthlyAngularProjects" datatype="html">
+        <source>Angular projects</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the front end page</note>
+        <note priority="1" from="meaning">eMonthly angular projects link</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan2" datatype="html">
+        <source>, my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre.
+      The template first needs to be used for a web app for Safran aeronautics company. 
+      This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">The second span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span2</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan3" datatype="html">
+        <source>I work only one week on this project. During this week, I create the Angular projet, organize </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">The third span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span3</note>
+      </trans-unit>
+      <trans-unit id="eMonthlyArchitecture" datatype="html">
+        <source>the architecture</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the notions of architecture page</note>
+        <note priority="1" from="meaning">eMonthly architecture link</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan4" datatype="html">
+        <source> of the solution by creating services, components, guards, etc. 
+       I add references to libraries that our centre has interest in using based on recurent feedback from clients. 
+       I especially added Angular Material to make rapidly and efficiently a neat website design (in particular for PoCs) 
+       and Kendo for Angular to be able to use grid systems that are a usual request from clients.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The fourth span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span4</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan5" datatype="html">
+        <source>Once this template project is operational, I work on the specificities of the application for Safran. 
+    I note the interest of a built-in solution which is ready, modular and reusable in the future. 
+    Then I easily integrate some screens asked in the specifications using Angular Material and Kendo already configured.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">The fifth span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span5</note>
+      </trans-unit>
+      <trans-unit id="eMonthlySpan6" datatype="html">
+        <source>I expect to work again on the Angular project template to improve it based on the needs of the future clients. 
+    I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, 
+    to encourage them to use good conception practices from the beginning.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">The sixth span of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly span6</note>
       </trans-unit>
     </body>
   </file>
