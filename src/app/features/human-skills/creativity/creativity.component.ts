@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ArticleComponent } from 'src/app/shared/article.component';
 
 @Component({
   selector: 'app-creativity',
   templateUrl: './creativity.component.html',
   styleUrls: ['./creativity.component.scss']
 })
-export class CreativityComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class CreativityComponent extends ArticleComponent {}

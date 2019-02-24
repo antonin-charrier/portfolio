@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ArticleComponent } from 'src/app/shared/article.component';
 
 @Component({
   selector: 'app-team-leading',
   templateUrl: './team-leading.component.html',
   styleUrls: ['./team-leading.component.scss']
 })
-export class TeamLeadingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class TeamLeadingComponent extends ArticleComponent {}

@@ -1,15 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+import { ArticleComponent } from 'src/app/shared/article.component';
 
 @Component({
   selector: 'app-knowledge-sharing',
   templateUrl: './knowledge-sharing.component.html',
   styleUrls: ['./knowledge-sharing.component.scss']
 })
-export class KnowledgeSharingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-}
+export class KnowledgeSharingComponent extends ArticleComponent {}
