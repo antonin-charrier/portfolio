@@ -8,12 +8,12 @@ import { VisionSafetyComponent } from './vision-safety/vision-safety.component';
 import { WebAgentComponent } from './web-agent/web-agent.component';
 
 const routes: Routes = [
-  { path: 'projects', component: ProjectsComponent },
-  { path: 'projects/call-center', component: CallCenterComponent },
+  { path: 'projects', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'projects/call-center', redirectTo: 'wip', pathMatch: 'full' },
   { path: 'projects/e-monthly', component: EMonthlyComponent },
-  { path: 'projects/galt', component: GaltComponent },
-  { path: 'projects/vision-safety', component: VisionSafetyComponent },
-  { path: 'projects/web-agent', component: WebAgentComponent }
+  { path: 'projects/galt', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'projects/vision-safety', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'projects/web-agent', redirectTo: 'wip', pathMatch: 'full' }
 ];
 
 @NgModule({

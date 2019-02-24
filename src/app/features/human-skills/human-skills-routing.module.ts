@@ -8,12 +8,12 @@ import { LanguagesComponent } from './languages/languages.component';
 import { TeamLeadingComponent } from './team-leading/team-leading.component';
 
 const routes: Routes = [
-  { path: 'human-skills', component: HumanSkillsComponent },
+  { path: 'human-skills', redirectTo: 'wip', pathMatch: 'full' },
   { path: 'human-skills/autonomy', component: AutonomyComponent },
-  { path: 'human-skills/creativity', component: CreativityComponent },
-  { path: 'human-skills/knowledge-sharing', component: KnowledgeSharingComponent },
-  { path: 'human-skills/languages', component: LanguagesComponent },
-  { path: 'human-skills/team-leading', component: TeamLeadingComponent }
+  { path: 'human-skills/creativity', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'human-skills/knowledge-sharing', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'human-skills/languages', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'human-skills/team-leading', redirectTo: 'wip', pathMatch: 'full' }
 ];
 
 @NgModule({

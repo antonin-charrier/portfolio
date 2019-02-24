@@ -8,12 +8,12 @@ import { FrontEndComponent } from './front-end/front-end.component';
 import { NotionsOfArchitectureComponent } from './notions-of-architecture/notions-of-architecture.component';
 
 const routes: Routes = [
-  { path: 'technical-skills', component: TechnicalSkillsComponent },
-  { path: 'technical-skills/android', component: AndroidComponent },
-  { path: 'technical-skills/dot-net-core-web-api', component: DotNetCoreWebApiComponent },
-  { path: 'technical-skills/financial-assessments', component: FinancialAssessmentsComponent },
-  { path: 'technical-skills/front-end', component: FrontEndComponent },
-  { path: 'technical-skills/notions-of-architecture', component: NotionsOfArchitectureComponent }
+  { path: 'technical-skills', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'technical-skills/android', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'technical-skills/dot-net-core-web-api', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'technical-skills/financial-assessments', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'technical-skills/front-end', redirectTo: 'wip', pathMatch: 'full' },
+  { path: 'technical-skills/notions-of-architecture', redirectTo: 'wip', pathMatch: 'full' }
 ];
 
 @NgModule({
