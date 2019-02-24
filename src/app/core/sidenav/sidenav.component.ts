@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID, Inject } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,11 +7,17 @@ import { Router } from '@angular/router';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
+
   constructor(
+    @Inject(LOCALE_ID) public locale: string,
     public router: Router
-  ) { }
+  ) {}
 
   isProjectsExpanded: boolean;
   isTechnicalSkillsExpanded: boolean;
   isHumanSkillsExpanded: boolean;
+
+  url(lang: string): string {
+    return 'https://antonin-charrier.com/' + lang + this.router.url;
+  }
 }
