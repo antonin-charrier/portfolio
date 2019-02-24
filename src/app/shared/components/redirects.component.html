@@ -1,0 +1,54 @@
+<h2 *ngIf="!isProjectsEmpty" i18n="linked projects title|The title of the linked projects section@@linkedProjectsTitle">Linked projects</h2>
+<ul *ngIf="!isProjectsEmpty">
+    <li *ngIf="isProjectLinked('call-center')" i18n="linked projects call-center|The link that redirects to the Call center page@@linkedProjectsCallCenter">
+        <a [routerLink]="['projects/call-center']">Call center</a>
+    </li>
+    <li *ngIf="isProjectLinked('e-monthly')" i18n="linked projects e-monthly|The link that redirects to the eMonthly page@@linkedProjectsEMonthly">
+        <a [routerLink]="['projects/e-monthly']">eMonthly</a>
+    </li>
+    <li *ngIf="isProjectLinked('galt')" i18n="linked projects galt|The link that redirects to the Galt page@@linkedProjectsGalt">
+        <a [routerLink]="['projects/galt']">Galt</a>
+    </li>
+    <li *ngIf="isProjectLinked('vision-safety')" i18n="linked projects vision-safety|The link that redirects to the VisionSafety page@@linkedProjectsVisionSafety">
+        <a [routerLink]="['projects/vision-safety']">VisionSafety</a>
+    </li>
+    <li *ngIf="isProjectLinked('web-agent')" i18n="linked projects web-agent|The link that redirects to the WebAgent page@@linkedProjectsWebAgent">
+        <a [routerLink]="['projects/web-agent']">WebAgent</a>
+    </li>
+</ul>
+<h2 *ngIf="!isTechnicalSkillsEmpty" i18n="linked technical skills title|The title of the linked technical skills section@@linkedTechnicalSkillsTitle">Linked technical skills</h2>
+<ul *ngIf="!isTechnicalSkillsEmpty">
+    <li *ngIf="isTechnicalSkillLinked('android')" i18n="linked projects android|The link that redirects to the Android page@@linkedProjectsAndroid">
+        <a [routerLink]="['technical-skills/android']">Android</a>
+    </li>
+    <li *ngIf="isTechnicalSkillLinked('dot-net-core-web-api')" i18n="linked projects dot-net-core-web-api|The link that redirects to the .NET Core Web API page@@linkedProjectsDotNetCoreWebApi">
+        <a [routerLink]="['technical-skills/dot-net-core-web-api']">.NET Core Web API</a>
+    </li>
+    <li *ngIf="isTechnicalSkillLinked('financial-assessments')" i18n="linked projects financial-assessments|The link that redirects to the Financial assessments page@@linkedProjectsFinancialAssessments">
+        <a [routerLink]="['technical-skills/financial-assessments']">Financial assessments</a>
+    </li>
+    <li *ngIf="isTechnicalSkillLinked('front-end')" i18n="linked projects front-end|The link that redirects to the Front end page@@linkedProjectsFrontEnd">
+        <a [routerLink]="['technical-skills/front-end']">Front end</a>
+    </li>
+    <li *ngIf="isTechnicalSkillLinked('notions-of-architecture')" i18n="linked projects notions-of-architecture|The link that redirects to the Notions of architecture page@@linkedProjectsNotionsOfArchitecture">
+        <a [routerLink]="['technical-skills/notions-of-architecture']">Notions of architecture</a>
+    </li>
+</ul>
+<h2 *ngIf="!isHumanSkillsEmpty" i18n="linked human skills title|The title of the linked human skills section@@linkedHumanSkillsTitle">Linked human skills</h2>
+<ul *ngIf="!isHumanSkillsEmpty">
+    <li *ngIf="isHumanSkillLinked('autonomy')" i18n="linked projects autonomy|The link that redirects to the Autonomy page@@linkedProjectsAutonomy">
+        <a [routerLink]="['human-skills/autonomy']">Autonomy</a>
+    </li>
+    <li *ngIf="isHumanSkillLinked('creativity')" i18n="linked projects creativity|The link that redirects to the Creativity page@@linkedProjectsCreativity">
+        <a [routerLink]="['human-skills/creativity']">Creativity</a>
+    </li>
+    <li *ngIf="isHumanSkillLinked('knowledge-sharing')" i18n="linked projects knowledge-sharing|The link that redirects to the Knowledge sharing page@@linkedProjectsKnowledgeSharing">
+        <a [routerLink]="['human-skills/knowledge-sharing']">Knowledge sharing</a>
+    </li>
+    <li *ngIf="isHumanSkillLinked('languages')" i18n="linked projects languages|The link that redirects to the Languages page@@linkedProjectsLanguages">
+        <a [routerLink]="['human-skills/languages']">Languages</a>
+    </li>
+    <li *ngIf="isHumanSkillLinked('team-leading')" i18n="linked projects team-leading|The link that redirects to the Team leading page@@linkedProjectsTeamLeading">
+        <a [routerLink]="['human-skills/team-leading']">Team leading</a>
+    </li>
+</ul>

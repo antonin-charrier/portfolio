@@ -2,7 +2,8 @@
     <mat-sidenav [mode]="'side'" [opened]="true">
         <app-sidenav></app-sidenav>
     </mat-sidenav>
-    <mat-sidenav-content style="height: 3000px;">
-        <router-outlet></router-outlet>
+    <mat-sidenav-content style="height: 700px;">
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+        <app-redirects [linkedProjects]="linkedProjects" [linkedTechnicalSkills]="linkedTechnicalSkills" [linkedHumanSkills]="linkedHumanSkills"></app-redirects>
     </mat-sidenav-content>
 </mat-sidenav-container>

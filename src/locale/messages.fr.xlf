@@ -2,6 +2,246 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en" datatype="plaintext" original="ng2.template">
     <body>
+    <trans-unit id="linkedProjectsTitle" datatype="html">
+        <source>Linked projects</source>
+        <target>Projets liés</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">The title of the linked projects section</note>
+        <note priority="1" from="meaning">linked projects title</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsCallCenter" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Call center<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Call center<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Call center page</note>
+        <note priority="1" from="meaning">linked projects call-center</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsEMonthly" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>eMonthly<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>eMonthly<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the eMonthly page</note>
+        <note priority="1" from="meaning">linked projects e-monthly</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsGalt" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Galt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Galt<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Galt page</note>
+        <note priority="1" from="meaning">linked projects galt</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsVisionSafety" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>VisionSafety<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>VisionSafety<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the VisionSafety page</note>
+        <note priority="1" from="meaning">linked projects vision-safety</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsWebAgent" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>WebAgent<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>WebAgent<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the WebAgent page</note>
+        <note priority="1" from="meaning">linked projects web-agent</note>
+      </trans-unit>
+      <trans-unit id="linkedTechnicalSkillsTitle" datatype="html">
+        <source>Linked technical skills</source>
+        <target>Compétences techniques liées</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <note priority="1" from="description">The title of the linked technical skills section</note>
+        <note priority="1" from="meaning">linked technical skills title</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsAndroid" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Android<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Android<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">21</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Android page</note>
+        <note priority="1" from="meaning">linked projects android</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsDotNetCoreWebApi" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>.NET Core Web API<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>API Web .NET Core<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the .NET Core Web API page</note>
+        <note priority="1" from="meaning">linked projects dot-net-core-web-api</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsFinancialAssessments" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Financial assessments<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Chiffrages financiers<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">27</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Financial assessments page</note>
+        <note priority="1" from="meaning">linked projects financial-assessments</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsFrontEnd" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Front end<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Front end<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Front end page</note>
+        <note priority="1" from="meaning">linked projects front-end</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsNotionsOfArchitecture" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Notions of architecture<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Notions d'architecture<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Notions of architecture page</note>
+        <note priority="1" from="meaning">linked projects notions-of-architecture</note>
+      </trans-unit>
+      <trans-unit id="linkedHumanSkillsTitle" datatype="html">
+        <source>Linked human skills</source>
+        <target>Compétences humaines liées</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+        <note priority="1" from="description">The title of the linked human skills section</note>
+        <note priority="1" from="meaning">linked human skills title</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsAutonomy" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Autonomy<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Autonomie<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Autonomy page</note>
+        <note priority="1" from="meaning">linked projects autonomy</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsCreativity" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Creativity<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Créativité<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Creativity page</note>
+        <note priority="1" from="meaning">linked projects creativity</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsKnowledgeSharing" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Knowledge sharing<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Partage de connaissances<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Knowledge sharing page</note>
+        <note priority="1" from="meaning">linked projects knowledge-sharing</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsLanguages" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Languages<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Langues<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Languages page</note>
+        <note priority="1" from="meaning">linked projects languages</note>
+      </trans-unit>
+      <trans-unit id="linkedProjectsTeamLeading" datatype="html">
+        <source>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Team leading<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </source>
+        <target>
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Gestion d'équipe<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+        </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/shared/components/redirects.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <note priority="1" from="description">The link that redirects to the Team leading page</note>
+        <note priority="1" from="meaning">linked projects team-leading</note>
+      </trans-unit>
       <trans-unit id="homeLink" datatype="html">
         <source>Home</source>
         <target>Accueil</target>
@@ -232,103 +472,137 @@
         <note priority="1" from="description">The subtitle of the eMonthly article</note>
         <note priority="1" from="meaning">eMonthly subtitle</note>
       </trans-unit>      
-      <trans-unit id="eMonthlySpan1" datatype="html">
-        <source>After working on several </source>
-        <target>Après avoir travaillé sur plusieurs </target>
+      <trans-unit id="eMonthlyParagraph" datatype="html">
+        <source>
+          After working on several <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>Angular projects<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          , my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre.
+          The template first needs to be used for a web app for Safran aeronautics company. 
+          This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          I work only one week on this project. During this week, I create the Angular projet
+          , organize <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>the architecture<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> of 
+          the solution by creating <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>services, components, guards<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, etc. 
+          I add references to libraries that our centre has interest in using based on recurent feedback from clients. 
+          I especially add <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular Material<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> to make rapidly and efficiently a neat website design (in particular for PoCs) 
+          and <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Kendo for Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> to be able to use grid systems that are a usual request from clients.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Once this template project is operational, I work on the specificities of the application for Safran. 
+          I note the interest of a built-in solution which is ready, modular and reusable in the future. 
+          Then I easily integrate some screens asked in the specifications using Angular Material and Kendo already configured.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          I expect to work again on the Angular project template to improve it based on the needs of the future clients. 
+          I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, 
+          to encourage them to use good conception practices from the beginning.
+        </source>
+        <target>
+          Après avoir travaillé sur plusieurs <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>projets Angular<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>
+          , mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services.
+          Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran.
+          Cette apoplication, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Je ne travaille qu'une semaine sur ce projet. Durant cette semaine, je créée le projet Angular
+          , organise <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>l'architecture<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> de 
+          la solution en créant <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>des services, des composants, des guards<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, etc. 
+          J'ajoute des références vers des bibliothèques que notre centre a intérêt à utiliser d'après les demandes récurrents des clients. 
+          J'ajoute notamment <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Angular Material<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> pour effectuer rapidement et facilement un design de site soigné (en particulier pour les PoC)  
+          et <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Kendo for Angular<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> afin de pouvoir utiliser des systèmes de grille, très demandés par les clients.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Une fois le template de projet opérationnel, je travaille sur les spécificités de l'application pour Safran. 
+          Je constate l'intérêt d'avoir une solution toute prête, modulable et réutilisable dans le futur. 
+          Ensuite, j'intègre très facilement quelques écrans demandés dans les spécifications grâce à Angular Material et Kendo déjà configurés.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. 
+          je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, 
+          pour les encourager à utiliser des bonnes pratiques de conception dès le début.
+        </target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">5</context>
+          <context context-type="linenumber">4</context>
         </context-group>
-        <note priority="1" from="description">The first span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span1</note>
+        <note priority="1" from="description">The paragraph of the eMonthly article</note>
+        <note priority="1" from="meaning">eMonthly paragraph</note>
       </trans-unit>
-      <trans-unit id="eMonthlyAngularProjects" datatype="html">
-        <source>Angular projects</source>
-        <target>projets Angular</target>
+      <trans-unit id="autonomyTitle" datatype="html">
+        <source>Autonomy</source>
+        <target>Autonomie</target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">7</context>
+          <context context-type="sourcefile">app/features/human-skills/autonomy/autonomy.component.html</context>
+          <context context-type="linenumber">1</context>
         </context-group>
-        <note priority="1" from="description">The link that redirects to the front end page</note>
-        <note priority="1" from="meaning">eMonthly angular projects link</note>
+        <note priority="1" from="description">The title of the autonomy article</note>
+        <note priority="1" from="meaning">autonomy title</note>
       </trans-unit>
-      <trans-unit id="eMonthlySpan2" datatype="html">
-        <source>, my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre.
-      The template first needs to be used for a web app for Safran aeronautics company. 
-      This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.</source>
-        <target>, mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services.
-      Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran.
-      Cette apoplication, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients.</target>
+      <trans-unit id="autonomysubtitle" datatype="html">
+        <source><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Because a developer has to be able to work on hos own<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target><x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i&gt;"/>Car un développeur doit être capable de travailler par lui-même<x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="sourcefile">app/features/human-skills/autonomy/autonomy.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
-        <note priority="1" from="description">The second span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span2</note>
+        <note priority="1" from="description">The subtitle of the autonomy article</note>
+        <note priority="1" from="meaning">autonomy subtitle</note>
       </trans-unit>
-      <trans-unit id="eMonthlySpan3" datatype="html">
-        <source>I work only one week on this project. During this week, I create the Angular projet, organize </source>
-        <target>Je ne travaille qu'une semaine sur ce projet. Durant cette semaine, je créée le projet Angular, organise </target>
+      <trans-unit id="autonomyParagraph" datatype="html">
+        <source>
+          What is autonomy ? Basically, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>autonomy<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> is the ability to act by ùyself in a specific environment. 
+          It doesn&apos;t mean working alone but working with other people being granted some freedom. 
+          I can do my tasks the way I like as far as it respects the perimeter given to me.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          How does autonomy transcript into an IT company? The employee is given a work and hopefully knows how to achieve it. 
+          If he doesn&apos;t, he tries to figure out by himself using forums or tutorials on the Internet.
+          If, despite searching and trying by himself, he is not able to achieve the work, he will report it to his manager.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          However, there are obvious nuances. The employee must not stay stuck on an issue for an excessive amount of time without reporting it. 
+          He must be able to feel when he needs help. Yet he must search and try by himself before asking to his mates, either way he will never make progress. 
+          In a sector in <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>constant evolution<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, it is primary to constantly stay up-to-date. Also, autonomy is not a binary skill. 
+          There aren&apos;t autonomous or not autonomous people. Everybody is autonomous (at different degrees) because autonomy is something people work on.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Autonomy is one of my qualities. I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vsion projet (cf. 
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>WevAgent<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> and <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>VisionSafety<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> apps). 
+          I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects.
+          However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, 
+          it also depicted my autonomy and my adaptability in a new environment. 
+          In this company, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>feedbacks<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile.
+        </source>
+        <target>
+          Qu'est-ce que l'autonomie ? Fondalementalement, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>l'autonomie<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> est la capacité d'agir par soi-même dans un environnement spécifique. 
+          Cela ne signifie pas travailler seul mais travailler avec d'autres personnes en ayant certaines libertés. 
+          Je peux faire mes tâches comme je le souhaite tant que cela respecte le périmètre qui m'a été donné.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Comment l'autonomie se transcrit dans une ESN ? L'employé se voit donné un travail et potentiellement sait comment le faire. 
+          S'il ne sait pas, il essaye de comprendre par lui-même en utilisant des forums ou des tutoriels sur internet. 
+          Si, après avoir cherché et essayé par lui-même, il n'est pas capable de faire le travail, il le signale à son manager.
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          Cependant, il existe des nuances évidents. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. 
+          Il doit être capable de savoir lorsque il a besoin d'aide. Cependant il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. 
+          Dans un secteur en <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>constante évolution<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/>, il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire.  
+          Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent. 
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          <x id="LINE_BREAK" ctype="lb" equiv-text="&lt;br/&gt;"/>
+          L'autonomie est l'une de mes qualités. Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications
+          <x id="START_LINK" ctype="x-a" equiv-text="&lt;a&gt;"/>WebAgent<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/> et <x id="START_LINK_1" ctype="x-a" equiv-text="&lt;a&gt;"/>VisionSafety<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/>). 
+          Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. 
+          Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel,the software better, 
+          cela a aussé démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. 
+          Dans cette entreprise, <x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>les feedbacks<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil.
+        </target>
         <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">15</context>
+          <context context-type="sourcefile">app/features/human-skills/autonomy/autonomy.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
-        <note priority="1" from="description">The third span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span3</note>
-      </trans-unit>
-      <trans-unit id="eMonthlyArchitecture" datatype="html">
-        <source>the architecture</source>
-        <target>l'architecture</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">17</context>
-        </context-group>
-        <note priority="1" from="description">The link that redirects to the notions of architecture page</note>
-        <note priority="1" from="meaning">eMonthly architecture link</note>
-      </trans-unit>
-      <trans-unit id="eMonthlySpan4" datatype="html">
-        <source> of the solution by creating services, components, guards, etc. 
-       I add references to libraries that our centre has interest in using based on recurent feedback from clients. 
-       I especially added Angular Material to make rapidly and efficiently a neat website design (in particular for PoCs) 
-       and Kendo for Angular to be able to use grid systems that are a usual request from clients.</source>
-        <target> de la solution en créant des services, des composants, des guards, etc. 
-       J'ajoute des références vers des bibliothèques que notre centre a intérêt à utiliser d'après les demandes récurrents des clients. 
-       J'ajoute notamment Angular Material pour effectuer rapidement et facilement un design de site soigné (en particulier pour les PoC)  
-       et Kendo for Angular afin de pouvoir utiliser des systèmes de grille, très demandés par les clients.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">19</context>
-        </context-group>
-        <note priority="1" from="description">The fourth span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span4</note>
-      </trans-unit>
-      <trans-unit id="eMonthlySpan5" datatype="html">
-         <source>Once this template project is operational, I work on the specificities of the application for Safran. 
-    I note the interest of a built-in solution which is ready, modular and reusable in the future. 
-    Then I easily integrate some screens asked in the specifications using Angular Material and Kendo already configured.</source>
-       <target>Une fois le template de projet opérationnel, je travaille sur les spécificités de l'application pour Safran. 
-    Je constate l'intérêt d'avoir une solution toute prête, modulable et réutilisable dans le futur. 
-    Ensuite, j'intègre très facilement quelques écrans demandés dans les spécifications grâce à Angular Material et Kendo déjà configurés.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">24</context>
-        </context-group>
-        <note priority="1" from="description">The fifth span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span5</note>
-      </trans-unit>
-      <trans-unit id="eMonthlySpan6" datatype="html">
-        <source>I expect to work again on the Angular project template to improve it based on the needs of the future clients. 
-    I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, 
-    to encourage them to use good conception practices from the beginning.</source>
-        <target>Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. 
-    je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, 
-    pour les encourager à utiliser des bonnes pratiques de conception dès le début.</target>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/features/projects/e-monthly/e-monthly.component.html</context>
-          <context context-type="linenumber">27</context>
-        </context-group>
-        <note priority="1" from="description">The sixth span of the eMonthly article</note>
-        <note priority="1" from="meaning">eMonthly span6</note>
+        <note priority="1" from="description">The paragraph of the autonomy article</note>
+        <note priority="1" from="meaning">autonomy paragraph</note>
       </trans-unit>
     </body>
   </file>
