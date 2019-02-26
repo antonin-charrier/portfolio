@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +10,13 @@ export class AppComponent {
   linkedProjects: string[] = [];
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
+
+  constructor(
+    private translateService: TranslateService
+    ) {
+      this.translateService.setDefaultLang('fr');
+      this.translateService.use('fr');
+    }
 
   onActivate(component: any) {
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];

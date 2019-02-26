@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { MaterialModule } from './material/material.module';
 import { RouterModule } from '@angular/router';
 import { RedirectsComponent } from './components/redirects.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { RedirectsComponent } from './components/redirects.component';
   exports: [
     MaterialModule,
     RouterModule,
-    RedirectsComponent
+    RedirectsComponent,
+    TranslateModule
   ]
 })
 export class SharedModule { }

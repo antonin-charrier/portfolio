@@ -100,9 +100,9 @@
     <mat-icon matListIcon>email</mat-icon>
     <p matLine i18n="contact link|The link that redirects to the contact page@@contactLink">Contact</p>
   </mat-list-item>
-  <button mat-raised-button id="language-button" [matMenuTriggerFor]="menu">{{ currentLocale.toUpperCase() }}</button>
+  <button mat-raised-button id="language-button" [matMenuTriggerFor]="menu">{{ locale }}</button>
   <mat-menu #menu="matMenu" yPosition="above" xPosition="before">
-    <a [href]="url('fr')" mat-menu-item>Français</a>
-    <a [href]="url('en')" mat-menu-item>English</a>
+    <button mat-menu-item (click)="setLang('fr')">Français</button>
+    <button mat-menu-item (click)="setLang('en')">English</button>
   </mat-menu>
 </mat-action-list>

@@ -1,5 +1,7 @@
-import { Component, LOCALE_ID, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-sidenav',
@@ -9,19 +11,19 @@ import { Router } from '@angular/router';
 export class SidenavComponent {
 
   constructor(
-    @Inject(LOCALE_ID) private locale: string,
-    public router: Router
+    public router: Router,
+    public translateService: TranslateService
   ) {}
 
-  get currentLocale(): string {
-    return this.locale.substring(0, 2);
+  get locale(): string {
+    return this.translateService.currentLang.toLocaleUpperCase();
   }
 
   isProjectsExpanded: boolean;
   isTechnicalSkillsExpanded: boolean;
   isHumanSkillsExpanded: boolean;
 
-  url(lang: string): string {
-    return 'https://antonin-charrier.com/' + lang + this.router.url;
+  setLang(lang: string) {
+    this.translateService.use(lang);
   }
 }
