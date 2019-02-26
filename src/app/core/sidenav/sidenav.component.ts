@@ -9,9 +9,13 @@ import { Router } from '@angular/router';
 export class SidenavComponent {
 
   constructor(
-    @Inject(LOCALE_ID) public locale: string,
+    @Inject(LOCALE_ID) private locale: string,
     public router: Router
   ) {}
+
+  get currentLocale(): string {
+    return this.locale.substring(0, 2);
+  }
 
   isProjectsExpanded: boolean;
   isTechnicalSkillsExpanded: boolean;

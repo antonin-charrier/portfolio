@@ -465,6 +465,7 @@
         </context-group>
         <note priority="1" from="description">The link that redirects to the work in progress page</note>
         <note priority="1" from="meaning">wip link</note>
+      </trans-unit>
       <trans-unit id="eMonthlyTitle" datatype="html">
         <source>eMonthly</source>
         <target>eMonthly</target>
