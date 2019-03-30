@@ -1,0 +1,27 @@
+{
+    "sidenav": {
+        "home": "Home",
+        "projects": "Projects",
+        "call-center": "Call center",
+        "e-monthly": "eMonthly",
+        "galt": "Galt",
+        "vision-safety": "VisionSafety",
+        "web-agent": "WebAgent",
+        "technical-skills": "Technical skills",
+        "android": "Android",
+        "dot-net-core-web-api": ".NET Core Web API",
+        "financial-assessments": "Financial assessments",
+        "notions-of-architecture": "Notions of architecture",
+        "human-skills": "Human skills",
+        "autonomy": "Autonomy",
+        "creativity": "Creativity",
+        "knowledge-sharing": "Knowledge sharing",
+        "languages": "Languages",
+        "team-leading": "Team leading",
+        "hobbies": "Hobbies",
+        "contact": "Contact"
+    },
+    "wip": {
+        "work-in-progress": "Work in progress"
+    }
+}
