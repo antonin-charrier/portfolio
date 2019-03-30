@@ -23,5 +23,34 @@
     },
     "wip": {
         "work-in-progress": "Travail en cours"
+    },
+    "projects": {
+        "e-monthly": {
+            "title": "eMonthly",
+            "subtitle": "Architecturer un project Angular",
+            "template": {
+                "title": "Construction d'un template Angular",
+                "after-working": "Après avoir travaillé sur plusieurs ",
+                "angular-projects": "projets Angular",
+                "project-manager": ", mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services. Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran. Cette apoplication, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients."
+            },
+            "architecture": {
+                "title": "Intégration de puissants frameworks",
+                "one-week":  " Je ne travaille qu'une semaine sur ce projet. Durant cette semaine, je créée le projet Angular, organise ",
+                "architecture": "l'architecture",
+                "by-creating": " de la solution en créant ",
+                "services": "des services, des composants, des guards",
+                "references": ", etc. J'ajoute des références vers des bibliothèques que notre centre a intérêt à utiliser d'après les demandes récurrents des clients. J'ajoute notamment ",
+                "angular-material": "Angular Material",
+                "website": " pour effectuer rapidement et facilement un design de site soigné (en particulier pour les PoC) et ",
+                "kendo": "Kendo for Angular",
+                "grid": " afin de pouvoir utiliser des systèmes de grille, très demandés par les clients.",
+                "specificities": "Une fois le template de projet opérationnel, je travaille sur les spécificités de l'application pour Safran. Je constate l'intérêt d'avoir une solution toute prête, modulable et réutilisable dans le futur. Ensuite, j'intègre très facilement quelques écrans demandés dans les spécifications grâce à Angular Material et Kendo déjà configurés."
+            }, 
+            "future": {
+                "title": "Continuer à améliorer le template",
+                "expect" : "Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. Je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, pour les encourager à utiliser des bonnes pratiques de conception dès le début."
+            }
+        }
     }
 }

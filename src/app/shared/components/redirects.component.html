@@ -1,4 +1,4 @@
-<h2 *ngIf="!isProjectsEmpty" i18n="linked projects title|The title of the linked projects section@@linkedProjectsTitle">Linked projects</h2>
+<h3 *ngIf="!isProjectsEmpty" i18n="linked projects title|The title of the linked projects section@@linkedProjectsTitle">Linked projects</h3>
 <ul *ngIf="!isProjectsEmpty">
     <li *ngIf="isProjectLinked('call-center')" i18n="linked projects call-center|The link that redirects to the Call center page@@linkedProjectsCallCenter">
         <a [routerLink]="['projects/call-center']">Call center</a>
@@ -16,7 +16,7 @@
         <a [routerLink]="['projects/web-agent']">WebAgent</a>
     </li>
 </ul>
-<h2 *ngIf="!isTechnicalSkillsEmpty" i18n="linked technical skills title|The title of the linked technical skills section@@linkedTechnicalSkillsTitle">Linked technical skills</h2>
+<h3 *ngIf="!isTechnicalSkillsEmpty" i18n="linked technical skills title|The title of the linked technical skills section@@linkedTechnicalSkillsTitle">Linked technical skills</h3>
 <ul *ngIf="!isTechnicalSkillsEmpty">
     <li *ngIf="isTechnicalSkillLinked('android')" i18n="linked projects android|The link that redirects to the Android page@@linkedProjectsAndroid">
         <a [routerLink]="['technical-skills/android']">Android</a>
@@ -34,7 +34,7 @@
         <a [routerLink]="['technical-skills/notions-of-architecture']">Notions of architecture</a>
     </li>
 </ul>
-<h2 *ngIf="!isHumanSkillsEmpty" i18n="linked human skills title|The title of the linked human skills section@@linkedHumanSkillsTitle">Linked human skills</h2>
+<h3 *ngIf="!isHumanSkillsEmpty" i18n="linked human skills title|The title of the linked human skills section@@linkedHumanSkillsTitle">Linked human skills</h3>
 <ul *ngIf="!isHumanSkillsEmpty">
     <li *ngIf="isHumanSkillLinked('autonomy')" i18n="linked projects autonomy|The link that redirects to the Autonomy page@@linkedProjectsAutonomy">
         <a [routerLink]="['human-skills/autonomy']">Autonomy</a>

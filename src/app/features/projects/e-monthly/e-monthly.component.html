@@ -1,27 +1,28 @@
-<h1 i18n="eMonthly title|The title of the eMonthly article@@eMonthlyTitle">eMonthly</h1>
-<i><h3 i18n="eMonthly subtitle|The subtitle of the eMonthly article@@eMonthlySubtitle">Architecting an Angular project</h3></i>
+<h1>{{ 'projects.e-monthly.title' | translate }}</h1>
+<h2>{{ 'projects.e-monthly.subtitle' | translate }}</h2>
 <div>
-  <p i18n="eMonthly paragraph|The paragraph of the eMonthly article@@eMonthlyParagraph">
-    After working on several <a [routerLink]="['../../technical-skills/front-end']">Angular projects</a>
-    , my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre.
-    The template first needs to be used for a web app for Safran aeronautics company. 
-    This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.
+  <h4>{{ 'projects.e-monthly.template.title' | translate }}</h4>
+  <p>
+    {{ 'projects.e-monthly.template.after-working' | translate }}
+    <a [routerLink]="['../../technical-skills/front-end']">{{ 'projects.e-monthly.template.angular-projects' | translate }}</a>
+    {{ 'projects.e-monthly.template.project-manager' | translate }}
+  </p>
+  <h4>{{ 'projects.e-monthly.architecture.title' | translate }}</h4>
+  <p>
+    {{ 'projects.e-monthly.architecture.one-week' | translate }}
+    <a [routerLink]="['../../technical-skills/architecture']">{{ 'projects.e-monthly.architecture.architecture' | translate }}</a>
+    {{ 'projects.e-monthly.architecture.by-creating' | translate }}
+    <b>{{ 'projects.e-monthly.architecture.services' | translate }}</b>
+    {{ 'projects.e-monthly.architecture.references' | translate }}
+    <b>{{ 'projects.e-monthly.architecture.angular-material' | translate }}</b>
+    {{ 'projects.e-monthly.architecture.website' | translate }}
+    <b>{{ 'projects.e-monthly.architecture.kendo' | translate }}</b>
+    {{ 'projects.e-monthly.architecture.grid' | translate }}
     <br>
-    <br>
-    I work only one week on this project. During this week, I create the Angular projet
-    , organize <a [routerLink]="['../../technical-skills/architecture']">the architecture</a> of 
-    the solution by creating <b>services, components, guards</b>, etc. 
-    I add references to libraries that our centre has interest in using based on recurent feedback from clients. 
-    I especially add <b>Angular Material</b> to make rapidly and efficiently a neat website design (in particular for PoCs) 
-    and <b>Kendo for Angular</b> to be able to use grid systems that are a usual request from clients.
-    <br>
-    <br>
-    Once this template project is operational, I work on the specificities of the application for Safran. 
-    I note the interest of a built-in solution which is ready, modular and reusable in the future. 
-    Then I easily integrate some screens asked in the specifications using Angular Material and Kendo already configured.
-    <br>
-    <br>
-    I expect to work again on the Angular project template to improve it based on the needs of the future clients. 
-    I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, 
-    to encourage them to use good conception practices from the beginning.
+    {{ 'projects.e-monthly.architecture.specificities' | translate }}
+  </p>
+  <h4>{{ 'projects.e-monthly.future.title' | translate }}</h4>
+  <p>
+    {{ 'projects.e-monthly.future.expect' | translate }}
+  </p>
 </div>

@@ -8,6 +8,7 @@ import { VisionSafetyComponent } from './vision-safety/vision-safety.component';
 import { WebAgentComponent } from './web-agent/web-agent.component';
 import { CallCenterComponent } from './call-center/call-center.component';
 import { EMonthlyComponent } from './e-monthly/e-monthly.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { EMonthlyComponent } from './e-monthly/e-monthly.component';
   ],
   imports: [
     CommonModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    SharedModule
   ]
 })
 export class ProjectsModule { }
