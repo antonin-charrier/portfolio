@@ -6,14 +6,18 @@ import { CallCenterComponent } from './call-center/call-center.component';
 import { EMonthlyComponent } from './e-monthly/e-monthly.component';
 import { VisionSafetyComponent } from './vision-safety/vision-safety.component';
 import { WebAgentComponent } from './web-agent/web-agent.component';
+import { WipGuard } from 'src/app/core/guards/wip.guard';
 
 const routes: Routes = [
-  { path: 'projects', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'projects/call-center', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'projects/e-monthly', component: EMonthlyComponent },
-  { path: 'projects/galt', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'projects/vision-safety', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'projects/web-agent', redirectTo: 'wip', pathMatch: 'full' }
+  { path: 'projects', children: [
+    { path: '', component: ProjectsComponent, canActivate: [WipGuard] },
+    { path: 'call-center', component: CallCenterComponent, canActivate: [WipGuard] },
+    { path: 'e-monthly', component: EMonthlyComponent, canActivate: [WipGuard] },
+    { path: 'galt', component: GaltComponent, canActivate: [WipGuard] },
+    { path: 'vision-safety', component: VisionSafetyComponent, canActivate: [WipGuard] },
+    { path: 'web-agent', component: WebAgentComponent, canActivate: [WipGuard] },
+    { path: '**', redirectTo: '', pathMatch: 'full'}
+  ]}
 ];
 
 @NgModule({

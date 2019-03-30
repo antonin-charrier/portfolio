@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { WipComponent } from './features/wip/wip.component';
+import { WipGuard } from './core/guards/wip.guard';
+import { ContactComponent } from './features/contact/contact.component';
+import { HobbiesComponent } from './features/hobbies/hobbies.component';
+import { HomeComponent } from './features/home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'wip', pathMatch: 'full' },
+  { path: '', component: HomeComponent, canActivate: [WipGuard]},
   { path: 'wip', component: WipComponent },
-  { path: 'hobbies', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'contact', redirectTo: 'wip', pathMatch: 'full' },
-  { path: '', redirectTo: '', pathMatch: 'full' }
+  { path: 'hobbies', component: HobbiesComponent, canActivate: [WipGuard] },
+  { path: 'contact', component: ContactComponent, canActivate: [WipGuard] }
 ];
 
 @NgModule({

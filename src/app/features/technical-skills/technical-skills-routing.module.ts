@@ -6,14 +6,18 @@ import { DotNetCoreWebApiComponent } from './dot-net-core-web-api/dot-net-core-w
 import { FinancialAssessmentsComponent } from './financial-assessments/financial-assessments.component';
 import { FrontEndComponent } from './front-end/front-end.component';
 import { NotionsOfArchitectureComponent } from './notions-of-architecture/notions-of-architecture.component';
+import { WipGuard } from 'src/app/core/guards/wip.guard';
 
 const routes: Routes = [
-  { path: 'technical-skills', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'technical-skills/android', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'technical-skills/dot-net-core-web-api', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'technical-skills/financial-assessments', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'technical-skills/front-end', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'technical-skills/notions-of-architecture', redirectTo: 'wip', pathMatch: 'full' }
+  { path: 'technical-skills', children: [
+    { path: '', component: TechnicalSkillsComponent, canActivate: [WipGuard] },
+    { path: 'android', component: AndroidComponent, canActivate: [WipGuard] },
+    { path: 'dot-net-core-web-api', component: DotNetCoreWebApiComponent, canActivate: [WipGuard] },
+    { path: 'financial-assessments', component: FinancialAssessmentsComponent, canActivate: [WipGuard] },
+    { path: 'front-end', component: FrontEndComponent, canActivate: [WipGuard] },
+    { path: 'notions-of-architecture', component: NotionsOfArchitectureComponent, canActivate: [WipGuard] },
+    { path: '**', redirectTo: '', pathMatch: 'full'}
+  ]}
 ];
 
 @NgModule({

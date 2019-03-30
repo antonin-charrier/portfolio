@@ -6,14 +6,18 @@ import { CreativityComponent } from './creativity/creativity.component';
 import { KnowledgeSharingComponent } from './knowledge-sharing/knowledge-sharing.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { TeamLeadingComponent } from './team-leading/team-leading.component';
+import { WipGuard } from 'src/app/core/guards/wip.guard';
 
 const routes: Routes = [
-  { path: 'human-skills', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'human-skills/autonomy', component: AutonomyComponent },
-  { path: 'human-skills/creativity', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'human-skills/knowledge-sharing', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'human-skills/languages', redirectTo: 'wip', pathMatch: 'full' },
-  { path: 'human-skills/team-leading', redirectTo: 'wip', pathMatch: 'full' }
+  { path: 'human-skills', children: [
+    { path: '', component: HumanSkillsComponent, canActivate: [WipGuard] },
+    { path: 'autonomy', component: AutonomyComponent, canActivate: [WipGuard] },
+    { path: 'creativity', component: CreativityComponent, canActivate: [WipGuard] },
+    { path: 'knowledge-sharing', component: KnowledgeSharingComponent, canActivate: [WipGuard] },
+    { path: 'languages', component: LanguagesComponent, canActivate: [WipGuard] },
+    { path: 'team-leading', component: TeamLeadingComponent, canActivate: [WipGuard] },
+    { path: '**', redirectTo: '', pathMatch: 'full'}
+  ]}
 ];
 
 @NgModule({
