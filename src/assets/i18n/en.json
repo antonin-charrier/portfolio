@@ -11,6 +11,7 @@
         "android": "Android",
         "dot-net-core-web-api": ".NET Core Web API",
         "financial-assessments": "Financial assessments",
+        "front-end": "Front end",
         "notions-of-architecture": "Notions of architecture",
         "human-skills": "Human skills",
         "autonomy": "Autonomy",
@@ -51,6 +52,32 @@
                 "title": "Continue to improve the template",
                 "expect" : "I expect to work again on the Angular project template to improve it based on the needs of the future clients. I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, to encourage them to use good conception practices from the beginning."
             }
+        }
+    },
+    "redirects": {
+        "linked-projects": {
+            "title": "Linked projects",
+            "call-center": "Call center",
+            "e-monthly": "eMonthly",
+            "galt": "Galt",
+            "vision-safety": "VisionSafety",
+            "web-agent": "WebAgent"
+        },
+        "linked-technical-skills": {
+            "title": "Linked technical skills",
+            "android": "Android",
+            "dot-net-core-web-api": ".NET Core Web API",
+            "financial-assessments": "Financial assessments",
+            "front-end": "Front end",
+            "notions-of-architecture": "Notions of architecture"
+        },
+        "linked-human-skills": {
+            "title": "Linked human skills",
+            "autonomy": "Autonomy",
+            "creativity": "Creativity",
+            "knowledge-sharing": "Knowledge sharing",
+            "languages": "Languages",
+            "team-leading": "Team leading"
         }
     }
 }

@@ -12,7 +12,8 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    TranslateModule
   ],
   exports: [
     MaterialModule,

@@ -11,6 +11,7 @@
         "android": "Android",
         "dot-net-core-web-api": "API Web .NET Core",
         "financial-assessments": "Chiffrages financiers",
+        "front-end": "Front end",
         "notions-of-architecture": "Notions d'architecture",
         "human-skills": "Compétences humaines",
         "autonomy": "Autonomie",
@@ -51,6 +52,32 @@
                 "title": "Continuer à améliorer le template",
                 "expect" : "Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. Je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, pour les encourager à utiliser des bonnes pratiques de conception dès le début."
             }
+        }
+    },
+    "redirects": {
+        "linked-projects": {
+            "title": "Projets liés",
+            "call-center": "Call center",
+            "e-monthly": "eMonthly",
+            "galt": "Galt",
+            "vision-safety": "VisionSafety",
+            "web-agent": "WebAgent"
+        },
+        "linked-technical-skills": {
+            "title": "Compétences techniques liées",
+            "android": "Android",
+            "dot-net-core-web-api": "API Web .NET Core",
+            "financial-assessments": "Chiffrages financiers",
+            "front-end": "Front end",
+            "notions-of-architecture": "Notions d'architecture"
+        },
+        "linked-human-skills": {
+            "title": "Compétences humaines liées",
+            "autonomy": "Autonomie",
+            "creativity": "Créativité",
+            "knowledge-sharing": "Partage de connaissances",
+            "languages": "Langues",
+            "team-leading": "Gestion d'équipe"
         }
     }
 }
