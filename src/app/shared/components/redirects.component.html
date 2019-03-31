@@ -1,6 +1,6 @@
 <h3 *ngIf="!isProjectsEmpty">{{ 'redirects.linked-projects.title' | translate }}</h3>
 <ul *ngIf="!isProjectsEmpty">
-    <li>
+    <li *ngIf="isProjectLinked('call-center')">
         <a [routerLink]="['projects/call-center']">{{ 'redirects.linked-projects.call-center' | translate }}</a>
     </li>
     <li *ngIf="isProjectLinked('e-monthly')">

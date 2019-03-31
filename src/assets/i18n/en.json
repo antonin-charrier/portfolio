@@ -54,6 +54,35 @@
             }
         }
     },
+    "human-skills": {
+        "autonomy": {
+            "title": "Autonomy",
+            "subtitle": "A developer needs to be able to work on his own",
+            "definition": {
+                "title": "What is autonomy?",
+                "what": "Basically, ",
+                "autonomy": "autonomy",
+                "ability": " is the ability to act by myself in a specific environment. It doesn't mean working alone but working with other people being granted some freedom. I can do my tasks the way I like as far as it respects the perimeter given to me."
+            },
+            "it-company": {
+                "title": "How does autonomy transcript into an IT company?",
+                "employee": "The employee is given a work and hopefully knows how to achieve it. If he doesn't, he tries to figure out by himself using forums or tutorials on the Internet. If, despite searching and trying by himself, he is not able to achieve the work, he will report it to his manager.",
+                "however": "However, there are obvious nuances. The employee must not stay stuck on an issue for an excessive amount of time without reporting it. He must be able to feel when he needs help. Yet he must search and try by himself before asking to his mates, else he will never make progress. In a sector in ",
+                "evolution": "constant evolution",
+                "binary": ", it is primary to constantly stay up-to-date. Also, autonomy is not a binary skill. There aren't autonomous or not autonomous people. Everybody is autonomous (at different degrees) because autonomy is something people work on."
+            },
+            "me": {
+                "title": "Autonomy is one of my qualities",
+                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
+                "web-agent": "WebAgent",
+                "and": " and ",
+                "vision-safety": "VisionSafety",
+                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
+                "feedbacks": "feedbacks",
+                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+            }
+        }
+    },
     "redirects": {
         "linked-projects": {
             "title": "Linked projects",

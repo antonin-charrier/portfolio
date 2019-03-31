@@ -54,6 +54,35 @@
             }
         }
     },
+    "human-skills": {
+        "autonomy": {
+            "title": "Autonomie",
+            "subtitle": "Un développeur doit être capable de travailler par lui-même",
+            "definition": {
+                "title": "Qu'est-ce que l'autonomie ?",
+                "what": "Fondalementalement, ",
+                "autonomy": "l'autonomie",
+                "ability": " est la capacité d'agir par soi-même dans un environnement spécifique. Cela ne signifie pas travailler seul mais travailler avec d'autres personnes en ayant certaines libertés. Je peux faire mes tâches comme je le souhaite tant que cela respecte le périmètre qui m'a été donné."
+            },
+            "it-company": {
+                "title": "Comment l'autonomie se transcrit dans une ESN ?",
+                "employee": "L'employé se voit donné un travail et potentiellement sait comment le faire. S'il ne sait pas, il essaye de comprendre par lui-même en utilisant des forums ou des tutoriels sur internet. Si, après avoir cherché et essayé par lui-même, il n'est pas capable de faire le travail, il le signale à son manager.",
+                "however": " Cependant, il existe des nuances évidents. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. Il doit être capable de savoir lorsque il a besoin d'aide. Cependant il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. Dans un secteur en ",
+                "evolution": "constante évolution",
+                "binary": ", il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire. Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent."
+            },
+            "me": {
+                "title": "L'autonomie est l'une de mes qualités.",
+                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications",
+                "web-agent": "WebAgent",
+                "and": " et ",
+                "vision-safety": "VisionSafety",
+                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel,the software better, cela a aussé démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
+                "feedbacks": "les feedbacks",
+                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil."
+            }
+        }
+    },
     "redirects": {
         "linked-projects": {
             "title": "Projets liés",
