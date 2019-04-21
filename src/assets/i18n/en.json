@@ -20,7 +20,7 @@
         "languages": "Languages",
         "team-leading": "Team leading",
         "hobbies": "Hobbies",
-        "contact": "Contact"
+        "contact": "Contact and resume"
     },
     "wip": {
         "work-in-progress": "Work in progress"
@@ -108,5 +108,19 @@
             "languages": "Languages",
             "team-leading": "Team leading"
         }
+    },
+    "hobbies": {
+
+    },
+    "contact": {
+        "title": "Contact and resume",
+        "contact": "You can contact me by sending me an email to the address below.",
+        "view-mail": "To view the address, please click on the button.",
+        "also": "You can also send me a private message on ",
+        "link": "https://www.linkedin.com/in/antonin-charrier/?locale=en_US",
+        "linkedin": "LinkedIn",
+        "cv": "You will find my resume below. You can also",
+        "download": "download",
+        "cv-end": "it."
     }
 }

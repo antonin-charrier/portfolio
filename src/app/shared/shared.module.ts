@@ -4,6 +4,8 @@ import { MaterialModule } from './material/material.module';
 import { RouterModule } from '@angular/router';
 import { RedirectsComponent } from './components/redirects.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { RecaptchaModule } from 'ng-recaptcha';
 
 @NgModule({
   declarations: [
@@ -13,13 +15,17 @@ import { TranslateModule } from '@ngx-translate/core';
     CommonModule,
     MaterialModule,
     RouterModule,
-    TranslateModule
+    TranslateModule,
+    PdfViewerModule,
+    RecaptchaModule
   ],
   exports: [
     MaterialModule,
     RouterModule,
     RedirectsComponent,
-    TranslateModule
+    TranslateModule,
+    PdfViewerModule,
+    RecaptchaModule
   ]
 })
 export class SharedModule { }
