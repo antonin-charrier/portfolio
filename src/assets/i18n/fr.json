@@ -28,7 +28,8 @@
         "languages": "Langues",
         "team-leading": "Gestion d'équipe",
         "hobbies": "Loisirs",
-        "language": "Changer de langue"
+        "language": "Changer de langue",
+        "about": "À propos"
     },
     "wip": {
         "work-in-progress": "Travail en cours"
@@ -119,6 +120,11 @@
     },
     "hobbies": {
 
+    },
+    "about": {
+        "icons": "Les icônes faites par",
+        "from": "depuis",
+        "licensed": "sont sous licence"
     },
     "resume": {
         "title": "CV",

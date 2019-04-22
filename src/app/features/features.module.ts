@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsModule } from './projects/projects.module';
 import { TechnicalSkillsModule } from './technical-skills/technical-skills.module';
 import { HumanSkillsModule } from './human-skills/human-skills.module';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     WipComponent,
     HobbiesComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule,

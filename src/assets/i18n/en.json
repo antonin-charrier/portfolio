@@ -28,7 +28,8 @@
         "languages": "Languages",
         "team-leading": "Team leading",
         "hobbies": "Hobbies",
-        "language": "Change language"
+        "language": "Change language",
+        "about": "About"
     },
     "wip": {
         "work-in-progress": "Work in progress"
@@ -119,6 +120,11 @@
     },
     "hobbies": {
 
+    },
+    "about": {
+        "icons": "Icons made by",
+        "from": "from",
+        "licensed": "are licensed by"
     },
     "resume": {
         "title": "Resume",

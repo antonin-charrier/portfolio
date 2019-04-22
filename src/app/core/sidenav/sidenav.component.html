@@ -135,5 +135,6 @@
       <button mat-menu-item (click)="setLang('fr')">Français</button>
       <button mat-menu-item (click)="setLang('en')">English</button>
     </mat-menu>
+    <button mat-button color="primary" [routerLink]="['about']" routerLinkActive="mat-flat-button" [routerLinkActiveOptions]="{exact: true}">{{ 'sidenav.about' | translate }}</button>
 </div>
 </div>
