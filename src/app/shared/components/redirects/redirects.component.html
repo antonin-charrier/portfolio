@@ -1,54 +1,70 @@
-<h3 *ngIf="!isProjectsEmpty">{{ 'redirects.linked-projects.title' | translate }}</h3>
-<ul *ngIf="!isProjectsEmpty">
-    <li *ngIf="isProjectLinked('call-center')">
-        <a [routerLink]="['projects/call-center']">{{ 'redirects.linked-projects.call-center' | translate }}</a>
-    </li>
-    <li *ngIf="isProjectLinked('e-monthly')">
-        <a [routerLink]="['projects/e-monthly']">{{ 'redirects.linked-projects.e-monthly' | translate }}</a>
-    </li>
-    <li *ngIf="isProjectLinked('galt')">
-        <a [routerLink]="['projects/galt']">{{ 'redirects.linked-projects.galt' | translate }}</a>
-    </li>
-    <li *ngIf="isProjectLinked('vision-safety')">
-        <a [routerLink]="['projects/vision-safety']">{{ 'redirects.linked-projects.vision-safety' | translate }}</a>
-    </li>
-    <li *ngIf="isProjectLinked('web-agent')">
-        <a [routerLink]="['projects/web-agent']">{{ 'redirects.linked-projects.web-agent' | translate }}</a>
-    </li>
-</ul>
-<h3 *ngIf="!isTechnicalSkillsEmpty">{{ 'redirects.linked-technical-skills.title' | translate }}</h3>
-<ul *ngIf="!isTechnicalSkillsEmpty">
-    <li *ngIf="isTechnicalSkillLinked('android')">
-        <a [routerLink]="['technical-skills/android']">{{ 'redirects.linked-technical-skills.android' | translate }}</a>
-    </li>
-    <li *ngIf="isTechnicalSkillLinked('dot-net-core-web-api')">
-        <a [routerLink]="['technical-skills/dot-net-core-web-api']">{{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}</a>
-    </li>
-    <li *ngIf="isTechnicalSkillLinked('financial-assessments')">
-        <a [routerLink]="['technical-skills/financial-assessments']">{{ 'redirects.linked-technical-skills.financial-assessments' | translate }}</a>
-    </li>
-    <li *ngIf="isTechnicalSkillLinked('front-end')">
-        <a [routerLink]="['technical-skills/front-end']">{{ 'redirects.linked-technical-skills.financial-assessments' | translate }}</a>
-    </li>
-    <li *ngIf="isTechnicalSkillLinked('notions-of-architecture')">
-        <a [routerLink]="['technical-skills/notions-of-architecture']">{{ 'redirects.linked-technical-skills.notions-of-architecture' | translate }}</a>
-    </li>
-</ul>
-<h3 *ngIf="!isHumanSkillsEmpty">{{ 'redirects.linked-human-skills.title' | translate }}</h3>
-<ul *ngIf="!isHumanSkillsEmpty">
-    <li *ngIf="isHumanSkillLinked('autonomy')">
-        <a [routerLink]="['human-skills/autonomy']">{{ 'redirects.linked-human-skills.autonomy' | translate }}</a>
-    </li>
-    <li *ngIf="isHumanSkillLinked('creativity')">
-        <a [routerLink]="['human-skills/creativity']">{{ 'redirects.linked-human-skills.creativity' | translate }}</a>
-    </li>
-    <li *ngIf="isHumanSkillLinked('knowledge-sharing')">
-        <a [routerLink]="['human-skills/knowledge-sharing']">{{ 'redirects.linked-human-skills.knowledge-sharing' | translate }}</a>
-    </li>
-    <li *ngIf="isHumanSkillLinked('languages')">
-        <a [routerLink]="['human-skills/languages']">{{ 'redirects.linked-human-skills.languages' | translate }}</a>
-    </li>
-    <li *ngIf="isHumanSkillLinked('team-leading')">
-        <a [routerLink]="['human-skills/team-leading']">{{ 'redirects.linked-human-skills.team-leading' | translate }}</a>
-    </li>
-</ul>
+<mat-divider class="redirects-divider"  *ngIf="!isProjectsEmpty || !isTechnicalSkillsEmpty || !isHumanSkillsEmpty"></mat-divider>
+<div class="redirects-component">
+    <div class="redirects-category redirects-category-1" *ngIf="!isProjectsEmpty">
+        <h3 class="redirects-title">
+            {{ 'redirects.linked-projects.title' | translate }}
+        </h3>
+        <div class="redirects-group">
+            <a mat-flat-button color="primary" [routerLink]="['projects/call-center']" *ngIf="isProjectLinked('call-center')">
+                {{ 'redirects.linked-projects.call-center' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['projects/e-monthly']" *ngIf="isProjectLinked('e-monthly')">
+                {{ 'redirects.linked-projects.e-monthly' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['projects/galt']" *ngIf="isProjectLinked('galt')">
+                {{ 'redirects.linked-projects.galt' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['projects/vision-safety']" *ngIf="isProjectLinked('vision-safety')">
+                {{ 'redirects.linked-projects.vision-safety' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['projects/web-agent']" *ngIf="isProjectLinked('web-agent')">
+                {{ 'redirects.linked-projects.web-agent' | translate }}
+            </a>
+        </div>
+    </div>
+    <div class="redirects-category" [ngClass]="isProjectsEmpty ? redirects-category-1 : redirects-category-2" *ngIf="!isTechnicalSkillsEmpty">
+        <h3 class="redirects-title">
+            {{ 'redirects.linked-technical-skills.title' | translate }}
+        </h3>
+        <div class="redirects-group">
+            <a mat-flat-button color="primary" [routerLink]="['technical-skills/android']" *ngIf="isTechnicalSkillLinked('android')">
+                {{ 'redirects.linked-technical-skills.android' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['technical-skills/dot-net-core-web-api']" *ngIf="isTechnicalSkillLinked('dot-net-core-web-api')">
+                {{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['technical-skills/financial-assessments']" *ngIf="isTechnicalSkillLinked('financial-assessments')">
+                {{ 'redirects.linked-technical-skills.financial-assessments' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['technical-skills/front-end']" *ngIf="isTechnicalSkillLinked('front-end')">
+                {{ 'redirects.linked-technical-skills.front-end' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['technical-skills/notions-of-architecture']" *ngIf="isTechnicalSkillLinked('notions-of-architecture')">
+                {{ 'redirects.linked-technical-skills.notions-of-architecture' | translate }}
+            </a>
+        </div>
+    </div>
+    <div class="redirects-category" *ngIf="!isHumanSkillsEmpty"
+        [ngClass]="isProjectsEmpty && isTechnicalSkillsEmpty ? redirects-category-1 : (isTechnicalSkillsEmpty ? redirects-category-2 : redirects-category-3)">
+        <h3 class="redirects-title">
+            {{ 'redirects.linked-human-skills.title' | translate }}
+        </h3>
+        <div class="redirects-group">
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/autonomy']">
+                {{ 'redirects.linked-human-skills.autonomy' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/creativity']" *ngIf="isHumanSkillLinked('creativity')">
+                {{ 'redirects.linked-human-skills.creativity' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/knowledge-sharing']" *ngIf="isHumanSkillLinked('knowledge-sharing')">
+                {{ 'redirects.linked-human-skills.knowledge-sharing' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/languages']" *ngIf="isHumanSkillLinked('languages')">
+                {{ 'redirects.linked-human-skills.languages' | translate }}
+            </a>
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/team-leading']" *ngIf="isHumanSkillLinked('team-leading')">
+                {{ 'redirects.linked-human-skills.team-leading' | translate }}
+            </a>
+        </div>
+    </div>        
+</div>
