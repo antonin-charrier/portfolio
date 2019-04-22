@@ -1,5 +1,13 @@
 {
     "sidenav": {
+        "profile": {
+            "name": "Antonin CHARRIER",
+            "job": "Consultant Angular",
+            "email": "Envoyer un mail",
+            "linkedin": "Visiter ma page LinkedIn",
+            "github": "Visiter ma page GitHub",
+            "resume": "Voir mon CV"
+        },
         "home": "Accueil",
         "projects": "Projets",
         "call-center": "Call center",
@@ -20,7 +28,7 @@
         "languages": "Langues",
         "team-leading": "Gestion d'équipe",
         "hobbies": "Loisirs",
-        "contact": "Contact et CV"
+        "language": "Changer de langue"
     },
     "wip": {
         "work-in-progress": "Travail en cours"
@@ -112,15 +120,10 @@
     "hobbies": {
 
     },
-    "contact": {
-        "title": "Contact et CV",
-        "contact": "Vous pouvez me contacter en m'envoyant un mail à l'adresse ci-dessous.",
-        "view-mail": "Pour voir l'adresse mail, veuillez cliquer sur le bouton.",
-        "also": "Vous pouvez également m'envoyer un message privé sur ",
-        "link": "https://www.linkedin.com/in/antonin-charrier",
-        "linkedin": "LinkedIn",
-        "cv": "Vous trouvez ci-dessous mon CV. Vous pouvez également le",
-        "download": "télécharger",
-        "cv-end": "."
+    "resume": {
+        "title": "CV",
+        "download": "Télécharger",
+        "error": "Désolé, mon CV ne s'est pas chargé correctement :(",
+        "close": "Fermer"
     }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 
 @Component({
@@ -6,17 +6,24 @@ import { TranslateService } from '@ngx-translate/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   linkedProjects: string[] = [];
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
 
   constructor(
     private translateService: TranslateService
-    ) {
-      this.translateService.setDefaultLang('en');
-      this.translateService.use('en');
+  ) {
+    this.translateService.setDefaultLang('fr');
+    this.translateService.use('fr');
+  }
+
+  ngOnInit() {
+    const lang = localStorage.getItem('lang');
+    if (lang) {
+      this.translateService.use(lang);
     }
+  }
 
   onActivate(component: any) {
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];

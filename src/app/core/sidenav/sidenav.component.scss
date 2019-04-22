@@ -53,9 +53,17 @@
 .profile-panel {
     display: flex;
     flex-direction: row;    
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+}
+
+.profile-subpanel-left {
+    margin-left: 24px;
+}
+
+.profile-subpanel-right {
+    margin-right: 24px;
 }
 
 .profile-logo {
@@ -64,6 +72,7 @@
 
 .profile-name {
     margin-top: 16px;
+    margin-bottom: 0;
 }
 
 .sidenav-mat-list {

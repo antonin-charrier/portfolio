@@ -1,5 +1,13 @@
 {
     "sidenav": {
+        "profile": {
+            "name": "Antonin CHARRIER",
+            "job": "Angular consultant",
+            "email": "Send an email",
+            "linkedin": "Visit my LinkedIn page",
+            "github": "Visit my GitHub ^page",
+            "resume": "View my resume"
+        },
         "home": "Home",
         "projects": "Projects",
         "call-center": "Call center",
@@ -20,7 +28,7 @@
         "languages": "Languages",
         "team-leading": "Team leading",
         "hobbies": "Hobbies",
-        "contact": "Contact and resume"
+        "language": "Change language"
     },
     "wip": {
         "work-in-progress": "Work in progress"
@@ -112,15 +120,10 @@
     "hobbies": {
 
     },
-    "contact": {
-        "title": "Contact and resume",
-        "contact": "You can contact me by sending me an email to the address below.",
-        "view-mail": "To view the address, please click on the button.",
-        "also": "You can also send me a private message on ",
-        "link": "https://www.linkedin.com/in/antonin-charrier/?locale=en_US",
-        "linkedin": "LinkedIn",
-        "cv": "You will find my resume below. You can also",
-        "download": "download",
-        "cv-end": "it."
+    "resume": {
+        "title": "Resume",
+        "download": "Download",
+        "error": "Sorry, my resume didn't load correctly :(",
+        "close": "Close"
     }
 }

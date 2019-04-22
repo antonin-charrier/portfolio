@@ -2,25 +2,25 @@
   <div class="sidenav-profile">
     <img src="assets/img/profile.png" class="profile-picture">
     <div class="profile-panel">
-      <a href="https://www.antonin-charrier.com">
+      <a href="/" class="profile-subpanel-left">
         <img src="assets/img/logo.png" class="profile-logo">
       </a>
-      <div>
-        <p class="profile-name">Antonin CHARRIER</p>
-        <p class="profile-job">Angular developper</p>
+      <div class="profile-subpanel-right">
+        <h1 class="profile-name">{{ 'sidenav.profile.name' | translate }}</h1>
+        <h2 class="profile-job">{{ 'sidenav.profile.job' | translate }}</h2>
       </div>
     </div>
     <div class="profile-actions">
-      <button mat-flat-button color="primary" matTooltip="Send an email" matTooltipPosition="above" (click)="email()">
+      <button mat-flat-button color="primary" matTooltip="{{ 'sidenav.profile.email' | translate }}" matTooltipPosition="above" (click)="email()">
         <mat-icon aria-label="Email">send</mat-icon>
       </button>
-      <button mat-flat-button color="primary" matTooltip="Visit my LinkedIn page" matTooltipPosition="above" (click)="linkedin()">
-        <mat-icon aria-label="LinkedIn">work</mat-icon>
+      <button mat-flat-button color="primary" matTooltip="{{ 'sidenav.profile.linkedin' | translate }}" matTooltipPosition="above" (click)="linkedin()">
+        <mat-icon aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
       </button>
-      <button mat-flat-button color="primary" matTooltip="Visit my GitHub page" matTooltipPosition="above" (click)="github()">
-        <mat-icon aria-label="GitHub">code</mat-icon>
+      <button mat-flat-button color="primary" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
+        <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
       </button> 
-      <button mat-flat-button color="primary" matTooltip="View my resume" matTooltipPosition="above">
+      <button mat-flat-button color="primary" matTooltip="{{ 'sidenav.profile.resume' | translate }}" matTooltipPosition="above" (click)="resume()">
         <mat-icon aria-label="Resume">description</mat-icon>
       </button> 
     </div>     
@@ -126,15 +126,11 @@
         <mat-icon matListIcon>videogame_asset</mat-icon>
         <p matLine>{{ 'sidenav.hobbies' | translate }}</p>
       </mat-list-item>
-      <mat-list-item [routerLink]="['contact']" routerLinkActive="sidenav-active-link" [routerLinkActiveOptions]="{exact: true}">
-        <mat-icon matListIcon>email</mat-icon>
-        <p matLine>{{ 'sidenav.contact' | translate }}</p>
-      </mat-list-item>
     </mat-action-list>
   </cdk-virtual-scroll-viewport>
   <mat-divider></mat-divider>
   <div class="sidenav-footer">
-    <button mat-flat-button color="primary" [matMenuTriggerFor]="menu" matTooltip="Select language" matTooltipPosition="above">{{ locale }}</button>
+    <button mat-flat-button color="primary" [matMenuTriggerFor]="menu" matTooltip="{{ 'sidenav.language' | translate }}" matTooltipPosition="above">{{ locale }}</button>
     <mat-menu #menu="matMenu" yPosition="above" xPosition="after">
       <button mat-menu-item (click)="setLang('fr')">Français</button>
       <button mat-menu-item (click)="setLang('en')">English</button>
