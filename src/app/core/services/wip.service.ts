@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -11,6 +12,6 @@ export class WipService {
   ];
 
   public static isWip(route: string): boolean {
-    return this.prodRoutes.includes(route);
+    return !environment.production || this.prodRoutes.includes(route);
   }
  }

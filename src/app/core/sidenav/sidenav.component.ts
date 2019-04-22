@@ -28,4 +28,34 @@ export class SidenavComponent {
   setLang(lang: string) {
     this.translateService.use(lang);
   }
+
+  email() {
+    window.location.href = 'mailto:charrier.antonin@yahoo.fr';
+  }
+
+  linkedin() {
+    switch (this.translateService.currentLang) {
+      case 'fr':
+      default:
+        window.open('https://www.linkedin.com/in/antonin-charrier/?locale=fr_FR', '_blank');
+        break;
+      case 'en':
+        window.open('https://www.linkedin.com/in/antonin-charrier/?locale=en_US', '_blank');
+        break;
+    }
+  }
+
+  github() {
+    window.open('https://github.com/antonin-charrier', '_blank');
+  }
+
+  cv() {
+    switch (this.translateService.currentLang) {
+      case 'fr':
+        default:
+        return 'assets/cv/CV_Antonin_CHARRIER_Fr.pdf';
+      case 'en':
+        return 'assets/cv/CV_Antonin_CHARRIER_En.pdf';
+    }
+  }
 }
