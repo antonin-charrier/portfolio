@@ -6,6 +6,7 @@ import { RedirectsComponent } from './components/redirects.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { RecaptchaModule } from 'ng-recaptcha';
+import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RecaptchaModule } from 'ng-recaptcha';
     RouterModule,
     TranslateModule,
     PdfViewerModule,
-    RecaptchaModule
+    RecaptchaModule,
+    ScrollDispatchModule
   ],
   exports: [
     MaterialModule,
@@ -25,7 +27,8 @@ import { RecaptchaModule } from 'ng-recaptcha';
     RedirectsComponent,
     TranslateModule,
     PdfViewerModule,
-    RecaptchaModule
+    RecaptchaModule,
+    ScrollDispatchModule
   ]
 })
 export class SharedModule { }

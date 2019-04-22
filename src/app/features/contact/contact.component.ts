@@ -8,8 +8,8 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class ContactComponent {
   public isEmailDisplayed = false;
-  private dot = '<##dot##>';
-  private at = '<$$at$$>';
+  private dot = '<%#%dot%#%>';
+  private at = '<#%#at#%#>';
   public email = 'charrier' + this.dot + 'antonin' + this.at + 'yahoo' + this.dot + 'fr';
 
   constructor(
@@ -35,7 +35,10 @@ export class ContactComponent {
   }
 
   displayEmail() {
-    this.email = this.email.replace(this.dot, '.').replace(this.at, '@');
+    let regex = new RegExp(this.dot, 'g');
+    this.email = this.email.replace(regex, '.');
+    regex = new RegExp(this.at, 'g');
+    this.email = this.email.replace(regex, '@');
     this.isEmailDisplayed = true;
 }
 }

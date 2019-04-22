@@ -1,109 +1,141 @@
-<mat-action-list class="sidenav-list">
-  <mat-list-item [routerLink]="['']" >
-    <mat-icon matListIcon>home</mat-icon>
-    <p matLine>{{ 'sidenav.home' | translate }}</p>
-  </mat-list-item>
-  <mat-list-item [routerLink]="['projects']" >
-    <mat-icon matListIcon>work</mat-icon>
-    <p matLine>{{ 'sidenav.projects' | translate }}</p>
-    <button mat-icon-button (click)="isProjectsExpanded = !isProjectsExpanded; $event.stopPropagation()">
-      <mat-icon *ngIf="!isProjectsExpanded">expand_more</mat-icon>
-      <mat-icon *ngIf="isProjectsExpanded">expand_less</mat-icon>
-    </button>
-  </mat-list-item>
-  <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
-    <mat-list-item [routerLink]="['projects/call-center']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.call-center' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['projects/e-monthly']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.e-monthly' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['projects/galt']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.galt' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['projects/vision-safety']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.vision-safety' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['projects/web-agent']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.web-agent' | translate }}</p>
-    </mat-list-item>
-  </mat-action-list>
-  <mat-list-item [routerLink]="['technical-skills']" >
-    <mat-icon matListIcon>build</mat-icon>
-    <p matLine>{{ 'sidenav.technical-skills' | translate }}</p>
-    <button mat-icon-button (click)="isTechnicalSkillsExpanded = !isTechnicalSkillsExpanded; $event.stopPropagation()">
-      <mat-icon *ngIf="!isTechnicalSkillsExpanded">expand_more</mat-icon>
-      <mat-icon *ngIf="isTechnicalSkillsExpanded">expand_less</mat-icon>
-    </button>
-  </mat-list-item>
-  <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
-    <mat-list-item [routerLink]="['technical-skills/android']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.android' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.dot-net-core-web-api' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['technical-skills/financial-assessments']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['technical-skills/front-end']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.front-end' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.notions-of-architecture' | translate }}</p>
-    </mat-list-item>
-  </mat-action-list>  
-  <mat-list-item [routerLink]="['human-skills']" >
-    <mat-icon matListIcon>assignment_ind</mat-icon>
-    <p matLine>{{ 'sidenav.human-skills' | translate }}</p>
-    <button mat-icon-button (click)="isHumanSkillsExpanded = !isHumanSkillsExpanded; $event.stopPropagation()">
-      <mat-icon *ngIf="!isHumanSkillsExpanded">expand_more</mat-icon>
-      <mat-icon *ngIf="isHumanSkillsExpanded">expand_less</mat-icon>
-    </button>
-  </mat-list-item>
-  <mat-action-list mat-list-item class="sublist" *ngIf="isHumanSkillsExpanded">
-    <mat-list-item [routerLink]="['human-skills/autonomy']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.autonomy' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['human-skills/creativity']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.creativity' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['human-skills/knowledge-sharing']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.knowledge-sharing' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['human-skills/languages']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.languages' | translate }}</p>
-    </mat-list-item>
-    <mat-list-item [routerLink]="['human-skills/team-leading']">
-      <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-      <p matLine>{{ 'sidenav.team-leading' | translate }}</p>
-    </mat-list-item>
-  </mat-action-list>
-  <mat-list-item [routerLink]="['hobbies']" >
-    <mat-icon matListIcon>videogame_asset</mat-icon>
-    <p matLine>{{ 'sidenav.hobbies' | translate }}</p>
-  </mat-list-item>
-  <mat-list-item [routerLink]="['contact']" >
-    <mat-icon matListIcon>email</mat-icon>
-    <p matLine>{{ 'sidenav.contact' | translate }}</p>
-  </mat-list-item>
-  <button mat-raised-button id="language-button" [matMenuTriggerFor]="menu">{{ locale }}</button>
-  <mat-menu #menu="matMenu" yPosition="above" xPosition="before">
-    <button mat-menu-item (click)="setLang('fr')">Français</button>
-    <button mat-menu-item (click)="setLang('en')">English</button>
-  </mat-menu>
-</mat-action-list>
+<div class="sidenav-container">
+  <div class="sidenav-profile">
+    <img src="assets/img/profile.png" class="profile-picture">
+    <div class="profile-panel">
+      <img src="assets/img/logo.png" class="profile-logo">
+      <div>
+        <p class="profile-name">Antonin CHARRIER</p>
+        <p class="profile-job">Angular developper</p>    
+      </div>
+    </div>
+    <div class="profile-actions">
+      <button mat-mini-fab matTooltip="Send an email" matTooltipPosition="above">
+        <mat-icon aria-label="Email">send</mat-icon>
+      </button>
+      <button mat-mini-fab matTooltip="Visit my LinkedIn page" matTooltipPosition="above">
+        <mat-icon aria-label="LinkedIn">work</mat-icon>
+      </button>
+      <button mat-mini-fab matTooltip="Visit my GitHub page" matTooltipPosition="above">
+        <mat-icon aria-label="GitHub">code</mat-icon>
+      </button> 
+      <button mat-mini-fab matTooltip="View my resume" matTooltipPosition="above">
+        <mat-icon aria-label="Resume">description</mat-icon>
+      </button> 
+    </div>     
+  </div>
+  <mat-divider></mat-divider>
+  <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list">
+    <mat-action-list class="sidenav-mat-list">
+      <mat-list-item [routerLink]="['']" >
+        <mat-icon matListIcon>home</mat-icon>
+        <p matLine>{{ 'sidenav.home' | translate }}</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['projects']" (click)="isProjectsExpanded = true">
+        <mat-icon matListIcon>work</mat-icon>
+        <p matLine>{{ 'sidenav.projects' | translate }}</p>
+        <button mat-icon-button (click)="isProjectsExpanded = !isProjectsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isProjectsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isProjectsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
+        <mat-list-item [routerLink]="['projects/call-center']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.call-center' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/e-monthly']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.e-monthly' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/galt']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.galt' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/vision-safety']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.vision-safety' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/web-agent']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.web-agent' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>
+      <mat-list-item [routerLink]="['technical-skills']" (click)="isTechnicalSkillsExpanded = true">
+        <mat-icon matListIcon>build</mat-icon>
+        <p matLine>{{ 'sidenav.technical-skills' | translate }}</p>
+        <button mat-icon-button (click)="isTechnicalSkillsExpanded = !isTechnicalSkillsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isTechnicalSkillsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isTechnicalSkillsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
+        <mat-list-item [routerLink]="['technical-skills/android']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.android' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.dot-net-core-web-api' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/financial-assessments']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/front-end']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.front-end' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.notions-of-architecture' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>  
+      <mat-list-item [routerLink]="['human-skills']" (click)="isHumanSkillsExpanded = true">
+        <mat-icon matListIcon>assignment_ind</mat-icon>
+        <p matLine>{{ 'sidenav.human-skills' | translate }}</p>
+        <button mat-icon-button (click)="isHumanSkillsExpanded = !isHumanSkillsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isHumanSkillsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isHumanSkillsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isHumanSkillsExpanded">
+        <mat-list-item [routerLink]="['human-skills/autonomy']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.autonomy' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/creativity']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.creativity' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/knowledge-sharing']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.knowledge-sharing' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/languages']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.languages' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/team-leading']">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p matLine>{{ 'sidenav.team-leading' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>
+      <mat-list-item [routerLink]="['hobbies']" >
+        <mat-icon matListIcon>videogame_asset</mat-icon>
+        <p matLine>{{ 'sidenav.hobbies' | translate }}</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['contact']" >
+        <mat-icon matListIcon>email</mat-icon>
+        <p matLine>{{ 'sidenav.contact' | translate }}</p>
+      </mat-list-item>
+    </mat-action-list>
+  </cdk-virtual-scroll-viewport>
+  <mat-divider></mat-divider>
+  <div class="sidenav-footer">
+    <button mat-raised-button [matMenuTriggerFor]="menu">{{ locale }}</button>
+    <mat-menu #menu="matMenu" yPosition="above" xPosition="after">
+      <button mat-menu-item (click)="setLang('fr')">Français</button>
+      <button mat-menu-item (click)="setLang('en')">English</button>
+    </mat-menu>
+</div>
+</div>

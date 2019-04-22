@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { MatSidenavContainer } from '@angular/material';
 
 
 @Component({
@@ -9,6 +10,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent {
+  items = Array.from({length: 100000}).map((_, i) => `Item #${i}`);
 
   constructor(
     public router: Router,
