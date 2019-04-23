@@ -8,11 +8,13 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { ResumeComponent } from './components/dialogs/resume/resume.component';
+import { ContactInfoComponent } from './components/dialogs/contact-info/contact-info.component';
 
 @NgModule({
   declarations: [
     RedirectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    ContactInfoComponent
   ],
   imports: [
     CommonModule,
@@ -28,13 +30,15 @@ import { ResumeComponent } from './components/dialogs/resume/resume.component';
     RouterModule,
     RedirectsComponent,
     ResumeComponent,
+    ContactInfoComponent,
     TranslateModule,
     PdfViewerModule,
     RecaptchaModule,
     ScrollDispatchModule
   ],
   entryComponents: [
-    ResumeComponent
+    ResumeComponent,
+    ContactInfoComponent
   ]
 })
 export class SharedModule { }

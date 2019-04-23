@@ -11,6 +11,12 @@
       </div>
     </div>
     <div class="profile-actions">
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.coordinates' | translate }}" matTooltipPosition="above" (click)="contactInfo()">
+        <mat-icon aria-label="Coordinates">person</mat-icon>
+      </button> 
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.resume' | translate }}" matTooltipPosition="above" (click)="resume()">
+        <mat-icon aria-label="Resume">description</mat-icon>
+      </button> 
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.email' | translate }}" matTooltipPosition="above" (click)="email()">
         <mat-icon aria-label="Email">send</mat-icon>
       </button>
@@ -19,10 +25,7 @@
       </button>
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
         <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
-      </button> 
-      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.resume' | translate }}" matTooltipPosition="above" (click)="resume()">
-        <mat-icon aria-label="Resume">description</mat-icon>
-      </button> 
+      </button>
     </div>     
   </div>
   <mat-divider></mat-divider>

@@ -3,10 +3,11 @@
         "profile": {
             "name": "Antonin CHARRIER",
             "job": "Angular consultant",
+            "coordinates": "View my contact informations",
+            "resume": "View my resume",
             "email": "Send an email",
             "linkedin": "Visit my LinkedIn page",
-            "github": "Visit my GitHub ^page",
-            "resume": "View my resume"
+            "github": "Visit my GitHub ^page"
         },
         "home": "Home",
         "projects": "Projects",
@@ -131,5 +132,8 @@
         "download": "Download",
         "error": "Sorry, my resume didn't load correctly :(",
         "close": "Close"
+    },
+    "contact-info": {
+        "title": "Contact informations"
     }
 }

@@ -3,6 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ResumeComponent } from 'src/app/shared/components/dialogs/resume/resume.component';
+import { ContactInfoComponent } from 'src/app/shared/components/dialogs/contact-info/contact-info.component';
 
 
 @Component({
@@ -66,6 +67,13 @@ export class SidenavComponent implements OnInit {
     this.dialog.open(ResumeComponent, {
       height: '80vh',
       width: '65vw',
+    });
+  }
+
+  contactInfo() {
+    this.dialog.open(ContactInfoComponent, {
+      height: '30vh',
+      width: '40vw',
     });
   }
 }

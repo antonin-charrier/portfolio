@@ -3,10 +3,11 @@
         "profile": {
             "name": "Antonin CHARRIER",
             "job": "Consultant Angular",
+            "coordinates": "Voir mes coordonnées",
+            "resume": "Voir mon CV",
             "email": "Envoyer un mail",
             "linkedin": "Visiter ma page LinkedIn",
-            "github": "Visiter ma page GitHub",
-            "resume": "Voir mon CV"
+            "github": "Visiter ma page GitHub"
         },
         "home": "Accueil",
         "projects": "Projets",
@@ -131,5 +132,8 @@
         "download": "Télécharger",
         "error": "Désolé, mon CV ne s'est pas chargé correctement :(",
         "close": "Fermer"
+    },
+    "contact-info": {
+        "title": "Coordonnées"
     }
 }
