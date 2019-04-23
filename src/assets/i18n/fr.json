@@ -37,7 +37,7 @@
     "projects": {
         "e-monthly": {
             "title": "eMonthly",
-            "subtitle": "Architecturer un project Angular",
+            "subtitle": "Architecturer un projet Angular",
             "template": {
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",

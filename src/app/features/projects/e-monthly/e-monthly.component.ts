@@ -8,6 +8,14 @@ import { ArticleComponent } from 'src/app/shared/article.component';
 })
 export class EMonthlyComponent extends ArticleComponent {
   get linkedTechnicalSkills() {
-    return ['front-end', 'notions-of-architecture'];
+    return ['front-end', 'notions-of-architecture', 'android'];
+  }
+
+  get linkedProjects() {
+    return ['vision-safety', 'web-agent', 'call-center', 'e-monthly'];
+  }
+
+  get linkedHumanSkills() {
+    return ['autonomy', 'creativity', 'languages', 'knowledge-sharing'];
   }
 }

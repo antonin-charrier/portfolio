@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .inline_icon {
     font-size: 16px;
 }
@@ -24,4 +26,42 @@
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
+}
+
+
+p.article-p {
+    margin: 0 0 24px !important;
+    text-align: justify;
+}
+
+.title-line {
+    width: 80px;
+    height: 0px;
+    border-bottom: 10px solid $primary;
+    -webkit-transform: rotate(120deg);
+    transform:
+        rotate(120deg)
+        skew(30deg);
+        position: relative;
+}
+
+.article-header {
+    display: inline-grid;    
+    grid-gap: 0 20px;
+
+    h1 {
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 0 !important;
+    }
+
+    .title-line {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    
+    h2 {
+        grid-row: 3;
+        grid-column: 2;
+    }
 }

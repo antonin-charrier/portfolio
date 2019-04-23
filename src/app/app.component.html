@@ -3,7 +3,11 @@
         <app-sidenav></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content id="content">
-        <router-outlet (activate)="onActivate($event)"></router-outlet>
-        <app-redirects [linkedProjects]="linkedProjects" [linkedTechnicalSkills]="linkedTechnicalSkills" [linkedHumanSkills]="linkedHumanSkills"></app-redirects>
+        <div class="article-container">
+            <div class="article">
+                <router-outlet (activate)="onActivate($event)"></router-outlet>
+            </div>
+            <app-redirects [linkedProjects]="linkedProjects" [linkedTechnicalSkills]="linkedTechnicalSkills" [linkedHumanSkills]="linkedHumanSkills"></app-redirects>
+        </div>
     </mat-sidenav-content>
 </mat-sidenav-container>

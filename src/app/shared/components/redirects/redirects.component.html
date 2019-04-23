@@ -1,9 +1,9 @@
-<mat-divider class="redirects-divider"  *ngIf="!isProjectsEmpty || !isTechnicalSkillsEmpty || !isHumanSkillsEmpty"></mat-divider>
+<mat-divider *ngIf="!isProjectsEmpty || !isTechnicalSkillsEmpty || !isHumanSkillsEmpty"></mat-divider>
 <div class="redirects-component">
     <div class="redirects-category redirects-category-1" *ngIf="!isProjectsEmpty">
-        <h3 class="redirects-title">
+        <h4 class="redirects-title">
             {{ 'redirects.linked-projects.title' | translate }}
-        </h3>
+        </h4>
         <div class="redirects-group">
             <a mat-flat-button color="primary" [routerLink]="['projects/call-center']" *ngIf="isProjectLinked('call-center')">
                 {{ 'redirects.linked-projects.call-center' | translate }}
@@ -23,9 +23,9 @@
         </div>
     </div>
     <div class="redirects-category" [ngClass]="isProjectsEmpty ? redirects-category-1 : redirects-category-2" *ngIf="!isTechnicalSkillsEmpty">
-        <h3 class="redirects-title">
+        <h4 class="redirects-title">
             {{ 'redirects.linked-technical-skills.title' | translate }}
-        </h3>
+        </h4>
         <div class="redirects-group">
             <a mat-flat-button color="primary" [routerLink]="['technical-skills/android']" *ngIf="isTechnicalSkillLinked('android')">
                 {{ 'redirects.linked-technical-skills.android' | translate }}
@@ -46,9 +46,9 @@
     </div>
     <div class="redirects-category" *ngIf="!isHumanSkillsEmpty"
         [ngClass]="isProjectsEmpty && isTechnicalSkillsEmpty ? redirects-category-1 : (isTechnicalSkillsEmpty ? redirects-category-2 : redirects-category-3)">
-        <h3 class="redirects-title">
+        <h4 class="redirects-title">
             {{ 'redirects.linked-human-skills.title' | translate }}
-        </h3>
+        </h4>
         <div class="redirects-group">
             <a mat-flat-button color="primary" [routerLink]="['human-skills/autonomy']">
                 {{ 'redirects.linked-human-skills.autonomy' | translate }}

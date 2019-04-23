@@ -1,14 +1,17 @@
-<h1>{{ 'projects.e-monthly.title' | translate }}</h1>
-<h2>{{ 'projects.e-monthly.subtitle' | translate }}</h2>
+<div class="article-header">
+    <h1>{{ 'projects.e-monthly.title' | translate }}</h1>
+    <div class="title-line"></div>
+    <h2>{{ 'projects.e-monthly.subtitle' | translate }}</h2>
+</div>
 <div>
-  <h4>{{ 'projects.e-monthly.template.title' | translate }}</h4>
-  <p>
+  <h3>{{ 'projects.e-monthly.template.title' | translate }}</h3>
+  <p class="article-p">
     {{ 'projects.e-monthly.template.after-working' | translate }}
     <a [routerLink]="['../../technical-skills/front-end']">{{ 'projects.e-monthly.template.angular-projects' | translate }}</a>
     {{ 'projects.e-monthly.template.project-manager' | translate }}
   </p>
-  <h4>{{ 'projects.e-monthly.architecture.title' | translate }}</h4>
-  <p>
+  <h3>{{ 'projects.e-monthly.architecture.title' | translate }}</h3>
+  <p class="article-p">
     {{ 'projects.e-monthly.architecture.one-week' | translate }}
     <a [routerLink]="['../../technical-skills/architecture']">{{ 'projects.e-monthly.architecture.architecture' | translate }}</a>
     {{ 'projects.e-monthly.architecture.by-creating' | translate }}
@@ -21,8 +24,8 @@
     <br>
     {{ 'projects.e-monthly.architecture.specificities' | translate }}
   </p>
-  <h4>{{ 'projects.e-monthly.future.title' | translate }}</h4>
-  <p>
+  <h3>{{ 'projects.e-monthly.future.title' | translate }}</h3>
+  <p class="article-p">
     {{ 'projects.e-monthly.future.expect' | translate }}
   </p>
 </div>

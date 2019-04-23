@@ -45,6 +45,10 @@
     width: 100%;
 }
 
+.profile-action {
+    min-width: 1%;
+}
+
 .profile-picture {
     width: 250px;
     border-radius: 50%;
@@ -59,11 +63,11 @@
 }
 
 .profile-subpanel-left {
-    margin-left: 24px;
+    margin-left: 40px;
 }
 
 .profile-subpanel-right {
-    margin-right: 24px;
+    margin-right: 40px;
 }
 
 .profile-logo {
@@ -73,10 +77,15 @@
 .profile-name {
     margin-top: 16px;
     margin-bottom: 0;
+    font: 500 20px/28px Roboto, monospace;
 }
 
 .sidenav-mat-list {
     padding: 8px 0 !important;
+}
+
+.sidenav-mat-list-p {
+    font-size: 17px !important;
 }
 
 .sublist {
