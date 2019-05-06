@@ -6,4 +6,7 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './creativity.component.html',
   styleUrls: ['./creativity.component.scss']
 })
-export class CreativityComponent extends ArticleComponent {}
+export class CreativityComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['vision-safety'];
+  }}

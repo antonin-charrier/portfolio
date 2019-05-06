@@ -91,6 +91,31 @@
                 "feedbacks": "les feedbacks",
                 "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil."
             }
+        },
+        "creativity": {
+            "title": "Créativité",
+            "subtitle": "La créativité permet d’apporter de véritables solutions",
+            "definition": {
+                "title": "Qu’est-ce que la créativité ?",
+                "the": "La",
+                "creativity": "créativité.",
+                "ability": "La créativité. La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à répondre aux besoins du client via des moyens plus appropriés que ceux auxquels il pensait. En cela la créativité peut rejoindre et s’ajouter à la force de proposition."
+            },
+            "necessary": {
+                "title": "La créativité est nécessaire",
+                "any-project": "N’importe quel projet a besoin d’une part de créativité. Une équipe doit compter parmi ses membres au moins un créatif bien qu’en avoir deux permet d’ajouter un débat et une réflexion menant à une solution de meilleure qualité. La créativité permettra d’imaginer des réponses aux exigences du client différentes et plus appropriées que les réponses habituelles. C’est cette créativité dont va pouvoir faire preuve une équipe qui va la différencier des autres équipes techniquement équivalentes auprès du client.",
+                "develop": "La créativité est une qualité innée, mais pas seulement. C’est une compétence que l’on développe avec le temps et qui s’accroit avec l’expérience. Tout ce que nous découvrons, lisons, apprenons, vient inconsciemment alimenter notre créativité. Le créatif se doit aussi d’être curieux pour renouveler régulièrement les sources d'où il puise pour ses créations."
+            },
+            "me": {
+                "title": "Autonomy is one of my qualities",
+                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
+                "web-agent": "WebAgent",
+                "and": " and ",
+                "vision-safety": "VisionSafety",
+                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
+                "feedbacks": "feedbacks",
+                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+            }
         }
     },
     "redirects": {
