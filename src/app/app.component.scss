@@ -7,7 +7,34 @@
     height: 90%;
 }
 
+#menu {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
 .article-container {    
     max-width: 980px;
 }
 
+
+
+@media only screen and (max-width: 848px) {
+    #sidenav {
+        display: none;
+    }
+
+    .sidenav-visible {
+        display: block !important;
+    }
+
+    #content {
+        margin-left: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 848px) {
+    #menu {
+        display: none;
+    }    
+}

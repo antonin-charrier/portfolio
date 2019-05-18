@@ -14,4 +14,4 @@ export class WipService {
   public static isWip(route: string): boolean {
     return !environment.production || this.prodRoutes.includes(route);
   }
- }
+}
