@@ -9,6 +9,7 @@ import { TeamLeadingComponent } from './team-leading/team-leading.component';
 import { LanguagesComponent } from './languages/languages.component';
 import { KnowledgeSharingComponent } from './knowledge-sharing/knowledge-sharing.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     HumanSkillsRoutingModule,
-    TranslateModule
+    TranslateModule,
+    SharedModule
   ]
 })
 export class HumanSkillsModule { }

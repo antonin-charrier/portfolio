@@ -7,13 +7,13 @@
   <h3>{{ 'projects.e-monthly.template.title' | translate }}</h3>
   <p class="article-p">
     {{ 'projects.e-monthly.template.after-working' | translate }}
-    <a [routerLink]="['../../technical-skills/front-end']">{{ 'projects.e-monthly.template.angular-projects' | translate }}</a>
+    <a [routerLink]="['../../technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'projects.e-monthly.template.angular-projects' | translate }}</a>
     {{ 'projects.e-monthly.template.project-manager' | translate }}
   </p>
   <h3>{{ 'projects.e-monthly.architecture.title' | translate }}</h3>
   <p class="article-p">
     {{ 'projects.e-monthly.architecture.one-week' | translate }}
-    <a [routerLink]="['../../technical-skills/architecture']">{{ 'projects.e-monthly.architecture.architecture' | translate }}</a>
+    <a [routerLink]="['../../technical-skills/architecture']" matTooltip="{{ 'redirects.linked-technical-skills.notions-of-architecture' | translate }}" matTooltipPosition="above">{{ 'projects.e-monthly.architecture.architecture' | translate }}</a>
     {{ 'projects.e-monthly.architecture.by-creating' | translate }}
     <b>{{ 'projects.e-monthly.architecture.services' | translate }}</b>
     {{ 'projects.e-monthly.architecture.references' | translate }}

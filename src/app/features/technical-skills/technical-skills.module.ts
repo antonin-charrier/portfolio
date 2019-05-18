@@ -8,6 +8,8 @@ import { FrontEndComponent } from './front-end/front-end.component';
 import { DotNetCoreWebApiComponent } from './dot-net-core-web-api/dot-net-core-web-api.component';
 import { NotionsOfArchitectureComponent } from './notions-of-architecture/notions-of-architecture.component';
 import { FinancialAssessmentsComponent } from './financial-assessments/financial-assessments.component';
+import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FinancialAssessmentsComponent } from './financial-assessments/financial
   ],
   imports: [
     CommonModule,
-    TechnicalSkillsRoutingModule
+    TechnicalSkillsRoutingModule,
+    TranslateModule,
+    SharedModule
   ]
 })
 export class TechnicalSkillsModule { }
