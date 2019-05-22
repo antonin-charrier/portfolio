@@ -35,6 +35,25 @@
     "wip": {
         "work-in-progress": "Travail en cours"
     },
+    "home": {
+        "title": "Antonin CHARRIER",
+        "subtitle": "Développeur web et Android",
+        "two-years": "Après deux années et demi à ",
+        "capgemini": "Capgemini",
+        "experience": " durant une expérience professionnelle en parallèle d’une formation à ",
+        "intech": "IN’TECH",
+        "applications": ", j’ai construit et maintenu plusieurs applications pour ",
+        "securitas": "Securitas",
+        "skills": ", améliorant mes compétences en ",
+        "development": "développement ",
+        "dot-net": ".NET",
+        "dot-net-bis": ", ",
+        "angular": "Angular",
+        "angular-bis": " et ",
+        "android": "Android",
+        "development-bis": ".",
+        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un gros site web pour des agents de sécurité de Securitas."
+    },
     "projects": {
         "e-monthly": {
             "title": "eMonthly",

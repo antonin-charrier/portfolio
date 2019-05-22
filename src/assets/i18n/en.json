@@ -35,6 +35,25 @@
     "wip": {
         "work-in-progress": "Work in progress"
     },
+    "home": {
+        "title": "Antonin CHARRIER",
+        "subtitle": "Web and Android developer",
+        "two-years": "After two and half years at ",
+        "capgemini": "Capgemini",
+        "experience": " during a work experience in parallel with a formation at ",
+        "intech": "IN’TECH",
+        "applications": ", I built and maintained several applications for ",
+        "securitas": "Securitas",
+        "skills": ", improving my skills in ",
+        "development": "",
+        "dot-net": ".NET",
+        "dot-net-bis": ", ",
+        "angular": "Angular",
+        "angular-bis": " and ",
+        "android": "Android",
+        "development-bis": "development.",
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a big web site for Securitas security agents."
+    },
     "projects": {
         "e-monthly": {
             "title": "eMonthly",
