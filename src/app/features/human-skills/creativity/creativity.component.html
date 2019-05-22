@@ -1,24 +1,44 @@
-<h1>{{ 'human-skills.creativity.title' | translate }}</h1>
-<h2>{{ 'human-skills.creativity.subtitle' | translate }}</h2>
-<h4>{{ 'human-skills.creativity.definition.title' | translate }}</h4>
-<p>
-  {{ 'human-skills.creativity.definition.the' | translate }}
-  <b>{{ 'human-skills.creativity.definition.creativity' | translate }}</b>
-  {{ 'human-skills.creativity.definition.ability' | translate }}
-</p>
-<h4>{{ 'human-skills.creativity.necessary.title' | translate }}</h4>
-<p>
-  {{ 'human-skills.creativity.necessary.any-project' | translate }}
-  <br>
-  {{ 'human-skills.creativity.necessary.develop' | translate }}
-</p>
-<h4>{{ 'human-skills.creativity.me.title' | translate }}</h4>
-<p>
-  {{ 'human-skills.creativity.me.vision' | translate }}
-  <a [routerLink]="['../../projects/web-agent']">{{ 'human-skills.creativity.me.web-agent' | translate }}</a>
-  {{ 'human-skills.creativity.me.and' | translate }}
-  <a [routerLink]="['../../projects/vision-safety']">{{ 'human-skills.creativity.me.vision-safety' | translate }}</a>
-  {{ 'human-skills.creativity.me.internship' | translate }}
-  <b>{{ 'human-skills.creativity.me.feedbacks' | translate }}</b>
-  {{ 'human-skills.creativity.me.colleagues' | translate }}
-</p>
+<div class="article-header">
+  <h1>{{ 'human-skills.creativity.title' | translate }}</h1>
+  <div class="title-line"></div>
+  <h2>{{ 'human-skills.creativity.subtitle' | translate }}</h2>
+</div>
+<div>
+  <h3>{{ 'human-skills.creativity.definition.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.creativity.definition.the' | translate }}
+    <b>{{ 'human-skills.creativity.definition.creativity' | translate }}</b>
+    {{ 'human-skills.creativity.definition.ability' | translate }}
+    <b>{{ 'human-skills.creativity.definition.client-needs' | translate }}</b>
+    {{ 'human-skills.creativity.definition.proposal' | translate }}
+  </p>
+  <h3>{{ 'human-skills.creativity.necessary.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.creativity.necessary.any-project' | translate }}
+    <b>{{ 'human-skills.creativity.necessary.answers' | translate }}</b>
+    {{ 'human-skills.creativity.necessary.requirements' | translate }}
+    <br>
+    {{ 'human-skills.creativity.necessary.develop' | translate }}
+  </p>
+  <h3>{{ 'human-skills.creativity.innovation.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.creativity.innovation.creative' | translate }}
+    <a [routerLink]="['../../projects/vision-safety']" matTooltip="{{ 'redirects.linked-projects.vision-safety' | translate }}" matTooltipPosition="above">{{ 'human-skills.creativity.innovation.vision-safety' | translate }}</a>
+    {{ 'human-skills.creativity.innovation.sms-alerts' | translate }}
+    <br>
+    {{ 'human-skills.creativity.innovation.suggested' | translate }}
+    <b>{{ 'human-skills.creativity.innovation.reducing' | translate }}</b>
+    {{ 'human-skills.creativity.innovation.application' | translate }}
+  </p>
+  <h3>{{ 'human-skills.creativity.other-domains.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.creativity.other-domains.various-forms' | translate }}
+    <b>{{ 'human-skills.creativity.other-domains.new-stuff' | translate }}</b>
+    {{ 'human-skills.creativity.other-domains.pokemon' | translate }}
+  </p>
+  <div class="pokemon-container">
+    <img src="assets/img/scaracorn.png" class="pokemon">
+    <img src="assets/img/beetleaf.png" class="pokemon">
+    <img src="assets/img/oakleoptera.png" class="pokemon">
+  </div>
+</div>

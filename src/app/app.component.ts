@@ -10,6 +10,7 @@ export class AppComponent implements OnInit {
   linkedProjects: string[] = [];
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
+  isMenuOpened = false;
 
   constructor(
     private translateService: TranslateService
@@ -29,5 +30,9 @@ export class AppComponent implements OnInit {
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
     this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
     this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];
+  }
+
+  toggleMenu() {
+    this.isMenuOpened = !this.isMenuOpened;
   }
 }

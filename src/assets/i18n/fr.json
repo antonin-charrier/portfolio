@@ -117,23 +117,32 @@
             "definition": {
                 "title": "Qu’est-ce que la créativité ?",
                 "the": "La",
-                "creativity": "créativité.",
-                "ability": "La créativité. La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à répondre aux besoins du client via des moyens plus appropriés que ceux auxquels il pensait. En cela la créativité peut rejoindre et s’ajouter à la force de proposition."
+                "creativity": "créativité",
+                "ability": ". La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à ",
+                "client-needs": "répondre aux besoins du client",
+                "proposal": " via des moyens plus appropriés que ceux auxquels il pensait. En cela la créativité peut rejoindre et s’ajouter à la force de proposition."
             },
             "necessary": {
                 "title": "La créativité est nécessaire",
-                "any-project": "N’importe quel projet a besoin d’une part de créativité. Une équipe doit compter parmi ses membres au moins un créatif bien qu’en avoir deux permet d’ajouter un débat et une réflexion menant à une solution de meilleure qualité. La créativité permettra d’imaginer des réponses aux exigences du client différentes et plus appropriées que les réponses habituelles. C’est cette créativité dont va pouvoir faire preuve une équipe qui va la différencier des autres équipes techniquement équivalentes auprès du client.",
+                "any-project": "N’importe quel projet a besoin d’une part de créativité. Une équipe doit compter parmi ses membres au moins un créatif bien qu’en avoir deux permet d’ajouter un débat et une réflexion menant à une solution de meilleure qualité. La créativité permettra d’imaginer des ",
+                "answers": "réponses différentes et plus appropriées",
+                "requirements": " aux exigences du client que les réponses habituelles. C’est cette créativité dont va pouvoir faire preuve une équipe qui va la différencier des autres équipes techniquement équivalentes auprès du client.",
                 "develop": "La créativité est une qualité innée, mais pas seulement. C’est une compétence que l’on développe avec le temps et qui s’accroit avec l’expérience. Tout ce que nous découvrons, lisons, apprenons, vient inconsciemment alimenter notre créativité. Le créatif se doit aussi d’être curieux pour renouveler régulièrement les sources d'où il puise pour ses créations."
             },
-            "me": {
-                "title": "Autonomy is one of my qualities",
-                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
-                "web-agent": "WebAgent",
-                "and": " and ",
+            "innovation": {
+                "title": "Apporter des solutions innovantes au client",
+                "creative": "Je me considère comme quelqu'un de créatif. Par exemple, lors de mon projet ",
                 "vision-safety": "VisionSafety",
-                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
-                "feedbacks": "feedbacks",
-                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+                "sms-alerts": ", j'ai du créer une solution permettant au client de facilement régler dans l'application mobile le numéro de téléphone auquel envoyer une alerte par SMS. Cette application étant destinée à tous les pays européens où Securitas est implanté, il faut réaliser une solution globale pour tous les pays. Certains pays possèdent plusieurs numéros de téléphone, d'autres un seul et certains pays n'en ont aucun (les alertes sont donc envoyées à un pays voisin).",
+                "suggested": "J'ai donc proposé au client de créer une liste contenant l'ensemble des numéros de téléphone associé à leur pays. Les pays possédant plusieurs numéros de téléphone verront ceux-ci organisés par un ordre de priorité. Ainsi, par défaut, les alertes seront envoyées au numéro de téléphone lié au pays de l'utilisateur (et au numéro le plus prioritaire dans le cas où le pays possède plusieurs numéros). J'ai également créé une interface pour que les administrateurs puissent directement sélectionner dans l'application quel numéro utliser (afin d'utiliser un numéro moins prioiritaire ou bien le numéro d'un autre pays dans le cas où aucun numéro n'est attribué à la localisation de l'utilisateur). Le client a approuvé cette solution lui qui lui permet d'éviter de déployer une configuration différente par pays, ",
+                "reducing": "réduisant ainsi les coûts d'exploitation",
+                "application": " de l'application."
+            },
+            "other-domains": {
+                "title": "La créativité dans les autres domaines",
+                "various-forms": "Comme dit plus haut, la créativité peut prendre différentes formes. Elle peut également revêtir une forme artistique. Bien que je ne sois pas un artiste, ",
+                "new-stuff": "j'aime imaginer et créer de nouvelles choses",
+                "pokemon": ". Cela me sert notamment dans mon projet personnel de fangame Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fangames Pokémon."
             }
         }
     },

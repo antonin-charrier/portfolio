@@ -1,13 +1,17 @@
 <mat-sidenav-container autosize fullscreen>
-    <mat-sidenav [mode]="'side'" [opened]="true">
+    <mat-sidenav id="sidenav" [ngClass]="{'sidenav-visible': isMenuOpened}" [mode]="'side'" [opened]="true">
         <app-sidenav></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content id="content">
         <div class="article-container">
             <div class="article">
+                <button mat-flat-button id="menu" color="primary" (click)="toggleMenu()">
+                    <mat-icon aria-label="Menu" *ngIf="!isMenuOpened">menu</mat-icon>
+                    <mat-icon aria-label="Close" *ngIf="isMenuOpened">close</mat-icon>
+                </button>  
                 <router-outlet (activate)="onActivate($event)"></router-outlet>
             </div>
             <app-redirects [linkedProjects]="linkedProjects" [linkedTechnicalSkills]="linkedTechnicalSkills" [linkedHumanSkills]="linkedHumanSkills"></app-redirects>
         </div>
-    </mat-sidenav-content>
+    </mat-sidenav-content>                   
 </mat-sidenav-container>

@@ -7,7 +7,7 @@
             "resume": "View my resume",
             "email": "Send an email",
             "linkedin": "Visit my LinkedIn page",
-            "github": "Visit my GitHub ^page"
+            "github": "Visit my GitHub page"
         },
         "home": "Home",
         "projects": "Projects",
@@ -118,22 +118,31 @@
                 "title": "What is creativity?",
                 "the": "",
                 "creativity": "Creativity.",
-                "ability": "The ability of the mind to create something new from a given context. It is a skill that applies to numerous domains and that can take different shapes. In a professional project, creativity can result in the ability to meet the needs of the customer using more appropriate means than the ones he thought of. In that way, creativity can join and add to strength of proposal."
+                "ability": "The ability of the mind to create something new from a given context. It is a skill that applies to numerous domains and that can take different shapes. In a professional project, creativity can result in the ability to ",
+                "client-needs": "meet the needs of the client",
+                "proposal": " using more appropriate means than the ones he thought of. In that way, creativity can join and add to strength of proposal."
             },
             "necessary": {
                 "title": "Creativity is necessary",
-                "any-project": "Any project needs a part of creativity. A team must have among its members at least one creative even though two would bring a debate and a thought leading to a higher quality solution. Creativity allows us to imagine different and more appropriate answers to the customer requirements than the usual ones. It is this creativity that a team will be able to demonstrate that will differentiate it from other technically equivalent teams to the client.",
+                "any-project": "Any project needs a part of creativity. A team must have among its members at least one creative even though two would bring a debate and a thought leading to a higher quality solution. Creativity allows us to imagine ",
+                "answers": "different and more appropriate answers",
+                "requirements": " to the customer requirements than the usual ones. It is this creativity that a team will be able to demonstrate that will differentiate it from other technically equivalent teams to the client.",
                 "develop": "Creativity is an innate quality, but not only. It is a skill that is developed over time and increases with experience. Everything that we discover, read, learn, comes unconsciously to fuel our creativity. The creative one must also be curious to usually renew the sources from which he draws for his creations."
             },
-            "me": {
-                "title": "Autonomy is one of my qualities",
-                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
-                "web-agent": "WebAgent",
-                "and": " and ",
+            "innovation": {
+                "title": "Bring innovative solutions to the client",
+                "creative": "I consider myself as a creative person. For example, during my ",
                 "vision-safety": "VisionSafety",
-                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
-                "feedbacks": "feedbacks",
-                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+                "sms-alerts": "project, I had to make a solution allowing the client to easily set in the mobile application the phone number to send an SMS alert to. This app being intended for all European countries where Securitas is implanted, I have to make a general solution for all countries. Some countries have several phone numbers, some have only one and some do not have any (the alerts are sent to a neighbouring country).",
+                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phonen numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
+                "reducing": "reducing the exploitation costs",
+                "application": " of the application."
+            },
+            "other-domains": {
+                "title": "Creativity in others domains",
+                "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
+                "new-stuff": "I like to imagine and create new stuff",
+                "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
             }
         }
     },

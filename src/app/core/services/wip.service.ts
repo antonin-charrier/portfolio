@@ -8,10 +8,10 @@ export class WipService {
   private static prodRoutes: string[] = [
     '/projects/e-monthly',
     '/human-skills/autonomy',
-    '/contact'
+    '/human-skills/creativity'
   ];
 
   public static isWip(route: string): boolean {
     return !environment.production || this.prodRoutes.includes(route);
   }
- }
+}
