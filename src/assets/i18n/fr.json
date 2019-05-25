@@ -210,6 +210,15 @@
         "close": "Fermer"
     },
     "contact-info": {
-        "title": "Coordonnées"
+        "title": "Coordonnées",
+        "email": "charrier.antonin@yahoo.fr",
+        "phone-number": "07.70.97.83.02",
+        "linkedin": "antonin-charrier",
+        "birth-date": "10/03/1997 ",
+        "years-old": " ans",
+        "city": "Issy-Les-Moulineaux",
+        "send-email": "Envoyer un mail",
+        "phone-call": "Appeler",
+        "ask-connection": "Demander une connexion"
     }
 }

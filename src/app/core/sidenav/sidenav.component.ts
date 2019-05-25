@@ -88,8 +88,8 @@ export class SidenavComponent implements OnInit {
 
   contactInfo() {
     this.dialog.open(ContactInfoComponent, {
-      height: '30vh',
-      width: '40vw',
+      height: '40vh',
+      width: '75vw',
     });
   }
 

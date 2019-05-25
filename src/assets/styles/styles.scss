@@ -29,6 +29,10 @@
     background: #555; 
 }
 
+body {
+    font-family: Roboto, monospace;
+    margin: 0;
+  }
 
 p.article-p {
     margin: 0 0 24px !important;
@@ -96,7 +100,7 @@ p.article-p {
     background-color: $dark-article-background !important;
     @extend .dark-theme;
 
-    h1 {
+    h1, .resume-content, .contact-info-content {
         color: $white;
     }
 }

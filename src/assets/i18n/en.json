@@ -210,6 +210,15 @@
         "close": "Close"
     },
     "contact-info": {
-        "title": "Contact informations"
+        "title": "Contact informations",
+        "email": "charrier.antonin@yahoo.fr",
+        "phone-number": "(+33) 770.978.302",
+        "linkedin": "antonin-charrier",
+        "birth-date": "03-10-1997 ",
+        "years-old": " years old",
+        "city": "Issy-Les-Moulineaux (Paris, France)",
+        "send-email": "Send an email",
+        "phone-call": "Call",
+        "ask-connection": "Ask for a connection"
     }
 }
