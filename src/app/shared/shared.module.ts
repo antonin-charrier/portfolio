@@ -9,12 +9,14 @@ import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { ResumeComponent } from './components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from './components/dialogs/contact-info/contact-info.component';
 import { LayoutModule } from '@angular/cdk/layout';
+import { ArticleHeaderComponent } from './components/article-header/article-header.component';
 
 @NgModule({
   declarations: [
     RedirectsComponent,
     ResumeComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    ArticleHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -34,7 +36,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     TranslateModule,
     PdfViewerModule,
     ScrollDispatchModule,
-    LayoutModule
+    LayoutModule,
+    ArticleHeaderComponent
   ],
   entryComponents: [
     ResumeComponent,
