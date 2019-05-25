@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
   isMenuOpened = false;
-  isDarkTheme: Observable<boolean>;
+  private _isDarkTheme = false;
   @ViewChild('sidenav') sidenav: MatSidenav;
 
   constructor(
@@ -27,12 +27,17 @@ export class AppComponent implements OnInit {
     this.translateService.use('fr');
   }
 
+  get isDarkTheme(): boolean {
+    return this._isDarkTheme;
+  }
+
   ngOnInit() {
     const lang = localStorage.getItem('lang');
     if (lang) {
       this.translateService.use(lang);
     }
-    this.isDarkTheme = this.themeService.isDarkTheme;
+    this._isDarkTheme = this.themeService.isDarkTheme.value;
+    this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
 
     this.breakpointObserver.observe([
       Breakpoints.Handset,

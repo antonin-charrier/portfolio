@@ -1,8 +1,15 @@
+@import "../assets/styles/variables.scss";
+
 #content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-content: center;
+}
+
+#content.dark {
+    background-color: $dark-article-background;     
+    color: $white;
 }
 
 .article-container {    

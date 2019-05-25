@@ -32,7 +32,8 @@ export class SidenavComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.themeService.isDarkTheme.subscribe(value => this._isDarkTheme = value);
+    this._isDarkTheme = this.themeService.isDarkTheme.value;
+    this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
     this.matIconRegistry.addSvgIcon(
       `linkedin`,
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/linkedin.svg')

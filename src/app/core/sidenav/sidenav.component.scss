@@ -23,15 +23,13 @@
     flex-grow: 15;
 }
 
-.sidenav-active-link {
-    color: $white;
-}
-
 .sidenav-active-link.light {
+    color: $white;
     background: $light-primary;
 }
 
 .sidenav-active-link.dark {
+    color: $white;
     background: $dark-primary;
 }
 

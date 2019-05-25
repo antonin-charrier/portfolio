@@ -9,10 +9,13 @@ $dark-accent-palette:  mat-palette($mat-amber, A200, A100, A400);
 $dark-warn-palette:    mat-palette($mat-deep-orange);
 
 $light-primary: mat-color($light-primary-palette);
+$light-primary-lighter: mat-color($light-primary-palette, 400);
 $light-accent: mat-color($light-accent-palette);
 $light-warn: mat-color($light-warn-palette);
 $dark-primary: mat-color($dark-primary-palette);
+$dark-primary-lighter: mat-color($dark-primary-palette, 200);
 $dark-accent: mat-color($dark-accent-palette);
 $dark-warn: mat-color($dark-warn-palette);
 $black: #000000;
 $white: #FFFFFF;
+$dark-article-background: #494949;
