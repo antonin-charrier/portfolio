@@ -97,5 +97,6 @@ export class SidenavComponent implements OnInit {
 
   toggleDarkTheme(checked: boolean) {
     this.themeService.isDarkTheme.next(checked);
+    localStorage.setItem('darkTheme', checked.toString());
   }
 }

@@ -159,7 +159,8 @@
       <button mat-menu-item (click)="setLang('en')">English</button>
     </mat-menu>
     <mat-icon [color]="isDarkTheme ? '' : 'primary'" aria-label="Light mode" svgIcon="sun"></mat-icon>
-    <mat-slide-toggle class="example-margin" color="primary" (change)="toggleDarkTheme($event.checked)"></mat-slide-toggle>
+    <mat-slide-toggle class="example-margin" color="primary" (change)="toggleDarkTheme($event.checked)"
+      [checked]="isDarkTheme" matTooltip="{{ 'sidenav.dark-mode' | translate }}"></mat-slide-toggle>
     <mat-icon [color]="isDarkTheme ? 'primary' : ''" aria-label="Dark mode" svgIcon="moon"></mat-icon>
     <button mat-button color="primary" [routerLink]="['about']" routerLinkActive="mat-flat-button" [routerLinkActiveOptions]="{exact: true}">{{ 'sidenav.about' | translate }}</button>
 </div>

@@ -36,6 +36,11 @@ export class AppComponent implements OnInit {
     if (lang) {
       this.translateService.use(lang);
     }
+    const darkTheme = localStorage.getItem('darkTheme');
+    if (darkTheme && darkTheme === 'true') {
+      this.themeService.isDarkTheme.next(true);
+    }
+
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
 
