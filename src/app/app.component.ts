@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { MatSidenav } from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -11,9 +13,11 @@ export class AppComponent implements OnInit {
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
   isMenuOpened = false;
+  @ViewChild('sidenav') sidenav: MatSidenav;
 
   constructor(
-    private translateService: TranslateService
+    private translateService: TranslateService,
+    private breakpointObserver: BreakpointObserver
   ) {
     this.translateService.setDefaultLang('fr');
     this.translateService.use('fr');
@@ -24,15 +28,31 @@ export class AppComponent implements OnInit {
     if (lang) {
       this.translateService.use(lang);
     }
+
+    this.breakpointObserver.observe([
+      Breakpoints.Handset,
+      Breakpoints.TabletPortrait
+    ]).subscribe(result => {
+      if (result.matches) {
+        this.sidenav.mode = 'over';
+        this.sidenav.close();
+      }
+    });
+
+    this.breakpointObserver.observe([
+      Breakpoints.Web,
+      Breakpoints.TabletLandscape
+    ]).subscribe(result => {
+      if (result.matches) {
+        this.sidenav.mode = 'side';
+        this.sidenav.open();
+      }
+    });
   }
 
   onActivate(component: any) {
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
     this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
     this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];
-  }
-
-  toggleMenu() {
-    this.isMenuOpened = !this.isMenuOpened;
   }
 }

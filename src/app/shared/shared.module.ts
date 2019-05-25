@@ -9,6 +9,7 @@ import { RecaptchaModule } from 'ng-recaptcha';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { ResumeComponent } from './components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from './components/dialogs/contact-info/contact-info.component';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactInfoComponent } from './components/dialogs/contact-info/contact-
     TranslateModule,
     PdfViewerModule,
     RecaptchaModule,
-    ScrollDispatchModule
+    ScrollDispatchModule,
+    LayoutModule
   ],
   exports: [
     MaterialModule,
@@ -34,7 +36,8 @@ import { ContactInfoComponent } from './components/dialogs/contact-info/contact-
     TranslateModule,
     PdfViewerModule,
     RecaptchaModule,
-    ScrollDispatchModule
+    ScrollDispatchModule,
+    LayoutModule
   ],
   entryComponents: [
     ResumeComponent,
