@@ -143,6 +143,14 @@
                 "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
                 "new-stuff": "I like to imagine and create new stuff",
                 "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
+            },
+            "pokemon": {
+                "scaracorn": "Scaracorn",
+                "scaracorn-bis": ",",
+                "beetleaf": "Beetleaf",
+                "beetleaf-bis": "and",
+                "oakleoptera": "Oakleoptera",
+                "created": ", three Pokémon that I created"
             }
         }
     },
