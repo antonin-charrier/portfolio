@@ -4,6 +4,8 @@ import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ResumeComponent } from 'src/app/shared/components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from 'src/app/shared/components/dialogs/contact-info/contact-info.component';
+import { ThemeService } from '../services/theme.service';
+import { Observable } from 'rxjs';
 
 
 @Component({
@@ -15,15 +17,24 @@ export class SidenavComponent implements OnInit {
   isProjectsExpanded: boolean;
   isTechnicalSkillsExpanded: boolean;
   isHumanSkillsExpanded: boolean;
+  private _isDarkTheme = false;
 
   constructor(
     private translateService: TranslateService,
     private matIconRegistry: MatIconRegistry,
     private domSanitizer: DomSanitizer,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private themeService: ThemeService
   ) { }
 
+  get isDarkTheme(): boolean {
+    return this._isDarkTheme;
+  }
+
   ngOnInit() {
+    this.themeService.isDarkTheme.subscribe(value => {
+      this._isDarkTheme = value;
+    });
     this.matIconRegistry.addSvgIcon(
       `linkedin`,
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/linkedin.svg')
@@ -31,6 +42,14 @@ export class SidenavComponent implements OnInit {
     this.matIconRegistry.addSvgIcon(
       `github`,
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/github.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      `moon`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/moon.svg')
+    );
+    this.matIconRegistry.addSvgIcon(
+      `sun`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/sun.svg')
     );
   }
 
@@ -75,5 +94,9 @@ export class SidenavComponent implements OnInit {
       height: '30vh',
       width: '40vw',
     });
+  }
+
+  toggleDarkTheme(checked: boolean) {
+    this.themeService.setDarkTheme(checked);
   }
 }

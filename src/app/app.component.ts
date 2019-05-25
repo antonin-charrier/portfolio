@@ -2,6 +2,8 @@ import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material';
+import { ThemeService } from './core/services/theme.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -13,11 +15,13 @@ export class AppComponent implements OnInit {
   linkedTechnicalSkills: string[] = [];
   linkedHumanSkills: string[] = [];
   isMenuOpened = false;
+  isDarkTheme: Observable<boolean>;
   @ViewChild('sidenav') sidenav: MatSidenav;
 
   constructor(
     private translateService: TranslateService,
-    private breakpointObserver: BreakpointObserver
+    private breakpointObserver: BreakpointObserver,
+    private themeService: ThemeService
   ) {
     this.translateService.setDefaultLang('fr');
     this.translateService.use('fr');
@@ -28,6 +32,7 @@ export class AppComponent implements OnInit {
     if (lang) {
       this.translateService.use(lang);
     }
+    this.isDarkTheme = this.themeService.isDarkTheme;
 
     this.breakpointObserver.observe([
       Breakpoints.Handset,

@@ -35,9 +35,16 @@ p.article-p {
 }
 
 .title-line {
-    border-left: 10px solid $primary;
     -webkit-transform: skew(-30deg);
     transform: skew(-30deg);
+}
+
+.title-line.light {
+    border-left: 10px solid $light-primary;
+}
+
+.title-line.dark {
+    border-left: 10px solid $dark-primary;
 }
 
 .article-header {

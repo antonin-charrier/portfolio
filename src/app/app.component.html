@@ -1,4 +1,4 @@
-<mat-sidenav-container autosize fullscreen>
+<mat-sidenav-container autosize fullscreen [ngClass]="{ 'dark-theme': isDarkTheme | async }">
     <mat-sidenav #sidenav id="sidenav" [ngClass]="{'sidenav-visible': isMenuOpened}" [mode]="'side'" [opened]="true">
         <app-sidenav></app-sidenav>
     </mat-sidenav>

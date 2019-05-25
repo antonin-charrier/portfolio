@@ -24,8 +24,15 @@
 }
 
 .sidenav-active-link {
-    background: $primary;
     color: $white;
+}
+
+.sidenav-active-link.light {
+    background: $light-primary;
+}
+
+.sidenav-active-link.dark {
+    background: $dark-primary;
 }
 
 .sidenav-footer {
@@ -43,6 +50,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .profile-action {
