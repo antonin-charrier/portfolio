@@ -25,7 +25,6 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "core-js": "^2.5.4",
-    "ng-recaptcha": "^4.2.1",
     "ng2-pdf-viewer": "^5.2.4",
     "rxjs": "~6.3.3",
     "zone.js": "~0.8.26"

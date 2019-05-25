@@ -6,9 +6,11 @@ import { environment } from 'src/environments/environment';
 })
 export class WipService {
   private static prodRoutes: string[] = [
+    '/',
     '/projects/e-monthly',
     '/human-skills/autonomy',
-    '/human-skills/creativity'
+    '/human-skills/creativity',
+    '/about'
   ];
 
   public static isWip(route: string): boolean {

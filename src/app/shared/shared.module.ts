@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { RedirectsComponent } from './components/redirects/redirects.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-import { RecaptchaModule } from 'ng-recaptcha';
 import { ScrollDispatchModule } from '@angular/cdk/scrolling';
 import { ResumeComponent } from './components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from './components/dialogs/contact-info/contact-info.component';
@@ -23,7 +22,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     RouterModule,
     TranslateModule,
     PdfViewerModule,
-    RecaptchaModule,
     ScrollDispatchModule,
     LayoutModule
   ],
@@ -35,7 +33,6 @@ import { LayoutModule } from '@angular/cdk/layout';
     ContactInfoComponent,
     TranslateModule,
     PdfViewerModule,
-    RecaptchaModule,
     ScrollDispatchModule,
     LayoutModule
   ],

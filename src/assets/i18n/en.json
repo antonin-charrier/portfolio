@@ -176,9 +176,23 @@
 
     },
     "about": {
+        "about": "About",
+        "my-portfolio": "my portfolio",
+        "copyright": "Copyright © 2019 Antonin CHARRIER - All rights reserved",
+        "developped": "Developped with",
+        "angular": "Angular 7",
+        "using": "using",
+        "material": "Material Design",
+        "translations": "Translations managed with",
+        "ngx-translate": "NGX-Translate",
+        "library": "library",
+        "resume": "Resume displayed with",
+        "ng2-pdf-viewer": "Ng2 PDF Viewer",
         "icons": "Icons made by",
         "from": "from",
-        "licensed": "are licensed by"
+        "licensed": "are licensed by",
+        "code": "All the source code of my portfolio is available on",
+        "github": "GitHub"
     },
     "resume": {
         "title": "Resume",
