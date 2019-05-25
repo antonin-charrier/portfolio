@@ -51,6 +51,7 @@ export class AppComponent implements OnInit {
   }
 
   onActivate(component: any) {
+    if (this.sidenav.mode === 'over') { this.sidenav.close(); }
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
     this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
     this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];
