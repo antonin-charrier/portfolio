@@ -5,10 +5,15 @@
 .download-sticky-button {
   z-index: 2000;
   position: absolute;
-  bottom: 70px;
-  right: 40px;
+  bottom: 90px;
+  right: 50px;
 }
 
 .download-sticky-button-container {
     position: relative;
+}
+
+.resume-content {
+  padding: 0;
+  margin: 0 24px;
 }

@@ -5,8 +5,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { ResumeComponent } from 'src/app/shared/components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from 'src/app/shared/components/dialogs/contact-info/contact-info.component';
 import { ThemeService } from '../services/theme.service';
-import { Observable } from 'rxjs';
-
 
 @Component({
   selector: 'app-sidenav',
