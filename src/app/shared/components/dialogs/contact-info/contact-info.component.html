@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>
+  {{ 'contact-info.title' | translate }}
+</h1>
+<div mat-dialog-content class="contact-info-content">
+  <div class="contact-info-grid">
+      <mat-icon class="column-1 row-1" aria-label="Email">mail</mat-icon>
+      <mat-icon class="column-1 row-2" aria-label="Phone number">phone</mat-icon>
+      <mat-icon class="column-1 row-3" aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
+      <mat-icon class="column-1 row-4" aria-label="Birth date">cake</mat-icon>
+      <mat-icon class="column-1 row-5" aria-label="City">location_city</mat-icon>
+      <div class="column-2 row-1">{{ 'contact-info.email' | translate }}</div>
+      <div class="column-2 row-2">{{ 'contact-info.phone-number' | translate }}</div>
+      <div class="column-2 row-3">{{ 'contact-info.linkedin' | translate }}</div>
+      <div class="column-2 row-4">{{ 'contact-info.birth-date' | translate }}({{age}}{{ 'contact-info.years-old' | translate }})</div>
+      <div class="column-2 row-5">{{ 'contact-info.city' | translate }}</div>
+      <button mat-flat-button class="column-3 row-1" color="primary" (click)="email()">{{ 'contact-info.send-email' | translate }}</button>
+      <button mat-flat-button class="column-3 row-2" color="primary" (click)="phoneCall()">{{ 'contact-info.phone-call' | translate }}</button>
+      <button mat-flat-button class="column-3 row-3" color="primary" (click)="linkedin()">{{ 'contact-info.ask-connection' | translate }}</button>
+  </div>
+</div>
+<div mat-dialog-actions class="contact-info-actions">
+  <button mat-flat-button color="primary" [mat-dialog-close]="" cdkFocusInitial>{{ 'resume.close' | translate }}</button>
+</div>

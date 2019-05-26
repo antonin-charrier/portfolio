@@ -1,0 +1,22 @@
+<app-article-header [title]="'home.title'" [subtitle]="'home.subtitle'"></app-article-header>
+<p class="article-p">
+  {{ 'home.two-years' | translate }}
+  <a href="https://www.capgemini.com" target="_blank">{{ 'home.capgemini' | translate }}</a>
+  {{ 'home.experience' | translate }}
+  <a href="https://www.intechinfo.fr" target="_blank">{{ 'home.intech' | translate }}</a>
+  {{ 'home.applications' | translate }}
+  <a href="https://www.securitas.com" target="_blank">{{ 'home.securitas' | translate }}</a>
+  {{ 'home.skills' | translate }}
+  <b>
+    {{ 'home.development' | translate }}
+    <a [routerLink]="['technical-skills/dot-net-core-web-api']">{{ 'home.dot-net' | translate }}</a>
+    {{ 'home.dot-net-bis' | translate }}
+    <a [routerLink]="['technical-skills/front-end']">{{ 'home.angular' | translate }}</a>
+    {{ 'home.angular-bis' | translate }}
+    <a [routerLink]="['technical-skills/android']">{{ 'home.android' | translate }}</a>
+    {{ 'home.development-bis' | translate }}
+  </b>
+</p>
+<p class="article-p">
+  {{ 'home.frameworks' | translate }}
+</p>

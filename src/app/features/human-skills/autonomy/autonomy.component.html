@@ -1,0 +1,27 @@
+<app-article-header [title]="'human-skills.autonomy.title'" [subtitle]="'human-skills.autonomy.subtitle'"></app-article-header>
+<div>
+  <h3>{{ 'human-skills.autonomy.definition.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.autonomy.definition.what' | translate }}
+    <b>{{ 'human-skills.autonomy.definition.autonomy' | translate }}</b>
+    {{ 'human-skills.autonomy.definition.ability' | translate }}
+  </p>
+  <h3>{{ 'human-skills.autonomy.it-company.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.autonomy.it-company.employee' | translate }}
+    <br>
+    {{ 'human-skills.autonomy.it-company.however' | translate }}
+    <b>{{ 'human-skills.autonomy.it-company.evolution' | translate }}</b>
+    {{ 'human-skills.autonomy.it-company.bonary' | translate }}
+  </p>
+  <h3>{{ 'human-skills.autonomy.me.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'human-skills.autonomy.me.vision' | translate }}
+    <a [routerLink]="['../../projects/web-agent']" matTooltip="{{ 'redirects.linked-projects.web-agent' | translate }}" matTooltipPosition="above">{{ 'human-skills.autonomy.me.web-agent' | translate }}</a>
+    {{ 'human-skills.autonomy.me.and' | translate }}
+    <a [routerLink]="['../../projects/vision-safety']" matTooltip="{{ 'redirects.linked-projects.vision-safety' | translate }}" matTooltipPosition="above">{{ 'human-skills.autonomy.me.vision-safety' | translate }}</a>
+    {{ 'human-skills.autonomy.me.internship' | translate }}
+    <b>{{ 'human-skills.autonomy.me.feedbacks' | translate }}</b>
+    {{ 'human-skills.autonomy.me.colleagues' | translate }}
+  </p>
+</div>

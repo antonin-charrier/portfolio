@@ -1,0 +1,279 @@
+{
+    "sidenav": {
+        "profile": {
+            "name": "Antonin CHARRIER",
+            "job": "Angular consultant",
+            "coordinates": "View my contact informations",
+            "resume": "View my resume",
+            "email": "Send an email",
+            "linkedin": "Visit my LinkedIn page",
+            "github": "Visit my GitHub page"
+        },
+        "home": "Home",
+        "projects": "Projects",
+        "call-center": "Call center",
+        "e-monthly": "eMonthly",
+        "galt": "Galt",
+        "vision-safety": "VisionSafety",
+        "web-agent": "WebAgent",
+        "technical-skills": "Technical skills",
+        "android": "Android",
+        "dot-net-core-web-api": ".NET Core Web API",
+        "financial-assessments": "Financial assessments",
+        "front-end": "Front end",
+        "notions-of-architecture": "Notions of architecture",
+        "human-skills": "Human skills",
+        "autonomy": "Autonomy",
+        "creativity": "Creativity",
+        "knowledge-sharing": "Knowledge sharing",
+        "languages": "Languages",
+        "team-leading": "Team leading",
+        "hobbies": "Hobbies",
+        "language": "Change language",
+        "dark-mode": "Toggle dark mode",
+        "about": "About"
+    },
+    "wip": {
+        "work-in-progress": "Work in progress"
+    },
+    "home": {
+        "title": "Antonin CHARRIER",
+        "subtitle": "Web and Android developer",
+        "two-years": "After two and half years at ",
+        "capgemini": "Capgemini",
+        "experience": " during a work experience in parallel with a formation at ",
+        "intech": "IN’TECH",
+        "applications": ", I built and maintained several applications for ",
+        "securitas": "Securitas",
+        "skills": ", improving my skills in ",
+        "development": "",
+        "dot-net": ".NET",
+        "dot-net-bis": ", ",
+        "angular": "Angular",
+        "angular-bis": " and ",
+        "android": "Android",
+        "development-bis": "development.",
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a big web site for Securitas security agents."
+    },
+    "projects": {
+        "e-monthly": {
+            "title": "eMonthly",
+            "subtitle": "Architecting an Angular project",
+            "template": {
+                "title": "Building an Angular template",
+                "after-working": "After working on several ",
+                "angular-projects": "Angular projects",
+                "project-manager": ", my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre. The template first needs to be used for a web app for Safran aeronautics company. This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers."
+            },
+            "architecture": {
+                "title": "Integrating powerful frameworks",
+                "one-week": "I work only one week on this project. During this week, I create the Angular project, organize ",
+                "architecture": "the architecture",
+                "by-creating": " of the solution by creating ",
+                "services": "services, components, guards",
+                "references": ", etc. I add references to libraries that our centre has interest in using based on recurent feedback from clients. I especially add ",
+                "angular-material": "Angular Material",
+                "website": " to make rapidly and efficiently a neat website design (in particular for PoCs) and ",
+                "kendo": "Kendo for Angular",
+                "grid": " to be able to use grid systems that are a usual request from clients.",
+                "specificities": "Once this template project is operational, I work on the specificities of the application for Safran. I note the interest of a built-in solution which is ready, modular and reusable in the future. Then I easily integrate some screens asked in the specifications using Angular Material and Kendo already configured."
+            }, 
+            "future": {
+                "title": "Continue to improve the template",
+                "expect" : "I expect to work again on the Angular project template to improve it based on the needs of the future clients. I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, to encourage them to use good conception practices from the beginning."
+            }
+        },
+        "galt": {
+            "title": "Galt",
+            "subtitle": "The packages manager that eases the life of developers",
+            "for-developers": {
+                "title": "A project designed for developers",
+                "galt": "Galt is a packages manager allowing developers to watch and administrate the dependencies architecture of their .NET project hosted on ",
+                "nuget": "NuGet",
+                "platform": " platform.",
+                "idea": "The idea rises in 2016 from one of my teachers in his IT company,",
+                "signature-code": "Signature Code",
+                "tool": ". He wants to create a tool allowing his employees to easily manage all the packages used by their applications. The objective is to visualize the dependencies of a project as a tree, to be warned when new package versions are released and to be alerted in the case of a versions conflict.",
+                "internship": "One of my classmates joins Signature Code in February 2016 for an internship for one month. He works on a ",
+                "poc": "PoC (proof of concept)",
+                "first-version": " along with other employees of the company. This first version of the project works, even though it has limited functionalities and a poor user interface. That's why our teacher decides to start a complete second version of the application. As a school project, he submits the idea to my team which is composed by my classmate who already worked on the PoC and two others classmates.",
+                "logo": "Our logo",
+                "start": "We start the project in October 2016. We decide to use adapted technologies for a user-friendly interface and an efficient packages management. Back end is managed by ",
+                "asp": "ASP.NET MVC 5",
+                "front": " and front end by ",
+                "vue-js": "Vue.js",
+                "framework": ", a JavaScript framework whose major version 2.0 has just been released two weeks before. In order to display dependencies graphs, we decide to use a powerful graphic framework, ",
+                "d3-js": "d3.js",
+                "technologies": ". These technologies offer us many possibilities. However, they are new to us, besides being recent and then not much documented."
+            },
+            "front-end": {
+                "title": "A first approach of the front end with Vue.js",
+                "in-charge": "During the project, I am mainly in charge of the front end with ",
+                "vue-js": "Vue.js",
+                "frameworks": ". This framework belongs to the three main JavaScript web frameworks along with ",
+                "angular": "Angular",
+                "google": " (Google) and ",
+                "react": "React",
+                "facebook": "(Facebook), unlike it is developed by an independent team. The other members of the team are being affected other tasks: one of them manages the creation and display of the dependencies graphs with d3.js, another one works on the back end and the last one makes the links between front and back end and is a technical reinforcement for the other members of the team with his experience.",
+                "suggest": "I suggest to my team to build a ",
+                "spa": "SPA (single page application)",
+                "views": " containing the different views necessary for the application (home, sign up and sign in, search, graph, etc.). All the SPA is then sent to the back end. Our ASP.NET server displays a web page containing only a reference to our SPA in charge of the user interaction (note: it is seldom necessary to host your client app inside a server-rendered web-app but it was an easier solution for this project. Most of the time, a client app and web services are enough).",
+                "mock-ups": "Before starting the SPA creation, I begin with creating detailed mock-ups of every screen from our application using Moqups tool. It is an important step, especially when building SPAs, because views are entirely modular. It is necessary to precisely define ",
+                "ux": "UX (user experience) ",
+                "and": " and ",
+                "ui": "UI (user interface)",
+                "direction": " to have a direction to follow during implementation.",
+                "powerful": "I learn the architecture and the operation of a web framework with online learning and with one of my teammates who already experienced Vue.js. It is a powerful tool allowing us to create fluid and user-friendly interfaces and to display the application pages created by reusable components in order to make a completely modular app."
+            }, 
+            "functional-project": {
+                "title": "A functional project",
+                "objectives" : "After four months, we achieve the objectives established during our pre-project phase, which are:",
+                "dependencies": "Display a dependencies graph for a package hosted on NuGet retrieved using a search bar.",
+                "versions": "Display the different versions available for this package, the potential new versions of the dependencies and the potential conflicts of versions within the dependencies.",
+                "account": "Allow the user to create an account to save the packages he consulted recently and his favourite packages.",
+                "presentation": "My team presents the project during a forum of IT projects in my school in January 2017. We know that the presentation will be hard because our project aims a technical audience. Though we succeed in making it accessible for a large audience, so our jury understand the stakes of our project. Among the jury, some of the members have a technical background and ask detailed questions about the functioning of our application, especially how we handle the package dependencies. Some other ones ask for the possible evolutions and improvements on the project. These improvements are the secondary objectives we defined in the case we had still time before the forum:",
+                "extend": "Extend the packages management to hosting platforms other than NuGet (npm, Maven, gradle, etc.) using interfaces in our backend.",
+                "optimize": "Optimize the packages download (as some packages can need several minutes), especially by suggesting background download options.",
+                "upload": "Add the possibility to upload your own package without using a hosting platform.",
+                "opportunity": "This project was a great opportunity for me on the technical side as well as the human side. I discovered several very recent technologies that I used again on my other projects. I have been able to answer the need of a customer (my teacher) and to end a project in its whole (the site has been deployed on our school server). I also took part in the organization of a complex project and I improved my oral expression during the presentation at the forum in front of a jury who did not necessarily have a technical background."
+            }
+        }
+    },
+    "human-skills": {
+        "autonomy": {
+            "title": "Autonomy",
+            "subtitle": "A developer needs to be able to work on his own",
+            "definition": {
+                "title": "What is autonomy?",
+                "what": "Basically, ",
+                "autonomy": "autonomy",
+                "ability": " is the ability to act by myself in a specific environment. It doesn't mean working alone but working with other people being granted some freedom. I can do my tasks the way I like as far as it respects the perimeter given to me."
+            },
+            "it-company": {
+                "title": "How does autonomy transcript into an IT company?",
+                "employee": "The employee is given a work and hopefully knows how to achieve it. If he doesn't, he tries to figure out by himself using forums or tutorials on the Internet. If, despite searching and trying by himself, he is not able to achieve the work, he will report it to his manager.",
+                "however": "However, there are obvious nuances. The employee must not stay stuck on an issue for an excessive amount of time without reporting it. He must be able to feel when he needs help. Yet he must search and try by himself before asking to his mates, else he will never make progress. In a sector in ",
+                "evolution": "constant evolution",
+                "binary": ", it is primary to constantly stay up-to-date. Also, autonomy is not a binary skill. There aren't autonomous or not autonomous people. Everybody is autonomous (at different degrees) because autonomy is something people work on."
+            },
+            "me": {
+                "title": "Autonomy is one of my qualities",
+                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
+                "web-agent": "WebAgent",
+                "and": " and ",
+                "vision-safety": "VisionSafety",
+                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
+                "feedbacks": "feedbacks",
+                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+            }
+        },
+        "creativity": {
+            "title": "Creativity",
+            "subtitle": "Creativity allows us to bring proper solutions",
+            "definition": {
+                "title": "What is creativity?",
+                "the": "",
+                "creativity": "Creativity.",
+                "ability": "The ability of the mind to create something new from a given context. It is a skill that applies to numerous domains and that can take different shapes. In a professional project, creativity can result in the ability to ",
+                "client-needs": "meet the needs of the client",
+                "proposal": " using more appropriate means than the ones he thought of. In that way, creativity can join and add to strength of proposal."
+            },
+            "necessary": {
+                "title": "Creativity is necessary",
+                "any-project": "Any project needs a part of creativity. A team must have among its members at least one creative even though two would bring a debate and a thought leading to a higher quality solution. Creativity allows us to imagine ",
+                "answers": "different and more appropriate answers",
+                "requirements": " to the customer requirements than the usual ones. It is this creativity that a team will be able to demonstrate that will differentiate it from other technically equivalent teams to the client.",
+                "develop": "Creativity is an innate quality, but not only. It is a skill that is developed over time and increases with experience. Everything that we discover, read, learn, comes unconsciously to fuel our creativity. The creative one must also be curious to usually renew the sources from which he draws for his creations."
+            },
+            "innovation": {
+                "title": "Bring innovative solutions to the client",
+                "creative": "I consider myself as a creative person. For example, during my ",
+                "vision-safety": "VisionSafety",
+                "sms-alerts": "project, I had to make a solution allowing the client to easily set in the mobile application the phone number to send an SMS alert to. This app being intended for all European countries where Securitas is implanted, I have to make a general solution for all countries. Some countries have several phone numbers, some have only one and some do not have any (the alerts are sent to a neighbouring country).",
+                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phonen numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
+                "reducing": "reducing the exploitation costs",
+                "application": " of the application."
+            },
+            "other-domains": {
+                "title": "Creativity in others domains",
+                "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
+                "new-stuff": "I like to imagine and create new stuff",
+                "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
+            },
+            "pokemon": {
+                "scaracorn": "Scaracorn",
+                "scaracorn-bis": ",",
+                "beetleaf": "Beetleaf",
+                "beetleaf-bis": "and",
+                "oakleoptera": "Oakleoptera",
+                "created": ", three Pokémon that I created"
+            }
+        }
+    },
+    "redirects": {
+        "linked-projects": {
+            "title": "Linked projects",
+            "call-center": "Call center",
+            "e-monthly": "eMonthly",
+            "galt": "Galt",
+            "vision-safety": "VisionSafety",
+            "web-agent": "WebAgent"
+        },
+        "linked-technical-skills": {
+            "title": "Linked technical skills",
+            "android": "Android",
+            "dot-net-core-web-api": ".NET Core Web API",
+            "financial-assessments": "Financial assessments",
+            "front-end": "Front end",
+            "notions-of-architecture": "Notions of architecture"
+        },
+        "linked-human-skills": {
+            "title": "Linked human skills",
+            "autonomy": "Autonomy",
+            "creativity": "Creativity",
+            "knowledge-sharing": "Knowledge sharing",
+            "languages": "Languages",
+            "team-leading": "Team leading"
+        }
+    },
+    "hobbies": {
+
+    },
+    "about": {
+        "about": "About",
+        "my-portfolio": "my portfolio",
+        "copyright": "Copyright © 2019 Antonin CHARRIER - All rights reserved",
+        "developped": "Developped with",
+        "angular": "Angular 7",
+        "using": "using",
+        "material": "Material Design",
+        "translations": "Translations managed with",
+        "ngx-translate": "NGX-Translate",
+        "library": "library",
+        "resume": "Resume displayed with",
+        "ng2-pdf-viewer": "Ng2 PDF Viewer",
+        "icons": "Icons made by",
+        "from": "from",
+        "licensed": "are licensed by",
+        "code": "All the source code of my portfolio is available on",
+        "github": "GitHub"
+    },
+    "resume": {
+        "title": "Resume",
+        "download": "Download",
+        "error": "Sorry, my resume didn't load correctly :(",
+        "close": "Close"
+    },
+    "contact-info": {
+        "title": "Contact informations",
+        "email": "charrier.antonin@yahoo.fr",
+        "phone-number": "(+33) 770.978.302",
+        "linkedin": "antonin-charrier",
+        "birth-date": "03-10-1997 ",
+        "years-old": " years old",
+        "city": "Issy-Les-Moulineaux (Paris, France)",
+        "send-email": "Send an email",
+        "phone-call": "Call",
+        "ask-connection": "Ask for a connection"
+    }
+}

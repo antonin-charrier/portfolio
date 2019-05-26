@@ -1,0 +1,30 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+$light-primary-palette: mat-palette($mat-indigo);
+$light-accent-palette:  mat-palette($mat-amber, A200, A100, A400);
+$light-warn-palette:    mat-palette($mat-red);
+$light-theme:   mat-light-theme($light-primary-palette, $light-accent-palette, $light-warn-palette);
+
+@include angular-material-theme($light-theme);
+
+$app-typography: mat-typography-config(
+  $font-family:   'Roboto, monospace',
+  $headline:      mat-typography-level(28px, 36px, 550),
+  $title:         mat-typography-level(20px, 26px, 200),
+  $subheading-2:  mat-typography-level(20px, 28px, 400),
+  $subheading-1:  mat-typography-level(18px, 24px, 400),
+  $body-1:        mat-typography-level(16px, 24px, 400)
+);
+
+@include angular-material-typography($app-typography);
+
+$dark-primary-palette: mat-palette($mat-blue-gray);
+$dark-accent-palette:  mat-palette($mat-amber, A200, A100, A400);
+$dark-warn-palette:    mat-palette($mat-deep-orange);
+$dark-theme:   mat-dark-theme($dark-primary-palette, $dark-accent-palette, $dark-warn-palette);
+
+.dark-theme {
+  @include angular-material-theme($dark-theme);
+}

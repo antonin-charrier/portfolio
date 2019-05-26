@@ -1,0 +1,17 @@
+<mat-sidenav-container autosize fullscreen [ngClass]="{ 'dark-theme': isDarkTheme }">
+    <mat-sidenav #sidenav id="sidenav" [ngClass]="{'sidenav-visible': isMenuOpened}" [mode]="'side'" [opened]="true">
+        <app-sidenav></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content id="content" [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }">
+        <div class="article-container">
+            <button id="menu" mat-flat-button color="primary" (click)="sidenav.toggle()" *ngIf="sidenav.mode === 'over'">
+                <mat-icon aria-label="Menu" *ngIf="!sidenav.isOpen">menu</mat-icon>
+                <mat-icon aria-label="Close" *ngIf="sidenav.isOpen">close</mat-icon>
+            </button>  
+            <div class="article">
+                <router-outlet (activate)="onActivate($event)"></router-outlet>
+            </div>
+            <app-redirects [linkedProjects]="linkedProjects" [linkedTechnicalSkills]="linkedTechnicalSkills" [linkedHumanSkills]="linkedHumanSkills"></app-redirects>
+        </div>
+    </mat-sidenav-content>                   
+</mat-sidenav-container>

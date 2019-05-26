@@ -1,0 +1,167 @@
+<div class="sidenav-container">
+  <div class="sidenav-profile">
+    <img src="assets/img/profile.png" class="profile-picture">
+    <div class="profile-panel">
+      <a href="/" class="profile-subpanel-left">
+        <img [src]="isDarkTheme ? 'assets/img/logo_white.png' : 'assets/img/logo_black.png'" class="profile-logo">
+      </a>
+      <div class="profile-subpanel-right">
+        <h1 class="profile-name">{{ 'sidenav.profile.name' | translate }}</h1>
+        <h2 class="profile-job">{{ 'sidenav.profile.job' | translate }}</h2>
+      </div>
+    </div>
+    <div class="profile-actions">
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.coordinates' | translate }}" matTooltipPosition="above" (click)="contactInfo()">
+        <mat-icon aria-label="Coordinates">person</mat-icon>
+      </button> 
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.resume' | translate }}" matTooltipPosition="above" (click)="resume()">
+        <mat-icon aria-label="Resume">description</mat-icon>
+      </button> 
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.email' | translate }}" matTooltipPosition="above" (click)="email()">
+        <mat-icon aria-label="Email">send</mat-icon>
+      </button>
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.linkedin' | translate }}" matTooltipPosition="above" (click)="linkedin()">
+        <mat-icon aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
+      </button>
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
+        <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
+      </button>
+    </div>     
+  </div>
+  <mat-divider></mat-divider>
+  <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list">
+    <mat-action-list class="sidenav-mat-list">
+      <mat-list-item [routerLink]="['']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon matListIcon>home</mat-icon>
+        <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.home' | translate }}</p>
+      </mat-list-item>
+      <mat-list-item [routerLink]="['projects']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isProjectsExpanded = true">
+        <mat-icon matListIcon>work</mat-icon>
+        <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.projects' | translate }}</p>
+        <button mat-icon-button (click)="isProjectsExpanded = !isProjectsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isProjectsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isProjectsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
+        <mat-list-item [routerLink]="['projects/call-center']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.call-center' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/e-monthly']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.e-monthly' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/galt']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.galt' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/vision-safety']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.vision-safety' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['projects/web-agent']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.web-agent' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>
+      <mat-list-item [routerLink]="['technical-skills']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isTechnicalSkillsExpanded = true">
+        <mat-icon matListIcon>build</mat-icon>
+        <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.technical-skills' | translate }}</p>
+        <button mat-icon-button (click)="isTechnicalSkillsExpanded = !isTechnicalSkillsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isTechnicalSkillsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isTechnicalSkillsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
+        <mat-list-item [routerLink]="['technical-skills/android']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.android' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.dot-net-core-web-api' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/financial-assessments']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/front-end']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.front-end' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.notions-of-architecture' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>  
+      <mat-list-item [routerLink]="['human-skills']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isHumanSkillsExpanded = true">
+        <mat-icon matListIcon>assignment_ind</mat-icon>
+        <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.human-skills' | translate }}</p>
+        <button mat-icon-button (click)="isHumanSkillsExpanded = !isHumanSkillsExpanded; $event.stopPropagation()">
+          <mat-icon *ngIf="!isHumanSkillsExpanded">expand_more</mat-icon>
+          <mat-icon *ngIf="isHumanSkillsExpanded">expand_less</mat-icon>
+        </button>
+      </mat-list-item>
+      <mat-action-list mat-list-item class="sublist" *ngIf="isHumanSkillsExpanded">
+        <mat-list-item [routerLink]="['human-skills/autonomy']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.autonomy' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/creativity']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.creativity' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/knowledge-sharing']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.knowledge-sharing' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/languages']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.languages' | translate }}</p>
+        </mat-list-item>
+        <mat-list-item [routerLink]="['human-skills/team-leading']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.team-leading' | translate }}</p>
+        </mat-list-item>
+      </mat-action-list>
+      <mat-list-item [routerLink]="['hobbies']" [routerLink]="['']" routerLinkActive="sidenav-active-link"
+               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+        <mat-icon matListIcon>videogame_asset</mat-icon>
+        <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.hobbies' | translate }}</p>
+      </mat-list-item>
+    </mat-action-list>
+  </cdk-virtual-scroll-viewport>
+  <mat-divider></mat-divider>
+  <div class="sidenav-footer">
+    <button mat-flat-button color="primary" [matMenuTriggerFor]="menu" matTooltip="{{ 'sidenav.language' | translate }}" matTooltipPosition="above">{{ locale }}</button>
+    <mat-menu #menu="matMenu" yPosition="above" xPosition="after">
+      <button mat-menu-item (click)="setLang('fr')">Français</button>
+      <button mat-menu-item (click)="setLang('en')">English</button>
+    </mat-menu>
+    <mat-icon [color]="isDarkTheme ? '' : 'primary'" aria-label="Light mode" svgIcon="sun"></mat-icon>
+    <mat-slide-toggle class="example-margin" color="primary" (change)="toggleDarkTheme($event.checked)"
+      [checked]="isDarkTheme" matTooltip="{{ 'sidenav.dark-mode' | translate }}"></mat-slide-toggle>
+    <mat-icon [color]="isDarkTheme ? 'primary' : ''" aria-label="Dark mode" svgIcon="moon"></mat-icon>
+    <button mat-button color="primary" [routerLink]="['about']" routerLinkActive="mat-flat-button" [routerLinkActiveOptions]="{exact: true}">{{ 'sidenav.about' | translate }}</button>
+</div>
+</div>
