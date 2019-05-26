@@ -82,6 +82,61 @@
                 "title": "Continuer à améliorer le template",
                 "expect" : "Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. Je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, pour les encourager à utiliser des bonnes pratiques de conception dès le début."
             }
+        },
+        "galt": {
+            "title": "Galt",
+            "subtitle": "Le gestionnaire de packages qui facilite la vie des développeurs",
+            "for-developers": {
+                "title": "Un projet destiné aux développeurs",
+                "galt": "Galt est un gestionnaire de packages permettant aux développeurs de surveiller et d’administrer l’architecture des dépendances de leur projet .NET hébergé sur la plateforme ",
+                "nuget": "NuGet",
+                "platform": ".",
+                "idea": "L’idée naît en 2016 d’un de mes professeurs dans son entreprise de services informatiques, ",
+                "signature-code": "Signature Code",
+                "tool": ". Il souhaite créer un outil permettant à ses employés de gérer facilement l’ensemble des packages utilisés par leurs applications. L’objectif est de visualiser les dépendances d’un projet sous forme d’arbre, d’être prévenu lorsque de nouvelles versions d’un package sont publiées et enfin d’être alerté en cas de conflit de versions.",
+                "internship": "Un de mes camarades de promotion rejoint Signature Code en février 2016 dans le cadre d’un stage d’un mois. Il travaille sur un ",
+                "poc": "PoC (proof of concept)",
+                "first-version": " en collaboration avec d’autres employés de l’entreprise. Cette première version du projet est fonctionnelle, malgré des fonctionnalités limitées et une interface peu ergonomique. C’est pourquoi notre professeur décide de lancer une deuxième version complète du projet. Dans le cadre d’un projet d’école, il propose cette idée à mon équipe, composée de mon camarade ayant déjà travaillé sur le PoC ainsi que deux autres élèves de notre promotion.",
+                "logo": "Notre logo",
+                "start": "Nous lançons le projet en octobre 2016. Nous décidons d’utiliser des technologies adaptées à une interface simple pour l’utilisateur et performante pour la gestion des packages. Le back end est géré par ",
+                "asp": "ASP.NET MVC 5",
+                "front": " et le front end par ",
+                "vue-js": "Vue.js",
+                "framework": ", un framework JavaScript dont la version majeure 2.0 est publiée deux semaines auparavant. Afin d’afficher les arbres de dépendances, nous décidons d’utiliser un puissant framework graphique, ",
+                "d3-js": "d3.js",
+                "technologies": ". Ces technologies nous offrent des possibilités très larges. Cependant, elles sont nouvelles pour nous, en plus d’être très récentes et donc peu documentées."
+            },
+            "front-end": {
+                "title": "Une première approche du front end avec Vue.js",
+                "in-charge": "Durant le projet, je suis principalement chargé du front end avec ",
+                "vue-js": "Vue.js",
+                "frameworks": ". Ce framework fait partie des trois principaux frameworks web JavaScript avec ",
+                "angular": "Angular",
+                "google": " (Google) et ",
+                "react": "React",
+                "facebook": ", à la différence des deux autres qu’il est développé par une équipe indépendante. Les autres membres de l’équipe sont affectés à d’autres tâches : un s’occupe de la création et de l’affichage des graphes de dépendances grâce à d3.js, un autre s’occupe de la mise en place du back end et enfin le dernier s’occupe des liaisons entre le front end et le back end et sert de renfort technique auprès des trois autres membres grâce à son expérience.",
+                "suggest": "Je propose à mon équipe de réaliser une ",
+                "spa": "SPA (single page application)",
+                "views": "contenant les différentes vues nécessaires à l’application (accueil, inscription et connexion, recherche, détails, etc.). Toute la SPA est ensuite envoyée dans le back end. Notre serveur ASP.NET affiche une page web contenant uniquement une référence à notre SPA qui se charge de l’interaction avec l’utilisateur (note : il est rarement nécessaire d’héberger son application client à l’intérieur d’une application web côté serveur mais il s’agissait d’une meilleure solution pour ce projet. La plupart du temps, une application client et des web services suffisent)",
+                "mock-ups": "Avant de me lancer dans la création de la SPA, je crée des maquettes détaillées de chaque « page » de notre application grâce à l’outil Moqups. C’est une étape importante, en particulier dans le cas d’une SPA, car les pages sont entièrement modulables. Il est nécessaire de définir précisément l’",
+                "ux": "UX (user experience) ",
+                "and": " et l'",
+                "ui": "UI (user interface)",
+                "direction": " afin d’avoir un axe à suivre lors de la réalisation.",
+                "powerful": "J’apprends l’architecture et le fonctionnement d’un framework web en me formant sur Internet et grâce à un de mes coéquipiers qui a déjà expérimenté Vue.js. C’est un outil puissant permettant de faire des interfaces fluides et user-friendly et d’afficher les vues de l’application créées à partir d’éléments réutilisables afin d’obtenir une application complètement modulaire."
+            }, 
+            "functional-project": {
+                "title": "Un projet fonctionnel",
+                "objectives" : "Après quatre mois, nous achevons les objectifs établis lors de notre phase d’avant-projet, à savoir :",
+                "dependencies": "Afficher un graphe de dépendances pour un package hébergé sur NuGet à partir d’une barre de recherche.",
+                "versions": "Afficher les différentes versions disponibles pour ce package, les potentielles nouvelles versions des dépendances et les potentiels conflits de version au sein des dépendances.",
+                "account": "Permettre à l’utilisateur de créer un compte afin de retrouver les packages récemment consultés ainsi que les packages ajoutés en favoris.",
+                "presentation": "Mon équipe présente le projet lors du forum des projets informatiques dans mon école en janvier 2017. Nous savons que la présentation va être difficile car notre projet est destiné à un public technique. Nous arrivons tout de même à vulgariser notre concept pour que les jurés comprennent l’enjeu de notre projet. Parmi ces jurés, certains sont proviennent d’un environnement technique et nous posent des questions approfondies sur le fonctionnement de notre application, notamment la gestion des dépendances d’un package. D’autres nous demandent les évolutions et les améliorations envisageables du projet. Ces améliorations sont les objectifs secondaires que nous nous étions fixés dans le cas où nous avions encore du temps avant le forum : ",
+                "extend": "Etendre la gestion des packages à des plateformes d’hébergement autres que NuGet (npm, Maven, gradle, etc.) grâce à l’utilisation d’interfaces",
+                "optimize": "Optimiser la gestion des téléchargements des packages (certains packages pouvant nécessiter plusieurs minutes), notamment en proposant des options de téléchargement en arrière-plan.",
+                "upload": "Ajouter la possibilité d’uploader son propre projet sans passer par une plateforme d’hébergement de package.",
+                "opportunity": "Ce projet m’a été très bénéfique tant sur le plan technique que sur le plan humain. J’ai pu découvrir plusieurs technologies très récentes et qui m’ont servi de nouveau par la suite. J’ai eu la satisfaction de répondre à une attente d’un client (mon professeur) et de terminer un projet dans son ensemble (le site a pu être déployé sur le serveur de notre école). J’ai également pu participer à l’organisation d’un projet complexe et j’ai amélioré mon expression lors de la présentation au forum face à des jurés n’ayant pas forcément un bagage technique."
+            }
         }
     },
     "human-skills": {

@@ -1,3 +1,79 @@
-<p>
-  galt works!
-</p>
+<app-article-header [title]="'projects.galt.title'" [subtitle]="'projects.galt.subtitle'"></app-article-header>
+<div>
+  <h3>{{ 'projects.galt.for-developers.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'projects.galt.for-developers.galt' | translate }}
+    <a href="http://www.nuget.org" target="_blank">{{ 'projects.galt.for-developers.nuget' | translate }}</a>
+    {{ 'projects.galt.for-developers.platform' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.for-developers.idea' | translate }}
+    <a href="https://signature-code.com" target="_blank">{{ 'projects.galt.for-developers.signature-code' | translate }}</a>
+    {{ 'projects.galt.for-developers.tool' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.for-developers.internship' | translate }}
+    <b>{{ 'projects.galt.for-developers.poc' | translate }}</b>
+    {{ 'projects.galt.for-developers.first-version' | translate }}
+  </p>
+  <div class="logo-container">
+    <img src="assets/img/galt.svg" class="logo">
+  </div>  
+  <p class="img-caption">
+    {{ 'projects.galt.for-developers.logo' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.for-developers.start' | translate }}
+    <a [routerLink]="['../../technical-skills/dot-net-core-web-api']" matTooltip="{{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}" matTooltipPosition="above">{{ 'projects.galt.for-developers.asp' | translate }}</a>
+    {{ 'projects.galt.for-developers.front' | translate }}
+    <a [routerLink]="['../../technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'projects.galt.for-developers.vue-js' | translate }}</a>
+    {{ 'projects.galt.for-developers.framework' | translate }}
+    <b>{{ 'projects.galt.for-developers.d3-js' | translate }}</b>
+    {{ 'projects.galt.for-developers.technologies' | translate }}
+  </p>
+  <h3>{{ 'projects.galt.front-end.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'projects.galt.front-end.in-charge' | translate }}
+    <b>{{ 'projects.galt.front-end.vue-js' | translate }}</b>
+    {{ 'projects.galt.front-end.frameworks' | translate }}
+    <a [routerLink]="['../../technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'projects.galt.front-end.angular' | translate }}</a>
+    {{ 'projects.galt.front-end.google' | translate }}
+    <b>{{ 'projects.galt.front-end.react' | translate }}</b>
+    {{ 'projects.galt.front-end.facebook' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.front-end.suggest' | translate }}
+    <b>{{ 'projects.galt.front-end.spa' | translate }}</b>
+    {{ 'projects.galt.front-end.views' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.front-end.mock-ups' | translate }}
+    <b>{{ 'projects.galt.front-end.ux' | translate }}</b>
+    {{ 'projects.galt.front-end.and' | translate }}
+    <b>{{ 'projects.galt.front-end.ui' | translate }}</b>
+    {{ 'projects.galt.front-end.direction' | translate }}
+  </p>
+  <p class="article-p">
+    {{ 'projects.galt.front-end.powerful' | translate }}
+  </p>
+  <h3>{{ 'projects.galt.functional-project.title' | translate }}</h3>
+  <p class="article-p">
+    {{ 'projects.galt.functional-project.objectives' | translate }}
+  </p>
+  <ul>
+    <li>{{ 'projects.galt.functional-project.dependencies' | translate }}</li>
+    <li>{{ 'projects.galt.functional-project.versions' | translate }}</li>
+    <li>{{ 'projects.galt.functional-project.account' | translate }}</li>
+  </ul>
+  <p class="article-p">
+    {{ 'projects.galt.functional-project.presentation' | translate }}
+  </p>
+  <ul>
+    <li>{{ 'projects.galt.functional-project.extend' | translate }}</li>
+    <li>{{ 'projects.galt.functional-project.optimize' | translate }}</li>
+    <li>{{ 'projects.galt.functional-project.upload' | translate }}</li>
+  </ul>
+  <p class="article-p">
+    {{ 'projects.galt.functional-project.opportunity' | translate }}
+  </p>
+</div>

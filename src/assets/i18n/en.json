@@ -67,7 +67,7 @@
             },
             "architecture": {
                 "title": "Integrating powerful frameworks",
-                "one-week":  "I work only one week on this project. During this week, I create the Angular project, organize ",
+                "one-week": "I work only one week on this project. During this week, I create the Angular project, organize ",
                 "architecture": "the architecture",
                 "by-creating": " of the solution by creating ",
                 "services": "services, components, guards",
@@ -81,6 +81,61 @@
             "future": {
                 "title": "Continue to improve the template",
                 "expect" : "I expect to work again on the Angular project template to improve it based on the needs of the future clients. I also want to make it more accessible and modular for the future developers that will use it, even if they are new to Angular, to encourage them to use good conception practices from the beginning."
+            }
+        },
+        "galt": {
+            "title": "Galt",
+            "subtitle": "The packages manager that eases the life of developers",
+            "for-developers": {
+                "title": "A project designed for developers",
+                "galt": "Galt is a packages manager allowing developers to watch and administrate the dependencies architecture of their .NET project hosted on ",
+                "nuget": "NuGet",
+                "platform": " platform.",
+                "idea": "The idea rises in 2016 from one of my teachers in his IT company,",
+                "signature-code": "Signature Code",
+                "tool": ". He wants to create a tool allowing his employees to easily manage all the packages used by their applications. The objective is to visualize the dependencies of a project as a tree, to be warned when new package versions are released and to be alerted in the case of a versions conflict.",
+                "internship": "One of my classmates joins Signature Code in February 2016 for an internship for one month. He works on a ",
+                "poc": "PoC (proof of concept)",
+                "first-version": " along with other employees of the company. This first version of the project works, even though it has limited functionalities and a poor user interface. That's why our teacher decides to start a complete second version of the application. As a school project, he submits the idea to my team which is composed by my classmate who already worked on the PoC and two others classmates.",
+                "logo": "Our logo",
+                "start": "We start the project in October 2016. We decide to use adapted technologies for a user-friendly interface and an efficient packages management. Back end is managed by ",
+                "asp": "ASP.NET MVC 5",
+                "front": " and front end by ",
+                "vue-js": "Vue.js",
+                "framework": ", a JavaScript framework whose major version 2.0 has just been released two weeks before. In order to display dependencies graphs, we decide to use a powerful graphic framework, ",
+                "d3-js": "d3.js",
+                "technologies": ". These technologies offer us many possibilities. However, they are new to us, besides being recent and then not much documented."
+            },
+            "front-end": {
+                "title": "A first approach of the front end with Vue.js",
+                "in-charge": "During the project, I am mainly in charge of the front end with ",
+                "vue-js": "Vue.js",
+                "frameworks": ". This framework belongs to the three main JavaScript web frameworks along with ",
+                "angular": "Angular",
+                "google": " (Google) and ",
+                "react": "React",
+                "facebook": "(Facebook), unlike it is developed by an independent team. The other members of the team are being affected other tasks: one of them manages the creation and display of the dependencies graphs with d3.js, another one works on the back end and the last one makes the links between front and back end and is a technical reinforcement for the other members of the team with his experience.",
+                "suggest": "I suggest to my team to build a ",
+                "spa": "SPA (single page application)",
+                "views": " containing the different views necessary for the application (home, sign up and sign in, search, graph, etc.). All the SPA is then sent to the back end. Our ASP.NET server displays a web page containing only a reference to our SPA in charge of the user interaction (note: it is seldom necessary to host your client app inside a server-rendered web-app but it was an easier solution for this project. Most of the time, a client app and web services are enough).",
+                "mock-ups": "Before starting the SPA creation, I begin with creating detailed mock-ups of every screen from our application using Moqups tool. It is an important step, especially when building SPAs, because views are entirely modular. It is necessary to precisely define ",
+                "ux": "UX (user experience) ",
+                "and": " and ",
+                "ui": "UI (user interface)",
+                "direction": " to have a direction to follow during implementation.",
+                "powerful": "I learn the architecture and the operation of a web framework with online learning and with one of my teammates who already experienced Vue.js. It is a powerful tool allowing us to create fluid and user-friendly interfaces and to display the application pages created by reusable components in order to make a completely modular app."
+            }, 
+            "functional-project": {
+                "title": "A functional project",
+                "objectives" : "After four months, we achieve the objectives established during our pre-project phase, which are:",
+                "dependencies": "Display a dependencies graph for a package hosted on NuGet retrieved using a search bar.",
+                "versions": "Display the different versions available for this package, the potential new versions of the dependencies and the potential conflicts of versions within the dependencies.",
+                "account": "Allow the user to create an account to save the packages he consulted recently and his favourite packages.",
+                "presentation": "My team presents the project during a forum of IT projects in my school in January 2017. We know that the presentation will be hard because our project aims a technical audience. Though we succeed in making it accessible for a large audience, so our jury understand the stakes of our project. Among the jury, some of the members have a technical background and ask detailed questions about the functioning of our application, especially how we handle the package dependencies. Some other ones ask for the possible evolutions and improvements on the project. These improvements are the secondary objectives we defined in the case we had still time before the forum:",
+                "extend": "Extend the packages management to hosting platforms other than NuGet (npm, Maven, gradle, etc.) using interfaces in our backend.",
+                "optimize": "Optimize the packages download (as some packages can need several minutes), especially by suggesting background download options.",
+                "upload": "Add the possibility to upload your own package without using a hosting platform.",
+                "opportunity": "This project was a great opportunity for me on the technical side as well as the human side. I discovered several very recent technologies that I used again on my other projects. I have been able to answer the need of a customer (my teacher) and to end a project in its whole (the site has been deployed on our school server). I also took part in the organization of a complex project and I improved my oral expression during the presentation at the forum in front of a jury who did not necessarily have a technical background."
             }
         }
     },
