@@ -1,0 +1,31 @@
+<app-article-header [title]="'career.title'" [subtitle]="'career.subtitle'"></app-article-header>
+<div class="timeline-container">
+  <div class="timeline-time-container">
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2019</p>
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2018</p>
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2017</p>
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2016</p>
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2015</p>
+    <p class="timeline-time" [ngClass]="{ 'light border-light': !isDarkTheme, 'dark border-dark': isDarkTheme }">2014</p>
+  </div>
+  <div class="timeline-background" [ngClass]="{ 'border-light': !isDarkTheme, 'border-dark': isDarkTheme }">
+    <button mat-flat-button color="accent" class="timeline-item timeline-item-cdi">
+      {{ 'career.cdi' | translate }}
+    </button>
+    <button mat-flat-button color="accent" class="timeline-item timeline-item-alternance">
+        {{ 'career.alternance' | translate }}
+    </button>
+    <button mat-flat-button color="accent" class="timeline-item timeline-item-stage-cap">
+        {{ 'career.stage-cap' | translate }}
+    </button>
+    <button mat-flat-button color="accent" class="timeline-item timeline-item-stage-asp">
+        {{ 'career.stage-asp' | translate }}
+    </button>
+    <button mat-flat-button color="primary" class="timeline-item timeline-item-intech">
+        {{ 'career.intech' | translate }}
+    </button>
+    <button mat-flat-button color="primary" class="timeline-item timeline-item-bac">
+        {{ 'career.bac' | translate }}
+    </button>
+  </div>
+</div>

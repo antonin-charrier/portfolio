@@ -29,6 +29,7 @@
         "languages": "Languages",
         "team-leading": "Team leading",
         "hobbies": "Hobbies",
+        "career": "Career",
         "language": "Change language",
         "dark-mode": "Toggle dark mode",
         "about": "About"
@@ -235,6 +236,15 @@
             "languages": "Languages",
             "team-leading": "Team leading"
         }
+    }, "career": {
+        "title": "Career",
+        "subtitle": "Professional experience and education",
+        "cdi": "Capgemini regular employment",
+        "alternance": "Capgemini apprenticeship",
+        "stage-cap": "Capgemini internship",
+        "stage-asp": "ASP internship",
+        "intech": "Software engineering expert diploma",
+        "bac": "Science baccalaureate"
     },
     "hobbies": {
 
@@ -253,6 +263,7 @@
         "resume": "Resume displayed with",
         "ng2-pdf-viewer": "Ng2 PDF Viewer",
         "icons": "Icons made by",
+        "and": "and",
         "from": "from",
         "licensed": "are licensed by",
         "code": "All the source code of my portfolio is available on",

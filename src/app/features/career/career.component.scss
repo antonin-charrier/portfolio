@@ -1,0 +1,88 @@
+.timeline-container {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
+.timeline-background {
+    min-width: 350px;
+    min-height: 600px;
+    width: 25vw;
+    height: 70vh;
+    border-left-style: solid;
+    border-left-width: 2px;
+    display: grid;   
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(25, 1fr); 
+    grid-gap: 10px;
+    padding: 0 32px;
+}
+
+.timeline-time-container {
+    min-width: 50px;
+    min-height: 600px;
+    width: 10vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-right: 32px;
+}
+
+.timeline-time:first-child {
+    margin-top: 16px;
+}
+
+.timeline-time:last-child {
+    margin-bottom: 16px;
+}
+
+.timeline-time {
+    font-size: 1.5rem;
+    border-style: solid;
+    border-width: 2px;
+    padding: 8px;
+    margin-bottom: 0;
+}
+
+.timeline-item {    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    white-space: normal;
+}
+
+.timeline-item-cdi {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+}
+
+.timeline-item-alternance {
+    grid-column: 2;
+    grid-row: 3 / span 9;
+}
+
+.timeline-item-stage-cap {
+    grid-column: 2;
+    grid-row: 12 / span 3;
+}
+
+.timeline-item-stage-asp {
+    grid-column: 2;
+    grid-row: 21;
+}
+
+.timeline-item-intech {
+    grid-column: 1;
+    grid-row: 3 / span 21;
+}
+
+.timeline-item-bac {
+    grid-column: 1 / span 2;
+    grid-row: 24 / span 2;
+}

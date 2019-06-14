@@ -29,6 +29,7 @@
         "languages": "Langues",
         "team-leading": "Gestion d'équipe",
         "hobbies": "Loisirs",
+        "career": "Parcours",
         "language": "Changer de langue",
         "dark-mode": "Activer le mode sombre",
         "about": "À propos"
@@ -236,6 +237,16 @@
             "team-leading": "Gestion d'équipe"
         }
     },
+    "career": {
+        "title": "Parcours",
+        "subtitle": "Expériences professionnelles et formation",
+        "cdi": "CDI Capgemini",
+        "alternance": "Alternance Capgemini",
+        "stage-cap": "Stage Capgemini",
+        "stage-asp": "Stage ASP",
+        "intech": "Diplôme d'expertise en ingéniérie logicielle",
+        "bac": "Baccalauréat scientifique"
+    },
     "hobbies": {
 
     },
@@ -253,6 +264,7 @@
         "resume": "CV affiché avec",
         "ng2-pdf-viewer": "Ng2 PDF Viewer",
         "icons": "Les icônes faites par",
+        "and": "et",
         "from": "depuis",
         "licensed": "sont sous licence",
         "code": "Tout le code source de mon portfolio est disponible sur",

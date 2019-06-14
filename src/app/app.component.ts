@@ -3,7 +3,7 @@ import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material';
 import { ThemeService } from './core/services/theme.service';
-import { Observable } from 'rxjs';
+import { DisplayService } from './core/services/breakpoint.service';
 
 @Component({
   selector: 'app-root',
@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
   constructor(
     private translateService: TranslateService,
     private breakpointObserver: BreakpointObserver,
+    private displayService: DisplayService,
     private themeService: ThemeService
   ) {
     this.translateService.setDefaultLang('fr');
@@ -44,15 +45,10 @@ export class AppComponent implements OnInit {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
 
-    this.breakpointObserver.observe([
-      Breakpoints.Handset,
-      Breakpoints.TabletPortrait
-    ]).subscribe(result => {
-      if (result.matches) {
-        this.sidenav.mode = 'over';
-        this.sidenav.close();
-      }
-    });
+    this.displayService.detectHandsetPortrait(this.breakpointObserver, (() => {
+      this.sidenav.mode = 'over';
+      this.sidenav.close();
+    }));
 
     this.breakpointObserver.observe([
       Breakpoints.Web,

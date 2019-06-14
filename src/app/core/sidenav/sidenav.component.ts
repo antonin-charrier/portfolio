@@ -48,6 +48,10 @@ export class SidenavComponent implements OnInit {
       `sun`,
       this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/sun.svg')
     );
+    this.matIconRegistry.addSvgIcon(
+      `route`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/route.svg')
+    );
   }
 
   get locale(): string {

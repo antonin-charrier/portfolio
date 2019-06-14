@@ -91,8 +91,42 @@ p.article-p {
 #content.dark {
     p {
         a {
-        color: $dark-primary-lighter;
+            color: $dark-primary-lighter;
         }
+    }
+}
+
+#content {
+    .border-light {
+        border-color: $light-primary-lighter;
+    }
+
+    .background-light {
+        background-color: $light-primary-lighter;
+    }
+
+    .border-dark {
+        border-color: $dark-primary-lighter;
+    }
+
+    .background-dark {
+        background-color: $dark-primary-lighter;
+    }
+
+    button.button-text-light {
+        color: $light-primary-lighter !important;
+    }
+
+    button.button-text-dark {
+        color: $dark-primary-lighter !important;
+    }
+
+    p.light {
+        color: $light-primary-lighter;
+    }
+
+    p.dark {
+        color: $dark-primary-lighter;
     }
 }
 
