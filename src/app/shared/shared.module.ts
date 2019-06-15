@@ -10,13 +10,15 @@ import { ResumeComponent } from './components/dialogs/resume/resume.component';
 import { ContactInfoComponent } from './components/dialogs/contact-info/contact-info.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ArticleHeaderComponent } from './components/article-header/article-header.component';
+import { ExperienceComponent } from './components/dialogs/experience/experience.component';
 
 @NgModule({
   declarations: [
     RedirectsComponent,
     ResumeComponent,
     ContactInfoComponent,
-    ArticleHeaderComponent
+    ArticleHeaderComponent,
+    ExperienceComponent
   ],
   imports: [
     CommonModule,
@@ -37,11 +39,13 @@ import { ArticleHeaderComponent } from './components/article-header/article-head
     PdfViewerModule,
     ScrollDispatchModule,
     LayoutModule,
-    ArticleHeaderComponent
+    ArticleHeaderComponent,
+    ExperienceComponent
   ],
   entryComponents: [
     ResumeComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    ExperienceComponent
   ]
 })
 export class SharedModule { }

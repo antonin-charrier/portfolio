@@ -134,7 +134,7 @@ p.article-p {
     background-color: $dark-article-background !important;
     @extend .dark-theme;
 
-    h1, .resume-content, .contact-info-content {
+    h1, h2, .resume-content, .contact-info-content, .experience-content {
         color: $white;
     }
 }

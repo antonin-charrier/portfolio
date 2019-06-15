@@ -1,5 +1,20 @@
-.timeline-container {
+.timeline-hint {    
     margin-top: 5vh;
+    text-align: center;
+    margin-left: 20vw;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline-hint-text {    
+    padding: 0 8px;
+    min-width: 170px;
+    max-width: 30vw;
+}
+
+.timeline-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -7,9 +22,9 @@
 }
 
 .timeline-background {
-    min-width: 350px;
+    min-width: 240px;
     min-height: 600px;
-    width: 25vw;
+    width: 35vw;
     height: 70vh;
     border-left-style: solid;
     border-left-width: 2px;
@@ -17,7 +32,7 @@
     grid-template-columns: repeat(2, 1fr); 
     grid-template-rows: repeat(25, 1fr); 
     grid-gap: 10px;
-    padding: 0 32px;
+    padding-left: 5vw;
 }
 
 .timeline-time-container {
@@ -30,7 +45,7 @@
     justify-content: space-between;
     align-content: center;
     flex-wrap: wrap;
-    margin-right: 32px;
+    margin-right: 5vw;
 }
 
 .timeline-time:first-child {
@@ -55,6 +70,7 @@
     align-items: center;
     border-width: 2px;
     white-space: normal;
+    line-height: 24px;
 }
 
 .timeline-item-cdi {

@@ -236,15 +236,47 @@
             "languages": "Languages",
             "team-leading": "Team leading"
         }
-    }, "career": {
+    },
+    "career": {
         "title": "Career",
         "subtitle": "Professional experience and education",
-        "cdi": "Capgemini regular employment",
-        "alternance": "Capgemini apprenticeship",
-        "stage-cap": "Capgemini internship",
-        "stage-asp": "ASP internship",
-        "intech": "Software engineering expert diploma",
-        "bac": "Science baccalaureate"
+        "click": "Click on an experience to display the detail",
+        "cdi": {
+            "button": "Capgemini regular employment",
+            "title": "Angular consultant at Capgemini",
+            "duration": "from September 2019",
+            "message": "Following my apprenticeship and my internship at Capgemini, I continue to work on the Securitas project from September 2019 as an Angular consultant."
+        },
+        "alternance": {
+            "button": "Capgemini apprenticeship",
+            "title": "Software apprentice developper at Capgemini",
+            "duration": "September 2017 - September 2019 • 2 years",
+            "message": "During my five years curriculum within IN'TECH, I've been an apprentice during two years at Capgemini following my internship. I mainly developped my technical and soft skills."
+        },
+        "stage-cap": {
+            "button": "Capgemini internship",
+            "title": "Software trainee developper at Capgemini",
+            "duration": "March 2017 - September 2017 • 6 months",
+            "message": "After two and a half years at IN'TECH, I joined Capgemini as part of a six months internship to discover and learn the software developper job."
+        },
+        "stage-asp": {
+            "button": "ASP internship",
+            "title": "Trainee developper at ASP Nettoyage",
+            "duration": "February 2015 • 1 month",
+            "message": "During my first year at IN'TECH, I had an internship in order to discover the world of business during one month. I helped the small cleaning company ASP Nettoyage to digitalize their quality controls using tablets instead of paper forms. Being alone, I took advantage of my autonomy to build a functional solution in a month using online Google Forms and Javascript and VBA scripts."
+        },
+        "intech": {
+            "button": "Software engineering expert diploma",
+            "title": "Software engineering student",
+            "duration": "September 2014 - September 2019 • 5 years",
+            "message": "Following by science baccalaureate, I wanted to join IN'TECH, a computer science school known for its different pedagogy focused on practice and group work. During my curriculum, I have been able to make several business-like projects, inluding Galt. After five years, I validated the graduation of software engineering expert, certified by the french RNCP committee as a level 1 diploma (Master)."
+        },
+        "bac": {
+            "button": "Science baccalaureate",
+            "title": "Science baccalaureate graduate",
+            "duration": "2014",
+            "message": "At the end of my high school, I graduated from a scientific baccalaureate (computer and digital science option) with honors."
+        }
     },
     "hobbies": {
 

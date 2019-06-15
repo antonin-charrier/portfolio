@@ -240,12 +240,43 @@
     "career": {
         "title": "Parcours",
         "subtitle": "Expériences professionnelles et formation",
-        "cdi": "CDI Capgemini",
-        "alternance": "Alternance Capgemini",
-        "stage-cap": "Stage Capgemini",
-        "stage-asp": "Stage ASP",
-        "intech": "Diplôme d'expertise en ingéniérie logicielle",
-        "bac": "Baccalauréat scientifique"
+        "click": "Cliquer sur une expérience pour afficher le détail",
+        "cdi": {
+            "button": "CDI Capgemini",
+            "title": "Consultant Angular chez Capgemini",
+            "duration": "à partir de septembre 2019",
+            "message": "A la suite de mon alternance et de mon stage chez Capgemini, je continue de travailler sur le projet Securitas en CDI à partir de septembre 2019 en tant que consultant Angular."
+        },
+        "alternance": {
+            "button": "Alternance Capgemini",
+            "title": "Développeur logiciel alternant chez Capgemini",
+            "duration": "septembre 2017 - septembre 2019 • 2 ans",
+            "message": "Au cours de mon cursus en cinq années au sein d'IN'TECH, j'ai effectué une alternance durant deux ans chez Capgemini à la suite de mon stage. J'y ai principalement développé mes compétences techniques et transverses."
+        },
+        "stage-cap": {
+            "button": "Stage Capgemini",
+            "title": "Développeur logiciel stagiaire chez Capgemini",
+            "duration": "mars 2017 - septembre 2017 • 6 mois",
+            "message": "Après deux ans et demi de formation à IN'TECH, j'ai rejoint Capgemini dans le cadre d'un stage de six mois afin de découvrir et apprendre le métier de développeur logiciel."
+        },
+        "stage-asp": {
+            "button": "Stage ASP",
+            "title": "Développeur stagiaire pour ASP Nettoyage",
+            "duration": "février 2015 • 1 mois",
+            "message": "Au cours de ma première année chez IN'TECH, j'ai effectué un stage afin de découvrir le monde de l'entreprise durant un mois. J'ai aidé la PME ASP Nettoyage à Cholet (49) à digitaliser leurs contrôles de qualité via l'utilisation de tablettes tactiles au lieu de formulaires papier. Etant seul, j'ai tiré profit de mon autonomie pour mettre en place une solution fonctionnelle en un mois grâce à l'utilisation de formulaires en ligne Google Forms et de scripts Javascript et VBA."
+        },
+        "intech": {
+            "button": "Diplôme d'expertise en ingéniérie logicielle",
+            "title": "Etudiant en ingéniérie logicielle",
+            "duration": "septembre 2014 - septembre 2019 • 5 ans",
+            "message": "Suite à mon baccalauréat scientifique, j'ai souhaité rejoindre IN'TECH, une école d'informatique réputée pour sa pédagogie différente axée sur la pratique et le travail en groupe. Au cours de mon cursus, j'ai pu réaliser plusieurs projets type entreprise, dont Galt. Après cinq années, j'ai validé l'obtention du diplôme d'expert en ingénierie logicielle reconnu RNCP Niveau 1 (Bac +5 / Master)."
+        },
+        "bac": {
+            "button": "Baccalauréat scientifique",
+            "title": "Diplômé du baccalauréat scientifique",
+            "duration": "2014",
+            "message": "A la fin de mon cycle de lycéen, j'ai été diplômé d'un baccalauréat scientifique (spécialité Informatique et Sciences du Numérique) au lycée Sainte Marie à Cholet (49) avec la mention Très bien."
+        }
     },
     "hobbies": {
 

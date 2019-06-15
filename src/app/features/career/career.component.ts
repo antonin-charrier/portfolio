@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ThemeService } from 'src/app/core/services/theme.service';
+import { MatDialog } from '@angular/material';
+import { ExperienceComponent } from 'src/app/shared/components/dialogs/experience/experience.component';
 
 @Component({
   selector: 'app-career',
@@ -14,11 +16,18 @@ export class CareerComponent implements OnInit {
   }
 
   constructor(
-    private themeService: ThemeService
+    private themeService: ThemeService,
+    private dialog: MatDialog
   ) {}
 
   ngOnInit() {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
+  }
+
+  displayExperience(experience: string) {
+    this.dialog.open(ExperienceComponent, {
+      data: { experience: experience }
+    });
   }
 }

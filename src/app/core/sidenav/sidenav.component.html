@@ -1,6 +1,6 @@
 <div class="sidenav-container">
   <div class="sidenav-profile">
-    <img src="assets/img/profile.png" class="profile-picture">
+    <img src="assets/img/profile.png" class="profile-picture" [ngClass]="{ 'profile-picture-large': !isOver, 'profile-picture-small': isOver }">
     <div class="profile-panel">
       <a href="/" class="profile-subpanel-left">
         <img [src]="isDarkTheme ? 'assets/img/logo_white.png' : 'assets/img/logo_black.png'" class="profile-logo">

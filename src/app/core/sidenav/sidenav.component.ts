@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -16,6 +16,7 @@ export class SidenavComponent implements OnInit {
   isTechnicalSkillsExpanded: boolean;
   isHumanSkillsExpanded: boolean;
   private _isDarkTheme = false;
+  @Input() isOver: boolean;
 
   constructor(
     private translateService: TranslateService,
@@ -86,14 +87,14 @@ export class SidenavComponent implements OnInit {
   resume() {
     this.dialog.open(ResumeComponent, {
       height: '80vh',
-      width: '65vw',
+      width: '65vw'
     });
   }
 
   contactInfo() {
     this.dialog.open(ContactInfoComponent, {
       height: '40vh',
-      width: '75vw',
+      width: '75vw'
     });
   }
 

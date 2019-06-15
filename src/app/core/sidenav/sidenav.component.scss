@@ -56,8 +56,16 @@
 }
 
 .profile-picture {
-    width: 250px;
     border-radius: 50%;
+    margin-top: 16px;
+}
+
+.profile-picture-large {
+    width: 250px;
+}
+
+.profile-picture-small {
+    width: 150px;
 }
 
 .profile-panel {
