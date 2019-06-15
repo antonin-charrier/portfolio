@@ -1,6 +1,6 @@
 <mat-sidenav-container autosize fullscreen [ngClass]="{ 'dark-theme': isDarkTheme }">
     <mat-sidenav #sidenav id="sidenav" [ngClass]="{'sidenav-visible': isMenuOpened}" [mode]="'side'" [opened]="true">
-        <app-sidenav [isOver]="sidenav.mode === 'over'"></app-sidenav>
+        <app-sidenav></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content id="content" [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }">
         <div class="article-container">

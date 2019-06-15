@@ -23,13 +23,13 @@
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.linkedin' | translate }}" matTooltipPosition="above" (click)="linkedin()">
         <mat-icon aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
       </button>
-      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above">
         <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
       </button>
     </div>     
   </div>
   <mat-divider></mat-divider>
-  <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list">
+  <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list" id="scroll-list">
     <mat-action-list class="sidenav-mat-list">
       <mat-list-item [routerLink]="['']" routerLinkActive="sidenav-active-link"
                [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">

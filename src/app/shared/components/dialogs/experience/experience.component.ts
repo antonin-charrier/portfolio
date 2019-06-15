@@ -9,7 +9,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 })
 export class ExperienceComponent implements OnInit {
   constructor(
-    @Inject(MAT_DIALOG_DATA) public data: string,
+    @Inject(MAT_DIALOG_DATA) public data: { experience: string },
     private themeService: ThemeService,
     private viewContainerRef: ViewContainerRef
   ) { }

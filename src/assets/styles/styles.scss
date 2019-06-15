@@ -138,3 +138,49 @@ p.article-p {
         color: $white;
     }
 }
+
+.article-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-card {
+    width: 250px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.article-card-image {
+    max-height: 150px;
+}
+
+.article-card-avatar {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.article-card-avatar-call-center {
+    background-image: url('../img/galt.notitle.svg');
+    background-size: cover;
+}
+
+.article-card-avatar-e-monthly {
+    background-image: url('../img/galt.notitle.svg');
+    background-size: cover;
+}
+
+.article-card-avatar-galt {
+    background-image: url('../img/galt.notitle.svg');
+    background-size: cover;
+}
+
+.article-card-avatar-vision-safety {
+    background-image: url('../img/galt.notitle.svg');
+    background-size: cover;
+}
+
+.article-card-avatar-web-agent {
+    background-image: url('../img/galt.notitle.svg');
+    background-size: cover;
+}

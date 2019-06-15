@@ -57,9 +57,17 @@
         "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un gros site web pour des agents de sécurité de Securitas."
     },
     "projects": {
+        "title": "Projets",
+        "subtitle": "Plusieurs projets sur lesquels j'ai travaillé",
+        "call-center": {
+            "title": "Call center",
+            "subtitle": "Ceci est le sous-titre de Call center",
+            "summary": "Ceci est le résumé de Call center. Ceci est le résumé de Call center. Ceci est le résumé de Call center."
+        },
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecturer un projet Angular",
+            "summary": "Ceci est le résumé de eMonthly. Ceci est le résumé de eMonthly. Ceci est le résumé de eMonthly.",
             "template": {
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",
@@ -87,6 +95,7 @@
         "galt": {
             "title": "Galt",
             "subtitle": "Le gestionnaire de packages qui facilite la vie des développeurs",
+            "summary": "Ceci est le résumé de Galt. Ceci est le résumé de Galt. Ceci est le résumé de Galt.",
             "for-developers": {
                 "title": "Un projet destiné aux développeurs",
                 "galt": "Galt est un gestionnaire de packages permettant aux développeurs de surveiller et d’administrer l’architecture des dépendances de leur projet .NET hébergé sur la plateforme ",
@@ -138,6 +147,16 @@
                 "upload": "Ajouter la possibilité d’uploader son propre projet sans passer par une plateforme d’hébergement de package.",
                 "opportunity": "Ce projet m’a été très bénéfique tant sur le plan technique que sur le plan humain. J’ai pu découvrir plusieurs technologies très récentes et qui m’ont servi de nouveau par la suite. J’ai eu la satisfaction de répondre à une attente d’un client (mon professeur) et de terminer un projet dans son ensemble (le site a pu être déployé sur le serveur de notre école). J’ai également pu participer à l’organisation d’un projet complexe et j’ai amélioré mon expression lors de la présentation au forum face à des jurés n’ayant pas forcément un bagage technique."
             }
+        },
+        "vision-safety": {
+            "title": "VisionSafety",
+            "subtitle": "Ceci est le sous-titre de VisionSafety",
+            "summary": "Ceci est le résumé de VisionSafety. Ceci est le résumé de VisionSafety. Ceci est le résumé de VisionSafety."
+        },
+        "web-agent": {
+            "title": "WebAgent",
+            "subtitle": "Ceci est le sous-titre de WebAgent",
+            "summary": "Ceci est le résumé de WebAgent. Ceci est le résumé de WebAgent. Ceci est le résumé de WebAgent."
         }
     },
     "human-skills": {

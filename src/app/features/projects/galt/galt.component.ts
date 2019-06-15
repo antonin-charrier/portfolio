@@ -6,4 +6,8 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './galt.component.html',
   styleUrls: ['./galt.component.scss']
 })
-export class GaltComponent extends ArticleComponent {}
+export class GaltComponent extends ArticleComponent {
+  get linkedTechnicalSkills() {
+    return ['front-end', 'dot-net-core-web-api'];
+  }
+}

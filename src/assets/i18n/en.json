@@ -57,9 +57,17 @@
         "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a big web site for Securitas security agents."
     },
     "projects": {
+        "title": "Projects",
+        "subtitle": "Several projects I worked on",
+        "call-center": {
+            "title": "Call center",
+            "subtitle": "This is the Call center subtitle",
+            "summary": "This is the Call center summary. This is the Call center summary. This is the Call center summary."
+        },
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecting an Angular project",
+            "summary": "This is the eMonthly summary. This is the eMonthly summary. This is the eMonthly summary.",
             "template": {
                 "title": "Building an Angular template",
                 "after-working": "After working on several ",
@@ -87,6 +95,7 @@
         "galt": {
             "title": "Galt",
             "subtitle": "The packages manager that eases the life of developers",
+            "summary": "This is the Galt summary. This is the Galt summary. This is the Galt summary.",
             "for-developers": {
                 "title": "A project designed for developers",
                 "galt": "Galt is a packages manager allowing developers to watch and administrate the dependencies architecture of their .NET project hosted on ",
@@ -138,6 +147,16 @@
                 "upload": "Add the possibility to upload your own package without using a hosting platform.",
                 "opportunity": "This project was a great opportunity for me on the technical side as well as the human side. I discovered several very recent technologies that I used again on my other projects. I have been able to answer the need of a customer (my teacher) and to end a project in its whole (the site has been deployed on our school server). I also took part in the organization of a complex project and I improved my oral expression during the presentation at the forum in front of a jury who did not necessarily have a technical background."
             }
+        },
+        "vision-safety": {
+            "title": "VisionSafety",
+            "subtitle": "This is the VisionSafety subtitle",
+            "summary": "This is the VisionSafety summary. This is the VisionSafety summary. This is the VisionSafety summary."
+        },
+        "web-agent": {
+            "title": "WebAgent",
+            "subtitle": "This is the WebAgent subtitle",
+            "summary": "This is the WebAgent summary. This is the WebAgent summary. This is the WebAgent summary."
         }
     },
     "human-skills": {

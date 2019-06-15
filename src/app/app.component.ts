@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { MatSidenav } from '@angular/material';
@@ -45,18 +45,21 @@ export class AppComponent implements OnInit {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
 
-    this.displayService.detectHandsetPortrait(this.breakpointObserver, (() => {
-      this.sidenav.mode = 'over';
-      this.sidenav.close();
-    }));
-
-    this.breakpointObserver.observe([
-      Breakpoints.Web,
-      Breakpoints.TabletLandscape
-    ]).subscribe(result => {
-      if (result.matches) {
-        this.sidenav.mode = 'side';
-        this.sidenav.open();
+    this.displayService.detectBreakpoints(this.breakpointObserver);
+    this.displayService.breakpoint.subscribe(newDisplay => {
+      switch (newDisplay) {
+        case Breakpoints.HandsetPortrait:
+        case Breakpoints.HandsetLandscape:
+        case Breakpoints.TabletPortrait:
+          this.sidenav.mode = 'over';
+          this.sidenav.close();
+          break;
+        case Breakpoints.TabletLandscape:
+        case Breakpoints.WebPortrait:
+        case Breakpoints.WebLandscape:
+          this.sidenav.mode = 'side';
+          this.sidenav.open();
+          break;
       }
     });
   }
