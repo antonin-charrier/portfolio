@@ -1,22 +1,22 @@
 <app-article-header [title]="'home.title'" [subtitle]="'home.subtitle'"></app-article-header>
 <p class="article-p">
-  {{ 'home.two-years' | translate }}
-  <a href="https://www.capgemini.com" target="_blank">{{ 'home.capgemini' | translate }}</a>
-  {{ 'home.experience' | translate }}
-  <a href="https://www.intechinfo.fr" target="_blank">{{ 'home.intech' | translate }}</a>
-  {{ 'home.applications' | translate }}
-  <a href="https://www.securitas.com" target="_blank">{{ 'home.securitas' | translate }}</a>
-  {{ 'home.skills' | translate }}
+  <span>{{ 'home.two-years' | translate }}</span>
+  <a href="https://www.capgemini.com" target="_blank" matTooltip="{{ 'home.capgemini-website' | translate }}" matTooltipPosition="above">{{ 'home.capgemini' | translate }}</a>
+  <span>{{ 'home.experience' | translate }}</span>
+  <a href="https://www.intechinfo.fr" target="_blank" matTooltip="{{ 'home.intech-website' | translate }}" matTooltipPosition="above">{{ 'home.intech' | translate }}</a>
+  <span>{{ 'home.applications' | translate }}</span>
+  <a href="https://www.securitas.com" target="_blank" matTooltip="{{ 'home.securitas-website' | translate }}" matTooltipPosition="above">{{ 'home.securitas' | translate }}</a>
+  <span>{{ 'home.skills' | translate }}</span>
   <b>
-    {{ 'home.development' | translate }}
-    <a [routerLink]="['technical-skills/dot-net-core-web-api']">{{ 'home.dot-net' | translate }}</a>
-    {{ 'home.dot-net-bis' | translate }}
-    <a [routerLink]="['technical-skills/front-end']">{{ 'home.angular' | translate }}</a>
-    {{ 'home.angular-bis' | translate }}
-    <a [routerLink]="['technical-skills/android']">{{ 'home.android' | translate }}</a>
-    {{ 'home.development-bis' | translate }}
+    <span>{{ 'home.development' | translate }}</span>
+    <a [routerLink]="['technical-skills/dot-net-core-web-api']" matTooltip="{{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}" matTooltipPosition="above">{{ 'home.dot-net' | translate }}</a>
+    <span>{{ 'home.dot-net-bis' | translate }}</span>
+    <a [routerLink]="['technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'home.angular' | translate }}</a>
+    <span>{{ 'home.angular-bis' | translate }}</span>
+    <a [routerLink]="['technical-skills/android']" matTooltip="{{ 'redirects.linked-technical-skills.android' | translate }}" matTooltipPosition="above">{{ 'home.android' | translate }}</a>
+    <span>{{ 'home.development-bis' | translate }}</span>
   </b>
 </p>
 <p class="article-p">
-  {{ 'home.frameworks' | translate }}
+  <span>{{ 'home.frameworks' | translate }}</span>
 </p>

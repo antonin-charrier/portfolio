@@ -11,6 +11,7 @@ export class WipService {
     '/projects/galt',
     '/human-skills/autonomy',
     '/human-skills/creativity',
+    '/human-skills/team-leading',
     '/career',
     '/about'
   ];

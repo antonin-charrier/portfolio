@@ -1,53 +1,58 @@
 <app-article-header [title]="'about.about'" [subtitle]="'about.my-portfolio'"></app-article-header>
 <div>
   <p class="article-p">
-    {{ 'about.copyright' | translate }} 
+    <span>{{ 'about.copyright' | translate }}</span>
   </p>
   <p class="article-p">
-    {{ 'about.developped' | translate }} 
-    <a href="https://angular.io/" title="Angular" target="_blank">
-      {{ 'about.angular' | translate }} 
+    <span>{{ 'about.developped' | translate }}</span>
+    <a href="https://angular.io/" title="Angular" target="_blank" matTooltip="{{ 'about.angular-website' | translate }}" matTooltipPosition="above">
+      <span>{{ 'about.angular' | translate }}</span>
     </a>
-    {{ 'about.using' | translate }}  
-    <a href="https://material.angular.io/" title="Angular Material" target="_blank">
-      {{ 'about.material' | translate }} 
+    <span></span>{{ 'about.using' | translate }}  
+    <a href="https://material.angular.io/" title="Angular Material" target="_blank" matTooltip="{{ 'about.material-website' | translate }}" matTooltipPosition="above">
+      <span>{{ 'about.material' | translate }}</span>
     </a>
+    <span>.</span>
   </p>
   <p class="article-p">
-    {{ 'about.translations' | translate }} 
-    <a href="http://www.ngx-translate.com/" title="Ngx Translate" target="_blank">
-      {{ 'about.ngx-translate' | translate }} 
+    <span></span>{{ 'about.translations' | translate }} 
+    <a href="http://www.ngx-translate.com/" title="Ngx Translate" target="_blank" matTooltip="{{ 'about.ngx-translate-website' | translate }}" matTooltipPosition="above">
+      <span>{{ 'about.ngx-translate' | translate }}</span>
     </a>
-    {{ 'about.library' | translate }} 
+    <span>{{ 'about.library' | translate }}</span>
+    <span>.</span>
   </p>
   <p class="article-p">
-    {{ 'about.resume' | translate }} 
-    <a href="https://www.npmjs.com/package/ng2-pdf-viewer" title="Ng2 PDF Viewer" target="_blank">
-      {{ 'about.ng2-pdf-viewer' | translate }} 
+    <span></span>{{ 'about.resume' | translate }} 
+    <a href="https://www.npmjs.com/package/ng2-pdf-viewer" title="Ng2 PDF Viewer" target="_blank" matTooltip="{{ 'about.ng2-pdf-viewer-website' | translate }}" matTooltipPosition="above">
+      <span>{{ 'about.ng2-pdf-viewer' | translate }}</span>
     </a> 
+    <span>.</span>
   </p>
   <p class="article-p">
-    {{ 'about.icons' | translate }} 
-    <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon" target="_blank">
-      SimpleIcon
+    <span>{{ 'about.icons' | translate }}</span>
+    <a href="https://www.flaticon.com/authors/simpleicon" title="SimpleIcon" target="_blank" matTooltip="{{ 'about.simpleicon-website' | translate }}" matTooltipPosition="above">
+      <span>SimpleIcon</span>
     </a>    
-    {{ 'about.and' | translate }} 
-    <a href="https://www.freepik.com/" title="SimpleIcon" target="_blank">
-      Freepik
+    <span>{{ 'about.and' | translate }}</span>
+    <a href="https://www.freepik.com/" title="SimpleIcon" target="_blank" matTooltip="{{ 'about.freepik-website' | translate }}" matTooltipPosition="above">
+      <span>Freepik</span>
     </a>
-    {{ 'about.from' | translate }} 
-      <a href="https://www.flaticon.com/" title="Flaticon" target="_blank">
-      www.flaticon.com
+    <span>{{ 'about.from' | translate }}</span>
+      <a href="https://www.flaticon.com/" title="Flaticon" target="_blank" matTooltip="{{ 'about.flaticon-website' | translate }}" matTooltipPosition="above">
+        <span>www.flaticon.com</span>
     </a>
-    {{ 'about.licensed' | translate }} 
-    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">
-      CC 3.0 BY
+    <span>{{ 'about.licensed' | translate }}</span>
+    <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" matTooltip="{{ 'about.cc-3-0-website' | translate }}" matTooltipPosition="above">
+      <span>CC 3.0 BY</span>
     </a>
+    <span>.</span>
   </p>
   <p class="article-p">
-    {{ 'about.code' | translate }} 
-    <a href="https://github.com/antonin-charrier/portfolio" title="GitHub repo" target="_blank">
-      {{ 'about.github' | translate }} 
+    <span>{{ 'about.code' | translate }}</span>
+    <a href="https://github.com/antonin-charrier/portfolio" title="GitHub repo" target="_blank" matTooltip="{{ 'about.github-website' | translate }}" matTooltipPosition="above">
+      <span>{{ 'about.github' | translate }}</span>
     </a>
+    <span>.</span>
   </p>
 </div>

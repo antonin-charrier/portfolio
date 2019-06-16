@@ -32,12 +32,12 @@
   <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list" id="scroll-list">
     <mat-action-list class="sidenav-mat-list">
       <mat-list-item [routerLink]="['']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon matListIcon>home</mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.home' | translate }}</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['projects']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isProjectsExpanded = true">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isProjectsExpanded = true">
         <mat-icon matListIcon>work</mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.projects' | translate }}</p>
         <button mat-icon-button (click)="isProjectsExpanded = !isProjectsExpanded; $event.stopPropagation()">
@@ -47,33 +47,33 @@
       </mat-list-item>
       <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
         <mat-list-item [routerLink]="['projects/call-center']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.call-center' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/e-monthly']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.e-monthly' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/galt']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.galt' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/vision-safety']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.vision-safety' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/web-agent']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.web-agent' | translate }}</p>
         </mat-list-item>
       </mat-action-list>
       <mat-list-item [routerLink]="['technical-skills']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isTechnicalSkillsExpanded = true">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isTechnicalSkillsExpanded = true">
         <mat-icon matListIcon>build</mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.technical-skills' | translate }}</p>
         <button mat-icon-button (click)="isTechnicalSkillsExpanded = !isTechnicalSkillsExpanded; $event.stopPropagation()">
@@ -83,33 +83,33 @@
       </mat-list-item>
       <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
         <mat-list-item [routerLink]="['technical-skills/android']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.android' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.dot-net-core-web-api' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/financial-assessments']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/front-end']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.front-end' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.notions-of-architecture' | translate }}</p>
         </mat-list-item>
       </mat-action-list>  
       <mat-list-item [routerLink]="['human-skills']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isHumanSkillsExpanded = true">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isHumanSkillsExpanded = true">
         <mat-icon matListIcon>assignment_ind</mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.human-skills' | translate }}</p>
         <button mat-icon-button (click)="isHumanSkillsExpanded = !isHumanSkillsExpanded; $event.stopPropagation()">
@@ -119,38 +119,38 @@
       </mat-list-item>
       <mat-action-list mat-list-item class="sublist" *ngIf="isHumanSkillsExpanded">
         <mat-list-item [routerLink]="['human-skills/autonomy']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.autonomy' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['human-skills/creativity']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.creativity' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['human-skills/knowledge-sharing']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.knowledge-sharing' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['human-skills/languages']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.languages' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['human-skills/team-leading']" routerLinkActive="sidenav-active-link"
-                 [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+          [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <mat-icon matListIcon class="sublist-icon">done</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.team-leading' | translate }}</p>
         </mat-list-item>
       </mat-action-list>
       <mat-list-item [routerLink]="['career']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon aria-label="Career" svgIcon="route" matListIcon></mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.career' | translate }}</p>
       </mat-list-item>
       <mat-list-item [routerLink]="['hobbies']" routerLinkActive="sidenav-active-link"
-               [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
+        [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
         <mat-icon matListIcon>videogame_asset</mat-icon>
         <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.hobbies' | translate }}</p>
       </mat-list-item>

@@ -9,4 +9,5 @@ import { ArticleComponent } from 'src/app/shared/article.component';
 export class CreativityComponent extends ArticleComponent {
   get linkedProjects() {
     return ['vision-safety'];
-  }}
+  }
+}

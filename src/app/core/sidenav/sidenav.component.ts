@@ -92,7 +92,7 @@ export class SidenavComponent implements OnInit {
           case '/technical-skills/front-end':
           case '/technical-skills/notions-of-architecture':
             this.isTechnicalSkillsExpanded = true;
-            timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = 220);
+            timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = this.isProjectsExpanded ? 220 : 20);
             break;
           case '/human-skills/autonomy':
           case '/human-skills/creativity':
