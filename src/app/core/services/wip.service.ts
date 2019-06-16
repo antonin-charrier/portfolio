@@ -7,6 +7,7 @@ import { environment } from 'src/environments/environment';
 export class WipService {
   private static prodRoutes: string[] = [
     '/',
+    '/projects/call-center',
     '/projects/e-monthly',
     '/projects/galt',
     '/human-skills/autonomy',

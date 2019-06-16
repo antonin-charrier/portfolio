@@ -64,8 +64,41 @@
         "subtitle": "Several projects I worked on",
         "call-center": {
             "title": "Call center",
-            "subtitle": "This is the Call center subtitle",
-            "summary": "This is the Call center summary. This is the Call center summary. This is the Call center summary."
+            "subtitle": "From Angular developer to team leader",
+            "summary": "This is the Call center summary. This is the Call center summary. This is the Call center summary.",
+            "portal": {
+                "title": "Create a portal for a call center",
+                "apprenticeship": "During my apprenticeship at Capgemini, I worked on several projects of Angular websites. Among them, I took part in October 2018 to a ",
+                "poc": "PoC (proof of concept)",
+                "goal": " of a portal for a call center. The goal of the PoC is to be suggested to the entity Energies E. Leclerc. Indeed, Siplec, a subsidiary company of import/export belonging to E. Leclerc group, is a client of Capgemini. A Capgemini team especially works on APIs linked to electricity distribution and sale. This team also put online the website of Energies E. Leclerc, allowing customers to subscribe to an offer online. That’s why the PoC must complete this site in order to enter the phone subscriptions and ensure a post-sale service for all customers.",
+                "project": "The project is ordered by a commercial from Capgemini so it can be sold thereafter to other energy providers. Indeed, in 2007, the energy market in France has opened and, since, the historical providers EDF (electricity) and GDF (natural gas), are not the only one to be able to deal their energy anymore. Since a few years, the alternative suppliers flourished, thus opening a big market for Capgemini to set up their numeric infrastructures. It is for this reason that the first objective of the PoC is the reusability in order to easily sell it to all the new energy providers."
+            },
+            "poorly-monitored": {
+                "title": "A poorly monitored project",
+                "beginning": "At the beginning, the project has many difficulties in terms of organization, communication and monitoring. We are three developers on the project, along with a project manager who has very little time to devote, being busy with other projects and the PoC being less a priority. The order comes from the commercial, who, after providing us ",
+                "ux": "UX (user experience)",
+                "and": " and ",
+                "ui": "UI (user interface)",
+                "mock-ups": " mock-ups, explains to us the functionalities to implement so he can present the project to the clients. Finally, the last people involved are the Siplec team who implements the APIs on which we rely.",
+                "problem": "The problem we face is that one of the APIs is under development and the other one uses different data than we are supposed to display from the mock-ups. We raise the problem to our project manager, and we try to make the most of what we can in total ",
+                "autonomy": "autonomy",
+                "information": ". After several days, since we have no information from the three other parties, we decide to organize ourselves. After consultation with my two colleagues, I take the ",
+                "lead": "lead",
+                "experienced": " on the project, being the most experienced of the three. My goal is to ensure the ",
+                "monitoring": "monitoring",
+                "inexistent": " of the team, which is inexistent, to establish a ",
+                "communication": "communication",
+                "parties": " with other parties of the project and to improve the ",
+                "organization": "organization",
+                "project": " of the project."
+            },
+            "experience": {
+                "title": "Call center",
+                "initiative": "This initiative is welcomed by our project manager who lets us manage the PoC with the other interlocutors. We succeed in improving the communication between the commercial and the APIs team, the first one expressing clearly his expectations and the second one explaining the current possibilities and evolutions which are possible or not. Thus, the project can be presented functional to the client and it is at this time that my mission ends. During the following months, no longer working on the project, I was still able to help the new members by ",
+                "knowledge": "sharing my knowledge",
+                "project": " of the project.",
+                "chaotic": "Even though the path of the project was chaotic, it will still allow me to draw a lot of experience, including human. I was able to concretely observe the impact of good and bad communication between the different interlocutors of a project and I was able to learn about project management."
+            }
         },
         "e-monthly": {
             "title": "eMonthly",
@@ -189,7 +222,11 @@
                 "vision-safety": "VisionSafety",
                 "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
                 "feedbacks": "feedbacks",
-                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile."
+                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile. It was also noticed during the ",
+                "poc": "",
+                "call-center": "Call center",
+                "poc-bis": " PoC (proof of concept)",
+                "responsabilities": " which in my team and I had to take our responsabilities given the bad project follow-up."
             }
         },
         "creativity": {

@@ -64,8 +64,41 @@
         "subtitle": "Plusieurs projets sur lesquels j'ai travaillé",
         "call-center": {
             "title": "Call center",
-            "subtitle": "Ceci est le sous-titre de Call center",
-            "summary": "Ceci est le résumé de Call center. Ceci est le résumé de Call center. Ceci est le résumé de Call center."
+            "subtitle": "De développeur Angular à team leader",
+            "summary": "Ceci est le résumé de Call center. Ceci est le résumé de Call center. Ceci est le résumé de Call center.",
+            "portal": {
+                "title": "Créer un portail pour un centre d’appels",
+                "apprenticeship": "Au cours de mon alternance chez Capgemini, j’ai travaillé sur plusieurs projets de sites web en Angular. Parmi eux, je participe en octobre 2018 à un ",
+                "poc": "PoC (proof of concept)",
+                "goal": " de portail pour un centre d’appels. Le but du PoC est d’être proposé à la nouvelle entité Energies E. Leclerc. En effet, Siplec, une filiale d’import/export appartenant au groupe E. Leclerc, est un client de Capgemini. Une équipe de Capgemini travaille notamment sur des API liées à la distribution et à la vente d’électricité. Cette équipe a également mis en ligne le site web de Energies E. Leclerc, permettant aux clients de souscrire à une offre en ligne. C’est pourquoi le PoC doit compléter ce site afin d’enregistrer les souscriptions par téléphone et pouvoir assurer un SAV auprès de tous les clients.",
+                "project": "Le projet est commandité par un commercial de Capgemini tel qu’il puisse être vendu par la suite à d’autres fournisseurs d’énergie. En effet, en 2007, le marché de l’énergie en France s’est ouvert et, depuis, les fournisseurs historiques EDF (électricité) et GDF (gaz naturel), ne sont plus les seuls à pouvoir distribuer leur énergie. Depuis quelques années, les fournisseurs alternatifs ont fleuri, ouvrant ainsi un grand marché à Capgemini pour mettre en place leurs infrastructures numériques. C’est pour cette raison que l’objectif premier du PoC est la réutilisabilité afin de pouvoir facilement le vendre à tous les nouveaux fournisseurs d’énergie."
+            },
+            "poorly-monitored": {
+                "title": "Un projet mal suivi",
+                "beginning": "Au départ, le projet a beaucoup de difficultés en termes d’organisation, de communication et de suivi. Nous sommes trois développeurs sur le projet, accompagné par un chef de projet qui a très peu de temps à nous consacrer, étant occupé par ses autres projets et le PoC étant le moins prioritaire. La demande vient du commercial, qui, après nous avoir fourni des maquettes ",
+                "ux": "UX (user experience)",
+                "and": " et ",
+                "ui": "UI (user interface)",
+                "mock-ups": ", nous explique les fonctionnalités à implémenter pour qu’il puisse présenter le projet aux clients. Enfin, le dernier acteur est l’équipe Siplec qui implémente les API sur lesquelles nous nous appuyons.",
+                "problem": "Le problème auquel nous faisons face est qu’une des API est en cours de développement et l’autre utilise des données différentes que celles que nous sommes sensés afficher à partir des maquettes. Nous remontons le problème à notre chef de projet et nous tentons d’avancer au maximum sur ce que nous pouvons en totale ",
+                "autonomy": "autonomie",
+                "information": ". Après plusieurs jours, étant donné que nous n’avons aucune information des trois autres parties, nous décidons de nous organiser. Après concertation avec mes deux collègues, je prends le ",
+                "lead": "lead",
+                "experienced": " sur le projet, étant le plus expérimenté des trois. Mon but est d’assurer le  ",
+                "monitoring": "suivi",
+                "inexistent": " de l’équipe, qui est alors inexistant, d’établir une ",
+                "communication": "communication",
+                "parties": " entre les autres parties du projet et d’améliorer l’",
+                "organization": "organisation",
+                "project": " du projet."
+            },
+            "experience": {
+                "title": "Une bonne expérience",
+                "initiative": "Cette prise d’initiative est saluée par notre chef de projet qui nous laisse gérer le PoC avec les autres interlocuteurs. Nous réussissons à améliorer la communication entre le commercial et l’équipe des API, le premier exprimant clairement ses attentes et la seconde expliquant les possibilités actuelles et les évolutions possibles ou non. Ainsi, le projet peut être présenté fonctionnel au client et c’est à ce moment-là que ma mission sur le projet se conclue. Les mois suivants, ne travaillant plus sur le projet, j’ai tout de même pu aider les nouveaux membres en ",
+                "knowledge": "partageant mes connaissances",
+                "project": " du projet.",
+                "chaotic": "Bien que le parcours du projet ait été chaotique, il m’aura néanmoins permis de tirer beaucoup d’expérience, notamment humaine. J’ai pu observer concrètement les impacts d’une bonne et d’une mauvaise communication entre les différents interlocuteurs d’un projet et j’ai pu m’initier à la gestion de projet."
+            }
         },
         "e-monthly": {
             "title": "eMonthly",
@@ -182,14 +215,18 @@
                 "binary": ", il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire. Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent."
             },
             "me": {
-                "title": "L'autonomie est l'une de mes qualités.",
-                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications",
+                "title": "L'autonomie est l'une de mes qualités",
+                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications ",
                 "web-agent": "WebAgent",
                 "and": " et ",
                 "vision-safety": "VisionSafety",
-                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel,the software better, cela a aussé démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
+                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
                 "feedbacks": "les feedbacks",
-                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil."
+                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil. Elle a également été relevée au cours du ",
+                "poc": "PoC (proof of concept) ",
+                "call-center": "Call center",
+                "poc-bis": "",
+                "responsabilities": " dans lequel mon équipe et moi avons dû prendre nos responsabilités étant donné le mauvais suivi du projet."
             }
         },
         "creativity": {

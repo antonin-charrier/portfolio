@@ -8,6 +8,6 @@ import { ArticleComponent } from 'src/app/shared/article.component';
 })
 export class AutonomyComponent  extends ArticleComponent {
   get linkedProjects() {
-    return ['web-agent', 'vision-safety'];
+    return ['call-center', 'web-agent', 'vision-safety'];
   }
 }

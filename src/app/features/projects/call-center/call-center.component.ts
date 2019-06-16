@@ -6,4 +6,12 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './call-center.component.html',
   styleUrls: ['./call-center.component.scss']
 })
-export class CallCenterComponent extends ArticleComponent {}
+export class CallCenterComponent extends ArticleComponent {
+  get linkedTechnicalSkills() {
+    return ['front-end'];
+  }
+
+  get linkedHumanSkills() {
+    return ['autonomy', 'knowledge-sharing', 'team-leading'];
+  }
+}
