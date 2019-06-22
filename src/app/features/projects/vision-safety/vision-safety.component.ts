@@ -8,6 +8,10 @@ import { ArticleComponent } from 'src/app/shared/article.component';
 })
 export class VisionSafetyComponent extends ArticleComponent {
   get linkedHumanSkills() {
-    return ['autonomy'];
-}
+    return ['autonomy', 'creativity'];
+  }
+
+  get linkedTechnicalSkills() {
+    return ['android'];
+  }
 }

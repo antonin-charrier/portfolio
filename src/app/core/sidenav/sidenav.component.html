@@ -23,7 +23,7 @@
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.linkedin' | translate }}" matTooltipPosition="above" (click)="linkedin()">
         <mat-icon aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
       </button>
-      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above">
+      <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
         <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
       </button>
     </div>     
@@ -48,28 +48,23 @@
       <mat-action-list mat-list-item class="sublist" *ngIf="isProjectsExpanded">
         <mat-list-item [routerLink]="['projects/call-center']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.call-center' | translate }}</p>
+          <p class="sidenav-mat-list-p" matLine>· {{ 'sidenav.call-center' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/e-monthly']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.e-monthly' | translate }}</p>
+          <p class="sidenav-mat-list-p" matLine>· {{ 'sidenav.e-monthly' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/galt']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.galt' | translate }}</p>
+          <p class="sidenav-mat-list-p" matLine>· {{ 'sidenav.galt' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/vision-safety']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.vision-safety' | translate }}</p>
+          <p class="sidenav-mat-list-p" matLine>· {{ 'sidenav.vision-safety' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['projects/web-agent']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
-          <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.web-agent' | translate }}</p>
+          <p class="sidenav-mat-list-p" matLine>· {{ 'sidenav.web-agent' | translate }}</p>
         </mat-list-item>
       </mat-action-list>
       <mat-list-item [routerLink]="['technical-skills']" routerLinkActive="sidenav-active-link"
@@ -84,27 +79,27 @@
       <mat-action-list mat-list-item class="sublist" *ngIf="isTechnicalSkillsExpanded">
         <mat-list-item [routerLink]="['technical-skills/android']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <mat-icon matListIcon class="sublist-icon">subdirectory_arrow_right</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.android' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/dot-net-core-web-api']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <mat-icon matListIcon class="sublist-icon">subdirectory_arrow_right</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.dot-net-core-web-api' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/financial-assessments']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <mat-icon matListIcon class="sublist-icon">subdirectory_arrow_right</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/front-end']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <mat-icon matListIcon class="sublist-icon">subdirectory_arrow_right</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.front-end' | translate }}</p>
         </mat-list-item>
         <mat-list-item [routerLink]="['technical-skills/notions-of-architecture']" routerLinkActive="sidenav-active-link"
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
-          <mat-icon matListIcon class="sublist-icon">done</mat-icon>
+          <mat-icon matListIcon class="sublist-icon">subdirectory_arrow_right</mat-icon>
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.notions-of-architecture' | translate }}</p>
         </mat-list-item>
       </mat-action-list>  
