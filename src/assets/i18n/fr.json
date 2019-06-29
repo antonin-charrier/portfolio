@@ -104,8 +104,8 @@
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecturer un projet Angular",
-            "card-subtitle": "Angular, template, architecture",
-            "card-content": "eMonthly est un site web basé sur un template Angular que j'ai architecturé",
+            "card-subtitle": "Angular, architecture",
+            "card-content": "eMonthly est un site web de Safran basé sur un template Angular que j'ai architecturé",
             "template": {
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",
@@ -193,7 +193,7 @@
             "title": "VisionSafety",
             "subtitle": "Protéger ceux qui nous protègent",
             "card-subtitle": "Xamarin, Android",
-            "card-content": "VisionSafety est une application life-saver pour les agents de sécurité",
+            "card-content": "VisionSafety est une application life-saver pour les agents Securitas",
             "save-lives": {
                 "title": "Une application pour sauver des vies",
                 "vision-safety": "VisionSafety est une application du panel Vision de Securitas. Elle est destinée aux agents de sécurité travaillant au sein de sites à risques. Grâce à elle, l’agent peut envoyer des alertes grâce à un gros bouton facilement accessible (avec une simple pression, il lance un décompte avant l’alerte avec la possibilité de l’annuler en cas d’erreur, et avec une pression longue, il envoie l’alerte directement). Il peut également passer en mode « danger », prévenant ainsi qu’il a ressenti un potentiel risque imminent. Durant ce mode, toutes les alertes sont immédiates. Certains agents sont équipés de boutons physiques ",
@@ -236,13 +236,17 @@
             "title": "WebAgent",
             "subtitle": "Ceci est le sous-titre de WebAgent",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents de sécurité dans leur quotidien"
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
         }
     },
     "human-skills": {
+        "title": "Compétences humaines",
+        "subtitle": "Mes principales compétences humaines",
         "autonomy": {
             "title": "Autonomie",
             "subtitle": "Un développeur doit être capable de travailler par lui-même",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
             "definition": {
                 "title": "Qu'est-ce que l'autonomie ?",
                 "what": "Fondalementalement, ",
@@ -274,6 +278,8 @@
         "creativity": {
             "title": "Créativité",
             "subtitle": "La créativité permet d’apporter de véritables solutions",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
             "definition": {
                 "title": "Qu’est-ce que la créativité ?",
                 "the": "La ",
@@ -313,9 +319,23 @@
                 "created": " (noms anglais), trois Pokémon que j'ai créés"
             }
         },
+        "knowledge-sharing": {
+            "title": "Partage de connaissances",
+            "subtitle": "Ceci est le sous-titre de partage de connaissances",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
+        },
+        "languages": {
+            "title": "Langues",
+            "subtitle": "Ceci est le sous-titre de langues",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
+        },
         "team-leading": {
             "title": "Gestion d'équipe",
             "subtitle": "Une introduction à la gestion d'équipe",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
             "arrival": {
                 "title": "Mon arrivée dans un PoC",
                 "october": "En octobre dernier, je rejoins un ",
@@ -338,6 +358,40 @@
                 "organization": "organisation",
                 "organization-bis": "."
             }
+        }
+    },
+    "technical-skills": {
+        "title": "Compétences techniques",
+        "subtitle": "Mes principales compétences techniques",
+        "android": {
+            "title": "Android",
+            "subtitle": "Ceci est le sous-titre de Android",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "dot-net-core-web-api": {
+            "title": "API Web .NET Core",
+            "subtitle": "Ceci est le sous-titre de API Web .NET Core",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "financial-assessments": {
+            "title": "Chiffrages financiers",
+            "subtitle": "Ceci est le sous-titre de chiffrages financiers",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "front-end": {
+            "title": "Front end",
+            "subtitle": "Ceci est le sous-titre de front end",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "notions-of-architecture": {
+            "title": "Notions d'architecture",
+            "subtitle": "Ceci est le sous-titre de notions d'architecture",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
         }
     },
     "redirects": {

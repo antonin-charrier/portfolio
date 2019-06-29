@@ -57,7 +57,7 @@
         "angular-bis": " and ",
         "android": "Android",
         "development-bis": " development.",
-        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a big web site for Securitas security agents."
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large web site for Securitas security agents."
     },
     "projects": {
         "title": "Projects",
@@ -104,8 +104,8 @@
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecting an Angular project",
-            "card-subtitle": "Angular, template, architecture",
-            "card-content": "eMonthly is a website based on an Angular template I architected",
+            "card-subtitle": "Angular, architecture",
+            "card-content": "eMonthly is a website of Safran based on an Angular template I architected",
             "template": {
                 "title": "Building an Angular template",
                 "after-working": "After working on several ",
@@ -193,7 +193,7 @@
             "title": "VisionSafety",
             "subtitle": "Protect the ones who protect us",
             "card-subtitle": "Xamarin, Android",
-            "card-content": "VisionSafety is a life-saver application for security agents",
+            "card-content": "VisionSafety is a life-saver application for Securitas agents",
             "save-lives": {
                 "title": "An application to save lives",
                 "vision-safety": "VisionSafety is an application from the Vision panel of Securitas. It is designed for security agents who work in risky sites. With it, the agent can send alerts using an easily accessible big button (with a simple click, he starts a countdown before the alert with the ability to cancel it in case of an error, and with a long click, he sends the alert directly). He also can switch to “danger” mode, thus warning that he felt a potential imminent risk. During this mode, all alerts are immediate. Some agents are equipped with ",
@@ -236,13 +236,17 @@
             "title": "WebAgent",
             "subtitle": "This is the WebAgent subtitle",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies security agents in their daily job"
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
         }
     },
     "human-skills": {
+        "title": "Human skills",
+        "subtitle": "My principal human skills",
         "autonomy": {
             "title": "Autonomy",
             "subtitle": "A developer needs to be able to work on his own",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
             "definition": {
                 "title": "What is autonomy?",
                 "what": "Basically, ",
@@ -262,7 +266,7 @@
                 "web-agent": "WebAgent",
                 "and": " and ",
                 "vision-safety": "VisionSafety",
-                "internship": " apps). I entered the project during my six months internship. I joined a big project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
+                "internship": " apps). I entered the project during my six months internship. I joined a large project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
                 "feedbacks": "feedbacks",
                 "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile. It was also noticed during the ",
                 "poc": "",
@@ -274,6 +278,8 @@
         "creativity": {
             "title": "Creativity",
             "subtitle": "Creativity allows us to bring proper solutions",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
             "definition": {
                 "title": "What is creativity?",
                 "the": "",
@@ -313,9 +319,23 @@
                 "created": ", three Pokémon that I created"
             }
         },
+        "knowledge-sharing": {
+            "title": "Knowledge sharing",
+            "subtitle": "This is the knowledge sharing subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "languages": {
+            "title": "Languages",
+            "subtitle": "This is the languages subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
         "team-leading": {
             "title": "Team leading",
             "subtitle": "An introduction to team leading",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
             "arrival": {
                 "title": "My arrival in a PoC",
                 "october": "Last October, I join a ",
@@ -338,6 +358,40 @@
                 "organization": "organization",
                 "organization-bis": "."
             }
+        }
+    },
+    "technical-skills": {
+        "title": "Technical skills",
+        "subtitle": "My principal technical skills",
+        "android": {
+            "title": "Android",
+            "subtitle": "This is the Android subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "dot-net-core-web-api": {
+            "title": ".NET Core Web API",
+            "subtitle": "This is the .NET Core Web API subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "financial-assessments": {
+            "title": "Financial assessments",
+            "subtitle": "This is the financial assessments subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "front-end": {
+            "title": "Front end",
+            "subtitle": "This is the front end subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+        },
+        "notions-of-architecture": {
+            "title": "Notions of architecture",
+            "subtitle": "This is the notions of architecture subtitle",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
         }
     },
     "redirects": {
