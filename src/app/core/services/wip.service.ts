@@ -10,6 +10,7 @@ export class WipService {
     '/projects/call-center',
     '/projects/e-monthly',
     '/projects/galt',
+    '/projects/vision-safety',
     '/human-skills/autonomy',
     '/human-skills/creativity',
     '/human-skills/team-leading',

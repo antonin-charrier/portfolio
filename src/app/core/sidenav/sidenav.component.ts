@@ -21,6 +21,7 @@ export class SidenavComponent implements OnInit {
   public isHumanSkillsExpanded = false;
   public isOver = false;
   private _isDarkTheme = false;
+  public parent = '';
 
   constructor(
     private translateService: TranslateService,
@@ -84,6 +85,7 @@ export class SidenavComponent implements OnInit {
           case '/projects/vision-safety':
           case '/projects/web-agent':
             this.isProjectsExpanded = true;
+            this.parent = 'projects';
             timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = 0);
             break;
           case '/technical-skills/android':
@@ -92,6 +94,7 @@ export class SidenavComponent implements OnInit {
           case '/technical-skills/front-end':
           case '/technical-skills/notions-of-architecture':
             this.isTechnicalSkillsExpanded = true;
+            this.parent = 'technical-skills';
             timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = this.isProjectsExpanded ? 220 : 20);
             break;
           case '/human-skills/autonomy':
@@ -100,7 +103,11 @@ export class SidenavComponent implements OnInit {
           case '/human-skills/languages':
           case '/human-skills/team-leading':
             this.isHumanSkillsExpanded = true;
+            this.parent = 'human-skills';
             timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = 450);
+            break;
+          default:
+            this.parent = '';
             break;
         }
       }

@@ -57,7 +57,7 @@
         "angular-bis": " et ",
         "android": "Android",
         "development-bis": ".",
-        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un gros site web pour des agents de sécurité de Securitas."
+        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un large site web pour des agents de sécurité de Securitas."
     },
     "projects": {
         "title": "Projets",
@@ -65,7 +65,8 @@
         "call-center": {
             "title": "Call center",
             "subtitle": "De développeur Angular à team leader",
-            "summary": "Ceci est le résumé de Call center. Ceci est le résumé de Call center. Ceci est le résumé de Call center.",
+            "card-subtitle": "Angular, PoC",
+            "card-content": "Call center est le PoC d'un site web réalisé en Angular pour Energies E.Leclerc",
             "portal": {
                 "title": "Créer un portail pour un centre d’appels",
                 "apprenticeship": "Au cours de mon alternance chez Capgemini, j’ai travaillé sur plusieurs projets de sites web en Angular. Parmi eux, je participe en octobre 2018 à un ",
@@ -103,7 +104,8 @@
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecturer un projet Angular",
-            "summary": "Ceci est le résumé de eMonthly. Ceci est le résumé de eMonthly. Ceci est le résumé de eMonthly.",
+            "card-subtitle": "Angular, template, architecture",
+            "card-content": "eMonthly est un site web basé sur un template Angular que j'ai architecturé",
             "template": {
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",
@@ -131,7 +133,8 @@
         "galt": {
             "title": "Galt",
             "subtitle": "Le gestionnaire de packages qui facilite la vie des développeurs",
-            "summary": "Ceci est le résumé de Galt. Ceci est le résumé de Galt. Ceci est le résumé de Galt.",
+            "card-subtitle": "Vue.js, .NET",
+            "card-content": "Galt est un gestionnaire de packages NuGet destiné aux développeurs",
             "for-developers": {
                 "title": "Un projet destiné aux développeurs",
                 "galt": "Galt est un gestionnaire de packages permettant aux développeurs de surveiller et d’administrer l’architecture des dépendances de leur projet .NET hébergé sur la plateforme ",
@@ -188,13 +191,52 @@
         },
         "vision-safety": {
             "title": "VisionSafety",
-            "subtitle": "Ceci est le sous-titre de VisionSafety",
-            "summary": "Ceci est le résumé de VisionSafety. Ceci est le résumé de VisionSafety. Ceci est le résumé de VisionSafety."
+            "subtitle": "Protéger ceux qui nous protègent",
+            "card-subtitle": "Xamarin, Android",
+            "card-content": "VisionSafety est une application life-saver pour les agents de sécurité",
+            "save-lives": {
+                "title": "Une application pour sauver des vies",
+                "vision-safety": "VisionSafety est une application du panel Vision de Securitas. Elle est destinée aux agents de sécurité travaillant au sein de sites à risques. Grâce à elle, l’agent peut envoyer des alertes grâce à un gros bouton facilement accessible (avec une simple pression, il lance un décompte avant l’alerte avec la possibilité de l’annuler en cas d’erreur, et avec une pression longue, il envoie l’alerte directement). Il peut également passer en mode « danger », prévenant ainsi qu’il a ressenti un potentiel risque imminent. Durant ce mode, toutes les alertes sont immédiates. Certains agents sont équipés de boutons physiques ",
+                "bluetooth": "Bluetooth",
+                "buttons": " qu’ils peuvent attacher à des bracelets afin d’envoyer des alertes de manière plus discrète grâce à des simples pressions furtives.",
+                "detection": "L’application détecte également les chutes ainsi que l’inactivité prolongée (et donc anormale) et envoie des alertes en conséquence. Enfin, elle permet aux agents de s’enregistrer au début et à la fin de leur ronde de surveillance et de tracer leur position GPS. Toute l’application est entièrement configurable et modulable en fonction des spécificités de chaque site à protéger. Grâce à cette application, Securitas gagne en efficacité pour intervenir en cas d’alerte et peut plus facilement secourir un agent ayant, par exemple, subit une agression."
+            },
+            "manage": {
+                "title": "Gérer l’application seul",
+                "vision-safety": "VisionSafety est une application Android développée grâce à l’environnement ",
+                "xamarin": "Xamarin",
+                "environment": " (permettant de coder en ",
+                "c-sharp": "C#",
+                "create": " et de créer des applications ",
+                "cross-platform": "cross-platform iOS/Android",
+                "apps": " , bien que VisionSafety ne soit évidemment pas destinée à être développée pour iPhone). Nous sommes trois développeurs à avoir travaillé sur l’application. Le premier a mis en place le socle et créé l’interface. J’ai ensuite développé l’ensemble de l’application avec mon autre collègue jusqu’à la livraison de la première version.",
+                "maintened": "Depuis, l’application est maintenue et a été régulièrement améliorée pour intégrer toutes les fonctionnalités actuelles. C’est désormais moi qui m’occupe de la maintenir en intégralité, des besoins du client jusqu’à la livraison. Ainsi, j’ai beaucoup gagné en ",
+                "autonomy": "autonomie",
+                "as-well": " ainsi qu’en ",
+                "customer-relationship": "relation avec le client",
+                "study": ". J’étudie ses besoins, je lui apporte mes idées afin de répondre aux mieux à ses besoins, je développe les évolutions et enfin je lui livre. Contrairement aux autres applications où mon responsable s’occupe du contact avec le client et des livraisons, il me laisse autonome sur celle-ci et le client est pleinement satisfait de la qualité."
+            }, 
+            "develop-better": {
+                "title": "Mieux développer sur Android",
+                "in-addition" : "Outre les apports humains, j’ai aussi beaucoup appris sur ",
+                "android": "Android",
+                "vision-safety": ". Grâce à VisionSafety, je sais désormais connecter des appareils ",
+                "bluetooth": "Bluetooth",
+                "devices": " depuis une application, recueillir les données de ",
+                "geolocation": "géolocalisation",
+                "data": " de l’appareil ou encore utiliser des  ",
+                "jobs": "jobs",
+                "background": " pour effectuer des tâches d’arrière-plan. Grâce à la séparation UI/Library de Xamarin, j’ai mieux compris et respecté le fonctionnement du ",
+                "multithreading": "multithreading",
+                "on-android": " sur Android.",
+                "enjoy": "J’apprécie travailler sur VisionSafety, il s’agit d’une application dont la finalité est importante : protéger des personnes. De plus, elle me permet de développer des fonctionnalités intéressantes d’Android."
+            }
         },
         "web-agent": {
             "title": "WebAgent",
             "subtitle": "Ceci est le sous-titre de WebAgent",
-            "summary": "Ceci est le résumé de WebAgent. Ceci est le résumé de WebAgent. Ceci est le résumé de WebAgent."
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents de sécurité dans leur quotidien"
         }
     },
     "human-skills": {
@@ -220,7 +262,7 @@
                 "web-agent": "WebAgent",
                 "and": " et ",
                 "vision-safety": "VisionSafety",
-                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
+                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un large projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
                 "feedbacks": "les feedbacks",
                 "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil. Elle a également été relevée au cours du ",
                 "poc": "PoC (proof of concept) ",

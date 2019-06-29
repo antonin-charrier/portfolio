@@ -61,11 +61,11 @@
 }
 
 .profile-picture-large {
-    width: 230px;
+    width: 200px;
 }
 
 .profile-picture-small {
-    width: 150px;
+    width: 144px;
 }
 
 .profile-panel {
@@ -102,8 +102,28 @@
     font-size: 16px !important;
 }
 
+.selected-parent {
+    width: 5px;
+    height: inherit; 
+    position: absolute;
+    left: 0;
+}
+
+.selected-parent.light {    
+    background: $light-primary;
+}
+
+.selected-parent.dark {    
+    background: $dark-primary;
+}
+
 .sublist {
     padding-top: 0;
+
+    .sidenav-mat-list-p {
+        padding-left: 16px;
+        font-weight: 300 !important;
+    }
 }
 
 .sublist-icon {    
