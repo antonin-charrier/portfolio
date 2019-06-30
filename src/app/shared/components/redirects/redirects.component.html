@@ -51,7 +51,7 @@
             {{ 'redirects.linked-human-skills.title' | translate }}
         </h4>
         <div class="redirects-group">
-            <a mat-flat-button color="primary" [routerLink]="['human-skills/autonomy']">
+            <a mat-flat-button color="primary" [routerLink]="['human-skills/autonomy']" *ngIf="isHumanSkillLinked('autonomy')">
                 {{ 'redirects.linked-human-skills.autonomy' | translate }}
             </a>
             <a mat-flat-button color="primary" [routerLink]="['human-skills/knowledge-sharing']" *ngIf="isHumanSkillLinked('knowledge-sharing')">

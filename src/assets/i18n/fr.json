@@ -447,9 +447,46 @@
         },
         "front-end": {
             "title": "Front end",
-            "subtitle": "Ceci est le sous-titre de front end",
+            "subtitle": "Rendre les applications modernes, esthétiques et ergonomiques",
             "card-subtitle": "Angular, .NET",
-            "card-content": "J'adore travailler sur du front-end, notamment en Angular et Vue.js"
+            "card-content": "J'adore travailler sur du front-end, notamment en Angular et Vue.js",
+            "introduction": {
+                "title": "Mon introduction au front end",
+                "basis": "Le front end est la base de toute application. C’est ce que voit l’utilisateur et ce qui définit s’il va adopter l’application ou non. A travers mes différents projets, j’ai pu expérimenter à la fois le front et le back end, étant la plupart du temps développeur full stack. J’apprécie particulièrement le front end car il me permet d’exprimer ma créativité.",
+                "web": "Concernant le web, j’apprécie utiliser des frameworks javascript modernes. J’ai d’abord commencé avec ",
+                "vue-js": "Vue.js",
+                "school": " dans le cadre d’un projet au sein de mon école, ",
+                "galt": "Galt",
+                "framework": ". Il s’agit d’un framework facile à appréhender qui m’a permis de découvrir ce monde que je ne connaissais pas. Dans ce projet, c’est moi qui me suis principalement occupé de la partie front end. J’ai appris comment créer une ",
+                "spa": "SPA (single page application)",
+                "fluid": ", plus fluide et agréable pour l’utilisateur."
+            },
+            "angular": {
+                "title": "De Vue.js à Angular",
+                "capgemini": "Après Galt, j’ai rejoint Capgemini en stage, puis en alternance. Durant la première année, je n’ai plus utilisé de frameworks javascript, hormis pour le début de ce portfolio que j’ai, à la base, initié avec Vue.js. Finalement, depuis 2018, l’offre en ",
+                "angular": "Angular",
+                "projects": " s’est multipliée. Plusieurs projets d’applications web se sont lancées et c’est Angular qui a été choisi pour les développer. Securitas, le client pour lequel j’ai quasiment exclusivement travaillé, s’est lancé dans un projet « full digital » pour 2020, et pour accompagner ce projet, une migration complète d’un client lourd vers un site web en Angular : ",
+                "web-agent": "WebAgent",
+                "integrated": ". J’ai même, par la suite, intégré d’autres projets Angular, de façon temporaire (",
+                "call-center": "Call center",
+                "and": " et ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ").",
+                "application": "Etant donné que la demande Angular ne cessait de grossir et que mon entreprise m’avait fait suivre des formations en ligne sur ce framework, j’ai décidé de migrer le début de mon portfolio en Vue.js vers une application Angular. Ainsi, j’ai pu prolonger ma formation en autodidacte et découvrir des outils et des concepts intéressants que moi et mon équipe avons ensuite pu reprendre sur WebAgent (par exemple les traductions via ",
+                "ngx-translate": "NgxTranslate",
+                "portfolio": ", que j’ai choisi après avoir testé le module d’internationalisation d’Angular). Ce portfolio a été entièrement développé avec Angular 7. Là où d’autres personnes souhaiteraient utiliser des CMS afin de rédiger leur portfolio pour se simplifier le travail, j’ai souhaité montrer directement mes compétences en tant que développeur Angular."
+            },
+            "web-agent": {
+                "title": "Le front end n’est pas que du développement",
+                "web-agent": "Depuis début 2019, je participe au développement de WebAgent pour Securitas. C’est un projet complexe qui m’a beaucoup fait monter en compétence sur Angular. L’application a été réalisée en collaboration avec une équipe d’ergonomes qui nous ont fournies des maquettes ",
+                "ux": "UX (user experience)",
+                "and": " et ",
+                "ui": "UI (user interface)",
+                "mock-ups": " étudiées avec le client. Grâce à cette équipe, nous avons un site esthétique et ergonomique, auquel nous devons ajouter la fluidité et la performance grâce à nos développements. L’un ne va pas sans l’autre, et si nous n’avions pas cette équipe d’experts à nos côtés, le site serait certainement fonctionnel et performant, mais peu agréable pour l’utilisateur, qui ne verrait alors aucune différence avec la vieille application sur client lourd. J’apprécie devoir essayer de comprendre au mieux les besoins du client et me mettre à la place des utilisateurs afin de leur fournir la meilleure expérience possible.",
+                "e-monthly": "Sur le projet eMonthly, j’ai également pu m’essayer à l’",
+                "architecture": "architecture",
+                "experience": " de projets Angular grâce à l’expérience acquise sur mes autres projets Angular. J’ai développé un template d’application Angular qui puisse être réutilisé pour toutes les nouvelles applications, eMonthly en tête de liste. Grâce à ce template, les développeurs gagnent en efficacité et améliorent l’industrialisation du processus. Il donne aussi des lignes directrices aux développeurs inexpérimentés en Angular afin qu’ils évitent de se disperser au sein de l’architecture du projet."
+            }
         },
         "notions-of-architecture": {
             "title": "Notions d'architecture",

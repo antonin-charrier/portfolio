@@ -8,16 +8,17 @@ export class WipService {
   private static prodRoutes: string[] = [
     '/',
     '/projects',
+    '/projects/vision-safety',
     '/projects/call-center',
     '/projects/e-monthly',
     '/projects/galt',
-    '/projects/vision-safety',
+    '/technical-skills',
+    '/technical-skills/front-end',
+    '/technical-skills/android',
     '/human-skills',
     '/human-skills/autonomy',
-    '/human-skills/creativity',
     '/human-skills/team-leading',
-    '/technical-skills',
-    '/technical-skills/android',
+    '/human-skills/creativity',
     '/career',
     '/about'
   ];

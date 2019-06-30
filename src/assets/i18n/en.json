@@ -447,9 +447,46 @@
         },
         "front-end": {
             "title": "Front end",
-            "subtitle": "This is the front end subtitle",
+            "subtitle": "Make modern, aesthetic and ergonomic applications",
             "card-subtitle": "Angular, .NET",
-            "card-content": "I love working on front-end, especially in Angular and Vue.js"
+            "card-content": "I love working on front-end, especially in Angular and Vue.js",
+            "introduction": {
+                "title": "My introduction to the front end",
+                "basis": "The front end is the basis of any application. This is what the user sees and what defines whether he will adopt the application or not. Through my different projects, I was able to experiment both front and back end, being mostly full stack developer. I particularly like the front end because it allows me to express my creativity.",
+                "web": "Regarding the web, I appreciate using modern javascript frameworks. I first started with ",
+                "vue-js": "Vue.js",
+                "school": " as part of a project at my school, ",
+                "galt": "Galt",
+                "framework": ". This is an easy-to-understand framework that allowed me to discover this world that I did not know. In this project, I was mainly involved in front end. I learned how to create a ",
+                "spa": "SPA (single page application)",
+                "fluid": ", more fluid and pleasant for the user."
+            },
+            "angular": {
+                "title": "From Vue.js to Angular",
+                "capgemini": "After Galt, I joined Capgemini for an internship, then an apprenticeship. During the first year, I no longer used javascript frameworks, except for the beginning of this portfolio that I basically started with Vue.js. Finally, since 2018, the offer in ",
+                "angular": "Angular",
+                "projects": " has multiplied. Several web application projects have started, and it is Angular that has been chosen to develop them. Securitas, the customer for whom I have almost exclusively worked, has embarked on a \"full digital\" project for 2020, and to accompany this project, a complete migration from a heavy client to a website in Angular: ",
+                "web-agent": "WebAgent",
+                "integrated": ". I even later integrated other Angular projects on a temporary basis (",
+                "call-center": "Call center",
+                "and": " and ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ").",
+                "application": "Since the Angular application was getting bigger and my company made me follow online courses on this framework, I decided to migrate the beginning of my portfolio in Vue.js to an Angular application. Thus, I was able to extend my training as an autodidact and to discover interesting tools and concepts that I and my team were able to take back on WebAgent (for example the translations via ",
+                "ngx-translate": "NgxTranslate",
+                "portfolio": ", which I chose after having tested Angular’s module of internationalization). This portfolio was fully developed with Angular 7. Where other people would like to use CMS to write their portfolio to simplify their work, I wanted to show my skills directly as an Angular developer."
+            },
+            "web-agent": {
+                "title": "The front end is not only about development",
+                "web-agent": "Since early 2019, I have been involved in the development of WebAgent for Securitas. It's a complex project that made me get a lot of Angular skills. The application was realized in collaboration with a team of ergonomists who provided us with ",
+                "ux": "UX (user experience)",
+                "and": " and ",
+                "ui": "UI (user interface)",
+                "mock-ups": " mock-ups studied with the client. Thanks to this team, we have an aesthetic and ergonomic site, to which we must add fluidity and performance thanks to our developments. One does not go without the other, and if we did not have this team of experts at our side, the site would certainly be functional and efficient, but not pleasant for the user, who would not see any difference with the old application on heavy client. I appreciate having to try to understand the needs of the customer and put myself in the users' shoes to give them the best possible experience. ",
+                "e-monthly": "On the eMonthly project, I was also able to try the Angular project ",
+                "architecture": "architecture",
+                "experience": " thanks to the experience gained on my other Angular projects. I developed an Angular application template that can be reused for all new applications, with eMonthly at the top of the list. Thanks to this template, developers gain in efficiency and improve the industrialization of the process. It also provides guidelines for inexperienced Angular developers to avoid dispersal within the project architecture."
+            }
         },
         "notions-of-architecture": {
             "title": "Notions of architecture",

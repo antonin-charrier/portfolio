@@ -6,4 +6,16 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './front-end.component.html',
   styleUrls: ['./front-end.component.scss']
 })
-export class FrontEndComponent extends ArticleComponent {}
+export class FrontEndComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['web-agent', 'call-center', 'e-monthly', 'galt'];
+  }
+
+  get linkedHumanSkills() {
+    return ['creativity'];
+  }
+
+  get linkedTechnicalSkills() {
+    return ['notions-of-architecture'];
+  }
+}
