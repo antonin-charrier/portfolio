@@ -17,6 +17,7 @@ export class WipService {
     '/human-skills/creativity',
     '/human-skills/team-leading',
     '/technical-skills',
+    '/technical-skills/android',
     '/career',
     '/about'
   ];

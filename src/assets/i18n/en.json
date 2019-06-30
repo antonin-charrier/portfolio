@@ -39,7 +39,7 @@
     },
     "home": {
         "title": "Antonin CHARRIER",
-        "subtitle": "Web and Android developer",
+        "subtitle": "Angular consultant",
         "two-years": "After two and half years at ",
         "capgemini": "Capgemini",
         "capgemini-website": "Capgemini website",
@@ -57,7 +57,32 @@
         "angular-bis": " and ",
         "android": "Android",
         "development-bis": " development.",
-        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large web site for Securitas security agents."
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large web site for Securitas security agents.",
+        "projects" : {
+            "title": "Projects",
+            "card-subtitle": "For Safran, Securitas...",
+            "card-content": "I worked on several projects, mainly websites and mobile applications"
+        },
+        "technical-skills" : {
+            "title": "Technical skills",
+            "card-subtitle": "Angular, Android...",
+            "card-content": "I appreciate being able to work on modern technologies, especially on front end"
+        },
+        "human-skills" : {
+            "title": "Human skills",
+            "card-subtitle": "Autonomy, creativity...",
+            "card-content": "These qualities and skills help me in my daily work"
+        },
+        "career" : {
+            "title": "Career",
+            "card-subtitle": "Until today",
+            "card-content": "After five years of study and two and a half years of professional experience, here is where I am"
+        },
+        "hobbies" : {
+            "title": "Hobbies",
+            "card-subtitle": "On my free time",
+            "card-content": "That is what I do on my spare time, these activities are really important to me"
+        }
     },
     "projects": {
         "title": "Projects",
@@ -365,9 +390,48 @@
         "subtitle": "My principal technical skills",
         "android": {
             "title": "Android",
-            "subtitle": "This is the Android subtitle",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "subtitle": "Mobile is the future of digital",
+            "card-subtitle": "Android, Xamarin",
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
+            "discovery": {
+                "title": "A step-by-step discovery as an autodidact",
+                "learned": "I learned to develop on ",
+                "android": "Android",
+                "vision": " on the Vision project of Securitas. Inside this project gathering several applications including ",
+                "web-agent": "WebAgent",
+                "vision-mobile": ", is a mobile application called VisionMobile allowing to use all modules of the website from a smartphone. The security agents can write reports or register visitors in the middle of their round of surveillance without needing to come back to a computer. Since I studied Java at my school, I discovered the project and the Android world directly. I started by dealing with small returns from the client on the application in order to familiarize myself with the concepts of this new environment."
+            },
+            "practice": {
+                "title": "A regular and thorough practice",
+                "two-years": "It is now been more than two years that I’ve been working on Android, inside different projects. I continued the TPM on VisionMobile, during which I learned to create ",
+                "activities": "activities",
+                "and": " and ",
+                "fragments": "fragments",
+                "tasks": ", to use Java’s asynchronous tasks to communicate with the server. I even learned to use an ",
+                "sqlite": "SQLite",
+                "database": " database in order to store data in the application before sending them to the server (VisionMobile must absolutely work even without Internet connection since there are sites which have a bad network reception in some sectors). This TPM allowed me to have a general vision on the Android operation and to understand the base principles.",
+                "opportunity": "I had the opportunity to work on Android in other projects. Firstly, at my school, I received during my apprenticeship introductory classes on Android. Given that I learned at my job, the classes did not teach me much, however, we had to give a project of a mobile application at the end of the cycle. I took advantage of this application to experiment and deepen my knowledge on Android, especially in terms of design, by studying in depth the operation of the different ",
+                "layouts": "layouts",
+                "layouts-bis": "."
+            },
+            "vision-safety": {
+                "title": "VisionSafety particularities",
+                "project": "Following this, Securitas launched the project of a new mobile application designed to ensure the safety of its agents, ",
+                "vision-safety": "VisionSafety",
+                "center": ". Since I work in a center mainly focused on Microsoft technologies, we decided to use ",
+                "xamarin": "Xamarin",
+                "one-hand": " to develop this application. The two interests are, on the one hand, to code in ",
+                "c-sharp": "C#",
+                "language": ", a language considered by most of the developers (including me) as way more pleasant, complete and performing than Java, and on the other hand, to be able to code ",
+                "cross-platform": "cross-platform Android/iOS",
+                "applications": " applications. The second interest was, in the case of VisionSafety, secondary, since the application would be deployed only on Android rugged phone and not iPhones. However, the goal of this application for the center is to serve as a showcase for customers to demonstrate our skills and offer new mobile solutions that are simple to develop using Xamarin.",
+                "debuts": "Thanks to this application that I followed from its debuts, I could study the set up of the ",
+                "architecture": "architecture",
+                "needs": " and participate in it. Given that this application must meet quite specific needs, I was able to use particular functionalities from Android, like the fall or inactivity detection using the accelerometer, the GPS positions retrieving using the geolocation or even the connection to devices with ",
+                "bluetooth": "Bluetooth",
+                "ble": " (v4 and BLE).",
+                "continue": "I want to continue to develop on Android and hope to have new opportunities to embark on such interesting projects of mobile applications."
+            }
         },
         "dot-net-core-web-api": {
             "title": ".NET Core Web API",
@@ -489,6 +553,9 @@
         "flaticon-website": "Flaticon website",
         "licensed": " are licensed by ",
         "cc-3-0-website": "Creative Commons BY 3.0 page",
+        "illustrations": "The illustrations of the cards were made by artist ",
+        "hassan-website": "Mohammed Hassan Pixabay page",
+        "images": ". Other images are royalty free.",
         "code": "All the source code of my portfolio is available on ",
         "github": "GitHub",
         "github-website": "My GitHub page"

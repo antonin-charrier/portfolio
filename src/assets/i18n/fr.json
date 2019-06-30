@@ -39,7 +39,7 @@
     },
     "home": {
         "title": "Antonin CHARRIER",
-        "subtitle": "Développeur web et Android",
+        "subtitle": "Consultant Angular",
         "two-years": "Après deux années et demi à ",
         "capgemini": "Capgemini",
         "capgemini-website": "Site web de Capgemini",
@@ -57,7 +57,32 @@
         "angular-bis": " et ",
         "android": "Android",
         "development-bis": ".",
-        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un large site web pour des agents de sécurité de Securitas."
+        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un large site web pour des agents de sécurité de Securitas.",
+        "projects" : {
+            "title": "Projets",
+            "card-subtitle": "Pour Safran, Securitas...",
+            "card-content": "J'ai travaillé sur plusieurs projets, principalement des sites web et des applications mobiles"
+        },
+        "technical-skills" : {
+            "title": "Compétences techniques",
+            "card-subtitle": "Angular, Android...",
+            "card-content": "J'apprécie pouvoir travailler sur des technologies modernes, notamment en front end"
+        },
+        "human-skills" : {
+            "title": "Compétences humaines",
+            "card-subtitle": "Autonomie, creativité...",
+            "card-content": "Ces qualités et compétences m'aident dans mon travail quotidien"
+        },
+        "career" : {
+            "title": "Parcours",
+            "card-subtitle": "Jusqu'à aujourd'hui",
+            "card-content": "Après cinq ans d'études et deux ans et demi d'expérience professionnelle, voilà où j'en suis"
+        },
+        "hobbies" : {
+            "title": "Loisirs",
+            "card-subtitle": "Sur mon temps libre",
+            "card-content": "Voilà ce que je fais sur mon temps libre, ces activités sont très importantes pour moi"
+        }
     },
     "projects": {
         "title": "Projets",
@@ -365,9 +390,48 @@
         "subtitle": "Mes principales compétences techniques",
         "android": {
             "title": "Android",
-            "subtitle": "Ceci est le sous-titre de Android",
+            "subtitle": "Le mobile est l’avenir du digital",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
+            "discovery": {
+                "title": "Une découverte pas-à-pas en autodidacte",
+                "learned": "J’ai appris à développer sur ",
+                "android": "Android",
+                "vision": " au sein du projet Vision de Securitas. Au sein de ce projet regroupant plusieurs applications dont ",
+                "web-agent": "WebAgent",
+                "vision-mobile": ", se trouve une application mobile appelée VisionMobile permettant d’utiliser tous les modules du site web depuis un téléphone. Les agents de sécurité peuvent rédiger des rapports ou enregistrer des visiteurs au milieu de leur ronde de surveillance sans avoir à revenir sur un poste de travail. Etant donné que j’ai étudié le Java au sein de mon école, j’ai pu découvrir le projet et le monde d’Android directement. J’ai commencé par traiter des petits retours client sur l’application afin de me familiariser avec les concepts de ce nouvel environnement."
+            },
+            "practice": {
+                "title": "Une pratique régulière et approfondie",
+                "two-years": "Cela fait désormais plus de deux ans que je travaille sur Android, au sein de différents projets. J’ai continué la TMA sur VisionMobile, durant laquelle j’ai appris à créer des ",
+                "activities": "activités",
+                "and": " et des ",
+                "fragments": "fragments",
+                "tasks": ", à utiliser les tâches asynchrones de Java pour communiquer avec le serveur. J’ai même appris à utiliser une base de données ",
+                "sqlite": "SQLite",
+                "database": " afin de stocker les données dans l’application avant de les envoyer au serveur (VisionMobile doit absolument fonctionner même sans connexion Internet étant donné que des sites ont une mauvaise réception du réseau dans certains secteurs). Cette TMA m’a permis d’avoir une vision générale sur le fonctionnement d’Android et de comprendre les principes de base.",
+                "opportunity": "J’ai eu l’occasion de travailler sur Android dans d’autres projets. D’une part, au sein de mon école, j’ai reçu durant mon alternance des cours d’introduction à Android. Etant donné que j’avais appris à mon travail, les cours ne m’ont pas beaucoup apporté, en revanche, nous devions rendre un projet d’application mobile à la fin du cycle. J’ai profité de cette application pour expérimenter et approfondir mes connaissances sur Android, notamment en termes de design, en étudiant en profondeur le fonctionnement des différents ",
+                "layouts": "layouts",
+                "layouts-bis": "."
+            },
+            "vision-safety": {
+                "title": "Les particularités de VisionSafety",
+                "project": "Par la suite, Securitas a lancé le projet d’une nouvelle application mobile destinée à assurer la sécurité de ses agents, ",
+                "vision-safety": "VisionSafety",
+                "center": ". Etant donné que je travaille dans un centre principalement axé sur les technologies Microsoft, nous avons décidé d’utiliser ",
+                "xamarin": "Xamarin",
+                "one-hand": " pour développer cette application. Les deux intérêts sont d’une part, de pouvoir coder en ",
+                "c-sharp": "C#",
+                "language": ", un langage considéré par la plupart des développeurs (moi compris) comme bien plus agréable, complet et performant que Java, et d’autre part, de pouvoir coder des applications ",
+                "cross-platform": "cross-platform Android/iOS",
+                "applications": ". Le deuxième intérêt était, dans le cas de VisionSafety, secondaire, puisque l’application n’allait être déployée que sur des téléphones Android robustes et non des iPhone. Cependant, le but de cette application pour le centre est de servir de vitrine auprès des clients pour démontrer nos compétences et proposer de nouvelles solutions mobiles simples à développer grâce à Xamarin.",
+                "debuts": "Grâce à cette application que j’ai suivie depuis ses débuts, j’ai pu étudier la mise en place de l’",
+                "architecture": "architecture",
+                "needs": " et y participer. Etant donné que cette application doit répondre à des besoins assez spécifiques, j’ai pu utiliser des fonctionnalités particulières d’Android, comme la détection de chute ou d’inactivité grâce à l’accéléromètre, la récupération de positions GPS grâce à la géolocalisation ou encore la connexion à des appareils en ",
+                "bluetooth": "Bluetooth",
+                "ble": " (v4 and BLE).",
+                "continue": "Je souhaite continuer à développer sur Android et espère avoir de nouvelles occasions de me lancer dans des projets aussi intéressants d’applications mobiles."
+            }
         },
         "dot-net-core-web-api": {
             "title": "API Web .NET Core",
@@ -489,6 +553,9 @@
         "flaticon-website": "Site web de Flaticon",
         "licensed": " sont sous licence ",
         "cc-3-0-website": "Page de Creative Commons BY 3.0",
+        "illustrations": "Les illustrations des cartes ont été réalisées par l'artiste ",
+        "images": ". Les autres images sont libres de droit.",
+        "hassan-website": "Page Pixabay de Mohammed Hassan",
         "code": "Tout le code source de mon portfolio est disponible sur ",
         "github": "GitHub",
         "github-website": "Ma page GitHub"
