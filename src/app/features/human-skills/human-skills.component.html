@@ -11,17 +11,6 @@
       <p>{{ 'human-skills.autonomy.card-content' | translate }}</p>
     </mat-card-content>
   </mat-card>
-  <mat-card matRipple class="article-card" [routerLink]="['./creativity']">
-    <mat-card-header>      
-      <div mat-card-avatar class="article-card-avatar article-card-avatar-creativity" *ngIf="isSmallDevice"></div>
-      <mat-card-title>{{ 'human-skills.creativity.title' | translate }}</mat-card-title>
-      <mat-card-subtitle>{{ 'human-skills.creativity.card-subtitle' | translate }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image class="article-card-image" src="assets/img/creativity.png" alt="Creativity logo" *ngIf="!isSmallDevice">
-    <mat-card-content>
-      <p>{{ 'human-skills.creativity.card-content' | translate }}</p>
-    </mat-card-content>
-  </mat-card>
   <mat-card matRipple class="article-card" [routerLink]="['./knowledge-sharing']">
     <mat-card-header>      
       <div mat-card-avatar class="article-card-avatar article-card-avatar-knowledge-sharing" *ngIf="isSmallDevice"></div>
@@ -33,17 +22,6 @@
       <p>{{ 'human-skills.knowledge-sharing.card-content' | translate }}</p>
     </mat-card-content>
   </mat-card>
-  <mat-card matRipple class="article-card" [routerLink]="['./languages']">
-    <mat-card-header>      
-      <div mat-card-avatar class="article-card-avatar article-card-avatar-languages" *ngIf="isSmallDevice"></div>
-      <mat-card-title>{{ 'human-skills.languages.title' | translate }}</mat-card-title>
-      <mat-card-subtitle>{{ 'human-skills.languages.card-subtitle' | translate }}</mat-card-subtitle>
-    </mat-card-header>
-    <img mat-card-image class="article-card-image" src="assets/img/languages.png" alt="Languages logo" *ngIf="!isSmallDevice">
-    <mat-card-content>
-      <p>{{ 'human-skills.languages.card-content' | translate }}</p>
-    </mat-card-content>
-  </mat-card>
   <mat-card matRipple class="article-card" [routerLink]="['./team-leading']">
     <mat-card-header>      
       <div mat-card-avatar class="article-card-avatar article-card-avatar-team-leading" *ngIf="isSmallDevice"></div>
@@ -53,6 +31,28 @@
     <img mat-card-image class="article-card-image" src="assets/img/team-leading.png" alt="Team leading logo" *ngIf="!isSmallDevice">
     <mat-card-content>
       <p>{{ 'human-skills.team-leading.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./creativity']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-creativity" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'human-skills.creativity.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'human-skills.creativity.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/creativity.png" alt="Creativity logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'human-skills.creativity.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./languages']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-languages" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'human-skills.languages.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'human-skills.languages.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/languages.png" alt="Languages logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'human-skills.languages.card-content' | translate }}</p>
     </mat-card-content>
   </mat-card>
 </div>
