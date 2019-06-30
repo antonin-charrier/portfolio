@@ -271,7 +271,7 @@
             "title": "Autonomie",
             "subtitle": "Un développeur doit être capable de travailler par lui-même",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
+            "card-content": "Je suis capable de travailler seul tout en ayant un bon esprit d'équipe",
             "definition": {
                 "title": "Qu'est-ce que l'autonomie ?",
                 "what": "Fondalementalement, ",
@@ -304,7 +304,7 @@
             "title": "Créativité",
             "subtitle": "La créativité permet d’apporter de véritables solutions",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
+            "card-content": "J'ai un esprit créatif, ce qui me permet d'innover régulièrement",
             "definition": {
                 "title": "Qu’est-ce que la créativité ?",
                 "the": "La ",
@@ -348,19 +348,19 @@
             "title": "Partage de connaissances",
             "subtitle": "Ceci est le sous-titre de partage de connaissances",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
+            "card-content": "J'aime partager mon savoir aux autres, qu'il soit fonctionnel ou technique"
         },
         "languages": {
             "title": "Langues",
             "subtitle": "Ceci est le sous-titre de langues",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
+            "card-content": "J'adore les langues, et je parle couramment anglais"
         },
         "team-leading": {
             "title": "Gestion d'équipe",
             "subtitle": "Une introduction à la gestion d'équipe",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
+            "card-content": "J'ai eu l'occasion d'expérimenter la gestion d'équipe durant mon alternance",
             "arrival": {
                 "title": "Mon arrivée dans un PoC",
                 "october": "En octobre dernier, je rejoins un ",
@@ -392,7 +392,7 @@
             "title": "Android",
             "subtitle": "Le mobile est l’avenir du digital",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
+            "card-content": "J'ai acquis une certaine expérience sur Android sur différents projets",
             "discovery": {
                 "title": "Une découverte pas-à-pas en autodidacte",
                 "learned": "J’ai appris à développer sur ",
@@ -437,25 +437,25 @@
             "title": "API Web .NET Core",
             "subtitle": "Ceci est le sous-titre de API Web .NET Core",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "J'ai principalement étudié le .NET durant mes études et j'ai pu le mettre en pratique au travail"
         },
         "financial-assessments": {
             "title": "Chiffrages financiers",
             "subtitle": "Ceci est le sous-titre de chiffrages financiers",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "Durant mon alternance, j'ai pu découvrir les chiffrages financiers"
         },
         "front-end": {
             "title": "Front end",
             "subtitle": "Ceci est le sous-titre de front end",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "J'adore travailler sur du front-end, notamment en Angular et Vue.js"
         },
         "notions-of-architecture": {
             "title": "Notions d'architecture",
             "subtitle": "Ceci est le sous-titre de notions d'architecture",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer"
         }
     },
     "redirects": {
