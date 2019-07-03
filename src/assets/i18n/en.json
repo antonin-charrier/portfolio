@@ -259,9 +259,54 @@
         },
         "web-agent": {
             "title": "WebAgent",
-            "subtitle": "This is the WebAgent subtitle",
+            "subtitle": "My biggest project on Angular",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job"
+            "card-content": "WebAgent is a large website that accompanies Securitas agents in their daily job",
+            "goal": {
+                "title": "The goal of WebAgent",
+                "vision": "During my apprenticeship, I mainly worked for the Securitas client on the Vision project. It is a set of tools that accompany the security agents in their daily work. These applications aim to help them in their tasks: plan surveillance rounds, write reports during anomalies, manage visitors on the site, etc. Among them is an ",
+                "android": "Android",
+                "vision-mobile": " application, VisionMobile, and a website developed in ",
+                "angular": "Angular",
+                "web-agent": ": WebAgent.",
+                "redesign": "This site is a web redesign of a WPF heavy client. The goal is to create a modern, ergonomic and aesthetic application in collaboration with a team of designers and ergonomists. The redesign is divided in multiple batches. The first one is a reproduction of the existing from an old website that only allowed reports writing. It has been delivered to the customer in June 2019. The second and third batches concern respectively the schedules (rounds, tasks, etc.) and the ins/outs (visitors, vehicles, keys, etc.). Lastly, the last batches correspond to the management of the documents and instructions within a site as well as the training of the agents. The development is expected to last until March 2020, yet the project could be extended in the case of the integration of a wide and complex administration module that currently only exists on the heavy client."
+            },
+            "angular": {
+                "title": "A big competence growth on Angular",
+                "skills": "On this project, I was able to develop my skills in ",
+                "angular": "Angular",
+                "environment": ". I learned several concepts, among which:",
+                "lazy-loading": "The ",
+                "lazy-loading-bis": "lazy loading",
+                "lazy-loading-ter": ", which allows to postpone the initialization of a module until it is requested",
+                "guards": "The ",
+                "guards-bis": "guards",
+                "guards-ter": ", which control access to a route requested by the user",
+                "resolvers": "The ",
+                "resolvers-bis": "resolvers",
+                "resolvers-ter": ", which allow to load the requested web page once all the necessary data of this page has been retrieved, without needing to display a placeholder or a loading spinner",
+                "app-initializers": "The ",
+                "app-initializers-bis": "app initializers",
+                "app-initializers-ter": ", which allow to wait for data retrieval before initializing and render the website (or the module in the case of lazy loading)",
+                "concepts": "Thanks to these concepts that we applied to WebAgent, it is possible to create powerful and fluid sites for the user, while avoiding a maximum of bugs on the client side. Obviously, you must know how to user them wisely in order to take the most advantage of their usefulness.",
+                "team": "I had the chance to work in a team where we were constantly learning. As soon as a member discovered something interesting, he shared it and we studied whether it was possible and interesting to add it on the project. As we were efficient, we were ahead of schedule and we were able to afford a lot of micro-refactoring to have the cleanest and most efficient solution. Thanks to this enriching experience, my teammates and I now take part on other Angular projects to make ",
+                "feedbacks": "feedbacks",
+                "expertise": " to other teams and bring them our expertise."
+            }, 
+            "other-skills": {
+                "title": "Some other technical and human skills",
+                "web-services" : "The new site was the occasion to develop new web services on ",
+                "asp-net": "ASP.NET",
+                "integrate": ". We will also integrate a ",
+                "signal-r": "SignalR",
+                "devices": " module during the second batch to notify the application on different events (new report, new instruction, etc.).",
+                "web-agent": "During the development of WebAgent, I also had the opportunity to ",
+                "knowledge": "share my functional and technical knowledge",
+                "welcome": " of the project. Indeed, mu team welcomed a new member after a few months of development. I was responsible for presenting him the functional specificities of the project and I was able to exchange with him on several Angular topics, knowing that he had also trained and had the occasion to discover and experiment concepts during his previous project.",
+                "discover": "Finally, I could discover the ",
+                "assessments": "financial assessments",
+                "client": " that are sent to the client for a validation of the budget by him. It is a skill that I want to develop in order to continue to evolve within the project."
+            }
         }
     },
     "human-skills": {

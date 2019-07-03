@@ -12,6 +12,7 @@ export class WipService {
     '/projects/call-center',
     '/projects/e-monthly',
     '/projects/galt',
+    '/projects/web-agent',
     '/technical-skills',
     '/technical-skills/front-end',
     '/technical-skills/android',

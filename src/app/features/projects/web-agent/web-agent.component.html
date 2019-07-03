@@ -1,3 +1,68 @@
-<p>
-  web-agent works!
-</p>
+<app-article-header [title]="'projects.web-agent.title'" [subtitle]="'projects.web-agent.subtitle'"></app-article-header>
+<div>
+  <h3>{{ 'projects.web-agent.goal.title' | translate }}</h3>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.goal.vision' | translate }}</span>
+    <a [routerLink]="['../../technical-skills/android']" matTooltip="{{ 'redirects.linked-technical-skills.android' | translate }}" matTooltipPosition="above">{{ 'projects.web-agent.goal.android' | translate }}</a>
+    <span>{{ 'projects.web-agent.goal.vision-mobile' | translate }}</span>
+    <a [routerLink]="['../../technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'projects.web-agent.goal.angular' | translate }}</a>
+    <span>{{ 'projects.web-agent.goal.web-agent' | translate }}</span>
+  </p>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.goal.redesign' | translate }}</span>
+  </p>
+  <h3>{{ 'projects.web-agent.angular.title' | translate }}</h3>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.angular.skills' | translate }}</span>
+    <b>{{ 'projects.web-agent.angular.angular' | translate }}</b>
+    <span>{{ 'projects.web-agent.angular.environment' | translate }}</span>
+  </p>
+  <ul>
+    <li>
+      <span>{{ 'projects.web-agent.angular.lazy-loading' | translate }}</span>
+      <b>{{ 'projects.web-agent.angular.lazy-loading-bis' | translate }}</b>
+      <span>{{ 'projects.web-agent.angular.lazy-loading-ter' | translate }}</span>  
+    </li>
+    <li>
+      <span>{{ 'projects.web-agent.angular.guards' | translate }}</span>
+      <b>{{ 'projects.web-agent.angular.guards-bis' | translate }}</b>
+      <span>{{ 'projects.web-agent.angular.guards-ter' | translate }}</span>  
+    </li>
+    <li>
+      <span>{{ 'projects.web-agent.angular.resolvers' | translate }}</span>
+      <b>{{ 'projects.web-agent.angular.resolvers-bis' | translate }}</b>
+      <span>{{ 'projects.web-agent.angular.resolvers-ter' | translate }}</span>  
+    </li>
+    <li>
+      <span>{{ 'projects.web-agent.angular.app-initializers' | translate }}</span>
+      <b>{{ 'projects.web-agent.angular.app-initializers-bis' | translate }}</b>
+      <span>{{ 'projects.web-agent.angular.app-initializers-ter' | translate }}</span>  
+    </li>
+  </ul>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.angular.concepts' | translate }}</span>
+  </p>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.angular.team' | translate }}</span>
+    <b>{{ 'projects.web-agent.angular.feedbacks' | translate }}</b>
+    <span>{{ 'projects.web-agent.angular.expertise' | translate }}</span>
+  </p>
+  <h3>{{ 'projects.web-agent.other-skills.title' | translate }}</h3>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.other-skills.web-services' | translate }}</span>
+    <a [routerLink]="['../../technical-skills/dot-net-core-web-api']" matTooltip="{{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}" matTooltipPosition="above">{{ 'projects.web-agent.other-skills.asp-net' | translate }}</a>
+    <span>{{ 'projects.web-agent.other-skills.integrate' | translate }}</span>
+    <b>{{ 'projects.web-agent.other-skills.signal-r' | translate }}</b>
+    <span>{{ 'projects.web-agent.other-skills.devices' | translate }}</span>
+  </p>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.other-skills.web-agent' | translate }}</span>
+    <a [routerLink]="['../../human-skills/knowledge-sharing']" matTooltip="{{ 'redirects.linked-human-skills.knowledge-sharing' | translate }}" matTooltipPosition="above">{{ 'projects.web-agent.other-skills.knowledge' | translate }}</a>
+    <span>{{ 'projects.web-agent.other-skills.welcome' | translate }}</span>
+  </p>
+  <p class="article-p">
+    <span>{{ 'projects.web-agent.other-skills.discover' | translate }}</span>
+    <a [routerLink]="['../../technical-skills/financial-assessments']" matTooltip="{{ 'redirects.linked-technical-skills.financial-assessments' | translate }}" matTooltipPosition="above">{{ 'projects.web-agent.other-skills.assessments' | translate }}</a>
+    <span>{{ 'projects.web-agent.other-skills.client' | translate }}</span>
+  </p>
+</div>

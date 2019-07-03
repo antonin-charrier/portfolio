@@ -259,9 +259,54 @@
         },
         "web-agent": {
             "title": "WebAgent",
-            "subtitle": "Ceci est le sous-titre de WebAgent",
+            "subtitle": "Mon plus gros projet sur Angular",
             "card-subtitle": "Angular, .NET",
-            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien"
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
+            "goal": {
+                "title": "Le but de WebAgent",
+                "vision": "Durant mon alternance, j’ai principalement travaillé pour le client Securitas sur le projet Vision. Il s’agit d’un ensemble d’outils qui accompagnent les agents de sécurité dans leur travail quotidien. Ces applications ont pour objectif de les aider dans leurs tâches : planifier les rondes de surveillance, rédiger des rapports lors d’anomalies, gérer les visiteurs sur le site, etc. Parmi elles se trouve une application ",
+                "android": "Android",
+                "vision-mobile": ", VisionMobile, ainsi qu’un site web développé en ",
+                "angular": "Angular",
+                "web-agent": " : WebAgent.",
+                "redesign": "Ce site est une refonte web d’un client lourd en WPF. Le but est de créer une application moderne, ergonomique et esthétique en collaboration avec une équipe de designers et d’ergonomes. La refonte est divisée en plusieurs lots. Le premier constitue une reproduction de l’existant d’un ancien site web qui permettait uniquement la rédaction de rapports. Il a été livré au client en juin 2019. Les deuxième et troisième lots concernent respectivement les plannings (rondes, tâches, etc.) et les entrées/sorties (visiteurs, véhicules, clefs, etc.). Enfin, les derniers lots correspondent à la gestion des documents et des instructions au sein d’un site ainsi que la formation des agents. Le développement devrait durer jusqu’en mars 2020, mais le projet pourrait être prolongé dans le cas de l’intégration d’un large et complexe module d’administration qui n’existe actuellement que sur le client lourd."
+            },
+            "angular": {
+                "title": "Une grande montée en compétence sur Angular",
+                "skills": "Sur ce projet, j’ai pu développer mes compétences en ",
+                "angular": "Angular",
+                "environment": ". J’y ai appris plusieurs concepts, parmi lesquels :",
+                "lazy-loading": "Le ",
+                "lazy-loading-bis": "lazy loading",
+                "lazy-loading-ter": ", qui permet de différer l’initialisation d’un module jusqu’au moment où il est demandé",
+                "guards": "Les ",
+                "guards-bis": "guards",
+                "guards-ter": ", qui permettent de contrôler l’accès à une route demandé par l’utilisateur",
+                "resolvers": "Les ",
+                "resolvers-bis": "resolvers",
+                "resolvers-ter": ", qui permettent de charger la page web demandée une fois que toutes les données nécessaire de cette page ont été récupérées, sans avoir besoin d’afficher un placeholder ou un loading spinner",
+                "app-initializers": "Les ",
+                "app-initializers-bis": "app initializers",
+                "app-initializers-ter": ", qui permettent d’attendre la récupération de données avant d’initialiser et rendre le site web (ou le module dans le cas d’un lazy loading)",
+                "concepts": "Grâce à ces concepts que nous avons appliqué à WebAgent, il est possible de créer des sites performants et fluides pour l’utilisateur, tout en évitant un maximum de bugs côté client. Evidemment, il faut savoir les utiliser à bon escient afin de tirer au mieux profit de leur utilité.",
+                "team": "J’ai eu la chance de travailler dans une équipe où nous apprenions constamment. Dès qu’un membre découvrait quelque chose d’intéressant, il la partageait et nous étudions s’il était possible et intéressant de l’ajouter au projet. Comme nous étions efficaces, nous avions de l’avance sur le planning et nous avons pu nous permettre beaucoup de micro-refactoring afin d’avoir la solution la plus propre et performante possible.  Grâce à cette expérience enrichissante, mes équipiers et moi intervenons désormais sur d’autres projets Angular afin de faire des ",
+                "feedbacks": "REX",
+                "expertise": " aux autres équipes et leur apporter notre expertise."
+            }, 
+            "other-skills": {
+                "title": "D’autres compétences techniques et humaines",
+                "web-services" : "Le nouveau site a été l’occasion de développer de nouveaux web services sur ",
+                "asp-net": "ASP.NET",
+                "integrate": ". Nous allons d’ailleurs intégrer un module ",
+                "signal-r": "SignalR",
+                "devices": " durant le deuxième lot afin de notifier l’application lors de différents événements (nouveau rapport, nouvelle instruction, etc.).",
+                "web-agent": "Au cours du développement de WebAgent, j’ai également eu l’occasion de ",
+                "knowledge": "partager mes connaissances techniques et fonctionnelles",
+                "welcome": " du projet. En effet, mon équipe a accueilli un nouveau membre après quelques mois de développement. Je me suis chargé de lui présenter les spécificités fonctionnelles du projet et j’ai pu échanger avec lui sur différents sujets Angular, sachant qu’il s’était également formé et avait eu l’occasion de découvrir et expérimenter des concepts lors de son précédent projet.",
+                "discover": "Enfin, j’ai pu commencer à découvrir les ",
+                "assessments": "chiffrages financiers",
+                "client": " qui sont envoyés au client en vue d’une validation du budget de sa part. C’est une compétence que je souhaite développer afin de continuer à évoluer au sein du projet."
+            }
         }
     },
     "human-skills": {
