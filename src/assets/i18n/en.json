@@ -309,127 +309,6 @@
             }
         }
     },
-    "human-skills": {
-        "title": "Human skills",
-        "subtitle": "My principal human skills",
-        "autonomy": {
-            "title": "Autonomy",
-            "subtitle": "A developer needs to be able to work on his own",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I am able to work on my own, while still having a good team spirit",
-            "definition": {
-                "title": "What is autonomy?",
-                "what": "Basically, ",
-                "autonomy": "autonomy",
-                "ability": " is the ability to act by myself in a specific environment. It doesn't mean working alone but working with other people being granted some freedom. I can do my tasks the way I like as far as it respects the perimeter given to me."
-            },
-            "it-company": {
-                "title": "How does autonomy transcript into an IT company?",
-                "employee": "The employee is given a work and hopefully knows how to achieve it. If he doesn't, he tries to figure out by himself using forums or tutorials on the Internet. If, despite searching and trying by himself, he is not able to achieve the work, he will report it to his manager.",
-                "however": "However, there are obvious nuances. The employee must not stay stuck on an issue for an excessive amount of time without reporting it. He must be able to feel when he needs help. Yet he must search and try by himself before asking to his mates, else he will never make progress. In a sector in ",
-                "evolution": "constant evolution",
-                "binary": ", it is primary to constantly stay up-to-date. Also, autonomy is not a binary skill. There aren't autonomous or not autonomous people. Everybody is autonomous (at different degrees) because autonomy is something people work on."
-            },
-            "me": {
-                "title": "Autonomy is one of my qualities",
-                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
-                "web-agent": "WebAgent",
-                "and": " and ",
-                "vision-safety": "VisionSafety",
-                "internship": " apps). I entered the project during my six months internship. I joined a large project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
-                "feedbacks": "feedbacks",
-                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile. It was also noticed during the ",
-                "poc": "",
-                "call-center": "Call center",
-                "poc-bis": " PoC (proof of concept)",
-                "responsabilities": " which in my team and I had to take our responsabilities given the bad project follow-up."
-            }
-        },
-        "creativity": {
-            "title": "Creativity",
-            "subtitle": "Creativity allows us to bring proper solutions",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I have a creative spirit, which allows me to innovate regularly",
-            "definition": {
-                "title": "What is creativity?",
-                "the": "",
-                "creativity": "Creativity",
-                "ability": ". The ability of the mind to create something new from a given context. It is a skill that applies to numerous domains and that can take different shapes. In a professional project, creativity can result in the ability to ",
-                "client-needs": "meet the needs of the client",
-                "proposal": " using more appropriate means than the ones he thought of. In that way, creativity can join and add to strength of proposal."
-            },
-            "necessary": {
-                "title": "Creativity is necessary",
-                "any-project": "Any project needs a part of creativity. A team must have among its members at least one creative even though two would bring a debate and a thought leading to a higher quality solution. Creativity allows us to imagine ",
-                "answers": "different and more appropriate answers",
-                "requirements": " to the customer requirements than the usual ones. It is this creativity that a team will be able to demonstrate that will differentiate it from other technically equivalent teams to the client.",
-                "develop": "Creativity is an innate quality, but not only. It is a skill that is developed over time and increases with experience. Everything that we discover, read, learn, comes unconsciously to fuel our creativity. The creative one must also be curious to usually renew the sources from which he draws for his creations."
-            },
-            "innovation": {
-                "title": "Bring innovative solutions to the client",
-                "creative": "I consider myself as a creative person. For example, during my ",
-                "vision-safety": "VisionSafety",
-                "sms-alerts": " project, I had to make a solution allowing the client to easily set in the mobile application the phone number to send an SMS alert to. This app being intended for all European countries where Securitas is implanted, I have to make a general solution for all countries. Some countries have several phone numbers, some have only one and some do not have any (the alerts are sent to a neighbouring country).",
-                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phonen numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
-                "reducing": "reducing the exploitation costs",
-                "application": " of the application."
-            },
-            "other-domains": {
-                "title": "Creativity in others domains",
-                "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
-                "new-stuff": "I like to imagine and create new stuff",
-                "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
-            },
-            "pokemon": {
-                "scaracorn": "Scaracorn",
-                "scaracorn-bis": ", ",
-                "beetleaf": "Beetleaf",
-                "beetleaf-bis": " and ",
-                "oakleoptera": "Oakleoptera",
-                "created": ", three Pokémon that I created"
-            }
-        },
-        "knowledge-sharing": {
-            "title": "Knowledge sharing",
-            "subtitle": "This is the knowledge sharing subtitle",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I like to share my knowledge with others, whether functional or technical"
-        },
-        "languages": {
-            "title": "Languages",
-            "subtitle": "This is the languages subtitle",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I love languages, and I speak English fluently"
-        },
-        "team-leading": {
-            "title": "Team leading",
-            "subtitle": "An introduction to team leading",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I have got the opportunity to experiment team leading during my apprenticeship",
-            "arrival": {
-                "title": "My arrival in a PoC",
-                "october": "Last October, I join a ",
-                "poc": "PoC (proof of concept)",
-                "named": " named ",
-                "call-center": "Call center",
-                "team": ". The team is made of three developers including me. The project is directed by a project manager who is already managing other projects and required by a commercial from my company to sell this PoC to customers.",
-                "goal": "The goal of the project is to make a portal for a call center intended for the energy distributors. The portal is divided in two parts: on one side, the subscription to a new contract by phone and on the other side, the consulting of an existing customer’s data for after sales service."
-            },
-            "lead": {
-                "title": "Taking the lead",
-                "visibility": "We have little visibility and instructions from him, and our project manager is quite busy with his ancillary projects. In order to improve the ",
-                "productivity": "productivity",
-                "dialogue": " of the team and the dialogue with our interlocutors, and assuming I am the most experienced member, I decide to take the lead of the team, with the approval of the other developers.",
-                "learn": "I learn to organize the tasks of the team members, ask for visibility on the client requests and plan and host meetings with all interested parties through the project. The ",
-                "communication": "communication",
-                "difficult": " with the other parties of the team was the most difficult part. Since it is a PoC and therefore a project without immediate value, it is not a priority to the other interlocutors.",
-                "functionalities": "On one side, the commercial who ordered the project gives us instructions in order to present the functionalities he wants to his customers. Only, all these functionalities are not implementable because the project is depending on an API developed by another team. Given that our project manager also has other projects going on, I must take care of making the link between the commercial and the person in charge of the API team. Through this initiative, specific decisions are made on the future of the project in the short and medium term. I leave the project a little after, once the first iteration is finished and ready to be presented to the client.",
-                "experience": "This experience allowed me to try the role of team leader in a serene way since the stakes were less important than in a billed project. I learned to establish communication among the team members and beyond, and I realized that I knew how to show a good ",
-                "organization": "organization",
-                "organization-bis": "."
-            }
-        }
-    },
     "technical-skills": {
         "title": "Technical skills",
         "subtitle": "My principal technical skills",
@@ -538,6 +417,172 @@
             "subtitle": "This is the notions of architecture subtitle",
             "card-subtitle": "Angular, .NET",
             "card-content": "Through my projects, I was able to understand the architecture of a solution and participate"
+        }
+    },
+    "human-skills": {
+        "title": "Human skills",
+        "subtitle": "My principal human skills",
+        "autonomy": {
+            "title": "Autonomy",
+            "subtitle": "A developer needs to be able to work on his own",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "I am able to work on my own, while still having a good team spirit",
+            "definition": {
+                "title": "What is autonomy?",
+                "what": "Basically, ",
+                "autonomy": "autonomy",
+                "ability": " is the ability to act by myself in a specific environment. It doesn't mean working alone but working with other people being granted some freedom. I can do my tasks the way I like as far as it respects the perimeter given to me."
+            },
+            "it-company": {
+                "title": "How does autonomy transcript into an IT company?",
+                "employee": "The employee is given a work and hopefully knows how to achieve it. If he doesn't, he tries to figure out by himself using forums or tutorials on the Internet. If, despite searching and trying by himself, he is not able to achieve the work, he will report it to his manager.",
+                "however": "However, there are obvious nuances. The employee must not stay stuck on an issue for an excessive amount of time without reporting it. He must be able to feel when he needs help. Yet he must search and try by himself before asking to his mates, else he will never make progress. In a sector in ",
+                "evolution": "constant evolution",
+                "binary": ", it is primary to constantly stay up-to-date. Also, autonomy is not a binary skill. There aren't autonomous or not autonomous people. Everybody is autonomous (at different degrees) because autonomy is something people work on."
+            },
+            "me": {
+                "title": "Autonomy is one of my qualities",
+                "vision": "I am used to work autonomously in a team thanks to my work experience at Capgemini Securitas Vision project (cf. ",
+                "web-agent": "WebAgent",
+                "and": " and ",
+                "vision-safety": "VisionSafety",
+                "internship": " apps). I entered the project during my six months internship. I joined a large project with several user applications and some complex functional aspects. However, I began correcting some issues on the main application from the first week only. Not only it allowed me to understand the software better, it also depicted my autonomy and my adaptability in a new environment. In this company, ",
+                "feedbacks": "feedbacks",
+                "colleagues": " to colleagues are anchored in our work and my autonomy is one of the main qualities highlighted on my profile. It was also noticed during the ",
+                "poc": "",
+                "call-center": "Call center",
+                "poc-bis": " PoC (proof of concept)",
+                "responsabilities": " which in my team and I had to take our responsabilities given the bad project follow-up."
+            }
+        },
+        "creativity": {
+            "title": "Creativity",
+            "subtitle": "Creativity allows us to bring proper solutions",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "I have a creative spirit, which allows me to innovate regularly",
+            "definition": {
+                "title": "What is creativity?",
+                "the": "",
+                "creativity": "Creativity",
+                "ability": ". The ability of the mind to create something new from a given context. It is a skill that applies to numerous domains and that can take different shapes. In a professional project, creativity can result in the ability to ",
+                "client-needs": "meet the needs of the client",
+                "proposal": " using more appropriate means than the ones he thought of. In that way, creativity can join and add to strength of proposal."
+            },
+            "necessary": {
+                "title": "Creativity is necessary",
+                "any-project": "Any project needs a part of creativity. A team must have among its members at least one creative even though two would bring a debate and a thought leading to a higher quality solution. Creativity allows us to imagine ",
+                "answers": "different and more appropriate answers",
+                "requirements": " to the customer requirements than the usual ones. It is this creativity that a team will be able to demonstrate that will differentiate it from other technically equivalent teams to the client.",
+                "develop": "Creativity is an innate quality, but not only. It is a skill that is developed over time and increases with experience. Everything that we discover, read, learn, comes unconsciously to fuel our creativity. The creative one must also be curious to usually renew the sources from which he draws for his creations."
+            },
+            "innovation": {
+                "title": "Bring innovative solutions to the client",
+                "creative": "I consider myself as a creative person. For example, during my ",
+                "vision-safety": "VisionSafety",
+                "sms-alerts": " project, I had to make a solution allowing the client to easily set in the mobile application the phone number to send an SMS alert to. This app being intended for all European countries where Securitas is implanted, I have to make a general solution for all countries. Some countries have several phone numbers, some have only one and some do not have any (the alerts are sent to a neighbouring country).",
+                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phonen numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
+                "reducing": "reducing the exploitation costs",
+                "application": " of the application."
+            },
+            "other-domains": {
+                "title": "Creativity in others domains",
+                "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
+                "new-stuff": "I like to imagine and create new stuff",
+                "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
+            },
+            "pokemon": {
+                "scaracorn": "Scaracorn",
+                "scaracorn-bis": ", ",
+                "beetleaf": "Beetleaf",
+                "beetleaf-bis": " and ",
+                "oakleoptera": "Oakleoptera",
+                "created": ", three Pokémon that I created"
+            }
+        },
+        "knowledge-sharing": {
+            "title": "Knowledge sharing",
+            "subtitle": "Transmit my knowledge to other people",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "I like to share my knowledge with others, whether functional or technical",
+            "importance": {
+                "title": "The importance of knowledge sharing",
+                "important": "In a team, it is important that everyone learns from others. This is especially true for somebody who just joined it. This person must upgrade to the technical and functional knowledge of the project in order to work efficiently on it. It is the responsibility of the most experienced members to support these new members so that they are up and running as quickly as possible."
+            },
+            "serve": {
+                "title": "Serve my teammates",
+                "available": "I am always very available for my team, whether they need information or a specific explanation of a project element. For example, during the redesign of the ",
+                "web-agent": "WebAgent",
+                "application": " application, we welcomed a third developer. It was my job to evaluate his mastery of ",
+                "angular": "Angular",
+                "technology": " technology and to show him the tools and methods we used on the project. I also introduced him to the functional aspects of the applications, explaining the work of security agents, their needs and expectations."
+            },
+            "accompany": {
+                "title": "Accompany developers in difficulty",
+                "skill": "I was also able to use this skill in the ",
+                "call-center": "Call Center",
+                "project": " project. A fourth member joined our team during the ",
+                "poc": "PoC",
+                "retraining": ". He was a retraining person who had difficulty developing. Thus, I accompanied him in his work until I left the project a few weeks later.",
+                "task": "The task was not easy, I had to teach him all the concepts of ",
+                "angular": "Angular",
+                "explain": ", explain the use of ",
+                "git": "Git",
+                "balance": ", read his code... The most difficult was to balance my interventions. I wanted to let him work a maximum in autonomy so that it progresses faster and that it gains confidence, without abandoning him. I had to help him when he needed it to ensure the quality and timeliness of the application, but I myself did not have to waste too much time on my own tasks. For this, I asked him to regroup his questions and remarks to the maximum so that we made a daily update on his difficulties, except in case of complete blocking where he could come to see me. Finally, after nearly a month, he became completely autonomous on simple tasks and was able to perform more complex ones by asking for help if needed from other members of the team."
+            }
+        },
+        "languages": {
+            "title": "Languages",
+            "subtitle": "Younger, I wanted to become an interpreter",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "I love languages, and I speak English fluently",
+            "passion": {
+                "title": "My passion for languages",
+                "child": "Since I was a child, I have been passionate about languages. I practiced very little English during my primary school, so I really started to learn languages from middle school where, in addition to compulsory ",
+                "english": "English",
+                "chose": ", I chose the ",
+                "spanish": "Spanish",
+                "option": " option of my establishment from the 6th grade. I continued with the ",
+                "latin": "Latin",
+                "middle-school": " option in 7th grade and I chose the European section in 8th grade to practice more English. During this middle school period, when I was asked what I wanted to do later, I said \"interpreter\".",
+                "high-school": "I pursued English (with European section), Spanish and Latin lessons during my high school, after which I joined the IN'TECH school where I continued to practice English in courses focused on practice and speaking. In this school, I passed the ",
+                "toeic": "TOEIC",
+                "score": " in my first semester, to which I obtained a score of 865 points out of 990. I passed this test again at the end of my studies, of which I expect results to evaluate my progress during these five years in school and in business. During my studies at IN'TECH, I did not have the opportunity to pursue Spanish and Latin. On the other hand, I was able to practice Spanish during a stay in the Valencia area and I realized that the ease of communication came back after two to three days in the environment. As for Latin, continuing to study it would not have brought me much in my field, however it continues to be useful today in the understanding of the Romance languages and especially in the spelling of the French language."
+            },
+            "today": {
+                "title": "Languages today",
+                "english": "Although Spanish has served me very little in recent years, apart from a stay in Spain, English is everywhere in my life. On the one hand, of course, as a developer, English is my language of choice for coding, but also for communicating with other developers in the global community. Even in my everyday life, I use English permanently, mainly on the Internet. Even on Netflix or Prime Video, I watch English-language series and films in the original language not subtitled. I regularly stay with my sister living in Dublin, Ireland. Thus, I know how to accustom myself to sometimes complex to understand accents. And, to top it off, I made this portfolio both in French and English.",
+                "future": "In the future, I intend to continue to improve my level of English to move to a truly bilingual status. I intend to live in ",
+                "new-zealand": "New Zealand",
+                "ten-years": " in the next ten years, first for six months, then, depending on my desire to stay, one year, two years, etc. I will extend my life there as long as I enjoy it. If I have the opportunity (and faith) to learn new languages in the future, I would like to learn Italian, which I personally consider to be the most beautiful language in the world. I would also like to have some notions of Japanese and, why not, to be interested in Russian."
+            }
+        },
+        "team-leading": {
+            "title": "Team leading",
+            "subtitle": "An introduction to team leading",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "I have got the opportunity to experiment team leading during my apprenticeship",
+            "arrival": {
+                "title": "My arrival in a PoC",
+                "october": "Last October, I join a ",
+                "poc": "PoC (proof of concept)",
+                "named": " named ",
+                "call-center": "Call center",
+                "team": ". The team is made of three developers including me. The project is directed by a project manager who is already managing other projects and required by a commercial from my company to sell this PoC to customers.",
+                "goal": "The goal of the project is to make a portal for a call center intended for the energy distributors. The portal is divided in two parts: on one side, the subscription to a new contract by phone and on the other side, the consulting of an existing customer’s data for after sales service."
+            },
+            "lead": {
+                "title": "Taking the lead",
+                "visibility": "We have little visibility and instructions from him, and our project manager is quite busy with his ancillary projects. In order to improve the ",
+                "productivity": "productivity",
+                "dialogue": " of the team and the dialogue with our interlocutors, and assuming I am the most experienced member, I decide to take the lead of the team, with the approval of the other developers.",
+                "learn": "I learn to organize the tasks of the team members, ask for visibility on the client requests and plan and host meetings with all interested parties through the project. The ",
+                "communication": "communication",
+                "difficult": " with the other parties of the team was the most difficult part. Since it is a PoC and therefore a project without immediate value, it is not a priority to the other interlocutors.",
+                "functionalities": "On one side, the commercial who ordered the project gives us instructions in order to present the functionalities he wants to his customers. Only, all these functionalities are not implementable because the project is depending on an API developed by another team. Given that our project manager also has other projects going on, I must take care of making the link between the commercial and the person in charge of the API team. Through this initiative, specific decisions are made on the future of the project in the short and medium term. I leave the project a little after, once the first iteration is finished and ready to be presented to the client.",
+                "experience": "This experience allowed me to try the role of team leader in a serene way since the stakes were less important than in a billed project. I learned to establish communication among the team members and beyond, and I realized that I knew how to show a good ",
+                "organization": "organization",
+                "organization-bis": "."
+            }
         }
     },
     "redirects": {

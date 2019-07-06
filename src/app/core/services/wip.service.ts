@@ -20,6 +20,8 @@ export class WipService {
     '/human-skills/autonomy',
     '/human-skills/team-leading',
     '/human-skills/creativity',
+    '/human-skills/knowledge-sharing',
+    '/human-skills/languages',
     '/career',
     '/about'
   ];

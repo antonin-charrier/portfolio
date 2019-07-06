@@ -309,127 +309,6 @@
             }
         }
     },
-    "human-skills": {
-        "title": "Compétences humaines",
-        "subtitle": "Mes principales compétences humaines",
-        "autonomy": {
-            "title": "Autonomie",
-            "subtitle": "Un développeur doit être capable de travailler par lui-même",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "Je suis capable de travailler seul tout en ayant un bon esprit d'équipe",
-            "definition": {
-                "title": "Qu'est-ce que l'autonomie ?",
-                "what": "Fondalementalement, ",
-                "autonomy": "l'autonomie",
-                "ability": " est la capacité d'agir par soi-même dans un environnement spécifique. Cela ne signifie pas travailler seul mais travailler avec d'autres personnes en ayant certaines libertés. Je peux faire mes tâches comme je le souhaite tant que cela respecte le périmètre qui m'a été donné."
-            },
-            "it-company": {
-                "title": "Comment l'autonomie se transcrit dans une ESN ?",
-                "employee": "L'employé se voit donné un travail et potentiellement sait comment le faire. S'il ne sait pas, il essaye de comprendre par lui-même en utilisant des forums ou des tutoriels sur internet. Si, après avoir cherché et essayé par lui-même, il n'est pas capable de faire le travail, il le signale à son manager.",
-                "however": " Cependant, il existe des nuances évidents. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. Il doit être capable de savoir lorsque il a besoin d'aide. Cependant il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. Dans un secteur en ",
-                "evolution": "constante évolution",
-                "binary": ", il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire. Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent."
-            },
-            "me": {
-                "title": "L'autonomie est l'une de mes qualités",
-                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications ",
-                "web-agent": "WebAgent",
-                "and": " et ",
-                "vision-safety": "VisionSafety",
-                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un large projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
-                "feedbacks": "les feedbacks",
-                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil. Elle a également été relevée au cours du ",
-                "poc": "PoC (proof of concept) ",
-                "call-center": "Call center",
-                "poc-bis": "",
-                "responsabilities": " dans lequel mon équipe et moi avons dû prendre nos responsabilités étant donné le mauvais suivi du projet."
-            }
-        },
-        "creativity": {
-            "title": "Créativité",
-            "subtitle": "La créativité permet d’apporter de véritables solutions",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "J'ai un esprit créatif, ce qui me permet d'innover régulièrement",
-            "definition": {
-                "title": "Qu’est-ce que la créativité ?",
-                "the": "La ",
-                "creativity": "créativité",
-                "ability": ". La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à ",
-                "client-needs": "répondre aux besoins du client",
-                "proposal": " via des moyens plus appropriés que ceux auxquels il pensait. En cela la créativité peut rejoindre et s’ajouter à la force de proposition."
-            },
-            "necessary": {
-                "title": "La créativité est nécessaire",
-                "any-project": "N’importe quel projet a besoin d’une part de créativité. Une équipe doit compter parmi ses membres au moins un créatif bien qu’en avoir deux permet d’ajouter un débat et une réflexion menant à une solution de meilleure qualité. La créativité permettra d’imaginer des ",
-                "answers": "réponses différentes et plus appropriées",
-                "requirements": " aux exigences du client que les réponses habituelles. C’est cette créativité dont va pouvoir faire preuve une équipe qui va la différencier des autres équipes techniquement équivalentes auprès du client.",
-                "develop": "La créativité est une qualité innée, mais pas seulement. C’est une compétence que l’on développe avec le temps et qui s’accroit avec l’expérience. Tout ce que nous découvrons, lisons, apprenons, vient inconsciemment alimenter notre créativité. Le créatif se doit aussi d’être curieux pour renouveler régulièrement les sources d'où il puise pour ses créations."
-            },
-            "innovation": {
-                "title": "Apporter des solutions innovantes au client",
-                "creative": "Je me considère comme quelqu'un de créatif. Par exemple, lors de mon projet ",
-                "vision-safety": "VisionSafety",
-                "sms-alerts": ", j'ai du créer une solution permettant au client de facilement régler dans l'application mobile le numéro de téléphone auquel envoyer une alerte par SMS. Cette application étant destinée à tous les pays européens où Securitas est implanté, il faut réaliser une solution globale pour tous les pays. Certains pays possèdent plusieurs numéros de téléphone, d'autres un seul et certains pays n'en ont aucun (les alertes sont donc envoyées à un pays voisin).",
-                "suggested": "J'ai donc proposé au client de créer une liste contenant l'ensemble des numéros de téléphone associé à leur pays. Les pays possédant plusieurs numéros de téléphone verront ceux-ci organisés par un ordre de priorité. Ainsi, par défaut, les alertes seront envoyées au numéro de téléphone lié au pays de l'utilisateur (et au numéro le plus prioritaire dans le cas où le pays possède plusieurs numéros). J'ai également créé une interface pour que les administrateurs puissent directement sélectionner dans l'application quel numéro utliser (afin d'utiliser un numéro moins prioiritaire ou bien le numéro d'un autre pays dans le cas où aucun numéro n'est attribué à la localisation de l'utilisateur). Le client a approuvé cette solution lui qui lui permet d'éviter de déployer une configuration différente par pays, ",
-                "reducing": "réduisant ainsi les coûts d'exploitation",
-                "application": " de l'application."
-            },
-            "other-domains": {
-                "title": "La créativité dans les autres domaines",
-                "various-forms": "Comme dit plus haut, la créativité peut prendre différentes formes. Elle peut également revêtir une forme artistique. Bien que je ne sois pas un artiste, ",
-                "new-stuff": "j'aime imaginer et créer de nouvelles choses",
-                "pokemon": ". Cela me sert notamment dans mon projet personnel de fangame Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fangames Pokémon."
-            },
-            "pokemon": {
-                "scaracorn": "Scaracorn",
-                "scaracorn-bis": ", ",
-                "beetleaf": "Beetleaf",
-                "beetleaf-bis": " et ",
-                "oakleoptera": "Oakleoptera",
-                "created": " (noms anglais), trois Pokémon que j'ai créés"
-            }
-        },
-        "knowledge-sharing": {
-            "title": "Partage de connaissances",
-            "subtitle": "Ceci est le sous-titre de partage de connaissances",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "J'aime partager mon savoir aux autres, qu'il soit fonctionnel ou technique"
-        },
-        "languages": {
-            "title": "Langues",
-            "subtitle": "Ceci est le sous-titre de langues",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "J'adore les langues, et je parle couramment anglais"
-        },
-        "team-leading": {
-            "title": "Gestion d'équipe",
-            "subtitle": "Une introduction à la gestion d'équipe",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "J'ai eu l'occasion d'expérimenter la gestion d'équipe durant mon alternance",
-            "arrival": {
-                "title": "Mon arrivée dans un PoC",
-                "october": "En octobre dernier, je rejoins un ",
-                "poc": "PoC (proof of concept)",
-                "named": " nommé ",
-                "call-center": "Call center",
-                "team": ". L’équipe est composée de trois développeurs dont moi. Le projet est dirigé par un chef de projet qui s’occupe déjà d’autres projets et commandité par un commercial de mon entreprise afin de pouvoir vendre le PoC à des clients.",
-                "goal": "Le but du projet est de réaliser un portail pour un centre d’appels destiné aux distributeurs d’énergie. Le portail est divisé en deux parties : d’un côté la souscription à un nouveau contrat via téléphone et de l’autre la consultation des données d’un client existant pour le service après-vente."
-            },
-            "lead": {
-                "title": "Je prends les devants",
-                "visibility": "Nous avons peu de visibilité et d’instructions de sa part et notre chef de projet est assez occupé par ses projets annexes. Afin d’améliorer la ",
-                "productivity": "productivité",
-                "dialogue": " de l’équipe et le dialogue avec nos interlocuteurs, et assumant que je suis le membre avec le plus d’expérience, je décide de diriger l’équipe, avec l’approbation des deux autres développeurs.",
-                "learn": "J’apprends à organiser les tâches des membres de l’équipe, demander de la visibilité sur les demandes du client, planifier et animer des réunions avec l’ensemble des intéressés par le projet. La ",
-                "communication": "communication",
-                "difficult": " avec les autres parties du projet est la partie la plus difficile. Etant donné qu’il s’agit d’un PoC et donc d’un projet sans valeur ajoutée immédiate, il n’est pas prioritaire auprès des autres interlocuteurs.",
-                "functionalities": "D’un côté, le commercial qui a commandité le projet nous donne ses instructions afin de pouvoir présenter les fonctionnalités qu’il souhaite à ses clients. Seulement, toutes ces fonctionnalités ne sont pas implémentables car le projet dépend d’une API développée par une autre équipe. Etant donné que notre chef de projet a également d’autres projets en cours, je dois m’occuper de faire le lien entre le commercial et la personne dirigeant l’équipe de l’API. Grâce à cette initiative, des décisions précises sont prises quant à l’avenir du projet à court et moyen terme. Je quitte le projet peu après, une fois la première itération terminée et prête à être présentée aux clients.",
-                "experience": "Cette expérience m’a permis de m’essayer au rôle de responsable d’équipe de façon sereine étant donné que les enjeux étaient moins importants que dans un projet facturé. J’y ai appris à établir la communication entre les membres de l’équipe et au-delà, et également j’ai réalisé que je savais faire preuve d’une bonne ",
-                "organization": "organisation",
-                "organization-bis": "."
-            }
-        }
-    },
     "technical-skills": {
         "title": "Compétences techniques",
         "subtitle": "Mes principales compétences techniques",
@@ -538,6 +417,172 @@
             "subtitle": "Ceci est le sous-titre de notions d'architecture",
             "card-subtitle": "Angular, .NET",
             "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer"
+        }
+    },
+    "human-skills": {
+        "title": "Compétences humaines",
+        "subtitle": "Mes principales compétences humaines",
+        "autonomy": {
+            "title": "Autonomie",
+            "subtitle": "Un développeur doit être capable de travailler par lui-même",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "Je suis capable de travailler seul tout en ayant un bon esprit d'équipe",
+            "definition": {
+                "title": "Qu'est-ce que l'autonomie ?",
+                "what": "Fondalementalement, ",
+                "autonomy": "l'autonomie",
+                "ability": " est la capacité d'agir par soi-même dans un environnement spécifique. Cela ne signifie pas travailler seul mais travailler avec d'autres personnes en ayant certaines libertés. Je peux faire mes tâches comme je le souhaite tant que cela respecte le périmètre qui m'a été donné."
+            },
+            "it-company": {
+                "title": "Comment l'autonomie se transcrit dans une ESN ?",
+                "employee": "L'employé se voit donné un travail et potentiellement sait comment le faire. S'il ne sait pas, il essaye de comprendre par lui-même en utilisant des forums ou des tutoriels sur internet. Si, après avoir cherché et essayé par lui-même, il n'est pas capable de faire le travail, il le signale à son manager.",
+                "however": " Cependant, il existe des nuances évidents. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. Il doit être capable de savoir lorsque il a besoin d'aide. Cependant il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. Dans un secteur en ",
+                "evolution": "constante évolution",
+                "binary": ", il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire. Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent."
+            },
+            "me": {
+                "title": "L'autonomie est l'une de mes qualités",
+                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications ",
+                "web-agent": "WebAgent",
+                "and": " et ",
+                "vision-safety": "VisionSafety",
+                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un large projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
+                "feedbacks": "les feedbacks",
+                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil. Elle a également été relevée au cours du ",
+                "poc": "PoC (proof of concept) ",
+                "call-center": "Call center",
+                "poc-bis": "",
+                "responsabilities": " dans lequel mon équipe et moi avons dû prendre nos responsabilités étant donné le mauvais suivi du projet."
+            }
+        },
+        "creativity": {
+            "title": "Créativité",
+            "subtitle": "La créativité permet d’apporter de véritables solutions",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "J'ai un esprit créatif, ce qui me permet d'innover régulièrement",
+            "definition": {
+                "title": "Qu’est-ce que la créativité ?",
+                "the": "La ",
+                "creativity": "créativité",
+                "ability": ". La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à ",
+                "client-needs": "répondre aux besoins du client",
+                "proposal": " via des moyens plus appropriés que ceux auxquels il pensait. En cela la créativité peut rejoindre et s’ajouter à la force de proposition."
+            },
+            "necessary": {
+                "title": "La créativité est nécessaire",
+                "any-project": "N’importe quel projet a besoin d’une part de créativité. Une équipe doit compter parmi ses membres au moins un créatif bien qu’en avoir deux permet d’ajouter un débat et une réflexion menant à une solution de meilleure qualité. La créativité permettra d’imaginer des ",
+                "answers": "réponses différentes et plus appropriées",
+                "requirements": " aux exigences du client que les réponses habituelles. C’est cette créativité dont va pouvoir faire preuve une équipe qui va la différencier des autres équipes techniquement équivalentes auprès du client.",
+                "develop": "La créativité est une qualité innée, mais pas seulement. C’est une compétence que l’on développe avec le temps et qui s’accroit avec l’expérience. Tout ce que nous découvrons, lisons, apprenons, vient inconsciemment alimenter notre créativité. Le créatif se doit aussi d’être curieux pour renouveler régulièrement les sources d'où il puise pour ses créations."
+            },
+            "innovation": {
+                "title": "Apporter des solutions innovantes au client",
+                "creative": "Je me considère comme quelqu'un de créatif. Par exemple, lors de mon projet ",
+                "vision-safety": "VisionSafety",
+                "sms-alerts": ", j'ai du créer une solution permettant au client de facilement régler dans l'application mobile le numéro de téléphone auquel envoyer une alerte par SMS. Cette application étant destinée à tous les pays européens où Securitas est implanté, il faut réaliser une solution globale pour tous les pays. Certains pays possèdent plusieurs numéros de téléphone, d'autres un seul et certains pays n'en ont aucun (les alertes sont donc envoyées à un pays voisin).",
+                "suggested": "J'ai donc proposé au client de créer une liste contenant l'ensemble des numéros de téléphone associé à leur pays. Les pays possédant plusieurs numéros de téléphone verront ceux-ci organisés par un ordre de priorité. Ainsi, par défaut, les alertes seront envoyées au numéro de téléphone lié au pays de l'utilisateur (et au numéro le plus prioritaire dans le cas où le pays possède plusieurs numéros). J'ai également créé une interface pour que les administrateurs puissent directement sélectionner dans l'application quel numéro utliser (afin d'utiliser un numéro moins prioiritaire ou bien le numéro d'un autre pays dans le cas où aucun numéro n'est attribué à la localisation de l'utilisateur). Le client a approuvé cette solution lui qui lui permet d'éviter de déployer une configuration différente par pays, ",
+                "reducing": "réduisant ainsi les coûts d'exploitation",
+                "application": " de l'application."
+            },
+            "other-domains": {
+                "title": "La créativité dans les autres domaines",
+                "various-forms": "Comme dit plus haut, la créativité peut prendre différentes formes. Elle peut également revêtir une forme artistique. Bien que je ne sois pas un artiste, ",
+                "new-stuff": "j'aime imaginer et créer de nouvelles choses",
+                "pokemon": ". Cela me sert notamment dans mon projet personnel de fangame Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fangames Pokémon."
+            },
+            "pokemon": {
+                "scaracorn": "Scaracorn",
+                "scaracorn-bis": ", ",
+                "beetleaf": "Beetleaf",
+                "beetleaf-bis": " et ",
+                "oakleoptera": "Oakleoptera",
+                "created": " (noms anglais), trois Pokémon que j'ai créés"
+            }
+        },
+        "knowledge-sharing": {
+            "title": "Partage de connaissances",
+            "subtitle": "Transmettre mon savoir aux autres",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "J'aime partager mon savoir aux autres, qu'il soit fonctionnel ou technique",
+            "importance": {
+                "title": "L’importance du partage de connaissance",
+                "important": "Dans une équipe, il est primordial que chacun apprenne des autres. C’est d’autant plus vrai pour quelqu’un qui vient de la rejoindre. Cette personne doit se mettre au niveau sur le savoir technique et fonctionnel du projet afin de pouvoir travailler efficacement dessus. Il est de la responsabilité des membres plus expérimentés de prendre en charge ces nouveaux membres afin qu’ils soient opérationnels le plus rapidement possible."
+            },
+            "serve": {
+                "title": "Être au service de mes coéquipiers",
+                "available": "Je suis toujours très disponible pour mon équipe, qu’ils aient besoin d’un renseignement ou d’une explication précise d’un élément du projet. Par exemple, au cours de la refonte de l’application ",
+                "web-agent": "WebAgent",
+                "application": ", nous avons accueilli un troisième développeur. C’est moi qui me suis chargé d’évaluer son niveau de maîtrise de la technologie ",
+                "angular": "Angular",
+                "technology": " et de lui montrer des outils et méthodes que nous avions utilisé sur le projet. Je lui ai également présenté les aspects fonctionnels des applications en lui expliquant le travail des agents de sécurité, leurs besoins et leurs attentes."
+            },
+            "accompany": {
+                "title": "Accompagner les développeurs en difficulté",
+                "skill": "J’ai également pu mettre cette compétence à profit au cours du projet ",
+                "call-center": "Call Center",
+                "project": ". Un quatrième membre a rejoint notre équipe pendant le ",
+                "poc": "PoC",
+                "retraining": ". Il s’agissait d’une personne en reconversion qui avait des difficultés à développer. Je l’ai donc accompagné dans son travail jusqu’à mon départ du projet quelques semaines après.",
+                "task": "La tâche n’a pas été aisée, il a fallu lui apprendre tous les concepts d’",
+                "angular": "Angular",
+                "explain": ", lui expliquer l’utilisation de ",
+                "git": "Git",
+                "balance": ", relire son code… Le plus difficile était d’équilibrer mes interventions. Je souhaitais le laisser travailler un maximum en autonomie afin qu’il progresse plus vite et qu’il gagne en confiance, sans pour autant l’abandonner. Je devais l’aider quand il en avait besoin afin d’assurer la qualité et les délais de l’application, mais je devais moi-même ne pas perdre trop de temps sur mes propres tâches. Pour cela, je lui ai demandé de regrouper au maximum ses questions et remarques afin que l’on fasse un point quotidien sur des difficultés, sauf en cas de blocage complet où il pouvait venir me voir. Finalement, après près d’un mois, il est devenu complètement autonome sur les tâches simples et était capable de réaliser des tâches plus complexes en demandant de l’aide si nécessaire aux autres membres de l’équipe."
+            }
+        },
+        "languages": {
+            "title": "Langues",
+            "subtitle": "Plus jeune, je souhaitais devenir interprète",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "J'adore les langues, et je parle couramment anglais",
+            "passion": {
+                "title": "Ma passion pour les langues",
+                "child": "Depuis que je suis enfant, j’ai été passionné par les langues. J’ai très peu pratiqué l’anglais durant mon école primaire, j’ai donc véritablement commencé à apprendre les langues à partir du collège où, en plus de l’",
+                "english": "anglais",
+                "chose": " obligatoire, j’ai choisi l’option ",
+                "spanish": "espagnol",
+                "option": " de mon établissement dès la 6ème. J’ai continué avec l’option ",
+                "latin": "latin",
+                "middle-school": " en 5ème et j’ai choisi la section européenne en 4ème pour pratiquer plus d’anglais. Durant cette période de collège, lorsqu’on me demandait ce que je souhaitais faire plus tard, je répondais « interprète ».",
+                "high-school": "J’ai poursuivi les cours d’anglais (avec la section européenne), d’espagnol et de latin durant mon lycée, suite auquel j’ai rejoint l’école IN’TECH au sein de laquelle j’ai continué à pratiquer l’anglais dans des cours axés sur la pratique et l’expression orale. Dans cette école, j’ai passé le ",
+                "toeic": "TOEIC",
+                "score": " lors de mon premier semestre, auquel j’ai obtenu un score de 865 points sur 990. J’ai de nouveau passé ce test à la fin de mes études, dont j’attends résultats pour évaluer ma progression durant ces cinq années à l’école et en entreprise. Durant mon cursus à IN’TECH, je n’ai pas eu l’occasion de poursuivre l’espagnol et le latin. En revanche, j’ai pu pratiquer l’espagnol durant un séjour dans la région de Valencia et je me suis rendu compte que la facilité à communiquer revenait au bout de deux à trois jours dans l’environnement. Quant au latin, continuer à l’étudier ne m’aurait pas beaucoup apporté dans mon domaine, en revanche il continue de m’être utile aujourd’hui dans la compréhension des langues romanes et surtout dans l’orthographe de la langue française."
+            },
+            "today": {
+                "title": "Les langues aujourd’hui",
+                "english": "Bien que l’espagnol ne m’ait que très peu servi durant ces dernières années, hormis un séjour en Espagne, l’anglais est présent partout dans ma vie courante. D’une part, bien sûr, en tant que développeur, l’anglais est ma langue de prédilection pour coder, mais également pour communiquer avec d’autres développeurs de la communauté mondiale. Même dans ma vie courante, j’utilise l’anglais en permanence, principalement sur Internet. Même sur Netflix ou Prime Video, je regarde les séries et films anglophones en VO non sous-titrée. Je vais régulièrement séjourner chez ma sœur vivant à Dublin en Irlande. Ainsi, je sais m’accoutumer à des accents parfois complexes à comprendre. Et, pour couronner le tout, j’ai réalisé ce portfolio à la fois en français et en anglais.",
+                "future": "A l’avenir, je compte continuer à perfectionner mon niveau d’anglais pour passer à un statut véritablement bilingue. Je compte vivre en ",
+                "new-zealand": "Nouvelle-Zélande",
+                "ten-years": " d’ici les dix prochaines années, d’abord pour 6 mois, puis, selon mon envie d’y rester, un an, deux ans, etc. Je prolongerai ma vie là-bas tant que je m’y plais. Si j’ai l’opportunité (et la foi) d’apprendre de nouvelles langues dans le futur, j’aimerais apprendre l’italien, que je considère personnellement comme la plus belle langue du monde. Je souhaiterais aussi avoir des notions de japonais et, pourquoi pas, m’intéresser au russe."
+            }
+        },
+        "team-leading": {
+            "title": "Gestion d'équipe",
+            "subtitle": "Une introduction à la gestion d'équipe",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "J'ai eu l'occasion d'expérimenter la gestion d'équipe durant mon alternance",
+            "arrival": {
+                "title": "Mon arrivée dans un PoC",
+                "october": "En octobre dernier, je rejoins un ",
+                "poc": "PoC (proof of concept)",
+                "named": " nommé ",
+                "call-center": "Call center",
+                "team": ". L’équipe est composée de trois développeurs dont moi. Le projet est dirigé par un chef de projet qui s’occupe déjà d’autres projets et commandité par un commercial de mon entreprise afin de pouvoir vendre le PoC à des clients.",
+                "goal": "Le but du projet est de réaliser un portail pour un centre d’appels destiné aux distributeurs d’énergie. Le portail est divisé en deux parties : d’un côté la souscription à un nouveau contrat via téléphone et de l’autre la consultation des données d’un client existant pour le service après-vente."
+            },
+            "lead": {
+                "title": "Je prends les devants",
+                "visibility": "Nous avons peu de visibilité et d’instructions de sa part et notre chef de projet est assez occupé par ses projets annexes. Afin d’améliorer la ",
+                "productivity": "productivité",
+                "dialogue": " de l’équipe et le dialogue avec nos interlocuteurs, et assumant que je suis le membre avec le plus d’expérience, je décide de diriger l’équipe, avec l’approbation des deux autres développeurs.",
+                "learn": "J’apprends à organiser les tâches des membres de l’équipe, demander de la visibilité sur les demandes du client, planifier et animer des réunions avec l’ensemble des intéressés par le projet. La ",
+                "communication": "communication",
+                "difficult": " avec les autres parties du projet est la partie la plus difficile. Etant donné qu’il s’agit d’un PoC et donc d’un projet sans valeur ajoutée immédiate, il n’est pas prioritaire auprès des autres interlocuteurs.",
+                "functionalities": "D’un côté, le commercial qui a commandité le projet nous donne ses instructions afin de pouvoir présenter les fonctionnalités qu’il souhaite à ses clients. Seulement, toutes ces fonctionnalités ne sont pas implémentables car le projet dépend d’une API développée par une autre équipe. Etant donné que notre chef de projet a également d’autres projets en cours, je dois m’occuper de faire le lien entre le commercial et la personne dirigeant l’équipe de l’API. Grâce à cette initiative, des décisions précises sont prises quant à l’avenir du projet à court et moyen terme. Je quitte le projet peu après, une fois la première itération terminée et prête à être présentée aux clients.",
+                "experience": "Cette expérience m’a permis de m’essayer au rôle de responsable d’équipe de façon sereine étant donné que les enjeux étaient moins importants que dans un projet facturé. J’y ai appris à établir la communication entre les membres de l’équipe et au-delà, et également j’ai réalisé que je savais faire preuve d’une bonne ",
+                "organization": "organisation",
+                "organization-bis": "."
+            }
         }
     },
     "redirects": {
