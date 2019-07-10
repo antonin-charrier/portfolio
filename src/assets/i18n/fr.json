@@ -414,9 +414,37 @@
         },
         "notions-of-architecture": {
             "title": "Notions d'architecture",
-            "subtitle": "Ceci est le sous-titre de notions d'architecture",
+            "subtitle": "Une solution correctement architecturée réduit les risques d’erreur",
             "card-subtitle": "Angular, .NET",
-            "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer"
+            "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer",
+            "architect": {
+                "title": "Architecturer un template Angular",
+                "working": "Après avoir travaillé sur les projets ",
+                "web-agent": "WebAgent",
+                "and": " et ",
+                "e-monthly": "eMonthly",
+                "projects": ", j’ai accumulé suffisamment d’expérience en ",
+                "angular": "Angular",
+                "architect": " pour architecturer un template de solution. J’ai donc été chargé de réaliser ce template afin d’avoir une base pour tous les futurs projets Angular du centre où je travaille. En effet, Angular était une technologie qui commençait à grandir sur le centre et les développeurs qui rejoignaient des projets basés sur cette technologie n’avaient généralement pas ou peu d’expérience en Angular. Avec mes quelques mois d’activité sur des projets Angular, j’étais, dans le centre, la personne avec le plus d’expérience sur cette technologie. C’est pour cette raison que le template devait contenir une architecture complètement prédéfinie. Les développeurs qui l’utiliseraient auraient des lignes directrices afin de les guider et leur éviter des erreurs courantes, notamment au démarrage d’un projet.",
+                "goal": "L’autre objectif était d’intégrer des modules basiques avec un composant de démonstration. J’ai donc ajouté deux modules qui étaient les plus récurrents dans les projets vendus par le centre : ",
+                "material": "Angular Material",
+                "and-bis": " et ",
+                "kendo": "Kendo for Angular",
+                "requests": ". La majorité des demandes des clients concernent une interface d’affichage et d’édition de données. Pour cela, un système de grilles avec un design simple et efficace sont souvent la meilleure solution en termes de rapport qualité/prix et ces deux outils répondent parfaitement au besoin."
+            },
+            "learn": {
+                "title": "Apprendre d’autres architectes",
+                "within": "Au sein du projet ",
+                "vision-safety": "VisionSafety",
+                "project": ", j’ai pu étudier l’architecture du projet mise en place par un collègue au début du projet. C’était intéressant de découvrir comment le projet ",
+                "xamarin": "Xamarin",
+                "split": " avait été découpé entre la partie spécifique à ",
+                "android": "Android",
+                "specific": " et la partie ",
+                "library": "Library",
+                "developments": ". Tout au long de mes développements d’évolutions sur l’application, j’ai veille à conserver et à respecter cette architecture.",
+                "notions": "Avec ces quelques notions, je n’ai bien sûr pas la prétention de me qualifier d’architecte mais il s’agit d’un rôle qui m’intéresse et sur lequel je compte me renseigner davantage, notamment auprès de véritables architectes logiciels car l’expérience à un importance primordiale dans ce métier, afin de savoir s’il est fait pour moi."
+            }
         }
     },
     "human-skills": {

@@ -6,4 +6,12 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './notions-of-architecture.component.html',
   styleUrls: ['./notions-of-architecture.component.scss']
 })
-export class NotionsOfArchitectureComponent extends ArticleComponent {}
+export class NotionsOfArchitectureComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['vision-safety', 'web-agent', 'e-monthly'];
+  }
+
+  get linkedTechnicalSkills() {
+    return ['front-end', 'android'];
+  }
+}

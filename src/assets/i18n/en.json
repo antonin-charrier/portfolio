@@ -365,7 +365,7 @@
         },
         "financial-assessments": {
             "title": "Financial assessments",
-            "subtitle": "This is the financial assessments subtitle",
+            "subtitle": "A well-architected solution reduces the risks of error",
             "card-subtitle": "Angular, .NET",
             "card-content": "During my apprenticeship, I was able to discover the financial assessments"
         },
@@ -416,7 +416,35 @@
             "title": "Notions of architecture",
             "subtitle": "This is the notions of architecture subtitle",
             "card-subtitle": "Angular, .NET",
-            "card-content": "Through my projects, I was able to understand the architecture of a solution and participate"
+            "card-content": "Through my projects, I was able to understand the architecture of a solution and participate",
+            "architect": {
+                "title": "Architect an Angular solution",
+                "working": "After working on the ",
+                "web-agent": "WebAgent",
+                "and": " and ",
+                "e-monthly": "eMonthly",
+                "projects": " projects, I have accumulated enough experience in ",
+                "angular": "Angular",
+                "architect": " to architect a solution template. Thus, I was charged to make this template in order to have a basis for all the future Angular projects of the center where I work. Indeed, Angular was a technology that was starting to grow on the center and developers who joined projects based on this technology usually had little or no experience in Angular. With my few months of activity on Angular projects, I was, in the center, the person with the most experience on this technology. It is for this reason that the template had to contain a completely predefined architecture. Developers who use it would have guidelines to guide them and avoid common mistakes, especially when starting a project.",
+                "goal": "The other goal was to integrate basic modules with a demo component. So, I added two modules that were the most recurrent in the projects sold by the center: ",
+                "material": "Angular Material",
+                "and-bis": " and ",
+                "kendo": "Kendo for Angular",
+                "requests": ". Most customer requests are for a data display and editing interface. For this, a grid system with a simple and effective design is often the best solution in terms of price / quality ratio and these two tools perfectly meet the need."
+            },
+            "learn": {
+                "title": "Learn from other architects",
+                "within": "Within the ",
+                "vision-safety": "VisionSafety",
+                "project": " project, I was able to study the architecture of the project set up by a colleague at the beginning of the project. It was interesting to discover how the ",
+                "xamarin": "Xamarin",
+                "split": " project had been split between the ",
+                "android": "Android",
+                "specific": "-specific part and the ",
+                "library": "Library",
+                "developments": " part. Throughout my developments of evolutions on the application, I make sure to keep and respect this architecture.",
+                "notions": "With these few notions, of course I do not pretend to claim to be an architect but it is a role that interests me and on which I intend to learn more, especially with real software architects because experience is of paramount importance in this job, in order to know if it is for me."
+            }
         }
     },
     "human-skills": {
