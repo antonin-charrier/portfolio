@@ -1,0 +1,68 @@
+@import '../../../assets/styles/variables.scss';
+
+.defile-container {
+	display: flex;
+	align-items: center;
+	padding: 16px;
+	margin: 0 0 24px !important;
+	border-radius: 16px;
+}
+
+.defile-container.light {
+    color: $white;
+    background: $light-primary;
+}
+
+.defile-container.dark {
+    color: $white;
+    background: $dark-primary;
+}
+
+.defile-parent {
+	display: block;
+	overflow: hidden;
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+
+.defile {
+	display:block;
+	-webkit-animation:linear marqueelike 40s infinite ;
+	-moz-animation:linear marqueelike 40s infinite ;
+	-o-animation:linear marqueelike 40s infinite ;
+	-ms-animation:linear marqueelike 40s infinite ;
+	animation:linear marqueelike 40s infinite ;
+	margin-left:-100%;
+	padding:0 5px;
+	text-align:left;
+	height:25px;
+}
+
+.defile:after {
+	content:attr(data-text);
+	position:absolute;
+	white-space:nowrap;
+	padding-left:10px;
+}
+
+@-webkit-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+}
+@-moz-keyframes marqueelike {
+    0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+}
+@-o-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+}
+@-ms-keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+}
+@keyframes marqueelike {
+	0%, 100% {margin-left:0;}
+	99.99% {margin-left:-100%;}
+}

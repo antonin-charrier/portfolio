@@ -20,6 +20,11 @@
 <p class="article-p">
   <span>{{ 'home.frameworks' | translate }}</span>
 </p>
+<div class="defile-container" [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }">
+  <div class="defile-parent">
+    <span class="defile" attr.data-text="{{ keywords.join('&nbsp;&nbsp;&nbsp;᛫&nbsp;&nbsp;&nbsp;') }}"></span>
+  </div>
+</div>
 <div class="article-card-container">
   <mat-card matRipple class="article-card" [routerLink]="['./projects']">
     <mat-card-header>      
