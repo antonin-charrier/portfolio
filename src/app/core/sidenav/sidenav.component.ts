@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { MatIconRegistry, MatDialog } from '@angular/material';
 import { DomSanitizer } from '@angular/platform-browser';
@@ -22,6 +22,8 @@ export class SidenavComponent implements OnInit {
   public isOver = false;
   private _isDarkTheme = false;
   public parent = '';
+  @Output()
+  public sidenavToggled = new EventEmitter<boolean>();
 
   constructor(
     private translateService: TranslateService,
@@ -160,5 +162,9 @@ export class SidenavComponent implements OnInit {
   toggleDarkTheme(checked: boolean) {
     this.themeService.isDarkTheme.next(checked);
     localStorage.setItem('darkTheme', checked.toString());
+  }
+
+  toggleSidenav() {
+    this.sidenavToggled.emit(true);
   }
 }

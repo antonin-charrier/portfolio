@@ -1,14 +1,15 @@
 <div class="sidenav-container">
   <div class="sidenav-profile">
-    <img src="assets/img/profile.png" class="profile-picture" [ngClass]="{ 'profile-picture-large': !isOver, 'profile-picture-small': isOver }">
-    <div class="profile-panel">
-      <a href="/" class="profile-subpanel-left">
+    <img src="assets/img/profile.png" class="profile-picture" *ngIf="!isOver">
+    <div class="profile-panel" [ngClass]="{ 'profile-panel-small': isOver }">
+      <a href="/" *ngIf="!isOver">
         <img [src]="isDarkTheme ? 'assets/img/logo_white.png' : 'assets/img/logo_black.png'" class="profile-logo">
       </a>
-      <div class="profile-subpanel-right">
+      <img src="assets/img/profile.png" class="profile-picture small" *ngIf="isOver">
+      <div>
         <h1 class="profile-name">{{ 'sidenav.profile.name' | translate }}</h1>
         <h2 class="profile-job">{{ 'sidenav.profile.job' | translate }}</h2>
-      </div>
+      </div> 
     </div>
     <div class="profile-actions">
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.coordinates' | translate }}" matTooltipPosition="above" (click)="contactInfo()">
@@ -156,5 +157,5 @@
       [checked]="isDarkTheme" matTooltip="{{ 'sidenav.dark-mode' | translate }}"></mat-slide-toggle>
     <mat-icon [color]="isDarkTheme ? 'primary' : ''" aria-label="Dark mode" svgIcon="moon"></mat-icon>
     <button mat-button color="primary" [routerLink]="['about']" routerLinkActive="mat-flat-button" [routerLinkActiveOptions]="{exact: true}">{{ 'sidenav.about' | translate }}</button>
-</div>
+  </div>
 </div>

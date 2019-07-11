@@ -35,7 +35,8 @@
         "about": "About"
     },
     "wip": {
-        "work-in-progress": "Work in progress"
+        "work-in-progress": "Work in progress",
+        "wait": "This article is still under construction, it will be available soon!"
     },
     "home": {
         "title": "Antonin CHARRIER",

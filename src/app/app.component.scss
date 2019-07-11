@@ -12,12 +12,61 @@
     color: $white;
 }
 
+#sub-content {
+    width: 100%;
+}
+
 .article-container {    
     max-width: 980px;
     padding: 48px 16px;
 }
 
-#menu {
-    position: relative;
-    top: -16px;
+.article-container.mobile {
+    padding: 80px 16px;
+}
+
+#header-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    z-index: 3000;
+    position: fixed;  
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 8px 16px;
+    padding-right: 8px;
+}
+
+#header-container.light {
+    background-color: $white; 
+}
+
+#header-container.dark {
+    background-color: $dark-background; 
+}
+
+.profile-name {
+    font: 500 16px/20px Roboto, monospace;
+    margin-bottom: 0;
+}
+
+.profile-job {
+    font: 200 16px/20px Roboto, monospace;
+    margin-bottom: 0;
+}
+
+.profile-logo {
+    max-width: 36px;
+    max-height: 36px;
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+        max-width: 36px; 
+        max-height: 36px; 
+    }
 }

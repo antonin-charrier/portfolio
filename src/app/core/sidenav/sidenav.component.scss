@@ -58,14 +58,12 @@
 .profile-picture {
     border-radius: 50%;
     margin-top: 16px;
-}
-
-.profile-picture-large {
     width: 200px;
 }
 
-.profile-picture-small {
-    width: 144px;
+.profile-picture.small {
+    margin-top: 0;
+    width: 64px;
 }
 
 .profile-panel {
@@ -76,12 +74,24 @@
     width: 100%;
 }
 
-.profile-subpanel-left {
+.profile-panel-small {
+    margin-bottom: 16px;
+}
+
+.profile-panel > *:first-child {
     margin-left: 40px;
 }
 
-.profile-subpanel-right {
+.profile-panel > *:last-child {
     margin-right: 40px;
+}
+
+.profile-panel-small > *:first-child {
+    margin-left: 30px;
+}
+
+.profile-panel-small > *:last-child {
+    margin-right: 30px;
 }
 
 .profile-logo {
