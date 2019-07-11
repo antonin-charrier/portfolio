@@ -24,6 +24,8 @@ export class SidenavComponent implements OnInit {
   public parent = '';
   @Output()
   public sidenavToggled = new EventEmitter<boolean>();
+  private resumeDialogDimensions: { height: string, width: string} = { height: '80vh', width: '65vw' };
+  private contactDialogDimensions: { height: string, width: string} = { height: '40vh', width: '45vw' };
 
   constructor(
     private translateService: TranslateService,
@@ -66,13 +68,33 @@ export class SidenavComponent implements OnInit {
     this.displayService.breakpoint.subscribe(newDisplay => {
       switch (newDisplay) {
         case Breakpoints.HandsetPortrait:
+          this.resumeDialogDimensions = { height: '70vh', width: '100vw' };
+          this.contactDialogDimensions = { height: '40vh', width: '100vw' };
+          this.isOver = true;
+          break;
         case Breakpoints.HandsetLandscape:
+          this.resumeDialogDimensions = { height: '95vh', width: '100vw' };
+          this.contactDialogDimensions = { height: '85vh', width: '100vw' };
+          this.isOver = true;
+          break;
         case Breakpoints.TabletPortrait:
+          this.resumeDialogDimensions = { height: '80vh', width: '100vw' };
+          this.contactDialogDimensions = { height: '40vh', width: '100vw' };
           this.isOver = true;
           break;
         case Breakpoints.TabletLandscape:
+          this.resumeDialogDimensions = { height: '85vh', width: '65vw' };
+          this.contactDialogDimensions = { height: '50vh', width: '60vw' };
+          this.isOver = false;
+          break;
         case Breakpoints.WebPortrait:
+          this.resumeDialogDimensions = { height: '80vh', width: '65vw' };
+          this.contactDialogDimensions = { height: '45vh', width: '65vw' };
+          this.isOver = false;
+          break;
         case Breakpoints.WebLandscape:
+          this.resumeDialogDimensions = { height: '80vh', width: '50vw' };
+          this.contactDialogDimensions = { height: '40vh', width: '45vw' };
           this.isOver = false;
           break;
       }
@@ -147,15 +169,15 @@ export class SidenavComponent implements OnInit {
 
   resume() {
     this.dialog.open(ResumeComponent, {
-      height: '80vh',
-      width: '65vw'
+      height: this.resumeDialogDimensions.height,
+      width: this.resumeDialogDimensions.width
     });
   }
 
   contactInfo() {
     this.dialog.open(ContactInfoComponent, {
-      height: '40vh',
-      width: '75vw'
+      height: this.contactDialogDimensions.height,
+      width: this.contactDialogDimensions.width
     });
   }
 

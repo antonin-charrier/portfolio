@@ -3,7 +3,7 @@
         "profile": {
             "name": "Antonin CHARRIER",
             "job": "Angular consultant",
-            "coordinates": "View my contact informations",
+            "coordinates": "View my contact information",
             "resume": "View my resume",
             "email": "Send an email",
             "linkedin": "Visit my LinkedIn page",
@@ -752,7 +752,7 @@
         "close": "Close"
     },
     "contact-info": {
-        "title": "Contact informations",
+        "title": "Contact information",
         "email": "charrier.antonin@yahoo.fr",
         "phone-number": "(+33) 770.978.302",
         "linkedin": "antonin-charrier",

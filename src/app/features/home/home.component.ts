@@ -44,9 +44,11 @@ export class HomeComponent implements OnInit {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
 
-    this.translateService.get('home.keywords').subscribe(translations => {
-      this.keywords = this.repeat(this.shuffle(Object.values(translations)), 2);
+    this.translateService.onLangChange.subscribe(() => {
+      this.getKeywords();
     });
+
+    this.getKeywords();
   }
 
   private shuffle(array: any[]): any[] {
@@ -59,5 +61,11 @@ export class HomeComponent implements OnInit {
         out = out.concat(array);
     }
     return out;
+  }
+
+  private getKeywords() {
+    this.translateService.get('home.keywords').subscribe(translations => {
+      this.keywords = this.repeat(this.shuffle(Object.values(translations)), 2);
+    });
   }
 }

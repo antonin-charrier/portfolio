@@ -14,6 +14,9 @@
 
 #sub-content {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .article-container {    
