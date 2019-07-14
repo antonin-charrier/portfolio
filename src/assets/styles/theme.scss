@@ -3,7 +3,7 @@
 @include mat-core();
 
 $light-primary-palette: mat-palette($mat-indigo);
-$light-accent-palette:  mat-palette($mat-amber, A200, A100, A400);
+$light-accent-palette:  mat-palette($mat-indigo, 200);
 $light-warn-palette:    mat-palette($mat-red);
 $light-theme:   mat-light-theme($light-primary-palette, $light-accent-palette, $light-warn-palette);
 
@@ -21,7 +21,7 @@ $app-typography: mat-typography-config(
 @include angular-material-typography($app-typography);
 
 $dark-primary-palette: mat-palette($mat-blue-gray);
-$dark-accent-palette:  mat-palette($mat-amber, A200, A100, A400);
+$dark-accent-palette:  mat-palette($mat-blue-gray, 200);
 $dark-warn-palette:    mat-palette($mat-deep-orange);
 $dark-theme:   mat-dark-theme($dark-primary-palette, $dark-accent-palette, $dark-warn-palette);
 

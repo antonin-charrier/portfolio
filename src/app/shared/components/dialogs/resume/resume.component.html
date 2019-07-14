@@ -1,10 +1,10 @@
 <div class="download-sticky-button-container">
   <h1 mat-dialog-title>
-    {{ 'resume.title' | translate }}
+    <span>{{ 'resume.title' | translate }}</span>
   </h1>
   <div mat-dialog-content class="resume-content">
     <div *ngIf="error">
-        {{ 'resume.error' | translate }}
+      <span>{{ 'resume.error' | translate }}</span>
     </div>
     <a target="_blank" [href]="resume()">
       <pdf-viewer [src]="resume()" [render-text]="true" style="display: block;" [original-size]="false"

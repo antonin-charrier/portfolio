@@ -1,22 +1,89 @@
 <app-article-header [title]="'home.title'" [subtitle]="'home.subtitle'"></app-article-header>
 <p class="article-p">
-  {{ 'home.two-years' | translate }}
-  <a href="https://www.capgemini.com" target="_blank">{{ 'home.capgemini' | translate }}</a>
-  {{ 'home.experience' | translate }}
-  <a href="https://www.intechinfo.fr" target="_blank">{{ 'home.intech' | translate }}</a>
-  {{ 'home.applications' | translate }}
-  <a href="https://www.securitas.com" target="_blank">{{ 'home.securitas' | translate }}</a>
-  {{ 'home.skills' | translate }}
+  <span>{{ 'home.two-years' | translate }}</span>
+  <a href="https://www.capgemini.com" target="_blank" matTooltip="{{ 'home.capgemini-website' | translate }}" matTooltipPosition="above">{{ 'home.capgemini' | translate }}</a>
+  <span>{{ 'home.experience' | translate }}</span>
+  <a href="https://www.intechinfo.fr" target="_blank" matTooltip="{{ 'home.intech-website' | translate }}" matTooltipPosition="above">{{ 'home.intech' | translate }}</a>
+  <span>{{ 'home.applications' | translate }}</span>
+  <a href="https://www.securitas.com" target="_blank" matTooltip="{{ 'home.securitas-website' | translate }}" matTooltipPosition="above">{{ 'home.securitas' | translate }}</a>
+  <span>{{ 'home.skills' | translate }}</span>
   <b>
-    {{ 'home.development' | translate }}
-    <a [routerLink]="['technical-skills/dot-net-core-web-api']">{{ 'home.dot-net' | translate }}</a>
-    {{ 'home.dot-net-bis' | translate }}
-    <a [routerLink]="['technical-skills/front-end']">{{ 'home.angular' | translate }}</a>
-    {{ 'home.angular-bis' | translate }}
-    <a [routerLink]="['technical-skills/android']">{{ 'home.android' | translate }}</a>
-    {{ 'home.development-bis' | translate }}
+    <span>{{ 'home.development' | translate }}</span>
+    <a [routerLink]="['technical-skills/dot-net-core-web-api']" matTooltip="{{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}" matTooltipPosition="above">{{ 'home.dot-net' | translate }}</a>
+    <span>{{ 'home.dot-net-bis' | translate }}</span>
+    <a [routerLink]="['technical-skills/front-end']" matTooltip="{{ 'redirects.linked-technical-skills.front-end' | translate }}" matTooltipPosition="above">{{ 'home.angular' | translate }}</a>
+    <span>{{ 'home.angular-bis' | translate }}</span>
+    <a [routerLink]="['technical-skills/android']" matTooltip="{{ 'redirects.linked-technical-skills.android' | translate }}" matTooltipPosition="above">{{ 'home.android' | translate }}</a>
+    <span>{{ 'home.development-bis' | translate }}</span>
   </b>
 </p>
 <p class="article-p">
-  {{ 'home.frameworks' | translate }}
+  <span>{{ 'home.frameworks' | translate }}</span>
 </p>
+<p class="article-p">
+  <span>{{ 'home.future' | translate }}</span>
+  <b>{{ 'home.architect' | translate }}</b>
+  <span>{{ 'home.continue' | translate }}</span>
+</p>
+<div class="defile-container" [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }">
+  <div class="defile-parent">
+    <span class="defile" attr.data-text="{{ keywords.join('&nbsp;&nbsp;&nbsp;᛫&nbsp;&nbsp;&nbsp;') }}"></span>
+  </div>
+</div>
+<div class="article-card-container">
+  <mat-card matRipple class="article-card" [routerLink]="['./projects']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-projects" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'home.projects.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'home.projects.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/projects.png" alt="Projects logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'home.projects.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./technical-skills']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-technical-skills" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'home.technical-skills.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'home.technical-skills.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/technical-skills.png" alt="Technical skills logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'home.technical-skills.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./human-skills']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-human-skills" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'home.human-skills.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'home.human-skills.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/human-skills.png" alt="Human skills logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'home.human-skills.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./career']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-career" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'home.career.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'home.career.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/career.png" alt="Career logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'home.career.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+  <mat-card matRipple class="article-card" [routerLink]="['./hobbies']">
+    <mat-card-header>      
+      <div mat-card-avatar class="article-card-avatar article-card-avatar-hobbies" *ngIf="isSmallDevice"></div>
+      <mat-card-title>{{ 'home.hobbies.title' | translate }}</mat-card-title>
+      <mat-card-subtitle>{{ 'home.hobbies.card-subtitle' | translate }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image class="article-card-image" src="assets/img/hobbies.png" alt="Hobbies logo" *ngIf="!isSmallDevice">
+    <mat-card-content>
+      <p>{{ 'home.hobbies.card-content' | translate }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

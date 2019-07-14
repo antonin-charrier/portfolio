@@ -6,4 +6,12 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './knowledge-sharing.component.html',
   styleUrls: ['./knowledge-sharing.component.scss']
 })
-export class KnowledgeSharingComponent extends ArticleComponent {}
+export class KnowledgeSharingComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['web-agent', 'call-center'];
+  }
+
+  get linkedTechnicalSkills() {
+    return ['front-end'];
+  }
+}

@@ -86,13 +86,57 @@ p.article-p {
             color: $light-primary-lighter;
         }    
     }
+    li {
+        a {
+            color: $light-primary-lighter;
+        }
+    }
 }
 
 #content.dark {
     p {
         a {
-        color: $dark-primary-lighter;
+            color: $dark-primary-lighter;
         }
+    }
+    li {
+        a {
+            color: $dark-primary-lighter;
+        }
+    }
+}
+
+#content {
+    .border-light {
+        border-color: $light-primary-lighter;
+    }
+
+    .background-light {
+        background-color: $light-primary-lighter;
+    }
+
+    .border-dark {
+        border-color: $dark-primary-lighter;
+    }
+
+    .background-dark {
+        background-color: $dark-primary-lighter;
+    }
+
+    button.button-text-light {
+        color: $light-primary-lighter !important;
+    }
+
+    button.button-text-dark {
+        color: $dark-primary-lighter !important;
+    }
+
+    p.light {
+        color: $light-primary-lighter;
+    }
+
+    p.dark {
+        color: $dark-primary-lighter;
     }
 }
 
@@ -100,7 +144,128 @@ p.article-p {
     background-color: $dark-article-background !important;
     @extend .dark-theme;
 
-    h1, .resume-content, .contact-info-content {
+    h1, h2, .resume-content, .contact-info-content, .experience-content {
         color: $white;
     }
+}
+
+.article-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.article-card {
+    width: 256px;
+    margin: 16px;
+    cursor: pointer;
+}
+
+.article-card-image {
+    max-height: 144px;
+}
+
+.article-card-avatar {
+    height: 50px !important;
+    width: 50px !important;
+}
+
+.article-card-avatar-projects {
+    background-image: url('../img/projects.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-technical-skills {
+    background-image: url('../img/technical-skills.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-human-skills {
+    background-image: url('../img/human-skills.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-career {
+    background-image: url('../img/career.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-hobbies {
+    background-image: url('../img/hobbies.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-call-center {
+    background-image: url('../img/energies-e-leclerc.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-e-monthly {
+    background-image: url('../img/safran.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-galt {
+    background-image: url('../img/galt.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-vision-safety {
+    background-image: url('../img/securitas.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-web-agent {
+    background-image: url('../img/securitas.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-autonomy {
+    background-image: url('../img/autonomy.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-creativity {
+    background-image: url('../img/creativity.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-knowledge-sharing {
+    background-image: url('../img/knowledge-sharing.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-languages {
+    background-image: url('../img/languages.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-team-leading {
+    background-image: url('../img/team-leading.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-android {
+    background-image: url('../img/android.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-dot-net-core-web-api {
+    background-image: url('../img/dot-net-core-web-api.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-financial-assessments {
+    background-image: url('../img/financial-assessments.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-front-end {
+    background-image: url('../img/front-end.icon.png');
+    background-size: cover;
+}
+
+.article-card-avatar-notions-of-architecture {
+    background-image: url('../img/notions-of-architecture.icon.png');
+    background-size: cover;
 }

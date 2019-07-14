@@ -56,8 +56,14 @@
 }
 
 .profile-picture {
-    width: 250px;
     border-radius: 50%;
+    margin-top: 16px;
+    width: 200px;
+}
+
+.profile-picture.small {
+    margin-top: 0;
+    width: 64px;
 }
 
 .profile-panel {
@@ -68,12 +74,24 @@
     width: 100%;
 }
 
-.profile-subpanel-left {
+.profile-panel-small {
+    margin-bottom: 16px;
+}
+
+.profile-panel > *:first-child {
     margin-left: 40px;
 }
 
-.profile-subpanel-right {
+.profile-panel > *:last-child {
     margin-right: 40px;
+}
+
+.profile-panel-small > *:first-child {
+    margin-left: 30px;
+}
+
+.profile-panel-small > *:last-child {
+    margin-right: 30px;
 }
 
 .profile-logo {
@@ -94,8 +112,28 @@
     font-size: 16px !important;
 }
 
+.selected-parent {
+    width: 5px;
+    height: inherit; 
+    position: absolute;
+    left: 0;
+}
+
+.selected-parent.light {    
+    background: $light-primary;
+}
+
+.selected-parent.dark {    
+    background: $dark-primary;
+}
+
 .sublist {
     padding-top: 0;
+
+    .sidenav-mat-list-p {
+        padding-left: 16px;
+        font-weight: 300 !important;
+    }
 }
 
 .sublist-icon {    

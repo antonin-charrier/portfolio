@@ -29,22 +29,27 @@
         "languages": "Langues",
         "team-leading": "Gestion d'équipe",
         "hobbies": "Loisirs",
+        "career": "Parcours",
         "language": "Changer de langue",
         "dark-mode": "Activer le mode sombre",
         "about": "À propos"
     },
     "wip": {
-        "work-in-progress": "Travail en cours"
+        "work-in-progress": "Travail en cours",
+        "wait": "Cet article est encore en construction, il sera bientôt disponible !"
     },
     "home": {
         "title": "Antonin CHARRIER",
-        "subtitle": "Développeur web et Android",
+        "subtitle": "Consultant Angular",
         "two-years": "Après deux années et demi à ",
         "capgemini": "Capgemini",
+        "capgemini-website": "Site web de Capgemini",
         "experience": " durant une expérience professionnelle en parallèle d’une formation à ",
         "intech": "IN’TECH",
+        "intech-website": "Site web de IN’TECH",
         "applications": ", j’ai construit et maintenu plusieurs applications pour ",
         "securitas": "Securitas",
+        "securitas-website": "Site web de Securitas",
         "skills": ", améliorant mes compétences en ",
         "development": "développement ",
         "dot-net": ".NET",
@@ -53,17 +58,123 @@
         "angular-bis": " et ",
         "android": "Android",
         "development-bis": ".",
-        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un gros site web pour des agents de sécurité de Securitas."
+        "frameworks": "J’adore travailler sur des frameworks modernes avec des ergonomes et des designers pour construire des sites web avec une très bonne expérience utilisateur. Je travaille actuellement sur un large site web pour des agents de sécurité de Securitas ainsi que sur une application mobile assurant leur sécurité et pouvant leur sauver la vie.",
+        "future": "Je veux continuer à travailler sur Angular et Android dans le futur et je voudrais en apprendre davantage sur le métier d'",
+        "architect": "architecte logiciel",
+        "continue": ". Je souhaite également me remettre à travailler sur des projets personnels que j'ai dû laisser en suspens par manque de temps durant mes études, ainsi que m'impliquer de plus en plus dans mon sport, l'escrime.",
+        "projects" : {
+            "title": "Projets",
+            "card-subtitle": "Pour Safran, Securitas...",
+            "card-content": "J'ai travaillé sur plusieurs projets, principalement des sites web et des applications mobiles"
+        },
+        "technical-skills" : {
+            "title": "Compétences techniques",
+            "card-subtitle": "Angular, Android...",
+            "card-content": "J'apprécie pouvoir travailler sur des technologies modernes, notamment en front end"
+        },
+        "human-skills" : {
+            "title": "Compétences humaines",
+            "card-subtitle": "Autonomie, creativité...",
+            "card-content": "Ces qualités et compétences m'aident dans mon travail quotidien"
+        },
+        "career" : {
+            "title": "Parcours",
+            "card-subtitle": "Jusqu'à aujourd'hui",
+            "card-content": "Après cinq ans d'études et deux ans et demi d'expérience professionnelle, voilà où j'en suis"
+        },
+        "hobbies" : {
+            "title": "Loisirs",
+            "card-subtitle": "Sur mon temps libre",
+            "card-content": "Voilà ce que je fais sur mon temps libre, ces activités sont très importantes pour moi"
+        },
+        "keywords": {
+            "angular": "Angular 7",
+            "android": "Android",
+            "xamarin": "Xamarin",
+            "dot-net-core": ".NET Core",
+            "html": "HTML",
+            "css": "CSS",
+            "Capgemini": "Capgemini",
+            "securitas": "Securitas",
+            "safran": "Safran",
+            "energies-e-leclerc": "Energies E.Leclerc",
+            "intech": "IN'TECH",
+            "vue-js": "Vue.js",
+            "creativity": "Créativité",
+            "autonomy": "Autonomie",
+            "front-end": "Front end",
+            "web-api": "API web",
+            "financial-assessments": "Chiffrages financiers",
+            "architecture": "Architecture",
+            "team-leading": "Gestion d'équipe",
+            "english": "Anglais",
+            "spanish": "Espagnol",
+            "javascript": "JavaScript",
+            "typescript": "Typescript",
+            "c-sharp": "C#",
+            "material": "Angular Material",
+            "ngx-translate": "NGX Translate",
+            "knowledge-sharing": "Partage de connaissances",
+            "unity-3d": "Unity 3D",
+            "bluetooth": "Bluetooth 4/BLE",
+            "rest": "REST",
+            "sql-server": "SQL Server"
+        }
     },
     "projects": {
+        "title": "Projets",
+        "subtitle": "Plusieurs projets sur lesquels j'ai travaillé",
+        "call-center": {
+            "title": "Call center",
+            "subtitle": "De développeur Angular à team leader",
+            "card-subtitle": "Angular, PoC",
+            "card-content": "Call center est le PoC d'un site web réalisé en Angular pour Energies E.Leclerc",
+            "portal": {
+                "title": "Créer un portail pour un centre d’appels",
+                "apprenticeship": "Au cours de mon alternance chez Capgemini, j’ai travaillé sur plusieurs projets de sites web en Angular. Parmi eux, je participe en octobre 2018 à un ",
+                "poc": "PoC (proof of concept)",
+                "goal": " de portail pour un centre d’appels. Le but du PoC est d’être proposé à la nouvelle entité Energies E. Leclerc. En effet, Siplec, une filiale d’import/export appartenant au groupe E. Leclerc, est un client de Capgemini. Une équipe de Capgemini travaille notamment sur des API liées à la distribution et à la vente d’électricité. Cette équipe a également mis en ligne le site web de Energies E. Leclerc, permettant aux clients de souscrire à une offre en ligne. C’est pourquoi le PoC doit compléter ce site afin d’enregistrer les souscriptions par téléphone et pouvoir assurer un SAV auprès de tous les clients.",
+                "page": "Le projet Call center, devenu par la suite Utilities in the box",
+                "project": "Le projet est commandité par un commercial de Capgemini tel qu’il puisse être vendu par la suite à d’autres fournisseurs d’énergie. En effet, en 2007, le marché de l’énergie en France s’est ouvert et, depuis, les fournisseurs historiques EDF (électricité) et GDF (gaz naturel), ne sont plus les seuls à pouvoir distribuer leur énergie. Depuis quelques années, les fournisseurs alternatifs ont fleuri, ouvrant ainsi un grand marché à Capgemini pour mettre en place leurs infrastructures numériques. C’est pour cette raison que l’objectif premier du PoC est la réutilisabilité afin de pouvoir facilement le vendre à tous les nouveaux fournisseurs d’énergie."
+            },
+            "poorly-monitored": {
+                "title": "Un projet mal suivi",
+                "beginning": "Au départ, le projet a beaucoup de difficultés en termes d’organisation, de communication et de suivi. Nous sommes trois développeurs sur le projet, accompagnés par un chef de projet qui a très peu de temps à nous consacrer, étant occupé par ses autres projets et le PoC étant le moins prioritaire. La demande vient du commercial, qui, après nous avoir fourni des maquettes ",
+                "ux": "UX (user experience)",
+                "and": " et ",
+                "ui": "UI (user interface)",
+                "mock-ups": ", nous explique les fonctionnalités à implémenter pour qu’il puisse présenter le projet aux clients. Enfin, le dernier acteur est l’équipe Siplec qui implémente les API sur lesquelles nous nous appuyons.",
+                "problem": "Le problème auquel nous faisons face est qu’une des API est en cours de développement et l’autre utilise des données différentes que celles que nous sommes sensés afficher à partir des maquettes. Nous remontons le problème à notre chef de projet et nous tentons d’avancer au maximum sur ce que nous pouvons en totale ",
+                "autonomy": "autonomie",
+                "information": ". Après plusieurs jours, étant donné que nous n’avons aucune information des trois autres parties, nous décidons de nous organiser. Après concertation avec mes deux collègues, je prends le ",
+                "lead": "lead",
+                "experienced": " sur le projet, étant le plus expérimenté des trois. Mon but est d’assurer le  ",
+                "monitoring": "suivi",
+                "inexistent": " de l’équipe, qui est alors inexistant, d’établir une ",
+                "communication": "communication",
+                "parties": " entre les autres parties du projet et d’améliorer l’",
+                "organization": "organisation",
+                "project": " du projet."
+            },
+            "experience": {
+                "title": "Une bonne expérience",
+                "initiative": "Cette prise d’initiative est saluée par notre chef de projet qui nous laisse gérer le PoC avec les autres interlocuteurs. Nous réussissons à améliorer la communication entre le commercial et l’équipe des API, le premier exprimant clairement ses attentes et la seconde expliquant les possibilités actuelles et les évolutions possibles ou non. Ainsi, le projet peut être présenté fonctionnel au client et c’est à ce moment-là que ma mission sur le projet se conclue. Les mois suivants, ne travaillant plus sur le projet, j’ai tout de même pu aider les nouveaux membres en ",
+                "knowledge": "partageant mes connaissances",
+                "project": " du projet.",
+                "chaotic": "Bien que le parcours du projet ait été chaotique, il m’aura néanmoins permis de tirer beaucoup d’expérience, notamment humaine. J’ai pu observer concrètement les impacts d’une bonne et d’une mauvaise communication entre les différents interlocuteurs d’un projet et j’ai pu m’initier à la gestion de projet."
+            }
+        },
         "e-monthly": {
             "title": "eMonthly",
             "subtitle": "Architecturer un projet Angular",
+            "card-subtitle": "Angular, architecture",
+            "card-content": "eMonthly est un site web de Safran basé sur un template Angular que j'ai architecturé",
             "template": {
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",
                 "angular-projects": "projets Angular",
-                "project-manager": ", mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services. Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran. Cette apoplication, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients."
+                "project-manager": ", mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services. Le template doit, dans un premier temps, être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran. Cette application, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients.",
+                "page": "Le projet eMonthly, devenu par la suite Satisfly"
             },
             "architecture": {
                 "title": "Intégration de puissants frameworks",
@@ -71,7 +182,7 @@
                 "architecture": "l'architecture",
                 "by-creating": " de la solution en créant ",
                 "services": "des services, des composants, des guards",
-                "references": ", etc. J'ajoute des références vers des bibliothèques que notre centre a intérêt à utiliser d'après les demandes récurrents des clients. J'ajoute notamment ",
+                "references": ", etc. J'ajoute des références vers des bibliothèques que notre centre a intérêt à utiliser d'après les demandes récurrentes des clients. J'ajoute notamment ",
                 "angular-material": "Angular Material",
                 "website": " pour effectuer rapidement et facilement un design de site soigné (en particulier pour les PoC) et ",
                 "kendo": "Kendo for Angular",
@@ -80,19 +191,23 @@
             }, 
             "future": {
                 "title": "Continuer à améliorer le template",
-                "expect" : "Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. Je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, pour les encourager à utiliser des bonnes pratiques de conception dès le début."
+                "expect" : "Je compte travailler de nouveau sur le template de projet Angular afin de l'améliorer en fonction des besoins des futurs clients. Je souhaite également le rendre encore plus accessible et modulable pour les futurs dévéloppeurs qui seront amenés à l'utiliser, même pour les néophytes en Angular, afin de les encourager à utiliser des bonnes pratiques de conception dès le début."
             }
         },
         "galt": {
             "title": "Galt",
             "subtitle": "Le gestionnaire de packages qui facilite la vie des développeurs",
+            "card-subtitle": "Vue.js, .NET",
+            "card-content": "Galt est un gestionnaire de packages NuGet destiné aux développeurs",
             "for-developers": {
                 "title": "Un projet destiné aux développeurs",
                 "galt": "Galt est un gestionnaire de packages permettant aux développeurs de surveiller et d’administrer l’architecture des dépendances de leur projet .NET hébergé sur la plateforme ",
                 "nuget": "NuGet",
+                "nuget-website": "Site web de NuGet",
                 "platform": ".",
                 "idea": "L’idée naît en 2016 d’un de mes professeurs dans son entreprise de services informatiques, ",
                 "signature-code": "Signature Code",
+                "signature-code-website": "Site web de Signature Code",
                 "tool": ". Il souhaite créer un outil permettant à ses employés de gérer facilement l’ensemble des packages utilisés par leurs applications. L’objectif est de visualiser les dépendances d’un projet sous forme d’arbre, d’être prévenu lorsque de nouvelles versions d’un package sont publiées et enfin d’être alerté en cas de conflit de versions.",
                 "internship": "Un de mes camarades de promotion rejoint Signature Code en février 2016 dans le cadre d’un stage d’un mois. Il travaille sur un ",
                 "poc": "PoC (proof of concept)",
@@ -114,10 +229,10 @@
                 "angular": "Angular",
                 "google": " (Google) et ",
                 "react": "React",
-                "facebook": ", à la différence des deux autres qu’il est développé par une équipe indépendante. Les autres membres de l’équipe sont affectés à d’autres tâches : un s’occupe de la création et de l’affichage des graphes de dépendances grâce à d3.js, un autre s’occupe de la mise en place du back end et enfin le dernier s’occupe des liaisons entre le front end et le back end et sert de renfort technique auprès des trois autres membres grâce à son expérience.",
+                "facebook": " (Facebook), à la différence des deux autres qu’il est développé par une équipe indépendante. Les autres membres de l’équipe sont affectés à d’autres tâches : un s’occupe de la création et de l’affichage des graphes de dépendances grâce à d3.js, un autre s’occupe de la mise en place du back end et enfin le dernier s’occupe des liaisons entre le front end et le back end et sert de renfort technique auprès des trois autres membres grâce à son expérience.",
                 "suggest": "Je propose à mon équipe de réaliser une ",
                 "spa": "SPA (single page application)",
-                "views": "contenant les différentes vues nécessaires à l’application (accueil, inscription et connexion, recherche, détails, etc.). Toute la SPA est ensuite envoyée dans le back end. Notre serveur ASP.NET affiche une page web contenant uniquement une référence à notre SPA qui se charge de l’interaction avec l’utilisateur (note : il est rarement nécessaire d’héberger son application client à l’intérieur d’une application web côté serveur mais il s’agissait d’une meilleure solution pour ce projet. La plupart du temps, une application client et des web services suffisent)",
+                "views": " contenant les différentes vues nécessaires à l’application (accueil, inscription et connexion, recherche, détails, etc.). Toute la SPA est ensuite envoyée dans le back end. Notre serveur ASP.NET affiche une page web contenant uniquement une référence à notre SPA qui se charge de l’interaction avec l’utilisateur (note : il est rarement nécessaire d’héberger son application client à l’intérieur d’une application web côté serveur mais il s’agissait d’une meilleure solution pour ce projet. La plupart du temps, une application client et des web services suffisent)",
                 "mock-ups": "Avant de me lancer dans la création de la SPA, je crée des maquettes détaillées de chaque « page » de notre application grâce à l’outil Moqups. C’est une étape importante, en particulier dans le cas d’une SPA, car les pages sont entièrement modulables. Il est nécessaire de définir précisément l’",
                 "ux": "UX (user experience) ",
                 "and": " et l'",
@@ -131,18 +246,307 @@
                 "dependencies": "Afficher un graphe de dépendances pour un package hébergé sur NuGet à partir d’une barre de recherche.",
                 "versions": "Afficher les différentes versions disponibles pour ce package, les potentielles nouvelles versions des dépendances et les potentiels conflits de version au sein des dépendances.",
                 "account": "Permettre à l’utilisateur de créer un compte afin de retrouver les packages récemment consultés ainsi que les packages ajoutés en favoris.",
-                "presentation": "Mon équipe présente le projet lors du forum des projets informatiques dans mon école en janvier 2017. Nous savons que la présentation va être difficile car notre projet est destiné à un public technique. Nous arrivons tout de même à vulgariser notre concept pour que les jurés comprennent l’enjeu de notre projet. Parmi ces jurés, certains sont proviennent d’un environnement technique et nous posent des questions approfondies sur le fonctionnement de notre application, notamment la gestion des dépendances d’un package. D’autres nous demandent les évolutions et les améliorations envisageables du projet. Ces améliorations sont les objectifs secondaires que nous nous étions fixés dans le cas où nous avions encore du temps avant le forum : ",
+                "presentation": "Mon équipe présente le projet lors du forum des projets informatiques dans mon école en janvier 2017. Nous savons que la présentation va être difficile car notre projet est destiné à un public technique. Nous arrivons tout de même à vulgariser notre concept pour que les jurés comprennent l’enjeu de notre projet. Parmi ces jurés, certains proviennent d’un environnement technique et nous posent des questions approfondies sur le fonctionnement de notre application, notamment la gestion des dépendances d’un package. D’autres nous demandent les évolutions et les améliorations envisageables du projet. Ces améliorations sont les objectifs secondaires que nous nous étions fixés dans le cas où nous avions encore du temps avant le forum : ",
                 "extend": "Etendre la gestion des packages à des plateformes d’hébergement autres que NuGet (npm, Maven, gradle, etc.) grâce à l’utilisation d’interfaces",
                 "optimize": "Optimiser la gestion des téléchargements des packages (certains packages pouvant nécessiter plusieurs minutes), notamment en proposant des options de téléchargement en arrière-plan.",
                 "upload": "Ajouter la possibilité d’uploader son propre projet sans passer par une plateforme d’hébergement de package.",
                 "opportunity": "Ce projet m’a été très bénéfique tant sur le plan technique que sur le plan humain. J’ai pu découvrir plusieurs technologies très récentes et qui m’ont servi de nouveau par la suite. J’ai eu la satisfaction de répondre à une attente d’un client (mon professeur) et de terminer un projet dans son ensemble (le site a pu être déployé sur le serveur de notre école). J’ai également pu participer à l’organisation d’un projet complexe et j’ai amélioré mon expression lors de la présentation au forum face à des jurés n’ayant pas forcément un bagage technique."
             }
+        },
+        "vision-safety": {
+            "title": "VisionSafety",
+            "subtitle": "Protéger ceux qui nous protègent",
+            "card-subtitle": "Xamarin, Android",
+            "card-content": "VisionSafety est une application life-saver pour les agents Securitas",
+            "save-lives": {
+                "title": "Une application pour sauver des vies",
+                "vision-safety": "VisionSafety est une application du panel Vision de Securitas. Elle est destinée aux agents de sécurité travaillant au sein de sites à risques. Grâce à elle, l’agent peut envoyer des alertes grâce à un gros bouton facilement accessible (avec une simple pression, il lance un décompte avant l’alerte avec la possibilité de l’annuler en cas d’erreur, et avec une pression longue, il envoie l’alerte directement). Il peut également passer en mode « danger », prévenant ainsi qu’il a ressenti un potentiel risque imminent. Durant ce mode, toutes les alertes sont immédiates. Certains agents sont équipés de boutons physiques ",
+                "bluetooth": "Bluetooth",
+                "buttons": " qu’ils peuvent attacher à des bracelets afin d’envoyer des alertes de manière plus discrète grâce à des simples pressions furtives.",
+                "detection": "L’application détecte également les chutes ainsi que l’inactivité prolongée (et donc anormale) et envoie des alertes en conséquence. Enfin, elle permet aux agents de s’enregistrer au début et à la fin de leur ronde de surveillance et de tracer leur position GPS. Toute l’application est entièrement configurable et modulable en fonction des spécificités de chaque site à protéger. Grâce à cette application, Securitas gagne en efficacité pour intervenir en cas d’alerte et peut plus facilement secourir un agent ayant, par exemple, subit une agression.",
+                "screens": "Les différents mode d'alerte de l'application (mayday, menace potentielle, chute détectée)"
+            },
+            "manage": {
+                "title": "Gérer l’application seul",
+                "vision-safety": "VisionSafety est une application Android développée grâce à l’environnement ",
+                "xamarin": "Xamarin",
+                "environment": " (permettant de coder en ",
+                "c-sharp": "C#",
+                "create": " et de créer des applications ",
+                "cross-platform": "cross-platform iOS/Android",
+                "apps": ", bien que VisionSafety ne soit évidemment pas destinée à être développée pour iPhone). Nous sommes trois développeurs à avoir travaillé sur l’application. Le premier a mis en place le socle et créé l’interface. J’ai ensuite développé l’ensemble de l’application avec mon autre collègue jusqu’à la livraison de la première version.",
+                "maintened": "Depuis, l’application est maintenue et a été régulièrement améliorée pour intégrer toutes les fonctionnalités actuelles. C’est désormais moi qui m’occupe de la maintenir en intégralité, des besoins du client jusqu’à la livraison. Ainsi, j’ai beaucoup gagné en ",
+                "autonomy": "autonomie",
+                "as-well": " ainsi qu’en ",
+                "customer-relationship": "relation avec le client",
+                "study": ". J’étudie ses besoins, je lui apporte mes idées afin de répondre au mieux à ses attentes, je développe les évolutions et enfin je lui livre. Contrairement aux autres applications où mon responsable s’occupe du contact avec le client et des livraisons, il me laisse autonome sur celle-ci et le client est pleinement satisfait de la qualité."
+            }, 
+            "develop-better": {
+                "title": "Mieux développer sur Android",
+                "in-addition" : "Outre les apports humains, j’ai aussi beaucoup appris sur ",
+                "android": "Android",
+                "vision-safety": ". Grâce à VisionSafety, je sais désormais connecter des appareils ",
+                "bluetooth": "Bluetooth",
+                "devices": " depuis une application, recueillir les données de ",
+                "geolocation": "géolocalisation",
+                "data": " de l’appareil ou encore utiliser des  ",
+                "jobs": "jobs",
+                "background": " pour effectuer des tâches d’arrière-plan. Grâce à la séparation UI/Library de Xamarin, j’ai mieux compris et respecté le fonctionnement du ",
+                "multithreading": "multithreading",
+                "on-android": " sur Android.",
+                "enjoy": "J’apprécie travailler sur VisionSafety, il s’agit d’une application dont la finalité est importante : protéger des personnes. De plus, elle me permet de développer des fonctionnalités intéressantes d’Android."
+            }
+        },
+        "web-agent": {
+            "title": "WebAgent",
+            "subtitle": "Mon plus gros projet sur Angular",
+            "card-subtitle": "Angular, .NET",
+            "card-content": "WebAgent est un large site web qui accompagne les agents Securitas dans leur quotidien",
+            "goal": {
+                "title": "Le but de WebAgent",
+                "vision": "Durant mon alternance, j’ai principalement travaillé pour le client Securitas sur le projet Vision. Il s’agit d’un ensemble d’outils qui accompagnent les agents de sécurité dans leur travail quotidien. Ces applications ont pour objectif de les aider dans leurs tâches : planifier les rondes de surveillance, rédiger des rapports lors d’anomalies, gérer les visiteurs sur le site, etc. Parmi elles se trouve une application ",
+                "android": "Android",
+                "vision-mobile": ", VisionMobile, ainsi qu’un site web développé en ",
+                "angular": "Angular",
+                "web-agent": " : WebAgent.",
+                "redesign": "Ce site est une refonte web d’un client lourd en WPF. Le but est de créer une application moderne, ergonomique et esthétique en collaboration avec une équipe de designers et d’ergonomes. La refonte est divisée en plusieurs lots. Le premier constitue une reproduction de l’existant d’un ancien site web qui permettait uniquement la rédaction de rapports. Il a été livré au client en juin 2019. Les deuxième et troisième lots concernent respectivement les plannings (rondes, tâches, etc.) et les entrées/sorties (visiteurs, véhicules, clefs, etc.). Enfin, les derniers lots correspondent à la gestion des documents et des instructions au sein d’un site ainsi que la formation des agents. Le développement devrait durer jusqu’en mars 2020, mais le projet pourrait être prolongé dans le cas de l’intégration d’un large et complexe module d’administration qui n’existe actuellement que sur le client lourd.",
+                "page": "Le nouveau design de l'application WebAgent"
+            },
+            "angular": {
+                "title": "Une grande montée en compétence sur Angular",
+                "skills": "Sur ce projet, j’ai pu développer mes compétences en ",
+                "angular": "Angular",
+                "environment": ". J’y ai appris plusieurs concepts, parmi lesquels :",
+                "lazy-loading": "Le ",
+                "lazy-loading-bis": "lazy loading",
+                "lazy-loading-ter": ", qui permet de différer l’initialisation d’un module jusqu’au moment où il est demandé",
+                "guards": "Les ",
+                "guards-bis": "guards",
+                "guards-ter": ", qui permettent de contrôler l’accès à une route demandée par l’utilisateur",
+                "resolvers": "Les ",
+                "resolvers-bis": "resolvers",
+                "resolvers-ter": ", qui permettent de charger la page web demandée une fois que toutes les données nécessaires de cette page ont été récupérées, sans avoir besoin d’afficher un placeholder ou un loading spinner",
+                "app-initializers": "Les ",
+                "app-initializers-bis": "app initializers",
+                "app-initializers-ter": ", qui permettent d’attendre la récupération de données avant d’initialiser et rendre le site web (ou le module dans le cas d’un lazy loading)",
+                "concepts": "Grâce à ces concepts que nous avons appliqué à WebAgent, il est possible de créer des sites performants et fluides pour l’utilisateur, tout en évitant un maximum de bugs côté client. Evidemment, il faut savoir les utiliser à bon escient afin de tirer au mieux profit de leur utilité.",
+                "team": "J’ai eu la chance de travailler dans une équipe où nous apprenions constamment. Dès qu’un membre découvrait quelque chose d’intéressant, il la partageait et nous étudions s’il était possible et intéressant de l’ajouter au projet. Comme nous étions efficaces, nous avions de l’avance sur le planning et nous avons pu nous permettre beaucoup de micro-refactoring afin d’avoir la solution la plus propre et performante possible.  Grâce à cette expérience enrichissante, mes équipiers et moi intervenons désormais sur d’autres projets Angular afin de faire des ",
+                "feedbacks": "REX",
+                "expertise": " aux autres équipes et leur apporter notre expertise."
+            }, 
+            "other-skills": {
+                "title": "D’autres compétences techniques et humaines",
+                "web-services" : "Le nouveau site a été l’occasion de développer de nouveaux web services sur ",
+                "asp-net": "ASP.NET",
+                "integrate": ". Nous allons d’ailleurs intégrer un module ",
+                "signal-r": "SignalR",
+                "devices": " durant le deuxième lot afin de notifier l’application lors de différents événements (nouveau rapport, nouvelle instruction, etc.).",
+                "web-agent": "Au cours du développement de WebAgent, j’ai également eu l’occasion de ",
+                "knowledge": "partager mes connaissances techniques et fonctionnelles",
+                "welcome": " du projet. En effet, mon équipe a accueilli un nouveau membre après quelques mois de développement. Je me suis chargé de lui présenter les spécificités fonctionnelles du projet et j’ai pu échanger avec lui sur différents sujets Angular, sachant qu’il s’était également formé et avait eu l’occasion de découvrir et expérimenter des concepts lors de son précédent projet.",
+                "discover": "Enfin, j’ai pu commencer à découvrir les ",
+                "assessments": "chiffrages financiers",
+                "client": " qui sont envoyés au client en vue d’une validation du budget de sa part. C’est une compétence que je souhaite développer afin de continuer à évoluer au sein du projet."
+            }
+        }
+    },
+    "technical-skills": {
+        "title": "Compétences techniques",
+        "subtitle": "Mes principales compétences techniques",
+        "android": {
+            "title": "Android",
+            "subtitle": "Le mobile est l’avenir du digital",
+            "card-subtitle": "Android, Xamarin",
+            "card-content": "J'ai acquis une certaine expérience sur Android sur différents projets",
+            "discovery": {
+                "title": "Une découverte pas-à-pas en autodidacte",
+                "learned": "J’ai appris à développer sur ",
+                "android": "Android",
+                "vision": " au sein du projet Vision de Securitas. Au sein de ce projet regroupant plusieurs applications dont ",
+                "web-agent": "WebAgent",
+                "vision-mobile": ", se trouve une application mobile appelée VisionMobile permettant d’utiliser tous les modules du site web depuis un téléphone. Les agents de sécurité peuvent rédiger des rapports ou enregistrer des visiteurs au milieu de leur ronde de surveillance sans avoir à revenir sur un poste de travail. Etant donné que j’ai étudié le Java au sein de mon école, j’ai pu découvrir le projet et le monde d’Android directement. J’ai commencé par traiter des petits retours client sur l’application afin de me familiariser avec les concepts de ce nouvel environnement."
+            },
+            "practice": {
+                "title": "Une pratique régulière et approfondie",
+                "two-years": "Cela fait désormais plus de deux ans que je travaille sur Android, au sein de différents projets. J’ai continué la TMA sur VisionMobile, durant laquelle j’ai appris à créer des ",
+                "activities": "activités",
+                "and": " et des ",
+                "fragments": "fragments",
+                "tasks": " ou à utiliser les tâches asynchrones de Java pour communiquer avec le serveur. J’ai même appris à utiliser une base de données ",
+                "sqlite": "SQLite",
+                "database": " afin de stocker les données dans l’application avant de les envoyer au serveur (VisionMobile doit absolument fonctionner même sans connexion Internet étant donné que des sites ont une mauvaise réception du réseau dans certains secteurs). Cette TMA m’a permis d’avoir une vision générale sur le fonctionnement d’Android et de comprendre les principes de base.",
+                "opportunity": "J’ai eu l’occasion de travailler sur Android dans d’autres projets. D’une part, au sein de mon école, j’ai reçu durant mon alternance des cours d’introduction à Android. Etant donné que j’avais appris à mon travail, les cours ne m’ont pas beaucoup apporté, en revanche, nous devions rendre un projet d’application mobile à la fin du cycle. J’ai profité de cette application pour expérimenter et approfondir mes connaissances sur Android, notamment en termes de design, en étudiant en profondeur le fonctionnement des différents ",
+                "layouts": "layouts",
+                "layouts-bis": "."
+            },
+            "vision-safety": {
+                "title": "Les particularités de VisionSafety",
+                "project": "Par la suite, Securitas a lancé le projet d’une nouvelle application mobile destinée à assurer la sécurité de ses agents, ",
+                "vision-safety": "VisionSafety",
+                "center": ". Etant donné que je travaille dans un centre principalement axé sur les technologies Microsoft, nous avons décidé d’utiliser ",
+                "xamarin": "Xamarin",
+                "one-hand": " pour développer cette application. Les deux intérêts sont d’une part, de pouvoir coder en ",
+                "c-sharp": "C#",
+                "language": ", un langage considéré par la plupart des développeurs (moi compris) comme bien plus agréable, complet et performant que Java, et d’autre part, de pouvoir coder des applications ",
+                "cross-platform": "cross-platform Android/iOS",
+                "applications": ". Le deuxième intérêt était, dans le cas de VisionSafety, secondaire, puisque l’application n’allait être déployée que sur des téléphones Android robustes et non des iPhone. Cependant, le but de cette application pour le centre est de servir de vitrine auprès des clients pour démontrer nos compétences et proposer de nouvelles solutions mobiles simples à développer grâce à Xamarin.",
+                "debuts": "Grâce à cette application que j’ai suivie depuis ses débuts, j’ai pu étudier la mise en place de l’",
+                "architecture": "architecture",
+                "needs": " et y participer. Etant donné que cette application doit répondre à des besoins assez spécifiques, j’ai pu utiliser des fonctionnalités particulières d’Android, comme la détection de chute ou d’inactivité grâce à l’accéléromètre, la récupération de positions GPS grâce à la géolocalisation ou encore la connexion à des appareils en ",
+                "bluetooth": "Bluetooth",
+                "ble": " (v4 et BLE).",
+                "continue": "Je souhaite continuer à développer sur Android et espère avoir de nouvelles occasions de me lancer dans des projets aussi intéressants d’applications mobiles."
+            }
+        },
+        "dot-net-core-web-api": {
+            "title": "API Web .NET Core",
+            "subtitle": "Savoir créer et utiliser des web services ASP.NET",
+            "card-subtitle": ".NET Core",
+            "card-content": "J'ai principalement étudié le .NET durant mes études et j'ai pu le mettre en pratique au travail",
+            "learning": {
+                "title": "L’apprentissage du C#.NET à IN’TECH",
+                "curriculum": "Durant mon cursus à IN’TECH, ma formation a été en grande partie axée sur le langage ",
+                "c-sharp": "C#",
+                "language": " avec le framework ",
+                "dot-net": ".NET",
+                "framework": ". J’y ai réalisé trois projets avec ces technologies :",
+                "first": "Le premier était un jeu réalisé avec Windows Forms afin de découvrir l’environnement.",
+                "second": "Le deuxième était un autre jeu créé avec ",
+                "unity": "Unity 3D",
+                "bluetooth": " à destination des mobiles et utilisant le Bluetooth pour connecter plusieurs joueurs sur la même partie.",
+                "last": "Le dernier, ",
+                "galt": "Galt",
+                "online": ", était un gestionnaire en ligne de packages ",
+                "nuget": "NuGet",
+                "manager": " permettant aux développeurs de contrôler les dépendances de leurs projets .NET.",
+                "projects": "Ces projets m’ont permis de développer mes compétences dans ce domaine, et le projet Galt m’a notamment introduit aux ",
+                "asp-net": "API Web ASP.NET Core",
+                "advantage": ". Nous avons profité de pouvoir utiliser le nouveau framework .NET Core étant donné qu’il s’agissait d’un projet d’école et que nous pouvions nous permettre de découvrir les technologies les plus récentes. J’y ai mis à profit mes connaissances en termes de web services de type ",
+                "rest": "REST",
+                "web-services": " afin de faire communiquer le client ",
+                "front": "front end",
+                "communicate": " avec le serveur back end. Grâce à ces web services, le client pouvait effectuer des requêtes auprès de la base de données ",
+                "sql-server": "SQL Server",
+                "database": "."
+            },
+            "business": {
+                "title": "Utiliser les API ASP.NET en entreprise",
+                "capgemini": "Chez Capgemini, je travaille depuis deux ans et demi pour un centre de services spécialisé dans les technologies Microsoft, et historiquement plus particulièrement sur le framework .NET. Logiquement, j’ai donc utilisé de nouveau des API ASP.NET. Sur mon principal projet pour ",
+                "securitas": "Securitas",
+                "framework": ", nous utilisons le framework .NET 4.5 mais j’ai également utilisé de nouveau le framework .NET Core sur d’autres projets comme ",
+                "call-center": "Call Center",
+                "or": " ou ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ".",
+                "finally": "Enfin, pour un projet personnel de jeu en ligne sur Unity 3D actuellement en pause, j’ai créé de toute pièce un projet de web services ",
+                "restful": "RESTful",
+                "web-services": " en ASP.NET Core avec l’aide de ",
+                "entity-framework": "EntityFramework",
+                "api": ". L’API n’est pas encore volumineuse, mais elle fonctionne correctement et elle m’a permis de mieux comprendre le fonctionnement global d’un bout à l’autre d’une API."
+            }
+        },
+        "financial-assessments": {
+            "title": "Chiffrages financiers",
+            "subtitle": "Ceci est le sous-titre de chiffrages financiers",
+            "card-subtitle": "Estimation, anticipation",
+            "card-content": "Durant mon alternance, j'ai pu découvrir les chiffrages financiers",
+            "apprenticeship": "Au cours de mon alternance chez Capgemini, mon chef de projet m’a introduit aux ",
+            "financial-assessments": "chiffrages financiers",
+            "estimate": ". Il s’agit de l’estimation des charges nécessaires à la réalisation d’un projet ou d’une tâche. Le but est d’évaluer la quantité de travail nécessaire au développement et aux autres étapes obligatoires, comme la rédaction des ",
+            "specifications": "spécifications",
+            "tool": " ou les tests. Il m’a présenté l’outil qu’il utilisait, dans lequel les tarifs journaliers sont indiqués pour chaque étape en fonction d’indices définis dans le contrat avec le client. Un template permet de remplir les autres étapes en fonction du temps estimé de développement, qui finalement ne représente environ que la moitié du chiffrage total, une fois les phases de pilotage, de rédaction des spécifications, de recette et de garantie ajoutées.",
+            "soon": "Je compte prochainement commencer à établir des chiffrages, d’abord sur des petites évolutions, puis sur des plus gros projets, comme les prochains lots de l’application ",
+            "web-agent": "WebAgent",
+            "collaboration": ", en collaboration avec mon responsable d’application. Au cours de ces deux ans et demi en entreprise, j’ai appris à estimer le temps nécessaire à la réalisation d’une tâche le plus précisément possible, je devrais donc réussir à estimer des tâches plus complexes avec de l’expérience. J’ai également eu plusieurs fois l’occasion de travailler à partir de chiffrages financiers déjà rédigés, j’ai donc appris à les lire et les comprendre sans problème."
+        },
+        "front-end": {
+            "title": "Front end",
+            "subtitle": "Rendre les applications modernes, esthétiques et ergonomiques",
+            "card-subtitle": "Angular, Vue.js",
+            "card-content": "J'adore travailler sur du front end, notamment en Angular et Vue.js",
+            "introduction": {
+                "title": "Mon introduction au front end",
+                "basis": "Le front end est la base de toute application. C’est ce que voit l’utilisateur et ce qui définit s’il va adopter l’application ou non. A travers mes différents projets, j’ai pu expérimenter à la fois le front et le back end, étant la plupart du temps développeur full stack. J’apprécie particulièrement le front end car il me permet d’exprimer ma ",
+                "creativity": "créativité",
+                "creativity-bis": ".",
+                "web": "Concernant le web, j’apprécie utiliser des frameworks JavaScript modernes. J’ai d’abord commencé avec ",
+                "vue-js": "Vue.js",
+                "school": " dans le cadre d’un projet au sein de mon école, ",
+                "galt": "Galt",
+                "framework": ". Il s’agit d’un framework facile à appréhender qui m’a permis de découvrir ce monde que je ne connaissais pas. Dans ce projet, c’est moi qui me suis principalement occupé de la partie front end. J’ai appris comment créer une ",
+                "spa": "SPA (single page application)",
+                "fluid": ", plus fluide et agréable pour l’utilisateur."
+            },
+            "angular": {
+                "title": "De Vue.js à Angular",
+                "capgemini": "Après Galt, j’ai rejoint Capgemini en stage, puis en alternance. Durant la première année, je n’ai plus utilisé de frameworks JavaScript, hormis pour le début de ce portfolio que j’ai, à la base, initié avec Vue.js. Finalement, depuis 2018, l’offre en ",
+                "angular": "Angular",
+                "projects": " s’est multipliée. Plusieurs projets d’applications web se sont lancées et c’est Angular qui a été choisi pour les développer. Securitas, le client pour lequel j’ai quasiment exclusivement travaillé, s’est lancé dans un projet « full digital » pour 2020, et pour accompagner ce projet, une migration complète d’un client lourd vers un site web en Angular : ",
+                "web-agent": "WebAgent",
+                "integrated": ". J’ai même, par la suite, intégré d’autres projets Angular, de façon temporaire (",
+                "call-center": "Call center",
+                "and": " et ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ").",
+                "application": "Etant donné que la demande Angular ne cessait de grossir et que mon entreprise m’avait fait suivre des formations en ligne sur ce framework, j’ai décidé de migrer le début de mon portfolio en Vue.js vers une application Angular. Ainsi, j’ai pu prolonger ma formation en autodidacte et découvrir des outils et des concepts intéressants que moi et mon équipe avons ensuite pu reprendre sur WebAgent (par exemple les traductions via ",
+                "ngx-translate": "NgxTranslate",
+                "portfolio": ", que j’ai choisi après avoir testé le module d’internationalisation d’Angular). Ce portfolio a été entièrement développé avec Angular 7. Là où d’autres personnes souhaiteraient utiliser des CMS afin de rédiger leur portfolio pour se simplifier le travail, j’ai souhaité montrer directement mes compétences en tant que développeur Angular."
+            },
+            "web-agent": {
+                "title": "Le front end n’est pas que du développement",
+                "web-agent": "Depuis début 2019, je participe au développement de WebAgent pour Securitas. C’est un projet complexe qui m’a beaucoup fait monter en compétence sur Angular. L’application a été réalisée en collaboration avec une équipe d’ergonomes qui nous ont fournies des maquettes ",
+                "ux": "UX (user experience)",
+                "and": " et ",
+                "ui": "UI (user interface)",
+                "mock-ups": " étudiées avec le client. Grâce à cette équipe, nous avons un site esthétique et ergonomique, auquel nous devons ajouter la fluidité et la performance grâce à nos développements. L’un ne va pas sans l’autre, et si nous n’avions pas cette équipe d’experts à nos côtés, le site serait certainement fonctionnel et performant, mais peu agréable pour l’utilisateur, qui ne verrait alors aucune différence avec la vieille application sur client lourd. J’apprécie devoir essayer de comprendre au mieux les besoins du client et me mettre à la place des utilisateurs afin de leur fournir la meilleure expérience possible.",
+                "e-monthly": "Sur le projet eMonthly, j’ai également pu m’essayer à l’",
+                "architecture": "architecture",
+                "experience": " de projets Angular grâce à l’expérience acquise sur mes autres projets Angular. J’ai développé un template d’application Angular qui puisse être réutilisé pour toutes les nouvelles applications, eMonthly en tête de liste. Grâce à ce template, les développeurs gagnent en efficacité et améliorent l’industrialisation du processus. Il donne aussi des lignes directrices aux développeurs inexpérimentés en Angular afin qu’ils évitent de se disperser au sein de l’architecture du projet."
+            }
+        },
+        "notions-of-architecture": {
+            "title": "Notions d'architecture",
+            "subtitle": "Une solution correctement architecturée réduit les risques d’erreur",
+            "card-subtitle": "Architecture, solutions",
+            "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer",
+            "architect": {
+                "title": "Architecturer un template Angular",
+                "working": "Après avoir travaillé sur les projets ",
+                "web-agent": "WebAgent",
+                "and": " et ",
+                "e-monthly": "eMonthly",
+                "projects": ", j’ai accumulé suffisamment d’expérience en ",
+                "angular": "Angular",
+                "architect": " pour architecturer un template de solution. J’ai donc été chargé de réaliser ce template afin d’avoir une base pour tous les futurs projets Angular du centre où je travaille. En effet, Angular était une technologie qui commençait à grandir sur le centre et les développeurs qui rejoignaient des projets basés sur cette technologie n’avaient généralement pas ou peu d’expérience en Angular. Avec mes quelques mois d’activité sur des projets Angular, j’étais, dans le centre, la personne avec le plus d’expérience sur cette technologie. C’est pour cette raison que le template devait contenir une architecture complètement prédéfinie. Les développeurs qui l’utiliseraient auraient des lignes directrices afin de les guider et leur éviter des erreurs courantes, notamment au démarrage d’un projet.",
+                "goal": "L’autre objectif était d’intégrer des modules basiques avec un composant de démonstration. J’ai donc ajouté deux modules qui étaient les plus récurrents dans les projets vendus par le centre : ",
+                "material": "Angular Material",
+                "and-bis": " et ",
+                "kendo": "Kendo for Angular",
+                "requests": ". La majorité des demandes des clients concernent une interface d’affichage et d’édition de données. Pour cela, un système de grilles avec un design simple et efficace sont souvent la meilleure solution en termes de rapport qualité/prix et ces deux outils répondent parfaitement au besoin."
+            },
+            "learn": {
+                "title": "Apprendre d’autres architectes",
+                "within": "Au sein du projet ",
+                "vision-safety": "VisionSafety",
+                "project": ", j’ai pu étudier l’architecture du projet mise en place par un collègue au début du projet. C’était intéressant de découvrir comment le projet ",
+                "xamarin": "Xamarin",
+                "split": " avait été découpé entre la partie spécifique à ",
+                "android": "Android",
+                "specific": " et la partie ",
+                "library": "Library",
+                "developments": ". Tout au long de mes développements d’évolutions sur l’application, j’ai veillé à conserver et à respecter cette architecture.",
+                "notions": "Avec ces quelques notions, je n’ai bien sûr pas la prétention de me qualifier architecte mais il s’agit d’un rôle qui m’intéresse et sur lequel je compte me renseigner davantage, notamment auprès de véritables architectes logiciels car l’expérience a une importance primordiale dans ce métier, afin de savoir s’il est fait pour moi."
+            }
         }
     },
     "human-skills": {
+        "title": "Compétences humaines",
+        "subtitle": "Mes principales compétences humaines",
         "autonomy": {
             "title": "Autonomie",
             "subtitle": "Un développeur doit être capable de travailler par lui-même",
+            "card-subtitle": "Efficacité, gain de temps",
+            "card-content": "Je suis capable de travailler seul tout en ayant un bon esprit d'équipe",
             "definition": {
                 "title": "Qu'est-ce que l'autonomie ?",
                 "what": "Fondalementalement, ",
@@ -152,27 +556,33 @@
             "it-company": {
                 "title": "Comment l'autonomie se transcrit dans une ESN ?",
                 "employee": "L'employé se voit donné un travail et potentiellement sait comment le faire. S'il ne sait pas, il essaye de comprendre par lui-même en utilisant des forums ou des tutoriels sur internet. Si, après avoir cherché et essayé par lui-même, il n'est pas capable de faire le travail, il le signale à son manager.",
-                "however": " Cependant, il existe des nuances évidents. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. Il doit être capable de savoir lorsque il a besoin d'aide. Cependant il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. Dans un secteur en ",
+                "however": " Cependant, il existe des nuances évidentes. L'employé ne doit pas rester bloqué sur un problème trop longtemps sans le signaler. Il doit être capable de savoir lorsqu'il a besoin d'aide. Cependant, il doit chercher et essayer par lui-même avant de demander à ses collègues, sinon il ne progressera jamais. Dans un secteur en ",
                 "evolution": "constante évolution",
                 "binary": ", il est primordial d'être constamment à jour. De plus, l'autonomie n'est pas une compétence binaire. Il n'y a pas de personnes autonomes ou pas autonomes. Tout le monde est autonome (à des degrés différents) car l'autonomie est quelque chose sur laquelle les gens travaillent."
             },
             "me": {
-                "title": "L'autonomie est l'une de mes qualités.",
-                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications",
+                "title": "L'autonomie est l'une de mes qualités",
+                "vision": "Je suis habitué à travailler en autonomie dans mon équipe grâce à mon expérience dans le projet Vision de Securitas chez Capgemini (cf. les applications ",
                 "web-agent": "WebAgent",
                 "and": " et ",
                 "vision-safety": "VisionSafety",
-                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un gros projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel,the software better, cela a aussé démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
+                "internship": "). Je suis entré dans le projet durant mon stage de six mois. J'ai rejoint un large projet avec plusieurs applications utilisateur et certains aspects fonctionnels complexes. Pourtant, j'ai commencé à corriger des anomalies sur l'application principale dès la première semaine seulement. Non seulement cela m'a permis de mieux comprendre le logiciel, cela a aussi démontré mon autonomie et mon adaptabilité au sein d'un nouvel environnement. Dans cette entreprise, ",
                 "feedbacks": "les feedbacks",
-                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil."
+                "colleagues": " aux collègues sont ancrés dans notre travail et l'autonomie est l'une des principales qualités mises en avant sur mon profil. Elle a également été relevée au cours du ",
+                "poc": "PoC (proof of concept) ",
+                "call-center": "Call center",
+                "poc-bis": "",
+                "responsabilities": " dans lequel mon équipe et moi avons dû prendre nos responsabilités étant donné le mauvais suivi du projet."
             }
         },
         "creativity": {
             "title": "Créativité",
             "subtitle": "La créativité permet d’apporter de véritables solutions",
+            "card-subtitle": "Imagination, innovation",
+            "card-content": "J'ai un esprit créatif, ce qui me permet d'innover régulièrement",
             "definition": {
                 "title": "Qu’est-ce que la créativité ?",
-                "the": "La",
+                "the": "La ",
                 "creativity": "créativité",
                 "ability": ". La capacité de l’esprit à créer quelque chose de nouveau à partir d’un contexte donné. C’est une compétence qui s’applique à de nombreux domaines et qui peut prendre différentes formes. Dans un projet professionnel, la créativité peut se traduire par la facilité à ",
                 "client-needs": "répondre aux besoins du client",
@@ -190,7 +600,7 @@
                 "creative": "Je me considère comme quelqu'un de créatif. Par exemple, lors de mon projet ",
                 "vision-safety": "VisionSafety",
                 "sms-alerts": ", j'ai du créer une solution permettant au client de facilement régler dans l'application mobile le numéro de téléphone auquel envoyer une alerte par SMS. Cette application étant destinée à tous les pays européens où Securitas est implanté, il faut réaliser une solution globale pour tous les pays. Certains pays possèdent plusieurs numéros de téléphone, d'autres un seul et certains pays n'en ont aucun (les alertes sont donc envoyées à un pays voisin).",
-                "suggested": "J'ai donc proposé au client de créer une liste contenant l'ensemble des numéros de téléphone associé à leur pays. Les pays possédant plusieurs numéros de téléphone verront ceux-ci organisés par un ordre de priorité. Ainsi, par défaut, les alertes seront envoyées au numéro de téléphone lié au pays de l'utilisateur (et au numéro le plus prioritaire dans le cas où le pays possède plusieurs numéros). J'ai également créé une interface pour que les administrateurs puissent directement sélectionner dans l'application quel numéro utliser (afin d'utiliser un numéro moins prioiritaire ou bien le numéro d'un autre pays dans le cas où aucun numéro n'est attribué à la localisation de l'utilisateur). Le client a approuvé cette solution lui qui lui permet d'éviter de déployer une configuration différente par pays, ",
+                "suggested": "J'ai donc proposé au client de créer une liste contenant l'ensemble des numéros de téléphone associés à leur pays. Les pays possédant plusieurs numéros de téléphone verront ceux-ci organisés par un ordre de priorité. Ainsi, par défaut, les alertes seront envoyées au numéro de téléphone lié au pays de l'utilisateur (et au numéro le plus prioritaire dans le cas où le pays possède plusieurs numéros). J'ai également créé une interface pour que les administrateurs puissent directement sélectionner dans l'application quel numéro utliser (afin d'utiliser un numéro moins prioiritaire ou bien le numéro d'un autre pays dans le cas où aucun numéro n'est attribué à la localisation de l'utilisateur). Le client a approuvé cette solution qui lui permet d'éviter de déployer une configuration différente par pays, ",
                 "reducing": "réduisant ainsi les coûts d'exploitation",
                 "application": " de l'application."
             },
@@ -198,15 +608,100 @@
                 "title": "La créativité dans les autres domaines",
                 "various-forms": "Comme dit plus haut, la créativité peut prendre différentes formes. Elle peut également revêtir une forme artistique. Bien que je ne sois pas un artiste, ",
                 "new-stuff": "j'aime imaginer et créer de nouvelles choses",
-                "pokemon": ". Cela me sert notamment dans mon projet personnel de fangame Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fangames Pokémon."
+                "pokemon": ". Cela me sert notamment dans mon projet personnel de fan-game Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fan-games Pokémon."
             },
             "pokemon": {
                 "scaracorn": "Scaracorn",
-                "scaracorn-bis": ",",
+                "scaracorn-bis": ", ",
                 "beetleaf": "Beetleaf",
-                "beetleaf-bis": "et",
+                "beetleaf-bis": " et ",
                 "oakleoptera": "Oakleoptera",
                 "created": " (noms anglais), trois Pokémon que j'ai créés"
+            }
+        },
+        "knowledge-sharing": {
+            "title": "Partage de connaissances",
+            "subtitle": "Transmettre mon savoir aux autres",
+            "card-subtitle": "Communication, vulgarisation",
+            "card-content": "J'aime partager mon savoir aux autres, qu'il soit fonctionnel ou technique",
+            "importance": {
+                "title": "L’importance du partage de connaissance",
+                "important": "Dans une équipe, il est primordial que chacun apprenne des autres. C’est d’autant plus vrai pour quelqu’un qui vient de la rejoindre. Cette personne doit se mettre au niveau sur le savoir technique et fonctionnel du projet afin de pouvoir travailler efficacement dessus. Il est de la responsabilité des membres plus expérimentés de prendre en charge ces nouveaux membres afin qu’ils soient opérationnels le plus rapidement possible."
+            },
+            "serve": {
+                "title": "Être au service de mes coéquipiers",
+                "available": "Je suis toujours très disponible pour mon équipe, qu’ils aient besoin d’un renseignement ou d’une explication précise d’un élément du projet. Par exemple, au cours de la refonte de l’application ",
+                "web-agent": "WebAgent",
+                "application": ", nous avons accueilli un troisième développeur. C’est moi qui me suis chargé d’évaluer son niveau de maîtrise de la technologie ",
+                "angular": "Angular",
+                "technology": " et de lui montrer des outils et méthodes que nous avions utilisé sur le projet. Je lui ai également présenté les aspects fonctionnels des applications en lui expliquant le travail des agents de sécurité, leurs besoins et leurs attentes."
+            },
+            "accompany": {
+                "title": "Accompagner les développeurs en difficulté",
+                "skill": "J’ai également pu mettre cette compétence à profit au cours du projet ",
+                "call-center": "Call Center",
+                "project": ". Un quatrième membre a rejoint notre équipe pendant le ",
+                "poc": "PoC",
+                "retraining": ". Il s’agissait d’une personne en reconversion qui avait des difficultés à développer. Je l’ai donc accompagné dans son travail jusqu’à mon départ du projet quelques semaines après.",
+                "task": "La tâche n’a pas été aisée, il a fallu lui apprendre tous les concepts d’",
+                "angular": "Angular",
+                "explain": ", lui expliquer l’utilisation de ",
+                "git": "Git",
+                "balance": ", relire son code… Le plus difficile était d’équilibrer mes interventions. Je souhaitais le laisser travailler un maximum en autonomie afin qu’il progresse plus vite et qu’il gagne en confiance, sans pour autant l’abandonner. Je devais l’aider quand il en avait besoin afin d’assurer la qualité et les délais de l’application, mais je devais moi-même ne pas perdre trop de temps sur mes propres tâches. Pour cela, je lui ai demandé de regrouper au maximum ses questions et remarques afin que l’on fasse un point quotidien sur ses difficultés, sauf en cas de blocage complet où il pouvait venir me voir. Finalement, après près d’un mois, il est devenu complètement autonome sur les tâches simples et était capable de réaliser des tâches plus complexes en demandant de l’aide si nécessaire aux autres membres de l’équipe."
+            }
+        },
+        "languages": {
+            "title": "Langues",
+            "subtitle": "Plus jeune, je souhaitais devenir interprète",
+            "card-subtitle": "Echange, compréhension",
+            "card-content": "J'adore les langues, et je parle couramment anglais",
+            "passion": {
+                "title": "Ma passion pour les langues",
+                "child": "Depuis que je suis enfant, j’ai été passionné par les langues. J’ai très peu pratiqué l’anglais durant mon école primaire, j’ai donc véritablement commencé à apprendre les langues à partir du collège où, en plus de l’",
+                "english": "anglais",
+                "chose": " obligatoire, j’ai choisi l’option ",
+                "spanish": "espagnol",
+                "option": " de mon établissement dès la 6ème. J’ai continué avec l’option ",
+                "latin": "latin",
+                "middle-school": " en 5ème et j’ai choisi la section européenne en 4ème pour pratiquer plus d’anglais. Durant cette période de collège, lorsqu’on me demandait ce que je souhaitais faire plus tard, je répondais « interprète ».",
+                "high-school": "J’ai poursuivi les cours d’anglais (avec la section européenne), d’espagnol et de latin durant mon lycée, suite auquel j’ai rejoint l’école IN’TECH au sein de laquelle j’ai continué à pratiquer l’anglais dans des cours axés sur la pratique et l’expression orale. Dans cette école, j’ai passé le ",
+                "toeic": "TOEIC",
+                "score": " lors de mon premier semestre, auquel j’ai obtenu un score de 865 points sur 990. J’ai de nouveau passé ce test à la fin de mes études, dont j’attends les résultats pour évaluer ma progression durant ces cinq années à l’école et en entreprise. Durant mon cursus à IN’TECH, je n’ai pas eu l’occasion de poursuivre l’espagnol et le latin. En revanche, j’ai pu pratiquer l’espagnol durant un séjour dans la région de Valencia en Espagne et je me suis rendu compte que la facilité à communiquer revenait au bout de deux à trois jours dans l’environnement. Quant au latin, continuer à l’étudier ne m’aurait pas beaucoup apporté dans mon domaine, en revanche il continue de m’être utile aujourd’hui dans la compréhension des langues romanes et surtout dans l’orthographe de la langue française."
+            },
+            "today": {
+                "title": "Les langues aujourd’hui",
+                "english": "Bien que l’espagnol ne m’ait que très peu servi durant ces dernières années, hormis un séjour en Espagne, l’anglais est présent partout dans ma vie courante. D’une part, bien sûr, en tant que développeur, l’anglais est ma langue de prédilection pour coder, mais également pour communiquer avec d’autres développeurs de la communauté mondiale. Même dans ma vie courante, j’utilise l’anglais en permanence, principalement sur Internet. Même sur Netflix ou Prime Video, je regarde les séries et films anglophones en VO non sous-titrée. Je vais régulièrement séjourner chez ma sœur vivant à Dublin en Irlande. Ainsi, je sais m’accoutumer à des accents parfois complexes à comprendre. Et, pour couronner le tout, j’ai réalisé ce portfolio à la fois en français et en anglais.",
+                "future": "A l’avenir, je compte continuer à perfectionner mon niveau d’anglais pour passer à un statut véritablement bilingue. Je compte vivre en ",
+                "new-zealand": "Nouvelle-Zélande",
+                "ten-years": " d’ici les dix prochaines années, d’abord pour 6 mois, puis, selon mon envie d’y rester, un an, deux ans, etc. Je prolongerai ma vie là-bas tant que je m’y plais. Si j’ai l’opportunité (et la foi) d’apprendre de nouvelles langues dans le futur, j’aimerais apprendre l’italien, que je considère personnellement comme la plus belle langue du monde. Je souhaiterais aussi avoir des notions de japonais et, pourquoi pas, m’intéresser au russe."
+            }
+        },
+        "team-leading": {
+            "title": "Gestion d'équipe",
+            "subtitle": "Une introduction à la gestion d'équipe",
+            "card-subtitle": "Organisation, communication",
+            "card-content": "J'ai eu l'occasion d'expérimenter la gestion d'équipe durant mon alternance",
+            "arrival": {
+                "title": "Mon arrivée dans un PoC",
+                "october": "En octobre dernier, je rejoins un ",
+                "poc": "PoC (proof of concept)",
+                "named": " nommé ",
+                "call-center": "Call center",
+                "team": ". L’équipe est composée de trois développeurs dont moi. Le projet est dirigé par un chef de projet qui s’occupe déjà d’autres projets et commandité par un commercial de mon entreprise afin de pouvoir vendre le PoC à des clients.",
+                "goal": "Le but du projet est de réaliser un portail pour un centre d’appels destiné aux distributeurs d’énergie. Le portail est divisé en deux parties : d’un côté la souscription à un nouveau contrat via téléphone et de l’autre la consultation des données d’un client existant pour le service après-vente."
+            },
+            "lead": {
+                "title": "Je prends les devants",
+                "visibility": "Nous avons peu de visibilité et d’instructions de la part du commercial et notre chef de projet est assez occupé par ses projets annexes. Afin d’améliorer la ",
+                "productivity": "productivité",
+                "dialogue": " de l’équipe et le dialogue avec nos interlocuteurs, et assumant que je suis le membre avec le plus d’expérience, je décide de diriger l’équipe, avec l’approbation des deux autres développeurs.",
+                "learn": "J’apprends à organiser les tâches des membres de l’équipe, demander de la visibilité sur les demandes du client, planifier et animer des réunions avec l’ensemble des intéressés par le projet. La ",
+                "communication": "communication",
+                "difficult": " avec les autres parties du projet est la partie la plus difficile. Etant donné qu’il s’agit d’un PoC et donc d’un projet sans valeur ajoutée immédiate, il n’est pas prioritaire auprès des autres interlocuteurs.",
+                "functionalities": "D’un côté, le commercial qui a commandité le projet nous donne ses instructions afin de pouvoir présenter les fonctionnalités qu’il souhaite à ses clients. Seulement, toutes ces fonctionnalités ne sont pas implémentables car le projet dépend d’une API développée par une autre équipe. Etant donné que notre chef de projet a également d’autres projets en cours, je dois m’occuper de faire le lien entre le commercial et la personne dirigeant l’équipe de l’API. Grâce à cette initiative, des décisions précises sont prises quant à l’avenir du projet à court et moyen terme. Je quitte le projet peu après, une fois la première itération terminée et prête à être présentée aux clients.",
+                "experience": "Cette expérience m’a permis de m’essayer au rôle de responsable d’équipe de façon sereine étant donné que les enjeux étaient moins importants que dans un projet facturé. J’y ai appris à établir la communication entre les membres de l’équipe et au-delà, et également j’ai réalisé que je savais faire preuve d’une bonne ",
+                "organization": "organisation",
+                "organization-bis": "."
             }
         }
     },
@@ -236,27 +731,129 @@
             "team-leading": "Gestion d'équipe"
         }
     },
+    "career": {
+        "title": "Parcours",
+        "subtitle": "Expériences professionnelles et formation",
+        "click": "Cliquer sur une expérience pour afficher le détail",
+        "cdi": {
+            "button": "CDI Capgemini",
+            "title": "Consultant Angular chez Capgemini",
+            "duration": "à partir de septembre 2019",
+            "message": "A la suite de mon alternance et de mon stage chez Capgemini, je continue de travailler sur le projet Securitas en CDI à partir de septembre 2019 en tant que consultant Angular."
+        },
+        "alternance": {
+            "button": "Alternance Capgemini",
+            "title": "Développeur logiciel alternant chez Capgemini",
+            "duration": "septembre 2017 - septembre 2019 • 2 ans",
+            "message": "Au cours de mon cursus en cinq années au sein d'IN'TECH, j'ai effectué une alternance durant deux ans chez Capgemini à la suite de mon stage. J'y ai principalement développé mes compétences techniques et transverses."
+        },
+        "stage-cap": {
+            "button": "Stage Capgemini",
+            "title": "Développeur logiciel stagiaire chez Capgemini",
+            "duration": "mars 2017 - septembre 2017 • 6 mois",
+            "message": "Après deux ans et demi de formation à IN'TECH, j'ai rejoint Capgemini dans le cadre d'un stage de six mois afin de découvrir et apprendre le métier de développeur logiciel."
+        },
+        "stage-asp": {
+            "button": "Stage ASP",
+            "title": "Développeur stagiaire pour ASP Nettoyage",
+            "duration": "février 2015 • 1 mois",
+            "message": "Au cours de ma première année chez IN'TECH, j'ai effectué un stage afin de découvrir le monde de l'entreprise durant un mois. J'ai aidé la PME ASP Nettoyage à Cholet (49) à digitaliser leurs contrôles de qualité via l'utilisation de tablettes tactiles au lieu de formulaires papier. Etant seul, j'ai tiré profit de mon autonomie pour mettre en place une solution fonctionnelle en un mois grâce à l'utilisation de formulaires en ligne Google Forms et de scripts JavaScript et VBA."
+        },
+        "intech": {
+            "button": "Diplôme d'expertise en ingéniérie logicielle",
+            "title": "Etudiant en ingéniérie logicielle",
+            "duration": "septembre 2014 - septembre 2019 • 5 ans",
+            "message": "Suite à mon baccalauréat scientifique, j'ai souhaité rejoindre IN'TECH, une école d'informatique réputée pour sa pédagogie différente axée sur la pratique et le travail en groupe. Au cours de mon cursus, j'ai pu réaliser plusieurs projets type entreprise, dont Galt. Après cinq années, j'ai validé l'obtention du diplôme d'expert en ingénierie logicielle reconnu RNCP Niveau 1 (Bac +5 / Master)."
+        },
+        "bac": {
+            "button": "Baccalauréat scientifique",
+            "title": "Diplômé du baccalauréat scientifique",
+            "duration": "2014",
+            "message": "A la fin de mon cycle de lycéen, j'ai été diplômé d'un baccalauréat scientifique (spécialité Informatique et Sciences du Numérique) au lycée Sainte Marie à Cholet (49) avec la mention Très bien."
+        }
+    },
     "hobbies": {
-
+        "title": "Loisirs",
+        "subtitle": "Mon temps libre",
+        "fencing": {
+            "title": "L’escrime",
+            "practicing": "Je pratique l’",
+            "fencing": "escrime",
+            "fifteen-years": " depuis une quinzaine d’années avec une pause de trois ans durant mes premières années d’études. Il s’agit d’un sport très complet opposant deux tireurs qui mélange vitesse, endurance et stratégie. Actuellement, je m’entraîne deux fois par semaine aux Mousquetaires d’Issy-les-Moulineaux et je compte reprendre la ",
+            "competition": "compétition",
+            "season": " à partir de la saison 2019/2020. J’aime beaucoup suivre les grands événements d’escrime dans le monde en direct sur Internet.",
+            "foil": "Le fleuret, la discipline que je pratique en escrime",
+            "also": "Je suis également ",
+            "referee": "arbitre",
+            "olympics": " au niveau régional, c’est-à-dire que je passe certains week-ends à arbitrer des compétitions en Île-de-France. J’ai pour objectif de devenir arbitre international, si possible d’ici les Jeux Olympiques de Paris 2024 afin d’y participer, même si ce sera difficile étant donné les courts délais."
+        },
+        "travels": {
+            "title": "Les voyages",
+            "travel": "J’aime voyager et je compte profiter de ces prochaines années pour découvrir de nouveaux pays. En 2018, j’ai passé trois semaines dans la ville de ",
+            "tokyo": "Tokyo",
+            "japan": " au Japon. Il s’agissait de mon premier vol en dehors de l’Europe. En 2019, je vais partir une semaine à ",
+            "montreal": "Montréal",
+            "canada": " au Canada. En Europe, j’affectionne tout particulièrement l’",
+            "ireland": "Irlande",
+            "ten-times": " où je suis allé près d’une dizaine de fois. Ma sœur vit à Dublin depuis dix ans et, après être allé la voir là-bas, j’ai adoré le pays que j’ai parcouru du nord au sud et d’ouest en est.",
+            "live": "Dans quelques années, je compte vivre en ",
+            "new-zealand": "Nouvelle-Zélande",
+            "kiwis": ". Je n’y suis jamais allé mais c’est un pays qui m’attire depuis très longtemps. J’ai visionné énormément de reportages et suivi des expatriés partis vivre là-bas ainsi que des « kiwis » (le surnom donné aux Néo-Zélandais) qui parlent de leur pays. Etant donné que je n’ai pas eu l’occasion de me faire ma propre opinion et que je devrais vivre à longue distance de ma famille et de mes amis (26 heures de vol entre Paris et Wellington !), je prévois de partir vivre durant une courte période (quelques mois par exemple), extensible à souhait selon que je m’y plais ou non (un an, deux ans, cinq ans, dix ans…).",
+            "auckland": "Auckland, la ville où j'aimerais vivre en Nouvelle-Zélande"
+        },
+        "video-games": {
+            "title": "Les jeux vidéo",
+            "child": "Depuis que je suis enfant, j’adore les ",
+            "video-games": "jeux vidéo",
+            "play": ". Je joue régulièrement avec mes amis à des jeux en ligne mais aussi des jeux en solo. Je suis notamment un fan de la licence Pokémon depuis que j’ai eu une console dans les mains, au point que je me suis lancé dans ",
+            "own": "mon propre jeu Pokémon",
+            "fan-games": " après avoir découvert toute une communauté sur Internet créant des « fan-games ». Ce n’est pas mon premier projet de création de jeu vidéo. Je m’étais déjà lancé dans le développement d’un jeu de cartes en ligne sur Unity. Cependant, ces deux projets sont en pause depuis un moment à cause d’un manque de temps, mais je compte bien les reprendre rapidement une fois mes études terminées. Dans le premier, j’utilise un outil appelé RPG Maker permettant de facilement créer des jeux du genre de Pokémon (jeux de rôle) et je dessine moi-même mes propres Pokémon inédits. Dans le deuxième, je code le jeu de A à Z et, si le projet venait un jour à prendre de l’ampleur, je devrais engager un graphiste afin de réaliser les illustrations des cartes.",
+            "the-last-of-us": "The Last of Us, mon jeu vidéo préféré"
+        },
+        "other": {
+            "title": "Quelques autres loisirs",
+            "listen": "J’écoute énormément de ",
+            "music": "musique",
+            "work": ", que ce soit sur mon temps libre ou même au travail. Elle me permet, selon les situations, de me détendre ou de me concentrer.",
+            "stop": "Bien que j’aie arrêté désormais, je jouais beaucoup au ",
+            "poker": "poker",
+            "practice": " auparavant. Il s’agit d’une pratique que je trouve extrêmement intéressante, mêlant réflexion, maitrise de soi et audace.",
+            "passion": "J’ai depuis quelques temps une nouvelle passion pour la ",
+            "formula-1": "Formule 1",
+            "grand-prix": ". J’ai toujours beaucoup aimé le sport automobile et je regardais la F1 avec mon père lorsque j’étais jeune, mais j’avais arrêté de suivre ce sport depuis une dizaine d’années. J’ai renoué avec les monoplaces depuis la saison 2019 et je ne manque aucun Grand Prix."
+        }
     },
     "about": {
         "about": "À propos",
         "my-portfolio": "de mon portfolio",
         "copyright": "Copyright © 2019 Antonin CHARRIER - Tous droits réservés",
-        "developped": "Développé avec",
+        "developed": "Développé avec ",
         "angular": "Angular 7",
-        "using": "avec l'aide de",
+        "angular-website": "Site web de Angular",
+        "using": " avec l'aide de ",
         "material": "Material Design",
-        "translations": "Traductions gérées avec la librarie",
+        "material-website": "Site web de Angular Material",
+        "translations": "Traductions gérées avec la librarie ",
         "ngx-translate": "NGX-Translate",
+        "ngx-translate-website": "Site web de NGX-Translate",
         "library": "",
-        "resume": "CV affiché avec",
+        "resume": "CV affiché avec ",
         "ng2-pdf-viewer": "Ng2 PDF Viewer",
-        "icons": "Les icônes faites par",
-        "from": "depuis",
-        "licensed": "sont sous licence",
-        "code": "Tout le code source de mon portfolio est disponible sur",
-        "github": "GitHub"
+        "ng2-pdf-viewer-website": "Page npm de Ng2 PDF Viewer",
+        "icons": "Les icônes faites par ",
+        "simpleicon-website": "Page Flaticon de SimpleIcon",
+        "and": " et ",
+        "freepik-website": "Site web de Freepik",
+        "from": " depuis ",
+        "flaticon-website": "Site web de Flaticon",
+        "licensed": " sont sous licence ",
+        "cc-3-0-website": "Page de Creative Commons BY 3.0",
+        "illustrations": "Les illustrations des cartes ont été réalisées par l'artiste ",
+        "images": ". Les autres images sont libres de droit.",
+        "hassan-website": "Page Pixabay de Mohammed Hassan",
+        "code": "Tout le code source de mon portfolio est disponible sur ",
+        "github": "GitHub",
+        "github-website": "Ma page GitHub"
     },
     "resume": {
         "title": "CV",

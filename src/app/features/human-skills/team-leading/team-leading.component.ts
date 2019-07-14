@@ -6,4 +6,8 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './team-leading.component.html',
   styleUrls: ['./team-leading.component.scss']
 })
-export class TeamLeadingComponent extends ArticleComponent {}
+export class TeamLeadingComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['call-center'];
+  }
+}
