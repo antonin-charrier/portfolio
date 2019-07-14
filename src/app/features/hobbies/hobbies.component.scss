@@ -1,0 +1,11 @@
+.screenshot-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+.screenshot {    
+    width: 80%;
+}
