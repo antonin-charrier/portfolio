@@ -111,7 +111,11 @@
             "c-sharp": "C#",
             "material": "Angular Material",
             "ngx-translate": "NGX Translate",
-            "knowledge-sharing": "Knowledge sharing"
+            "knowledge-sharing": "Knowledge sharing",
+            "unity-3d": "Unity 3D",
+            "bluetooth": "Bluetooth 4/BLE",
+            "rest": "REST",
+            "sql-server": "SQL Server"
         }
     },
     "projects": {
@@ -389,9 +393,50 @@
         },
         "dot-net-core-web-api": {
             "title": ".NET Core Web API",
-            "subtitle": "This is the .NET Core Web API subtitle",
+            "subtitle": "Know how to create and use ASP.NET web services",
             "card-subtitle": "Angular, .NET",
-            "card-content": "I mainly studied .NET during my studies and was able to put it into practice at work"
+            "card-content": "I mainly studied .NET during my studies and was able to put it into practice at work",
+            "learning": {
+                "title": "The learning of C#.NET at IN’TECH",
+                "curriculum": "During my curriculum at IN’TECH, my education was largely focused on the ",
+                "c-sharp": "C#",
+                "language": " language with the ",
+                "dot-net": ".NET",
+                "framework": " framework. There, I realized three projects with these technologies:",
+                "first": "The first one was a game made with Windows Forms to discover the environment.",
+                "second": "The second one was another game created with ",
+                "unity": "Unity 3D",
+                "bluetooth": " for mobile phones and using Bluetooth to connect multiple players on a same game.",
+                "last": "The last one, ",
+                "galt": "Galt",
+                "online": ", was an online ",
+                "nuget": "NuGet",
+                "manager": " packages manager allowing developers to control the dependencies of their .NET projects.",
+                "projects": "These projects allowed me to develop my skills in this area, and the Galt project especially introduced me to the ",
+                "asp-net": "ASP.NET Core Web APIs",
+                "advantage": ". We took advantage of being able to use the new .NET Core framework as it was a school project and we could afford to discover the latest technologies. I took advantage of my knowledge in terms of ",
+                "rest": "REST",
+                "web-services": " type web services in order to make the ",
+                "front": "front-end",
+                "communicate": " client communicate with the back-end server. With these web services, the client could query the ",
+                "sql-server": "SQL Server",
+                "database": " database."
+            },
+            "business": {
+                "title": "Use the ASP.NET API in business",
+                "capgemini": "At Capgemini, I've been working for two and a half years for a center specialized in Microsoft technologies, and historically more specifically on the .NET framework. Logically, I thus used ASP.NET APIs again. On my main project for ",
+                "securitas": "Securitas",
+                "framework": ", we use the .NET 4.5 framework, but I also used the .NET Core framework again on other projects like ",
+                "call-center": "Call Center",
+                "or": " or ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ".",
+                "finally": "Finally, for a personal project of online game on Unity 3D currently paused, I created from scratch a ",
+                "restful": "RESTful",
+                "web-services": " web services project in ASP.NET Core with the help of ",
+                "entity-framework": "EntityFramework",
+                "api": ". The API is not yet large, but it is working properly, and it has allowed me to better understand the overall operation of an API from one end to the other."
+            }
         },
         "financial-assessments": {
             "title": "Financial assessments",

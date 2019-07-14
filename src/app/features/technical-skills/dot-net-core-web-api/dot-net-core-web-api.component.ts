@@ -6,4 +6,12 @@ import { ArticleComponent } from 'src/app/shared/article.component';
   templateUrl: './dot-net-core-web-api.component.html',
   styleUrls: ['./dot-net-core-web-api.component.scss']
 })
-export class DotNetCoreWebApiComponent extends ArticleComponent {}
+export class DotNetCoreWebApiComponent extends ArticleComponent {
+  get linkedProjects() {
+    return ['web-agent', 'e-monthly', 'call-center', 'galt'];
+  }
+
+  get linkedTechnicalSkills() {
+    return ['front-end'];
+  }
+}

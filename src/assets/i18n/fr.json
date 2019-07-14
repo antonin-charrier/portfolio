@@ -111,7 +111,11 @@
             "c-sharp": "C#",
             "material": "Angular Material",
             "ngx-translate": "NGX Translate",
-            "knowledge-sharing": "Partage de connaissances"
+            "knowledge-sharing": "Partage de connaissances",
+            "unity-3d": "Unity 3D",
+            "bluetooth": "Bluetooth 4/BLE",
+            "rest": "REST",
+            "sql-server": "SQL Server"
         }
     },
     "projects": {
@@ -389,9 +393,50 @@
         },
         "dot-net-core-web-api": {
             "title": "API Web .NET Core",
-            "subtitle": "Ceci est le sous-titre de API Web .NET Core",
+            "subtitle": "Savoir créer et utiliser des web services ASP.NET",
             "card-subtitle": "Angular, .NET",
-            "card-content": "J'ai principalement étudié le .NET durant mes études et j'ai pu le mettre en pratique au travail"
+            "card-content": "J'ai principalement étudié le .NET durant mes études et j'ai pu le mettre en pratique au travail",
+            "learning": {
+                "title": "L’apprentissage du C#.NET à IN’TECH",
+                "curriculum": "Durant mon cursus à IN’TECH, ma formation a été en grande partie axée sur le langage ",
+                "c-sharp": "C#",
+                "language": " avec le framework ",
+                "dot-net": ".NET",
+                "framework": ". J’y ai réalisé trois projets avec ces technologies :",
+                "first": "Le premier était un jeu réalisé avec Windows Forms afin de découvrir l’environnement.",
+                "second": "Le deuxième était un autre jeu créé avec ",
+                "unity": "Unity 3D",
+                "bluetooth": " à destination des mobiles et utilisant le Bluetooth pour connecter plusieurs joueurs sur la même partie.",
+                "last": "Le dernier, ",
+                "galt": "Galt",
+                "online": ", était un gestionnaire en ligne de packages ",
+                "nuget": "NuGet",
+                "manager": " permettant aux développeurs de contrôler les dépendances de leurs projets .NET.",
+                "projects": "Ces projets m’ont permis de développer mes compétences dans ce domaine, et le projet Galt m’a notamment introduit aux ",
+                "asp-net": "API Web ASP.NET Core",
+                "advantage": ". Nous avons profité de pouvoir utiliser le nouveau framework .NET Core étant donné qu’il s’agissait d’un projet d’école et que nous pouvions nous permettre de découvrir les technologies les plus récentes. J’y ai mis à profit mes connaissances en termes de web services de type ",
+                "rest": "REST",
+                "web-services": " afin de faire communiquer le client ",
+                "front": "front end",
+                "communicate": " avec le serveur back end. Grâce à ces webservices, le client pouvait effectuer des requêtes auprès de la base de données ",
+                "sql-server": "SQL Server",
+                "database": "."
+            },
+            "business": {
+                "title": "Utiliser les API ASP.NET en entreprise",
+                "capgemini": "Chez Capgemini, je travaille depuis deux ans et demi pour un centre de services spécialisé dans les technologies Microsoft, et historiquement plus particulièrement sur le framework .NET. Logiquement, j’ai donc utilisé de nouveau des API ASP.NET. Sur mon principal projet pour ",
+                "securitas": "Securitas",
+                "framework": ", nous utilisons le framework .NET 4.5 mais j’ai également utilisé de nouveau le framework .NET Core sur d’autres projets comme ",
+                "call-center": "Call Center",
+                "or": " ou ",
+                "e-monthly": "eMonthly",
+                "e-monthly-bis": ".",
+                "finally": "Enfin, pour un projet personnel de jeu en ligne sur Unity 3D actuellement en pause, j’ai créé de toute pièce un projet de webservices ",
+                "restful": "RESTful",
+                "web-services": " en ASP.NET Core avec l’aide de ",
+                "entity-framework": "EntityFramework",
+                "api": ". L’API n’est pas encore volumineuse, mais elle fonctionne correctement et elle m’a permis de mieux comprendre le fonctionnement global d’un bout à l’autre d’une API."
+            }
         },
         "financial-assessments": {
             "title": "Chiffrages financiers",

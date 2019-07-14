@@ -86,10 +86,20 @@ p.article-p {
             color: $light-primary-lighter;
         }    
     }
+    li {
+        a {
+            color: $light-primary-lighter;
+        }
+    }
 }
 
 #content.dark {
     p {
+        a {
+            color: $dark-primary-lighter;
+        }
+    }
+    li {
         a {
             color: $dark-primary-lighter;
         }
