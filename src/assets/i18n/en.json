@@ -58,7 +58,10 @@
         "angular-bis": " and ",
         "android": "Android",
         "development-bis": " development.",
-        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large website for Securitas security agents.",
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large website for Securitas security agents and on an mobile application ensuring their safety and beign able to save their life.",
+        "future": "I want to continue working on Angular and Android applications in the future, and I would like to learn more about the job of ",
+        "architect": "software architect",
+        "continue": ". I also want to work again on some personal projects that I had to pause due to lack of time during my studies, and to get involved more and more in my sport, fencing.",
         "projects" : {
             "title": "Projects",
             "card-subtitle": "For Safran, Securitas...",
