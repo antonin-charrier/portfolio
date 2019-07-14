@@ -1,0 +1,13 @@
+.screenshots-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.screenshot {    
+    margin: 20px;
+    max-height: 40vh;
+    max-width: 150px;
+    border: solid 1px black;
+}

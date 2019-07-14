@@ -131,6 +131,7 @@
                 "apprenticeship": "Au cours de mon alternance chez Capgemini, j’ai travaillé sur plusieurs projets de sites web en Angular. Parmi eux, je participe en octobre 2018 à un ",
                 "poc": "PoC (proof of concept)",
                 "goal": " de portail pour un centre d’appels. Le but du PoC est d’être proposé à la nouvelle entité Energies E. Leclerc. En effet, Siplec, une filiale d’import/export appartenant au groupe E. Leclerc, est un client de Capgemini. Une équipe de Capgemini travaille notamment sur des API liées à la distribution et à la vente d’électricité. Cette équipe a également mis en ligne le site web de Energies E. Leclerc, permettant aux clients de souscrire à une offre en ligne. C’est pourquoi le PoC doit compléter ce site afin d’enregistrer les souscriptions par téléphone et pouvoir assurer un SAV auprès de tous les clients.",
+                "page": "Le projet Call center, devenu par la suite Utilities in the box",
                 "project": "Le projet est commandité par un commercial de Capgemini tel qu’il puisse être vendu par la suite à d’autres fournisseurs d’énergie. En effet, en 2007, le marché de l’énergie en France s’est ouvert et, depuis, les fournisseurs historiques EDF (électricité) et GDF (gaz naturel), ne sont plus les seuls à pouvoir distribuer leur énergie. Depuis quelques années, les fournisseurs alternatifs ont fleuri, ouvrant ainsi un grand marché à Capgemini pour mettre en place leurs infrastructures numériques. C’est pour cette raison que l’objectif premier du PoC est la réutilisabilité afin de pouvoir facilement le vendre à tous les nouveaux fournisseurs d’énergie."
             },
             "poorly-monitored": {
@@ -258,7 +259,8 @@
                 "vision-safety": "VisionSafety est une application du panel Vision de Securitas. Elle est destinée aux agents de sécurité travaillant au sein de sites à risques. Grâce à elle, l’agent peut envoyer des alertes grâce à un gros bouton facilement accessible (avec une simple pression, il lance un décompte avant l’alerte avec la possibilité de l’annuler en cas d’erreur, et avec une pression longue, il envoie l’alerte directement). Il peut également passer en mode « danger », prévenant ainsi qu’il a ressenti un potentiel risque imminent. Durant ce mode, toutes les alertes sont immédiates. Certains agents sont équipés de boutons physiques ",
                 "bluetooth": "Bluetooth",
                 "buttons": " qu’ils peuvent attacher à des bracelets afin d’envoyer des alertes de manière plus discrète grâce à des simples pressions furtives.",
-                "detection": "L’application détecte également les chutes ainsi que l’inactivité prolongée (et donc anormale) et envoie des alertes en conséquence. Enfin, elle permet aux agents de s’enregistrer au début et à la fin de leur ronde de surveillance et de tracer leur position GPS. Toute l’application est entièrement configurable et modulable en fonction des spécificités de chaque site à protéger. Grâce à cette application, Securitas gagne en efficacité pour intervenir en cas d’alerte et peut plus facilement secourir un agent ayant, par exemple, subit une agression."
+                "detection": "L’application détecte également les chutes ainsi que l’inactivité prolongée (et donc anormale) et envoie des alertes en conséquence. Enfin, elle permet aux agents de s’enregistrer au début et à la fin de leur ronde de surveillance et de tracer leur position GPS. Toute l’application est entièrement configurable et modulable en fonction des spécificités de chaque site à protéger. Grâce à cette application, Securitas gagne en efficacité pour intervenir en cas d’alerte et peut plus facilement secourir un agent ayant, par exemple, subit une agression.",
+                "screens": "Les différents mode d'alerte de l'application (mayday, menace potentielle, chute détectée)"
             },
             "manage": {
                 "title": "Gérer l’application seul",
@@ -303,7 +305,8 @@
                 "vision-mobile": ", VisionMobile, ainsi qu’un site web développé en ",
                 "angular": "Angular",
                 "web-agent": " : WebAgent.",
-                "redesign": "Ce site est une refonte web d’un client lourd en WPF. Le but est de créer une application moderne, ergonomique et esthétique en collaboration avec une équipe de designers et d’ergonomes. La refonte est divisée en plusieurs lots. Le premier constitue une reproduction de l’existant d’un ancien site web qui permettait uniquement la rédaction de rapports. Il a été livré au client en juin 2019. Les deuxième et troisième lots concernent respectivement les plannings (rondes, tâches, etc.) et les entrées/sorties (visiteurs, véhicules, clefs, etc.). Enfin, les derniers lots correspondent à la gestion des documents et des instructions au sein d’un site ainsi que la formation des agents. Le développement devrait durer jusqu’en mars 2020, mais le projet pourrait être prolongé dans le cas de l’intégration d’un large et complexe module d’administration qui n’existe actuellement que sur le client lourd."
+                "redesign": "Ce site est une refonte web d’un client lourd en WPF. Le but est de créer une application moderne, ergonomique et esthétique en collaboration avec une équipe de designers et d’ergonomes. La refonte est divisée en plusieurs lots. Le premier constitue une reproduction de l’existant d’un ancien site web qui permettait uniquement la rédaction de rapports. Il a été livré au client en juin 2019. Les deuxième et troisième lots concernent respectivement les plannings (rondes, tâches, etc.) et les entrées/sorties (visiteurs, véhicules, clefs, etc.). Enfin, les derniers lots correspondent à la gestion des documents et des instructions au sein d’un site ainsi que la formation des agents. Le développement devrait durer jusqu’en mars 2020, mais le projet pourrait être prolongé dans le cas de l’intégration d’un large et complexe module d’administration qui n’existe actuellement que sur le client lourd.",
+                "page": "Le nouveau design de l'application WebAgent"
             },
             "angular": {
                 "title": "Une grande montée en compétence sur Angular",
@@ -442,7 +445,15 @@
             "title": "Chiffrages financiers",
             "subtitle": "Ceci est le sous-titre de chiffrages financiers",
             "card-subtitle": "Angular, .NET",
-            "card-content": "Durant mon alternance, j'ai pu découvrir les chiffrages financiers"
+            "card-content": "Durant mon alternance, j'ai pu découvrir les chiffrages financiers",
+            "apprenticeship": "Au cours de mon alternance chez Capgemini, mon chef de projet m’a introduit aux ",
+            "financial-assessments": "chiffrages financiers",
+            "estimate": ". Il s’agit de l’estimation des charges nécessaires à la réalisation d’un projet ou d’une tâche. Le but est d’évaluer la quantité de travail nécessaire au développement et aux autres étapes obligatoires, comme la rédaction des ",
+            "specifications": "spécifications",
+            "tool": " ou les tests. Il m’a présenté l’outil qu’il utilisait, dans lequel les tarifs journaliers sont indiqués pour chaque étape en fonction d’indice définis dans le contrat avec le client. Un template permet de remplir les autres étapes en fonction du temps estimé de développement, qui finalement ne représente que la moitié du chiffrage total environ, une fois les phases de pilotage, de rédaction des spécifications, de recette et de garantie ajoutées.",
+            "soon": "Je compte prochainement commencer à établir des chiffrages, d’abord sur des petites évolutions, puis sur des plus gros projets, comme les prochains lots de l’application ",
+            "web-agent": "WebAgent",
+            "collaboration": ", en collaboration avec mon responsable d’application. Au cours de ces deux ans et demi en entreprise, j’ai appris à estimer le temps nécessaire à la réalisation d’une tâche le plus précisément possible, je devrais donc réussir à estimer des tâches plus complexes avec de l’expérience. J’ai également eu plusieurs fois l’occasion de travailler à partir de chiffrages financiers déjà rédigés, j’ai donc appris à les lire et les comprendre sans problème."
         },
         "front-end": {
             "title": "Front end",

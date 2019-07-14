@@ -18,6 +18,7 @@ export class WipService {
     '/technical-skills/android',
     '/technical-skills/dot-net-core-web-api',
     '/technical-skills/notions-of-architecture',
+    '/technical-skills/financial-assessments',
     '/human-skills',
     '/human-skills/autonomy',
     '/human-skills/team-leading',

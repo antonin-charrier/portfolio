@@ -131,6 +131,7 @@
                 "apprenticeship": "During my apprenticeship at Capgemini, I worked on several projects of Angular websites. Among them, I took part in October 2018 to a ",
                 "poc": "PoC (proof of concept)",
                 "goal": " of a portal for a call center. The goal of the PoC is to be suggested to the entity Energies E. Leclerc. Indeed, Siplec, a subsidiary company of import/export belonging to E. Leclerc group, is a client of Capgemini. A Capgemini team especially works on APIs linked to electricity distribution and sale. This team also put online the website of Energies E. Leclerc, allowing customers to subscribe to an offer online. That’s why the PoC must complete this site in order to enter the phone subscriptions and ensure a post-sale service for all customers.",
+                "page": "The Call center project, subsequently become Utilities in the box",
                 "project": "The project is ordered by a commercial from Capgemini so it can be sold thereafter to other energy providers. Indeed, in 2007, the energy market in France has opened and, since, the historical providers EDF (electricity) and GDF (natural gas), are not the only one to be able to deal their energy anymore. Since a few years, the alternative suppliers flourished, thus opening a big market for Capgemini to set up their numeric infrastructures. It is for this reason that the first objective of the PoC is the reusability in order to easily sell it to all the new energy providers."
             },
             "poorly-monitored": {
@@ -258,7 +259,8 @@
                 "vision-safety": "VisionSafety is an application from the Vision panel of Securitas. It is designed for security agents who work in risky sites. With it, the agent can send alerts using an easily accessible big button (with a simple click, he starts a countdown before the alert with the ability to cancel it in case of an error, and with a long click, he sends the alert directly). He also can switch to “danger” mode, thus warning that he felt a potential imminent risk. During this mode, all alerts are immediate. Some agents are equipped with ",
                 "bluetooth": "Bluetooth",
                 "buttons": " physical buttons that they can attach to bracelets in order to send alerts in a more discreet way using simple stealthy pressions.",
-                "detection": "The application also detects the falls and extended (and therefore abnormal) inactivity and sends alerts in consequence. Finally, it allows agents to check in and out at the start and at the end of their round of surveillance and to track their GPS position. All the application is entirely configurable and modular depending on the specificities of each site to protect. Thanks to this application, Securitas gains in efficiency to intervene in case of alert and can more easily rescue and agent having, for example, an assault."
+                "detection": "The application also detects the falls and extended (and therefore abnormal) inactivity and sends alerts in consequence. Finally, it allows agents to check in and out at the start and at the end of their round of surveillance and to track their GPS position. All the application is entirely configurable and modular depending on the specificities of each site to protect. Thanks to this application, Securitas gains in efficiency to intervene in case of alert and can more easily rescue and agent having, for example, an assault.",
+                "screens": "The different alert modes from the application (mayday, potential threat, fall detected)"
             },
             "manage": {
                 "title": "Manage the application alone",
@@ -303,7 +305,8 @@
                 "vision-mobile": " application, VisionMobile, and a website developed in ",
                 "angular": "Angular",
                 "web-agent": ": WebAgent.",
-                "redesign": "This site is a web redesign of a WPF heavy client. The goal is to create a modern, ergonomic and aesthetic application in collaboration with a team of designers and ergonomists. The redesign is divided in multiple batches. The first one is a reproduction of the existing from an old website that only allowed reports writing. It has been delivered to the customer in June 2019. The second and third batches concern respectively the schedules (rounds, tasks, etc.) and the ins/outs (visitors, vehicles, keys, etc.). Lastly, the last batches correspond to the management of the documents and instructions within a site as well as the training of the agents. The development is expected to last until March 2020, yet the project could be extended in the case of the integration of a wide and complex administration module that currently only exists on the heavy client."
+                "redesign": "This site is a web redesign of a WPF heavy client. The goal is to create a modern, ergonomic and aesthetic application in collaboration with a team of designers and ergonomists. The redesign is divided in multiple batches. The first one is a reproduction of the existing from an old website that only allowed reports writing. It has been delivered to the customer in June 2019. The second and third batches concern respectively the schedules (rounds, tasks, etc.) and the ins/outs (visitors, vehicles, keys, etc.). Lastly, the last batches correspond to the management of the documents and instructions within a site as well as the training of the agents. The development is expected to last until March 2020, yet the project could be extended in the case of the integration of a wide and complex administration module that currently only exists on the heavy client.",
+                "page": "The new design of the WebAgent application"
             },
             "angular": {
                 "title": "A big competence growth on Angular",
@@ -440,9 +443,17 @@
         },
         "financial-assessments": {
             "title": "Financial assessments",
-            "subtitle": "A well-architected solution reduces the risks of error",
+            "subtitle": "Be able to evaluate the costs of a project",
             "card-subtitle": "Angular, .NET",
-            "card-content": "During my apprenticeship, I was able to discover the financial assessments"
+            "card-content": "During my apprenticeship, I was able to discover the financial assessments",
+            "apprenticeship": "During my apprenticeship at Capgemini, my project manager introduced me to ",
+            "financial-assessments": "financial assessments",
+            "estimate": ". It is the estimate of the costs needed to complete a project or task. The goal is to evaluate the amount of work required for development and other mandatory steps, such as writing ",
+            "specifications": "specifications",
+            "tool": " or testing. He presented me the tool he was using, in which the daily rates are shown for each step according to index defined in the contract with the customer. A template is used to complete the other steps based on the estimated development time, which ultimately only represents half of the total assessment, once the stages of piloting, writing specifications, recipe and warranty added.",
+            "soon": "I will soon begin to make assessments, first on small evolutions, then on larger projects, such as the next batches of the ",
+            "web-agent": "WebAgent",
+            "collaboration": " application, in collaboration with my application manager. During these two and a half years in business, I have learned to estimate the time needed to complete a task as precisely as possible, so I should be able to estimate more complex tasks with some experience. I also had multiple opportunities to work from financial assessments already written, so I learned to read and understand them without problem."
         },
         "front-end": {
             "title": "Front end",
@@ -489,7 +500,7 @@
         },
         "notions-of-architecture": {
             "title": "Notions of architecture",
-            "subtitle": "This is the notions of architecture subtitle",
+            "subtitle": "A well-architected solution reduces the risks of error",
             "card-subtitle": "Angular, .NET",
             "card-content": "Through my projects, I was able to understand the architecture of a solution and participate",
             "architect": {
