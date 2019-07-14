@@ -170,7 +170,8 @@
                 "title": "Building an Angular template",
                 "after-working": "After working on several ",
                 "angular-projects": "Angular projects",
-                "project-manager": ", my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre. The template first needs to be used for a web app for Safran aeronautics company. This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers."
+                "project-manager": ", my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre. The template first needs to be used for a web app for Safran aeronautics company. This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.",
+                "page": "The eMonthly project, subsequently become Satisfly"
             },
             "architecture": {
                 "title": "Integrating powerful frameworks",

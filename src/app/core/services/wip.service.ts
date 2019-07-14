@@ -26,6 +26,7 @@ export class WipService {
     '/human-skills/knowledge-sharing',
     '/human-skills/languages',
     '/career',
+    '/hobbies',
     '/about'
   ];
 

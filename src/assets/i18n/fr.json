@@ -170,7 +170,8 @@
                 "title": "Construction d'un template Angular",
                 "after-working": "Après avoir travaillé sur plusieurs ",
                 "angular-projects": "projets Angular",
-                "project-manager": ", mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services. Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran. Cette apoplication, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients."
+                "project-manager": ", mon chef de projet me propose de mettre en place le squelette d'une solution Angular qui servirait de template à toutes les nouvelles applications Angular de mon centre de services. Le template doit dans un premier temps être utilisé pour une application web pour le compte de l'entreprise d'aéronautique Safran. Cette application, appelée eMonthly, aide les employés de Safran à rentrer et consulter les notes d'évaluation de la qualité des services proposés à leurs clients.",
+                "page": "Le projet eMonthly, devenu par la suite Satisfly"
             },
             "architecture": {
                 "title": "Intégration de puissants frameworks",
