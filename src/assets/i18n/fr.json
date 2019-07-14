@@ -106,7 +106,7 @@
             "team-leading": "Gestion d'équipe",
             "english": "Anglais",
             "spanish": "Espagnol",
-            "javascript": "Javascript",
+            "javascript": "JavaScript",
             "typescript": "Typescript",
             "c-sharp": "C#",
             "material": "Angular Material",
@@ -353,7 +353,7 @@
         "android": {
             "title": "Android",
             "subtitle": "Le mobile est l’avenir du digital",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Android, Xamarin",
             "card-content": "J'ai acquis une certaine expérience sur Android sur différents projets",
             "discovery": {
                 "title": "Une découverte pas-à-pas en autodidacte",
@@ -369,7 +369,7 @@
                 "activities": "activités",
                 "and": " et des ",
                 "fragments": "fragments",
-                "tasks": ", à utiliser les tâches asynchrones de Java pour communiquer avec le serveur. J’ai même appris à utiliser une base de données ",
+                "tasks": " ou à utiliser les tâches asynchrones de Java pour communiquer avec le serveur. J’ai même appris à utiliser une base de données ",
                 "sqlite": "SQLite",
                 "database": " afin de stocker les données dans l’application avant de les envoyer au serveur (VisionMobile doit absolument fonctionner même sans connexion Internet étant donné que des sites ont une mauvaise réception du réseau dans certains secteurs). Cette TMA m’a permis d’avoir une vision générale sur le fonctionnement d’Android et de comprendre les principes de base.",
                 "opportunity": "J’ai eu l’occasion de travailler sur Android dans d’autres projets. D’une part, au sein de mon école, j’ai reçu durant mon alternance des cours d’introduction à Android. Etant donné que j’avais appris à mon travail, les cours ne m’ont pas beaucoup apporté, en revanche, nous devions rendre un projet d’application mobile à la fin du cycle. J’ai profité de cette application pour expérimenter et approfondir mes connaissances sur Android, notamment en termes de design, en étudiant en profondeur le fonctionnement des différents ",
@@ -398,7 +398,7 @@
         "dot-net-core-web-api": {
             "title": "API Web .NET Core",
             "subtitle": "Savoir créer et utiliser des web services ASP.NET",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": ".NET Core",
             "card-content": "J'ai principalement étudié le .NET durant mes études et j'ai pu le mettre en pratique au travail",
             "learning": {
                 "title": "L’apprentissage du C#.NET à IN’TECH",
@@ -445,7 +445,7 @@
         "financial-assessments": {
             "title": "Chiffrages financiers",
             "subtitle": "Ceci est le sous-titre de chiffrages financiers",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Estimation, anticipation",
             "card-content": "Durant mon alternance, j'ai pu découvrir les chiffrages financiers",
             "apprenticeship": "Au cours de mon alternance chez Capgemini, mon chef de projet m’a introduit aux ",
             "financial-assessments": "chiffrages financiers",
@@ -459,12 +459,14 @@
         "front-end": {
             "title": "Front end",
             "subtitle": "Rendre les applications modernes, esthétiques et ergonomiques",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "J'adore travailler sur du front-end, notamment en Angular et Vue.js",
+            "card-subtitle": "Angular, Vue.js",
+            "card-content": "J'adore travailler sur du front end, notamment en Angular et Vue.js",
             "introduction": {
                 "title": "Mon introduction au front end",
-                "basis": "Le front end est la base de toute application. C’est ce que voit l’utilisateur et ce qui définit s’il va adopter l’application ou non. A travers mes différents projets, j’ai pu expérimenter à la fois le front et le back end, étant la plupart du temps développeur full stack. J’apprécie particulièrement le front end car il me permet d’exprimer ma créativité.",
-                "web": "Concernant le web, j’apprécie utiliser des frameworks javascript modernes. J’ai d’abord commencé avec ",
+                "basis": "Le front end est la base de toute application. C’est ce que voit l’utilisateur et ce qui définit s’il va adopter l’application ou non. A travers mes différents projets, j’ai pu expérimenter à la fois le front et le back end, étant la plupart du temps développeur full stack. J’apprécie particulièrement le front end car il me permet d’exprimer ma ",
+                "creativity": "créativité",
+                "creativity-bis": ".",
+                "web": "Concernant le web, j’apprécie utiliser des frameworks JavaScript modernes. J’ai d’abord commencé avec ",
                 "vue-js": "Vue.js",
                 "school": " dans le cadre d’un projet au sein de mon école, ",
                 "galt": "Galt",
@@ -474,7 +476,7 @@
             },
             "angular": {
                 "title": "De Vue.js à Angular",
-                "capgemini": "Après Galt, j’ai rejoint Capgemini en stage, puis en alternance. Durant la première année, je n’ai plus utilisé de frameworks javascript, hormis pour le début de ce portfolio que j’ai, à la base, initié avec Vue.js. Finalement, depuis 2018, l’offre en ",
+                "capgemini": "Après Galt, j’ai rejoint Capgemini en stage, puis en alternance. Durant la première année, je n’ai plus utilisé de frameworks JavaScript, hormis pour le début de ce portfolio que j’ai, à la base, initié avec Vue.js. Finalement, depuis 2018, l’offre en ",
                 "angular": "Angular",
                 "projects": " s’est multipliée. Plusieurs projets d’applications web se sont lancées et c’est Angular qui a été choisi pour les développer. Securitas, le client pour lequel j’ai quasiment exclusivement travaillé, s’est lancé dans un projet « full digital » pour 2020, et pour accompagner ce projet, une migration complète d’un client lourd vers un site web en Angular : ",
                 "web-agent": "WebAgent",
@@ -502,7 +504,7 @@
         "notions-of-architecture": {
             "title": "Notions d'architecture",
             "subtitle": "Une solution correctement architecturée réduit les risques d’erreur",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Architecture, solutions",
             "card-content": "A travers mes projets, j'ai pu appréhender l'architecture d'une solution et y participer",
             "architect": {
                 "title": "Architecturer un template Angular",
@@ -540,7 +542,7 @@
         "autonomy": {
             "title": "Autonomie",
             "subtitle": "Un développeur doit être capable de travailler par lui-même",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Efficacité, gain de temps",
             "card-content": "Je suis capable de travailler seul tout en ayant un bon esprit d'équipe",
             "definition": {
                 "title": "Qu'est-ce que l'autonomie ?",
@@ -573,7 +575,7 @@
         "creativity": {
             "title": "Créativité",
             "subtitle": "La créativité permet d’apporter de véritables solutions",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Imagination, innovation",
             "card-content": "J'ai un esprit créatif, ce qui me permet d'innover régulièrement",
             "definition": {
                 "title": "Qu’est-ce que la créativité ?",
@@ -603,7 +605,7 @@
                 "title": "La créativité dans les autres domaines",
                 "various-forms": "Comme dit plus haut, la créativité peut prendre différentes formes. Elle peut également revêtir une forme artistique. Bien que je ne sois pas un artiste, ",
                 "new-stuff": "j'aime imaginer et créer de nouvelles choses",
-                "pokemon": ". Cela me sert notamment dans mon projet personnel de fangame Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fangames Pokémon."
+                "pokemon": ". Cela me sert notamment dans mon projet personnel de fan-game Pokémon, dans lequel je crée et j'ajoute des faux Pokémon, des nouvelles créatures qui pourraient avoir leur place dans la licence de Nintendo. Ces créations sont réalisées selon le style du \"pixel art\", permettant à des novices comme moi de créer selon leurs envies sans avoir de grands talents de dessinateur. J'ai par exemple créé les Pokémon ci-dessous, qui ont été complimentés par d'autres membres expérimentés de la communauté en ligne de fan-games Pokémon."
             },
             "pokemon": {
                 "scaracorn": "Scaracorn",
@@ -617,7 +619,7 @@
         "knowledge-sharing": {
             "title": "Partage de connaissances",
             "subtitle": "Transmettre mon savoir aux autres",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Communication, vulgarisation",
             "card-content": "J'aime partager mon savoir aux autres, qu'il soit fonctionnel ou technique",
             "importance": {
                 "title": "L’importance du partage de connaissance",
@@ -648,7 +650,7 @@
         "languages": {
             "title": "Langues",
             "subtitle": "Plus jeune, je souhaitais devenir interprète",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Echange, compréhension",
             "card-content": "J'adore les langues, et je parle couramment anglais",
             "passion": {
                 "title": "Ma passion pour les langues",
@@ -661,7 +663,7 @@
                 "middle-school": " en 5ème et j’ai choisi la section européenne en 4ème pour pratiquer plus d’anglais. Durant cette période de collège, lorsqu’on me demandait ce que je souhaitais faire plus tard, je répondais « interprète ».",
                 "high-school": "J’ai poursuivi les cours d’anglais (avec la section européenne), d’espagnol et de latin durant mon lycée, suite auquel j’ai rejoint l’école IN’TECH au sein de laquelle j’ai continué à pratiquer l’anglais dans des cours axés sur la pratique et l’expression orale. Dans cette école, j’ai passé le ",
                 "toeic": "TOEIC",
-                "score": " lors de mon premier semestre, auquel j’ai obtenu un score de 865 points sur 990. J’ai de nouveau passé ce test à la fin de mes études, dont j’attends résultats pour évaluer ma progression durant ces cinq années à l’école et en entreprise. Durant mon cursus à IN’TECH, je n’ai pas eu l’occasion de poursuivre l’espagnol et le latin. En revanche, j’ai pu pratiquer l’espagnol durant un séjour dans la région de Valencia et je me suis rendu compte que la facilité à communiquer revenait au bout de deux à trois jours dans l’environnement. Quant au latin, continuer à l’étudier ne m’aurait pas beaucoup apporté dans mon domaine, en revanche il continue de m’être utile aujourd’hui dans la compréhension des langues romanes et surtout dans l’orthographe de la langue française."
+                "score": " lors de mon premier semestre, auquel j’ai obtenu un score de 865 points sur 990. J’ai de nouveau passé ce test à la fin de mes études, dont j’attends résultats pour évaluer ma progression durant ces cinq années à l’école et en entreprise. Durant mon cursus à IN’TECH, je n’ai pas eu l’occasion de poursuivre l’espagnol et le latin. En revanche, j’ai pu pratiquer l’espagnol durant un séjour dans la région de Valencia en Espagne et je me suis rendu compte que la facilité à communiquer revenait au bout de deux à trois jours dans l’environnement. Quant au latin, continuer à l’étudier ne m’aurait pas beaucoup apporté dans mon domaine, en revanche il continue de m’être utile aujourd’hui dans la compréhension des langues romanes et surtout dans l’orthographe de la langue française."
             },
             "today": {
                 "title": "Les langues aujourd’hui",
@@ -674,7 +676,7 @@
         "team-leading": {
             "title": "Gestion d'équipe",
             "subtitle": "Une introduction à la gestion d'équipe",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Organisation, communication",
             "card-content": "J'ai eu l'occasion d'expérimenter la gestion d'équipe durant mon alternance",
             "arrival": {
                 "title": "Mon arrivée dans un PoC",
@@ -687,7 +689,7 @@
             },
             "lead": {
                 "title": "Je prends les devants",
-                "visibility": "Nous avons peu de visibilité et d’instructions de sa part et notre chef de projet est assez occupé par ses projets annexes. Afin d’améliorer la ",
+                "visibility": "Nous avons peu de visibilité et d’instructions de la part du commercial et notre chef de projet est assez occupé par ses projets annexes. Afin d’améliorer la ",
                 "productivity": "productivité",
                 "dialogue": " de l’équipe et le dialogue avec nos interlocuteurs, et assumant que je suis le membre avec le plus d’expérience, je décide de diriger l’équipe, avec l’approbation des deux autres développeurs.",
                 "learn": "J’apprends à organiser les tâches des membres de l’équipe, demander de la visibilité sur les demandes du client, planifier et animer des réunions avec l’ensemble des intéressés par le projet. La ",
@@ -752,7 +754,7 @@
             "button": "Stage ASP",
             "title": "Développeur stagiaire pour ASP Nettoyage",
             "duration": "février 2015 • 1 mois",
-            "message": "Au cours de ma première année chez IN'TECH, j'ai effectué un stage afin de découvrir le monde de l'entreprise durant un mois. J'ai aidé la PME ASP Nettoyage à Cholet (49) à digitaliser leurs contrôles de qualité via l'utilisation de tablettes tactiles au lieu de formulaires papier. Etant seul, j'ai tiré profit de mon autonomie pour mettre en place une solution fonctionnelle en un mois grâce à l'utilisation de formulaires en ligne Google Forms et de scripts Javascript et VBA."
+            "message": "Au cours de ma première année chez IN'TECH, j'ai effectué un stage afin de découvrir le monde de l'entreprise durant un mois. J'ai aidé la PME ASP Nettoyage à Cholet (49) à digitaliser leurs contrôles de qualité via l'utilisation de tablettes tactiles au lieu de formulaires papier. Etant seul, j'ai tiré profit de mon autonomie pour mettre en place une solution fonctionnelle en un mois grâce à l'utilisation de formulaires en ligne Google Forms et de scripts JavaScript et VBA."
         },
         "intech": {
             "button": "Diplôme d'expertise en ingéniérie logicielle",
@@ -802,7 +804,7 @@
             "video-games": "jeux vidéo",
             "play": ". Je joue régulièrement avec mes amis à des jeux en ligne mais aussi des jeux en solo. Je suis notamment un fan de la licence Pokémon depuis que j’ai eu une console dans les mains, au point que je me suis lancé dans ",
             "own": "mon propre jeu Pokémon",
-            "fangames": " après avoir découvert toute une communauté sur Internet créant des « fangames ». Ce n’est pas mon premier projet de création de jeu vidéo. Je m’étais déjà lancé dans le développement d’un jeu de cartes en ligne sur Unity. Cependant, ces deux projets sont en pause depuis un moment à cause d’un manque de temps, mais je compte bien les reprendre rapidement une fois mes études terminées. Dans le premier, j’utilise un outil appelé RPG Maker permettant de facilement créer des jeux du genre de Pokémon (jeux de rôle) et je dessine moi-même mes propres Pokémon inédits. Dans le deuxième, je code le jeu de A à Z et, si le projet venait un jour à prendre de l’ampleur, je devrais engager un graphiste afin de réaliser les illustrations des cartes.",
+            "fan-games": " après avoir découvert toute une communauté sur Internet créant des « fan-games ». Ce n’est pas mon premier projet de création de jeu vidéo. Je m’étais déjà lancé dans le développement d’un jeu de cartes en ligne sur Unity. Cependant, ces deux projets sont en pause depuis un moment à cause d’un manque de temps, mais je compte bien les reprendre rapidement une fois mes études terminées. Dans le premier, j’utilise un outil appelé RPG Maker permettant de facilement créer des jeux du genre de Pokémon (jeux de rôle) et je dessine moi-même mes propres Pokémon inédits. Dans le deuxième, je code le jeu de A à Z et, si le projet venait un jour à prendre de l’ampleur, je devrais engager un graphiste afin de réaliser les illustrations des cartes.",
             "the-last-of-us": "The Last of Us, mon jeu vidéo préféré"
         },
         "other": {
@@ -822,7 +824,7 @@
         "about": "À propos",
         "my-portfolio": "de mon portfolio",
         "copyright": "Copyright © 2019 Antonin CHARRIER - Tous droits réservés",
-        "developped": "Développé avec ",
+        "developed": "Développé avec ",
         "angular": "Angular 7",
         "angular-website": "Site web de Angular",
         "using": " avec l'aide de ",

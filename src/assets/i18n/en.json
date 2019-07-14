@@ -58,7 +58,7 @@
         "angular-bis": " and ",
         "android": "Android",
         "development-bis": " development.",
-        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large web site for Securitas security agents.",
+        "frameworks": "I love working on modern frameworks with ergonomists and designers to build websites with a great user experience. I’m currently working on a large website for Securitas security agents.",
         "projects" : {
             "title": "Projects",
             "card-subtitle": "For Safran, Securitas...",
@@ -106,7 +106,7 @@
             "team-leading": "Team leading",
             "english": "English",
             "spanish": "Spanish",
-            "javascript": "Javascript",
+            "javascript": "JavaScript",
             "typescript": "Typescript",
             "c-sharp": "C#",
             "material": "Angular Material",
@@ -132,7 +132,7 @@
                 "poc": "PoC (proof of concept)",
                 "goal": " of a portal for a call center. The goal of the PoC is to be suggested to the entity Energies E. Leclerc. Indeed, Siplec, a subsidiary company of import/export belonging to E. Leclerc group, is a client of Capgemini. A Capgemini team especially works on APIs linked to electricity distribution and sale. This team also put online the website of Energies E. Leclerc, allowing customers to subscribe to an offer online. That’s why the PoC must complete this site in order to enter the phone subscriptions and ensure a post-sale service for all customers.",
                 "page": "The Call center project, subsequently become Utilities in the box",
-                "project": "The project is ordered by a commercial from Capgemini so it can be sold thereafter to other energy providers. Indeed, in 2007, the energy market in France has opened and, since, the historical providers EDF (electricity) and GDF (natural gas), are not the only one to be able to deal their energy anymore. Since a few years, the alternative suppliers flourished, thus opening a big market for Capgemini to set up their numeric infrastructures. It is for this reason that the first objective of the PoC is the reusability in order to easily sell it to all the new energy providers."
+                "project": "The project is ordered by a commercial from Capgemini so it can be sold thereafter to other energy providers. Indeed, in 2007, the energy market in France has opened and, since, the historical providers EDF (electricity) and GDF (natural gas), are not the only ones to be able to deal their energy anymore. Since a few years, the alternative suppliers flourished, thus opening a big market for Capgemini to set up their numeric infrastructures. It is for this reason that the first objective of the PoC is the reusability in order to easily sell it to all the new energy providers."
             },
             "poorly-monitored": {
                 "title": "A poorly monitored project",
@@ -154,7 +154,7 @@
                 "project": " of the project."
             },
             "experience": {
-                "title": "Call center",
+                "title": "A good experience",
                 "initiative": "This initiative is welcomed by our project manager who lets us manage the PoC with the other interlocutors. We succeed in improving the communication between the commercial and the APIs team, the first one expressing clearly his expectations and the second one explaining the current possibilities and evolutions which are possible or not. Thus, the project can be presented functional to the client and it is at this time that my mission ends. During the following months, no longer working on the project, I was still able to help the new members by ",
                 "knowledge": "sharing my knowledge",
                 "project": " of the project.",
@@ -170,7 +170,7 @@
                 "title": "Building an Angular template",
                 "after-working": "After working on several ",
                 "angular-projects": "Angular projects",
-                "project-manager": ", my project manager suggests me to set up the skeletton of an Angular solution that would be used as a template for every new Angular app in my services centre. The template first needs to be used for a web app for Safran aeronautics company. This app, called eMonthly, helps Safran employees to input and to consult the evualuation marks for the quality of the services offered to their customers.",
+                "project-manager": ", my project manager suggests me to set up the skeleton of an Angular solution that would be used as a template for every new Angular app in my services centre. The template first needs to be used for a web app for Safran aeronautics company. This app, called eMonthly, helps Safran employees to input and to consult the evaluation marks for the quality of the services offered to their customers.",
                 "page": "The eMonthly project, subsequently become Satisfly"
             },
             "architecture": {
@@ -179,7 +179,7 @@
                 "architecture": "the architecture",
                 "by-creating": " of the solution by creating ",
                 "services": "services, components, guards",
-                "references": ", etc. I add references to libraries that our centre has interest in using based on recurent feedback from clients. I especially add ",
+                "references": ", etc. I add references to libraries that our centre has interest in using based on recurrent feedbacks from clients. I especially add ",
                 "angular-material": "Angular Material",
                 "website": " to make rapidly and efficiently a neat website design (in particular for PoCs) and ",
                 "kendo": "Kendo for Angular",
@@ -227,7 +227,7 @@
                 "google": " (Google) and ",
                 "react": "React",
                 "facebook": " (Facebook), unlike it is developed by an independent team. The other members of the team are being affected other tasks: one of them manages the creation and display of the dependencies graphs with d3.js, another one works on the back end and the last one makes the links between front and back end and is a technical reinforcement for the other members of the team with his experience.",
-                "suggest": "I suggest to my team to build a ",
+                "suggest": "I suggest to my team to build an ",
                 "spa": "SPA (single page application)",
                 "views": " containing the different views necessary for the application (home, sign up and sign in, search, graph, etc.). All the SPA is then sent to the back end. Our ASP.NET server displays a web page containing only a reference to our SPA in charge of the user interaction (note: it is seldom necessary to host your client app inside a server-rendered web-app but it was an easier solution for this project. Most of the time, a client app and web services are enough).",
                 "mock-ups": "Before starting the SPA creation, I begin with creating detailed mock-ups of every screen from our application using Moqups tool. It is an important step, especially when building SPAs, because views are entirely modular. It is necessary to precisely define ",
@@ -257,10 +257,10 @@
             "card-content": "VisionSafety is a life-saver application for Securitas agents",
             "save-lives": {
                 "title": "An application to save lives",
-                "vision-safety": "VisionSafety is an application from the Vision panel of Securitas. It is designed for security agents who work in risky sites. With it, the agent can send alerts using an easily accessible big button (with a simple click, he starts a countdown before the alert with the ability to cancel it in case of an error, and with a long click, he sends the alert directly). He also can switch to “danger” mode, thus warning that he felt a potential imminent risk. During this mode, all alerts are immediate. Some agents are equipped with ",
+                "vision-safety": "VisionSafety is an application from the Vision panel of Securitas. It is designed for security agents who work in risky sites. With it, the agent can send alerts using an easily accessible big button (with a simple click, he starts a countdown before the alert, with the ability to cancel it in case of an error, and with a long click, he sends the alert directly). He also can switch to “danger” mode, thus warning that he felt a potential imminent risk. During this mode, all alerts are immediate. Some agents are equipped with ",
                 "bluetooth": "Bluetooth",
                 "buttons": " physical buttons that they can attach to bracelets in order to send alerts in a more discreet way using simple stealthy pressions.",
-                "detection": "The application also detects the falls and extended (and therefore abnormal) inactivity and sends alerts in consequence. Finally, it allows agents to check in and out at the start and at the end of their round of surveillance and to track their GPS position. All the application is entirely configurable and modular depending on the specificities of each site to protect. Thanks to this application, Securitas gains in efficiency to intervene in case of alert and can more easily rescue and agent having, for example, an assault.",
+                "detection": "The application also detects the falls and extended (and therefore abnormal) inactivity and sends alerts in consequence. Finally, it allows agents to check in and out at the start and at the end of their round of surveillance and to track their GPS position. All the application is entirely configurable and modular depending on the specificities of each site to protect. Thanks to this application, Securitas gains in efficiency to intervene in case of alert and can more easily rescue an agent having, for example, an assault.",
                 "screens": "The different alert modes from the application (mayday, potential threat, fall detected)"
             },
             "manage": {
@@ -272,7 +272,7 @@
                 "create": " and to create ",
                 "cross-platform": "cross-platform iOS/Android",
                 "apps": " apps, although VisionSafety is obviously not intended to be developed for iPhone). We are three developers to have worked on the application. The first one set up the base and created the interface. Then I developed the entire application with my other colleague until the delivery of the first version.",
-                "maintened": "Since then, the application is maintained and has been regularly improved to integrate all the current functionalities. It is now me who take cares of maintaining it in full, from the needs of the client to the delivery. Thus, I gained a lot in ",
+                "maintened": "Since then, the application is maintained and has been regularly improved to integrate all the current functionalities. It is now me who fully takes care of maintaining it, from the needs of the client to the delivery. Thus, I gained a lot in ",
                 "autonomy": "autonomy",
                 "as-well": " as well as in ",
                 "customer-relationship": "customer relationship",
@@ -282,7 +282,7 @@
                 "title": "Develop better on Android",
                 "in-addition" : "In addition to the human contributions, I also learned a lot about ",
                 "android": "Android",
-                "vision-safety": ". Thanks to VisionSafety, I can now to connect ",
+                "vision-safety": ". Thanks to VisionSafety, I can now connect ",
                 "bluetooth": "Bluetooth",
                 "devices": " devices from an application, collect ",
                 "geolocation": "geolocation",
@@ -326,7 +326,7 @@
                 "app-initializers": "The ",
                 "app-initializers-bis": "app initializers",
                 "app-initializers-ter": ", which allow to wait for data retrieval before initializing and render the website (or the module in the case of lazy loading)",
-                "concepts": "Thanks to these concepts that we applied to WebAgent, it is possible to create powerful and fluid sites for the user, while avoiding a maximum of bugs on the client side. Obviously, you must know how to user them wisely in order to take the most advantage of their usefulness.",
+                "concepts": "Thanks to these concepts that we applied to WebAgent, it is possible to create powerful and fluid sites for the user, while avoiding a maximum of bugs on the client side. Obviously, you must know how to use them wisely in order to take the most advantage of their usefulness.",
                 "team": "I had the chance to work in a team where we were constantly learning. As soon as a member discovered something interesting, he shared it and we studied whether it was possible and interesting to add it on the project. As we were efficient, we were ahead of schedule and we were able to afford a lot of micro-refactoring to have the cleanest and most efficient solution. Thanks to this enriching experience, my teammates and I now take part on other Angular projects to make ",
                 "feedbacks": "feedbacks",
                 "expertise": " to other teams and bring them our expertise."
@@ -340,7 +340,7 @@
                 "devices": " module during the second batch to notify the application on different events (new report, new instruction, etc.).",
                 "web-agent": "During the development of WebAgent, I also had the opportunity to ",
                 "knowledge": "share my functional and technical knowledge",
-                "welcome": " of the project. Indeed, mu team welcomed a new member after a few months of development. I was responsible for presenting him the functional specificities of the project and I was able to exchange with him on several Angular topics, knowing that he had also trained and had the occasion to discover and experiment concepts during his previous project.",
+                "welcome": " of the project. Indeed, my team welcomed a new member after a few months of development. I was responsible for presenting him the functional specificities of the project and I was able to exchange with him on several Angular topics, knowing that he had also trained and had the occasion to discover and experiment concepts during his previous project.",
                 "discover": "Finally, I could discover the ",
                 "assessments": "financial assessments",
                 "client": " that are sent to the client for a validation of the budget by him. It is a skill that I want to develop in order to continue to evolve within the project."
@@ -369,7 +369,7 @@
                 "activities": "activities",
                 "and": " and ",
                 "fragments": "fragments",
-                "tasks": ", to use Java’s asynchronous tasks to communicate with the server. I even learned to use an ",
+                "tasks": " or to use Java’s asynchronous tasks to communicate with the server. I even learned to use an ",
                 "sqlite": "SQLite",
                 "database": " database in order to store data in the application before sending them to the server (VisionMobile must absolutely work even without Internet connection since there are sites which have a bad network reception in some sectors). This TPM allowed me to have a general vision on the Android operation and to understand the base principles.",
                 "opportunity": "I had the opportunity to work on Android in other projects. Firstly, at my school, I received during my apprenticeship introductory classes on Android. Given that I learned at my job, the classes did not teach me much, however, we had to give a project of a mobile application at the end of the cycle. I took advantage of this application to experiment and deepen my knowledge on Android, especially in terms of design, by studying in depth the operation of the different ",
@@ -386,7 +386,7 @@
                 "c-sharp": "C#",
                 "language": ", a language considered by most of the developers (including me) as way more pleasant, complete and performing than Java, and on the other hand, to be able to code ",
                 "cross-platform": "cross-platform Android/iOS",
-                "applications": " applications. The second interest was, in the case of VisionSafety, secondary, since the application would be deployed only on Android rugged phone and not iPhones. However, the goal of this application for the center is to serve as a showcase for customers to demonstrate our skills and offer new mobile solutions that are simple to develop using Xamarin.",
+                "applications": " applications. The second interest was, in the case of VisionSafety, secondary, since the application would only be deployed on Android rugged phones and not iPhones. However, the goal of this application for the center is to serve as a showcase for customers to demonstrate our skills and offer new mobile solutions that are simple to develop using Xamarin.",
                 "debuts": "Thanks to this application that I followed from its debuts, I could study the set up of the ",
                 "architecture": "architecture",
                 "needs": " and participate in it. Given that this application must meet quite specific needs, I was able to use particular functionalities from Android, like the fall or inactivity detection using the accelerometer, the GPS positions retrieving using the geolocation or even the connection to devices with ",
@@ -398,7 +398,7 @@
         "dot-net-core-web-api": {
             "title": ".NET Core Web API",
             "subtitle": "Know how to create and use ASP.NET web services",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": ".NET Core",
             "card-content": "I mainly studied .NET during my studies and was able to put it into practice at work",
             "learning": {
                 "title": "The learning of C#.NET at IN’TECH",
@@ -421,7 +421,7 @@
                 "advantage": ". We took advantage of being able to use the new .NET Core framework as it was a school project and we could afford to discover the latest technologies. I took advantage of my knowledge in terms of ",
                 "rest": "REST",
                 "web-services": " type web services in order to make the ",
-                "front": "front-end",
+                "front": "front end",
                 "communicate": " client communicate with the back-end server. With these web services, the client could query the ",
                 "sql-server": "SQL Server",
                 "database": " database."
@@ -445,7 +445,7 @@
         "financial-assessments": {
             "title": "Financial assessments",
             "subtitle": "Be able to evaluate the costs of a project",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Estimation, anticipation",
             "card-content": "During my apprenticeship, I was able to discover the financial assessments",
             "apprenticeship": "During my apprenticeship at Capgemini, my project manager introduced me to ",
             "financial-assessments": "financial assessments",
@@ -459,22 +459,24 @@
         "front-end": {
             "title": "Front end",
             "subtitle": "Make modern, aesthetic and ergonomic applications",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "I love working on front-end, especially in Angular and Vue.js",
+            "card-subtitle": "Angular, Vue.js",
+            "card-content": "I love working on front end, especially in Angular and Vue.js",
             "introduction": {
                 "title": "My introduction to the front end",
-                "basis": "The front end is the basis of any application. This is what the user sees and what defines whether he will adopt the application or not. Through my different projects, I was able to experiment both front and back end, being mostly full stack developer. I particularly like the front end because it allows me to express my creativity.",
-                "web": "Regarding the web, I appreciate using modern javascript frameworks. I first started with ",
+                "basis": "The front end is the basis of any application. This is what the user sees and what defines whether he will adopt the application or not. Through my different projects, I was able to experiment both front and back end, being mostly full stack developer. I particularly like the front end because it allows me to express my ",
+                "creativity": "creativity",
+                "creativity-bis": ".",
+                "web": "Regarding the web, I appreciate using modern JavaScript frameworks. I first started with ",
                 "vue-js": "Vue.js",
                 "school": " as part of a project at my school, ",
                 "galt": "Galt",
-                "framework": ". This is an easy-to-understand framework that allowed me to discover this world that I did not know. In this project, I was mainly involved in front end. I learned how to create a ",
+                "framework": ". This is an easy-to-understand framework that allowed me to discover this world that I did not know. In this project, I was mainly involved in front end. I learned how to create an ",
                 "spa": "SPA (single page application)",
                 "fluid": ", more fluid and pleasant for the user."
             },
             "angular": {
                 "title": "From Vue.js to Angular",
-                "capgemini": "After Galt, I joined Capgemini for an internship, then an apprenticeship. During the first year, I no longer used javascript frameworks, except for the beginning of this portfolio that I basically started with Vue.js. Finally, since 2018, the offer in ",
+                "capgemini": "After Galt, I joined Capgemini for an internship, then an apprenticeship. During the first year, I no longer used JavaScript frameworks, except for the beginning of this portfolio that I basically started with Vue.js. Finally, since 2018, the offer in ",
                 "angular": "Angular",
                 "projects": " has multiplied. Several web application projects have started, and it is Angular that has been chosen to develop them. Securitas, the customer for whom I have almost exclusively worked, has embarked on a \"full digital\" project for 2020, and to accompany this project, a complete migration from a heavy client to a website in Angular: ",
                 "web-agent": "WebAgent",
@@ -502,8 +504,8 @@
         "notions-of-architecture": {
             "title": "Notions of architecture",
             "subtitle": "A well-architected solution reduces the risks of error",
-            "card-subtitle": "Angular, .NET",
-            "card-content": "Through my projects, I was able to understand the architecture of a solution and participate",
+            "card-subtitle": "Architecture, solutions",
+            "card-content": "Through my projects, I was able to understand the architecture of a solution and participate to it",
             "architect": {
                 "title": "Architect an Angular solution",
                 "working": "After working on the ",
@@ -540,7 +542,7 @@
         "autonomy": {
             "title": "Autonomy",
             "subtitle": "A developer needs to be able to work on his own",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Efficiency, time saving",
             "card-content": "I am able to work on my own, while still having a good team spirit",
             "definition": {
                 "title": "What is autonomy?",
@@ -573,7 +575,7 @@
         "creativity": {
             "title": "Creativity",
             "subtitle": "Creativity allows us to bring proper solutions",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Imagination, innovation",
             "card-content": "I have a creative spirit, which allows me to innovate regularly",
             "definition": {
                 "title": "What is creativity?",
@@ -595,15 +597,15 @@
                 "creative": "I consider myself as a creative person. For example, during my ",
                 "vision-safety": "VisionSafety",
                 "sms-alerts": " project, I had to make a solution allowing the client to easily set in the mobile application the phone number to send an SMS alert to. This app being intended for all European countries where Securitas is implanted, I have to make a general solution for all countries. Some countries have several phone numbers, some have only one and some do not have any (the alerts are sent to a neighbouring country).",
-                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phonen numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
+                "suggested": "I suggested to the client to create a list containing all the phone numbers associated to their country. The countries having multiple phone numbers will see them ordered by priority. Thus, the alerts will be sent to the phone number linked to the user country (and to the most prioritary one if the country has more than one phone number). I also created an interface so the administrators can directly set in the application which phone number to use (in order to use a less prioritary number or the one of another country in case no number is assigned to the user location). The client approved this solution allowing him to avoid deploying a different configuration for each country, ",
                 "reducing": "reducing the exploitation costs",
                 "application": " of the application."
             },
             "other-domains": {
                 "title": "Creativity in others domains",
-                "various-forms": "As said above, cretivity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
+                "various-forms": "As said above, creativity can take different forms. It can also take on an artistic form. Although I am not an artist, ",
                 "new-stuff": "I like to imagine and create new stuff",
-                "pokemon": ". It especially serves me in my Pokémon fangame personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by oither experimented members of the Pokémon fangames online community."
+                "pokemon": ". It especially serves me in my Pokémon fan-game personal project, in which I create and add fake Pokémon, new creatures that could have a place in Nintendo's licence. These creations are made according to the \"pixel art\" style, allowing novices like me to create as they wish without having great drawing skills. For example, I created the Pokémon below, which have been complimented by other experimented members of the Pokémon fan-games online community."
             },
             "pokemon": {
                 "scaracorn": "Scaracorn",
@@ -617,7 +619,7 @@
         "knowledge-sharing": {
             "title": "Knowledge sharing",
             "subtitle": "Transmit my knowledge to other people",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Communication, popularization",
             "card-content": "I like to share my knowledge with others, whether functional or technical",
             "importance": {
                 "title": "The importance of knowledge sharing",
@@ -642,13 +644,13 @@
                 "angular": "Angular",
                 "explain": ", explain the use of ",
                 "git": "Git",
-                "balance": ", read his code... The most difficult was to balance my interventions. I wanted to let him work a maximum in autonomy so that it progresses faster and that it gains confidence, without abandoning him. I had to help him when he needed it to ensure the quality and timeliness of the application, but I myself did not have to waste too much time on my own tasks. For this, I asked him to regroup his questions and remarks to the maximum so that we made a daily update on his difficulties, except in case of complete blocking where he could come to see me. Finally, after nearly a month, he became completely autonomous on simple tasks and was able to perform more complex ones by asking for help if needed from other members of the team."
+                "balance": ", read his code... The most difficult was to balance my interventions. I wanted to let him work a maximum in autonomy so that it progresses faster and that it gains confidence, without abandoning him. I had to help him when he needed it to ensure the quality and timeliness of the application, but I myself did not have to waste too much time on my own tasks. For this, I asked him to regroup his questions and remarks to the maximum so that we made a daily update on his difficulties, except in case of complete blocking where he could come to see me. Finally, after nearly a month, he became completely autonomous on simple tasks and was able to perform more complex ones by asking for help if needed to the other members of the team."
             }
         },
         "languages": {
             "title": "Languages",
             "subtitle": "Younger, I wanted to become an interpreter",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Exchange, comprehension",
             "card-content": "I love languages, and I speak English fluently",
             "passion": {
                 "title": "My passion for languages",
@@ -661,7 +663,7 @@
                 "middle-school": " option in 7th grade and I chose the European section in 8th grade to practice more English. During this middle school period, when I was asked what I wanted to do later, I said \"interpreter\".",
                 "high-school": "I pursued English (with European section), Spanish and Latin lessons during my high school, after which I joined the IN'TECH school where I continued to practice English in courses focused on practice and speaking. In this school, I passed the ",
                 "toeic": "TOEIC",
-                "score": " in my first semester, to which I obtained a score of 865 points out of 990. I passed this test again at the end of my studies, of which I expect results to evaluate my progress during these five years in school and in business. During my studies at IN'TECH, I did not have the opportunity to pursue Spanish and Latin. On the other hand, I was able to practice Spanish during a stay in the Valencia area and I realized that the ease of communication came back after two to three days in the environment. As for Latin, continuing to study it would not have brought me much in my field, however it continues to be useful today in the understanding of the Romance languages and especially in the spelling of the French language."
+                "score": " in my first semester, to which I obtained a score of 865 points out of 990. I passed this test again at the end of my studies, of which I expect results to evaluate my progress during these five years in school and in business. During my studies at IN'TECH, I did not have the opportunity to pursue Spanish and Latin. On the other hand, I was able to practice Spanish during a stay in the Valencia area, Spain, and I realized that the ease of communication came back after two to three days in the environment. As for Latin, continuing to study it would not have brought me much in my field, however it continues to be useful today in the understanding of the Romance languages and especially in the spelling of the French language."
             },
             "today": {
                 "title": "Languages today",
@@ -674,7 +676,7 @@
         "team-leading": {
             "title": "Team leading",
             "subtitle": "An introduction to team leading",
-            "card-subtitle": "Angular, .NET",
+            "card-subtitle": "Organization, communication",
             "card-content": "I have got the opportunity to experiment team leading during my apprenticeship",
             "arrival": {
                 "title": "My arrival in a PoC",
@@ -683,11 +685,11 @@
                 "named": " named ",
                 "call-center": "Call center",
                 "team": ". The team is made of three developers including me. The project is directed by a project manager who is already managing other projects and required by a commercial from my company to sell this PoC to customers.",
-                "goal": "The goal of the project is to make a portal for a call center intended for the energy distributors. The portal is divided in two parts: on one side, the subscription to a new contract by phone and on the other side, the consulting of an existing customer’s data for after sales service."
+                "goal": "The goal of the project is to make a portal for a call center intended for the energy providers. The portal is divided in two parts: on one side, the subscription to a new contract by phone and on the other side, the consulting of an existing customer’s data for after sales service."
             },
             "lead": {
                 "title": "Taking the lead",
-                "visibility": "We have little visibility and instructions from him, and our project manager is quite busy with his ancillary projects. In order to improve the ",
+                "visibility": "We have little visibility and instructions from the commercial, and our project manager is quite busy with his ancillary projects. In order to improve the ",
                 "productivity": "productivity",
                 "dialogue": " of the team and the dialogue with our interlocutors, and assuming I am the most experienced member, I decide to take the lead of the team, with the approval of the other developers.",
                 "learn": "I learn to organize the tasks of the team members, ask for visibility on the client requests and plan and host meetings with all interested parties through the project. The ",
@@ -738,21 +740,21 @@
         },
         "alternance": {
             "button": "Capgemini apprenticeship",
-            "title": "Software apprentice developper at Capgemini",
+            "title": "Software apprentice developer at Capgemini",
             "duration": "September 2017 - September 2019 • 2 years",
-            "message": "During my five years curriculum within IN'TECH, I've been an apprentice during two years at Capgemini following my internship. I mainly developped my technical and soft skills."
+            "message": "During my five years curriculum within IN'TECH, I've been an apprentice during two years at Capgemini following my internship. I mainly developed my technical and soft skills."
         },
         "stage-cap": {
             "button": "Capgemini internship",
-            "title": "Software trainee developper at Capgemini",
+            "title": "Software trainee developer at Capgemini",
             "duration": "March 2017 - September 2017 • 6 months",
-            "message": "After two and a half years at IN'TECH, I joined Capgemini as part of a six months internship to discover and learn the software developper job."
+            "message": "After two and a half years at IN'TECH, I joined Capgemini as part of a six months internship to discover and learn the software developer job."
         },
         "stage-asp": {
             "button": "ASP internship",
-            "title": "Trainee developper at ASP Nettoyage",
+            "title": "Trainee developer at ASP Nettoyage",
             "duration": "February 2015 • 1 month",
-            "message": "During my first year at IN'TECH, I had an internship in order to discover the world of business during one month. I helped the small cleaning company ASP Nettoyage to digitalize their quality controls using tablets instead of paper forms. Being alone, I took advantage of my autonomy to build a functional solution in a month using online Google Forms and Javascript and VBA scripts."
+            "message": "During my first year at IN'TECH, I had an internship in order to discover the world of business during one month. I helped the small cleaning company ASP Nettoyage to digitalize their quality controls using tablets instead of paper forms. Being alone, I took advantage of my autonomy to build a functional solution in a month using online Google Forms and JavaScript and VBA scripts."
         },
         "intech": {
             "button": "Software engineering expert diploma",
@@ -774,7 +776,7 @@
             "title": "Fencing",
             "practicing": "I have been practicing ",
             "fencing": "fencing",
-            "fifteen-years": " for about fifteen years with a three-years break during my first years of study. It is a very complete sport between two opponents who mix speed, endurance and strategy. Currently, I train twice a week at the Musketeers of Issy-les-Moulineaux and I intend to resume the ",
+            "fifteen-years": " for about fifteen years with a three-years break during my first years of study. It is a very complete sport between two opponents which mixes speed, endurance and strategy. Currently, I train twice a week at the Musketeers of Issy-les-Moulineaux and I intend to resume the ",
             "competition": "competition",
             "season": " from the 2019/2020 season. I love to follow the big worldwide fencing events live on the internet.",
             "foil": "Foil, the discipline that I practice in fencing",
@@ -793,7 +795,7 @@
             "ten-times": ", where I have been close to ten times. My sister has lived in Dublin for ten years and after visiting her there, I loved the country that I travelled through from north to south and from west to east.",
             "live": "In a few years, I intend to live in ",
             "new-zealand": "New Zealand",
-            "kiwis": ". I've never been there, but it is a country that has attracted me for a very long time. I watched a lot of reports and followed expats who went to live there as well as \"kiwis\" (the nickname given to New Zealanders) who talk about their country. Since I did not have the opportunity to make my own opinion and I would have to live long distance from my family and my friends (26 hours of flight between Paris and Wellington!), I plan to go live during a short period (a few months for example), expandable to wish according to whether I like it or not (one year, two years, five years, ten years ...).",
+            "kiwis": ". I've never been there, but it is a country that has attracted me for a very long time. I watched a lot of reports and followed expats who went to live there as well as \"kiwis\" (the nickname given to New Zealanders) who talk about their country. Since I did not have the opportunity to make my own opinion and I would have to live long distance from my family and my friends (26 hours of flight between Paris and Wellington!), I plan to go live during a short period (a few months for example), expandable to wish according to whether I like it or not (one year, two years, five years, ten years...).",
             "auckland": "Auckland, the city where I would like to live in New Zealand"
         },
         "video-games": {
@@ -802,7 +804,7 @@
             "video-games": "video games",
             "play": ". I play regularly with my friends at online games but also solo games. I am a fan of the Pokémon license since I had a console in the hands, to the point that I started in ",
             "own": "my own Pokémon game",
-            "fangames": " after discovering a whole community on the Internet creating \"fangames\". This is not my first video game creation project. I had already embarked on the development of an online cards game on Unity. However, these two projects have been paused for a while due to lack of time, but I intend to resume quickly once my studies are completed. In the first one, I use a tool called RPG Maker allowing to easily create games like Pokémon (role play games) and I draw my own original Pokémon. In the second one, I code the game from A to Z and, if the project were to grow one day, I should hire a graphic designer to make the illustrations of the cards.",
+            "fan-games": " after discovering a whole community on the Internet creating \"fan-games\". This is not my first video game creation project. I had already embarked on the development of an online cards game on Unity. However, these two projects have been paused for a while due to lack of time, but I intend to resume quickly once my studies are completed. In the first one, I use a tool called RPG Maker allowing to easily create games like Pokémon (role play games) and I draw my own original Pokémon. In the second one, I code the game from A to Z and, if the project were to grow one day, I should hire a graphic designer to make the illustrations of the cards.",
             "the-last-of-us": "The Last of Us, my favorite video game"
         },
         "other": {
@@ -822,7 +824,7 @@
         "about": "About",
         "my-portfolio": "my portfolio",
         "copyright": "Copyright © 2019 Antonin CHARRIER - All rights reserved",
-        "developped": "Developped with ",
+        "developed": "Developed with ",
         "angular": "Angular 7",
         "angular-website": "Angular website",
         "using": " using ",
