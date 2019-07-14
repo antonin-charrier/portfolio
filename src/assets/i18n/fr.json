@@ -767,7 +767,52 @@
         }
     },
     "hobbies": {
-
+        "title": "Loisirs",
+        "subtitle": "Mon temps libre",
+        "fencing": {
+            "title": "L’escrime",
+            "practicing": "Je pratique l’",
+            "fencing": "escrime",
+            "fifteen-years": " depuis une quinzaine d’années avec une pause de trois ans durant mes premières années d’études. Il s’agit d’un sport très complet opposant deux tireurs qui mélange vitesse, endurance et stratégie. Actuellement, je m’entraîne deux fois par semaine aux Mousquetaires d’Issy-les-Moulineaux et je compte reprendre la ",
+            "competition": "compétition",
+            "season": " à partir de la saison 2019/2020. J’aime beaucoup suivre les grands événements d’escrime dans le monde en direct sur Internet.",
+            "also": "Je suis également ",
+            "referee": "arbitre",
+            "olympics": " au niveau régional, c’est-à-dire que je passe certains week-ends à arbitrer des compétitions en Île-de-France. J’ai pour objectif de devenir arbitre international, si possible d’ici les Jeux Olympiques de Paris 2024 afin d’y participer, même si ce sera difficile étant donné les courts délais."
+        },
+        "travels": {
+            "title": "Les voyages",
+            "travel": "J’aime voyager et je compte profiter de ces prochaines années pour découvrir de nouveaux pays. En 2018, j’ai passé trois semaines dans la ville de ",
+            "tokyo": "Tokyo",
+            "japan": " au Japon. Il s’agissait de mon premier vol en dehors de l’Europe. En 2019, je vais partir une semaine à ",
+            "montreal": "Montréal",
+            "canada": " au Canada. En Europe, j’affectionne tout particulièrement l’",
+            "ireland": "Irlande",
+            "ten-times": " où je suis allé près d’une dizaine de fois. Ma sœur vit à Dublin depuis dix ans et, après être allé la voir là-bas, j’ai adoré le pays que j’ai parcouru du nord au sud et d’ouest en est.",
+            "live": "Dans quelques années, je compte vivre en ",
+            "new-zealand": "Nouvelle-Zélande",
+            "kiwis": ". Je n’y suis jamais allé mais c’est un pays qui m’attire depuis très longtemps. J’ai visionné énormément de reportages et suivi des expatriés partis vivre là-bas ainsi que des « kiwis » (le surnom donné aux Néo-Zélandais) qui parlent de leur pays. Etant donné que je n’ai pas eu l’occasion de me faire ma propre opinion et que je devrais vivre à longue distance de ma famille et de mes amis (26 heures de vol entre Paris et Wellington !), je prévois de partir vivre durant une courte période (quelques mois par exemple), extensible à souhait selon que je m’y plais ou non (un an, deux ans, cinq ans, dix ans…)."
+        },
+        "video-games": {
+            "title": "Les jeux vidéo",
+            "child": "Depuis que je suis enfant, j’adore les ",
+            "video-games": "jeux vidéo",
+            "play": ". Je joue régulièrement avec mes amis à des jeux en ligne mais aussi des jeux en solo. Je suis notamment un fan de la licence Pokémon depuis que j’ai eu une console dans les mains, au point que je me suis lancé dans ",
+            "own": "mon propre jeu Pokémon",
+            "fangames": " après avoir découvert toute une communauté sur Internet créant des « fangames ». Ce n’est pas mon premier projet de création de jeu vidéo. Je m’étais déjà lancé dans le développement d’un jeu de cartes en ligne sur Unity. Cependant, ces deux projets sont en pause depuis un moment à cause d’un manque de temps, mais je compte bien les reprendre rapidement une fois mes études terminées. Dans le premier, j’utilise un outil appelé RPG Maker permettant de facilement créer des jeux du genre de Pokémon (jeux de rôle) et je dessine moi-même mes propres Pokémon inédits. Dans le deuxième, je code le jeu de A à Z et, si le projet venait un jour à prendre de l’ampleur, je devrais engager un graphiste afin de réaliser les illustrations des cartes."
+        },
+        "other": {
+            "title": "Quelques autres loisirs",
+            "listen": "J’écoute énormément de ",
+            "music": "musique",
+            "work": ", que ce soit sur mon temps libre ou même au travail. Elle me permet, selon les situations, de me détendre ou de me concentrer.",
+            "stop": "Bien que j’aie arrêté désormais, je jouais beaucoup au ",
+            "poker": "poker",
+            "practice": " auparavant. Il s’agit d’une pratique que je trouve extrêmement intéressante, mêlant réflexion, maitrise de soi et audace.",
+            "passion": "J’ai depuis quelques temps une nouvelle passion pour la ",
+            "formula-1": "Formule 1",
+            "grand-prix": ". J’ai toujours beaucoup aimé le sport automobile et je regardais la F1 avec mon père lorsque j’étais jeune, mais j’avais arrêté de suivre ce sport depuis une dizaine d’années. J’ai renoué avec les monoplaces depuis la saison 2019 et je ne manque aucun Grand Prix."
+        }
     },
     "about": {
         "about": "À propos",
