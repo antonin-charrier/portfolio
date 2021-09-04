@@ -43,3 +43,6 @@ Thumbs.db
 .vscode/tasks.json
 Portfolio.csproj.user
 Properties/launchSettings.json
+
+# Firebase publishes
+/.firebase

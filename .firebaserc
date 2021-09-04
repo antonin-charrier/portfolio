@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "antonin-charrier"
+  },
+  "targets": {
+    "antonin-charrier": {
+      "hosting": {
+        "portfolio": [
+          "antonin-charrier"
+        ]
+      }
+    }
+  }
+}
