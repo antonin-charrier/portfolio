@@ -1,6 +1,9 @@
 <app-article-header [title]="'about.about'" [subtitle]="'about.my-portfolio'"></app-article-header>
 <div>
   <p class="article-p">
+    <span>{{ 'about.version' | translate }} {{ version }}</span>
+  </p>
+  <p class="article-p">
     <span>{{ 'about.copyright' | translate }}</span>
   </p>
   <p class="article-p">

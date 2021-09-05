@@ -831,9 +831,10 @@
   "about": {
     "about": "À propos",
     "my-portfolio": "de mon portfolio",
-    "copyright": "Copyright © 2019 Antonin CHARRIER - Tous droits réservés",
+    "version": "Version",
+    "copyright": "Copyright © 2021 Antonin CHARRIER - Tous droits réservés",
     "developed": "Développé avec ",
-    "angular": "Angular 7",
+    "angular": "Angular 12",
     "angular-website": "Site web de Angular",
     "using": " avec l'aide de ",
     "material": "Material Design",
