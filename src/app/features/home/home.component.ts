@@ -1,7 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { DisplayService } from 'src/app/core/services/breakpoint.service';
 import { Breakpoints } from '@angular/cdk/layout';
+import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { DisplayService } from 'src/app/core/services/display.service';
 import { ThemeService } from 'src/app/core/services/theme.service';
 
 @Component({
@@ -56,7 +56,7 @@ export class HomeComponent implements OnInit {
   }
 
   private repeat(array: any[], n: number) {
-    let out = [];
+    let out: any[] = [];
     for (let i = 0; i < n; i++) {
         out = out.concat(array);
     }
@@ -64,7 +64,7 @@ export class HomeComponent implements OnInit {
   }
 
   private getKeywords() {
-    this.translateService.get('home.keywords').subscribe(translations => {
+    this.translateService.get('home.keywords').subscribe((translations: { [s: string]: any; } | ArrayLike<any>) => {
       this.keywords = this.repeat(this.shuffle(Object.values(translations)), 2);
     });
   }

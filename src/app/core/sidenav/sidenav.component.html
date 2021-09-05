@@ -9,25 +9,25 @@
       <div>
         <h1 class="profile-name">{{ 'sidenav.profile.name' | translate }}</h1>
         <h2 class="profile-job">{{ 'sidenav.profile.job' | translate }}</h2>
-      </div> 
+      </div>
     </div>
     <div class="profile-actions">
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.coordinates' | translate }}" matTooltipPosition="above" (click)="contactInfo()">
-        <mat-icon aria-label="Coordinates">person</mat-icon>
-      </button> 
+        <mat-icon aria-label="Coordinates" aria-hidden="false">person</mat-icon>
+      </button>
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.resume' | translate }}" matTooltipPosition="above" (click)="resume()">
-        <mat-icon aria-label="Resume">description</mat-icon>
-      </button> 
+        <mat-icon aria-label="Resume" aria-hidden="false">description</mat-icon>
+      </button>
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.email' | translate }}" matTooltipPosition="above" (click)="email()">
-        <mat-icon aria-label="Email">send</mat-icon>
+        <mat-icon aria-label="Email" aria-hidden="false">send</mat-icon>
       </button>
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.linkedin' | translate }}" matTooltipPosition="above" (click)="linkedin()">
-        <mat-icon aria-label="LinkedIn" svgIcon="linkedin"></mat-icon>
+        <mat-icon aria-label="LinkedIn" aria-hidden="false" svgIcon="linkedin"></mat-icon>
       </button>
       <button mat-flat-button color="primary" class="profile-action" matTooltip="{{ 'sidenav.profile.github' | translate }}" matTooltipPosition="above" (click)="github()">
-        <mat-icon aria-label="GitHub" svgIcon="github"></mat-icon>
+        <mat-icon aria-label="GitHub" aria-hidden="false" svgIcon="github"></mat-icon>
       </button>
-    </div>     
+    </div>
   </div>
   <mat-divider></mat-divider>
   <cdk-virtual-scroll-viewport itemSize="0" class="sidenav-list" id="scroll-list">
@@ -100,7 +100,7 @@
           [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}">
           <p class="sidenav-mat-list-p" matLine>{{ 'sidenav.financial-assessments' | translate }}</p>
         </mat-list-item>
-      </mat-action-list>  
+      </mat-action-list>
       <mat-list-item [routerLink]="['human-skills']" routerLinkActive="sidenav-active-link"
         [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }" [routerLinkActiveOptions]="{exact: true}" (click)="isHumanSkillsExpanded = true">
         <div *ngIf="parent === 'human-skills'" class="selected-parent" [ngClass]="{ 'light': !isDarkTheme, 'dark': isDarkTheme }"></div>

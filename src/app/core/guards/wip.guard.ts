@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from '@angular/router';
+import { ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot } from '@angular/router';
 import { Observable } from 'rxjs';
 import { WipService } from '../services/wip.service';
 
@@ -8,16 +8,13 @@ import { WipService } from '../services/wip.service';
 })
 export class WipGuard implements CanActivate {
 
-  constructor(
-    private router: Router
-  ) {}
+  constructor(private router: Router) {}
 
-  canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
+  canActivate(_next: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> | Promise<boolean> | boolean {
     if (WipService.isWip(state.url)) {
-      return true;
-    } else {
       this.router.navigate(['wip']);
       return false;
     }
+    return true;
   }
 }

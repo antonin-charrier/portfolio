@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ProjectsComponent } from './projects.component';
-import { GaltComponent } from './galt/galt.component';
+import { RouterModule, Routes } from '@angular/router';
+import { WipGuard } from 'src/app/core/guards/wip.guard';
 import { CallCenterComponent } from './call-center/call-center.component';
 import { EMonthlyComponent } from './e-monthly/e-monthly.component';
+import { GaltComponent } from './galt/galt.component';
+import { ProjectsComponent } from './projects/projects.component';
 import { VisionSafetyComponent } from './vision-safety/vision-safety.component';
 import { WebAgentComponent } from './web-agent/web-agent.component';
-import { WipGuard } from 'src/app/core/guards/wip.guard';
 
 const routes: Routes = [
   { path: 'projects', children: [

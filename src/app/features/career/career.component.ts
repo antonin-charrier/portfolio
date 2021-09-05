@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { ThemeService } from 'src/app/core/services/theme.service';
-import { MatDialog } from '@angular/material';
-import { ExperienceComponent } from 'src/app/shared/components/dialogs/experience/experience.component';
+import { ExperienceComponent } from 'src/app/shared/dialogs/experience/experience.component';
 
 @Component({
   selector: 'app-career',

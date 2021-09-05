@@ -5,7 +5,7 @@
             {{ 'redirects.linked-projects.title' | translate }}
         </h4>
         <div class="redirects-group">
-            
+
             <a mat-flat-button color="primary" [routerLink]="['projects/web-agent']" *ngIf="isProjectLinked('web-agent')">
                 {{ 'redirects.linked-projects.web-agent' | translate }}
             </a>
@@ -23,11 +23,11 @@
             </a>
         </div>
     </div>
-    <div class="redirects-category" [ngClass]="isProjectsEmpty ? redirects-category-1 : redirects-category-2" *ngIf="!isTechnicalSkillsEmpty">
+    <div class="redirects-category" [ngClass]="isProjectsEmpty ? 'redirects-category-1' : 'redirects-category-2'" *ngIf="!isTechnicalSkillsEmpty">
         <h4 class="redirects-title">
             {{ 'redirects.linked-technical-skills.title' | translate }}
         </h4>
-        <div class="redirects-group">            
+        <div class="redirects-group">
             <a mat-flat-button color="primary" [routerLink]="['technical-skills/front-end']" *ngIf="isTechnicalSkillLinked('front-end')">
                 {{ 'redirects.linked-technical-skills.front-end' | translate }}
             </a>
@@ -36,7 +36,7 @@
             </a>
             <a mat-flat-button color="primary" [routerLink]="['technical-skills/dot-net-core-web-api']" *ngIf="isTechnicalSkillLinked('dot-net-core-web-api')">
                 {{ 'redirects.linked-technical-skills.dot-net-core-web-api' | translate }}
-            </a>            
+            </a>
             <a mat-flat-button color="primary" [routerLink]="['technical-skills/notions-of-architecture']" *ngIf="isTechnicalSkillLinked('notions-of-architecture')">
                 {{ 'redirects.linked-technical-skills.notions-of-architecture' | translate }}
             </a>
@@ -46,7 +46,7 @@
         </div>
     </div>
     <div class="redirects-category" *ngIf="!isHumanSkillsEmpty"
-        [ngClass]="isProjectsEmpty && isTechnicalSkillsEmpty ? redirects-category-1 : (isTechnicalSkillsEmpty ? redirects-category-2 : redirects-category-3)">
+        [ngClass]="isProjectsEmpty && isTechnicalSkillsEmpty ? 'redirects-category-1' : (isTechnicalSkillsEmpty ? 'redirects-category-2' : 'redirects-category-3')">
         <h4 class="redirects-title">
             {{ 'redirects.linked-human-skills.title' | translate }}
         </h4>
@@ -67,5 +67,5 @@
                 {{ 'redirects.linked-human-skills.languages' | translate }}
             </a>
         </div>
-    </div>        
+    </div>
 </div>

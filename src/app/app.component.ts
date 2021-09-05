@@ -1,22 +1,23 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { MatSidenav } from '@angular/material';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
+import { TranslateService } from '@ngx-translate/core';
+import { DisplayService } from './core/services/display.service';
 import { ThemeService } from './core/services/theme.service';
-import { DisplayService } from './core/services/breakpoint.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
-  linkedProjects: string[] = [];
-  linkedTechnicalSkills: string[] = [];
-  linkedHumanSkills: string[] = [];
-  isMenuOpened = false;
+export class AppComponent {
   private _isDarkTheme = false;
-  @ViewChild('sidenav') sidenav: MatSidenav;
+  public linkedProjects: string[] = [];
+  public linkedTechnicalSkills: string[] = [];
+  public linkedHumanSkills: string[] = [];
+  public isMenuOpened = false;
+
+  @ViewChild('sidenav') sidenav: MatSidenav | undefined;
 
   constructor(
     private translateService: TranslateService,
@@ -47,6 +48,10 @@ export class AppComponent implements OnInit {
 
     this.displayService.detectBreakpoints(this.breakpointObserver);
     this.displayService.breakpoint.subscribe(newDisplay => {
+      if (!this.sidenav) {
+        return;
+      }
+
       switch (newDisplay) {
         case Breakpoints.HandsetPortrait:
         case Breakpoints.HandsetLandscape:
@@ -65,7 +70,7 @@ export class AppComponent implements OnInit {
   }
 
   onActivate(component: any) {
-    if (this.sidenav.mode === 'over') { this.sidenav.close(); }
+    if (this.sidenav?.mode === 'over') { this.sidenav?.close(); }
     this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
     this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
     this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];

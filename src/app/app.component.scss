@@ -8,7 +8,7 @@
 }
 
 #content.dark {
-    background-color: $dark-article-background;     
+    background-color: $dark-article-background;
     color: $white;
 }
 
@@ -19,7 +19,7 @@
     justify-content: center;
 }
 
-.article-container {    
+.article-container {
     max-width: 980px;
     padding: 48px 16px;
 }
@@ -33,7 +33,7 @@
     flex-direction: column;
     width: 100%;
     z-index: 3000;
-    position: fixed;  
+    position: fixed;
 }
 
 #header {
@@ -45,11 +45,11 @@
 }
 
 #header-container.light {
-    background-color: $white; 
+    background-color: $white;
 }
 
 #header-container.dark {
-    background-color: $dark-background; 
+    background-color: $dark-background;
 }
 
 .profile-name {
@@ -69,7 +69,7 @@
     margin-right: auto;
 
     img {
-        max-width: 36px; 
-        max-height: 36px; 
+        max-width: 36px;
+        max-height: 36px;
     }
 }

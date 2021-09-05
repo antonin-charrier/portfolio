@@ -1,14 +1,57 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
-import { MatIconRegistry, MatDialog } from '@angular/material';
-import { DomSanitizer } from '@angular/platform-browser';
-import { ResumeComponent } from 'src/app/shared/components/dialogs/resume/resume.component';
-import { ContactInfoComponent } from 'src/app/shared/components/dialogs/contact-info/contact-info.component';
-import { ThemeService } from '../services/theme.service';
 import { Breakpoints } from '@angular/cdk/layout';
-import { DisplayService } from '../services/breakpoint.service';
-import { Router, NavigationEnd } from '@angular/router';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
+import { NavigationEnd, Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 import { timer } from 'rxjs';
+import { ContactInfoComponent } from 'src/app/shared/dialogs/contact-info/contact-info.component';
+import { ResumeComponent } from 'src/app/shared/dialogs/resume/resume.component';
+import { DisplayService } from '../services/display.service';
+import { ThemeService } from '../services/theme.service';
+
+const ICON: string = `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  width="510px" height="510px" viewBox="0 0 510 510" style="enable-background:new 0 0 510 510;" xml:space="preserve">
+<g>
+ <g id="post-linkedin">
+   <path d="M459,0H51C22.95,0,0,22.95,0,51v408c0,28.05,22.95,51,51,51h408c28.05,0,51-22.95,51-51V51C510,22.95,487.05,0,459,0z
+      M153,433.5H76.5V204H153V433.5z M114.75,160.65c-25.5,0-45.9-20.4-45.9-45.9s20.4-45.9,45.9-45.9s45.9,20.4,45.9,45.9
+     S140.25,160.65,114.75,160.65z M433.5,433.5H357V298.35c0-20.399-17.85-38.25-38.25-38.25s-38.25,17.851-38.25,38.25V433.5H204
+     V204h76.5v30.6c12.75-20.4,40.8-35.7,63.75-35.7c48.45,0,89.25,40.8,89.25,89.25V433.5z"/>
+ </g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>`
 
 @Component({
   selector: 'app-sidenav',
@@ -16,26 +59,29 @@ import { timer } from 'rxjs';
   styleUrls: ['./sidenav.component.scss']
 })
 export class SidenavComponent implements OnInit {
+  private _isDarkTheme = false;
+  private resumeDialogDimensions: { height: string, width: string} = { height: '80vh', width: '65vw' };
+  private contactDialogDimensions: { height: string, width: string} = { height: '40vh', width: '45vw' };
   public isProjectsExpanded = false;
   public isTechnicalSkillsExpanded = false;
   public isHumanSkillsExpanded = false;
   public isOver = false;
-  private _isDarkTheme = false;
   public parent = '';
+
   @Output()
   public sidenavToggled = new EventEmitter<boolean>();
-  private resumeDialogDimensions: { height: string, width: string} = { height: '80vh', width: '65vw' };
-  private contactDialogDimensions: { height: string, width: string} = { height: '40vh', width: '45vw' };
 
   constructor(
+    private matIconRegistry:MatIconRegistry,
+    private domSanitizer:DomSanitizer,
     private translateService: TranslateService,
-    private matIconRegistry: MatIconRegistry,
-    private domSanitizer: DomSanitizer,
     private dialog: MatDialog,
     private themeService: ThemeService,
     private displayService: DisplayService,
     private router: Router
-  ) { }
+  ){
+    this.generateIcons(['linkedin', 'github', 'moon', 'sun', 'route']);
+  }
 
   get isDarkTheme(): boolean {
     return this._isDarkTheme;
@@ -44,26 +90,6 @@ export class SidenavComponent implements OnInit {
   ngOnInit() {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
-    this.matIconRegistry.addSvgIcon(
-      `linkedin`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/linkedin.svg')
-    );
-    this.matIconRegistry.addSvgIcon(
-      `github`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/github.svg')
-    );
-    this.matIconRegistry.addSvgIcon(
-      `moon`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/moon.svg')
-    );
-    this.matIconRegistry.addSvgIcon(
-      `sun`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/sun.svg')
-    );
-    this.matIconRegistry.addSvgIcon(
-      `route`,
-      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/icons/route.svg')
-    );
 
     this.displayService.breakpoint.subscribe(newDisplay => {
       switch (newDisplay) {
@@ -110,7 +136,13 @@ export class SidenavComponent implements OnInit {
           case '/projects/web-agent':
             this.isProjectsExpanded = true;
             this.parent = 'projects';
-            timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = 0);
+            timer(100).subscribe(() => {
+              let scrollList = document.getElementById('scroll-list');
+              if (!scrollList) {
+                return;
+              }
+              scrollList.scrollTop = 0
+            });
             break;
           case '/technical-skills/android':
           case '/technical-skills/dot-net-core-web-api':
@@ -119,7 +151,13 @@ export class SidenavComponent implements OnInit {
           case '/technical-skills/notions-of-architecture':
             this.isTechnicalSkillsExpanded = true;
             this.parent = 'technical-skills';
-            timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = this.isProjectsExpanded ? 220 : 20);
+            timer(100).subscribe(() => {
+              let scrollList = document.getElementById('scroll-list');
+              if (!scrollList) {
+                return;
+              }
+              scrollList.scrollTop = this.isProjectsExpanded ? 220 : 20;
+            });
             break;
           case '/human-skills/autonomy':
           case '/human-skills/creativity':
@@ -128,7 +166,13 @@ export class SidenavComponent implements OnInit {
           case '/human-skills/team-leading':
             this.isHumanSkillsExpanded = true;
             this.parent = 'human-skills';
-            timer(100).subscribe(() => document.getElementById('scroll-list').scrollTop = 450);
+            timer(100).subscribe(() => {
+              let scrollList = document.getElementById('scroll-list');
+              if (!scrollList) {
+                return;
+              }
+              scrollList.scrollTop = 450;
+            });
             break;
           default:
             this.parent = '';
@@ -147,6 +191,17 @@ export class SidenavComponent implements OnInit {
     localStorage.setItem('lang', lang);
   }
 
+  private generateIcon(name: string) {
+    this.matIconRegistry.addSvgIcon(
+      name,
+      this.domSanitizer.bypassSecurityTrustResourceUrl(`assets/icons/${name}.svg`)
+    );
+  }
+
+  private generateIcons(names: string[]) {
+    names.forEach(name => this.generateIcon(name));
+  }
+
   email() {
     window.location.href = 'mailto:charrier.antonin@yahoo.fr';
   }
@@ -154,10 +209,9 @@ export class SidenavComponent implements OnInit {
   linkedin() {
     switch (this.translateService.currentLang) {
       case 'fr':
-      default:
         window.open('https://www.linkedin.com/in/antonin-charrier/?locale=fr_FR', '_blank');
         break;
-      case 'en':
+      default:
         window.open('https://www.linkedin.com/in/antonin-charrier/?locale=en_US', '_blank');
         break;
     }

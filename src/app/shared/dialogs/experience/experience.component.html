@@ -1,0 +1,10 @@
+<h1 mat-dialog-title class="experience-title">
+  <span>{{ 'career.' + data.experience + '.title' | translate }}</span>
+  <span class="experience-duration">{{ 'career.' + data.experience + '.duration' | translate }}</span>
+</h1>
+<div mat-dialog-content class="experience-content">
+  <span>{{ 'career.' + data.experience + '.message' | translate }}</span>
+</div>
+<div mat-dialog-actions class="experience-actions">
+  <button mat-flat-button color="primary" [mat-dialog-close]="" cdkFocusInitial>{{ 'resume.close' | translate }}</button>
+</div>

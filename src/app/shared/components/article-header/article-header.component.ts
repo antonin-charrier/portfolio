@@ -1,6 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ThemeService } from 'src/app/core/services/theme.service';
-import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-article-header',
@@ -9,8 +8,8 @@ import { Observable } from 'rxjs';
 })
 export class ArticleHeaderComponent implements OnInit {
   private _isDarkTheme = false;
-  @Input() title: String;
-  @Input() subtitle: String;
+  @Input() title: string = '';
+  @Input() subtitle: string = '';
 
   constructor(
     private themeService: ThemeService
@@ -24,5 +23,4 @@ export class ArticleHeaderComponent implements OnInit {
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
   }
-
 }

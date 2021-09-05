@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SidenavComponent } from './sidenav/sidenav.component';
 import { SharedModule } from '../shared/shared.module';
 import { PageNotFoundModule } from './page-not-found/page-not-found.module';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +15,6 @@ import { PageNotFoundModule } from './page-not-found/page-not-found.module';
   ],
   exports: [
     SidenavComponent
-  ],
-  providers: []
+  ]
 })
 export class CoreModule { }
