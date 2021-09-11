@@ -3,16 +3,20 @@ import { Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { DisplayService } from 'src/app/core/services/display.service';
 import { ThemeService } from 'src/app/core/services/theme.service';
+import { HomeAnimations } from './home.animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: HomeAnimations
 })
 export class HomeComponent implements OnInit {
   public isSmallDevice = false;
   public keywords: string[] = [];
   private _isDarkTheme = false;
+  public isMainExpanded = false;
+  public isBgExpanded = false;
 
   constructor(
     private displayService: DisplayService,
@@ -67,5 +71,21 @@ export class HomeComponent implements OnInit {
     this.translateService.get('home.keywords').subscribe((translations: { [s: string]: any; } | ArrayLike<any>) => {
       this.keywords = this.repeat(this.shuffle(Object.values(translations)), 2);
     });
+  }
+
+  public mainDelayedEnter() {
+    this.isMainExpanded = true;
+  }
+
+  public mainLeave() {
+    this.isMainExpanded = false;
+  }
+
+  public bgStill() {
+    this.isBgExpanded = !this.isMainExpanded;
+  }
+
+  public bgMove() {
+    this.isBgExpanded = false;
   }
 }

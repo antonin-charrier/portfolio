@@ -12,6 +12,10 @@ import { ExperienceComponent } from './dialogs/experience/experience.component';
 import { ContactInfoComponent } from './dialogs/contact-info/contact-info.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DelayedHoverDirective } from './directives/delayed-hover.directive';
+import { MouseStillDirective } from './directives/mouse-still.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     RedirectsComponent,
     ResumeComponent,
     ExperienceComponent,
-    ContactInfoComponent
+    ContactInfoComponent,
+    DelayedHoverDirective,
+    MouseStillDirective
   ],
   imports: [
     CommonModule,
@@ -29,7 +35,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     LayoutModule,
     ScrollingModule,
     TranslateModule,
-    PdfViewerModule
+    PdfViewerModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   exports: [
     MaterialModule,
@@ -39,11 +47,15 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     ScrollingModule,
     TranslateModule,
     PdfViewerModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     RedirectsComponent,
     ResumeComponent,
     ContactInfoComponent,
     ExperienceComponent,
-    ArticleHeaderComponent
+    ArticleHeaderComponent,
+    DelayedHoverDirective,
+    MouseStillDirective
   ]
 })
 export class SharedModule { }

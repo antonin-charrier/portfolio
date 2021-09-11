@@ -1,8 +1,5 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { DisplayService } from './core/services/display.service';
 import { ThemeService } from './core/services/theme.service';
 
 @Component({
@@ -12,17 +9,9 @@ import { ThemeService } from './core/services/theme.service';
 })
 export class AppComponent {
   private _isDarkTheme = false;
-  public linkedProjects: string[] = [];
-  public linkedTechnicalSkills: string[] = [];
-  public linkedHumanSkills: string[] = [];
-  public isMenuOpened = false;
-
-  @ViewChild('sidenav') sidenav: MatSidenav | undefined;
 
   constructor(
     private translateService: TranslateService,
-    private breakpointObserver: BreakpointObserver,
-    private displayService: DisplayService,
     private themeService: ThemeService
   ) {
     this.translateService.setDefaultLang('fr');
@@ -45,34 +34,5 @@ export class AppComponent {
 
     this._isDarkTheme = this.themeService.isDarkTheme.value;
     this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
-
-    this.displayService.detectBreakpoints(this.breakpointObserver);
-    this.displayService.breakpoint.subscribe(newDisplay => {
-      if (!this.sidenav) {
-        return;
-      }
-
-      switch (newDisplay) {
-        case Breakpoints.HandsetPortrait:
-        case Breakpoints.HandsetLandscape:
-        case Breakpoints.TabletPortrait:
-          this.sidenav.mode = 'over';
-          this.sidenav.close();
-          break;
-        case Breakpoints.TabletLandscape:
-        case Breakpoints.WebPortrait:
-        case Breakpoints.WebLandscape:
-          this.sidenav.mode = 'side';
-          this.sidenav.open();
-          break;
-      }
-    });
-  }
-
-  onActivate(component: any) {
-    if (this.sidenav?.mode === 'over') { this.sidenav?.close(); }
-    this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
-    this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
-    this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];
   }
 }
