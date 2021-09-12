@@ -1,11 +1,11 @@
-<div id="home-background"
+<div id="home-container">
+  <div id="home-background"
+    [@mainExpand]="isMainExpanded ? 'expanded' : 'retracted'"
+    [@bgExpand]="isBgExpanded ? 'expanded' : 'retracted'"
     [ngClass]="{ 'home-slideshow' : isBgExpanded }"
-    (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()">
+    (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()"></div>
   <div id="triangle-main"
-      [@mainExpand]="isMainExpanded ? 'expanded' : 'retracted'"
-      [@bgExpand]="isBgExpanded ? 'expanded' : 'retracted'"
       (delayed-hover)="mainDelayedEnter()" [delay]="250" (mouseout)="mainLeave()">
-
+    <p id="antonin-charrier">Antonin Charrier</p>
   </div>
-
 </div>

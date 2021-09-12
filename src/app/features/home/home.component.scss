@@ -1,30 +1,90 @@
 @import '../../../assets/styles/variables.scss';
 
+$asakusa: "../../../assets/img/background/asakusa.jpg";
+$auckland: "../../../assets/img/background/asakusa.jpg";
+$samarkand: "../../../assets/img/background/asakusa.jpg";
+$montreal:  "../../../assets/img/background/montreal.jpg";
+$dublin:  "../../../assets/img/background/asakusa.jpg";
+$bg-polygon: polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%);
+
+#home-container {
+  overflow:hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
 #home-background {
-  background: url($asakusa) no-repeat center center fixed;
+  height:100vh;
+  width:100vw;
+  float:left;
+  float:right;
+  background: black url($asakusa) center top no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  width: 100vw;
-  height: 100vh;
+  shape-outside: $bg-polygon;
+  clip-path: $bg-polygon;
+  shape-margin: 20px;
 }
 
 #triangle-main {
 	width: 100%;
 	height: 100%;
   background: $light-primary;
-  clip-path: polygon(0 0, 80% 0, 80% 0, 0 80%);
+  padding-top: 32px;
 }
 
 .home-slideshow {
-  animation: slideshow 20s ease-in-out infinite;
+  animation: slideshow 60s cubic-bezier(1,0,0,1) infinite;
 }
 
 @keyframes slideshow {
-  0% { background: url($asakusa) no-repeat center center fixed; }
-  25% { background: url($auckland) no-repeat center center fixed; }
-  50% { background: url($samarkand) no-repeat center center fixed; }
-  75% { background: url($montreal) no-repeat center center fixed; }
-  100% { background: url($dublin) no-repeat center center fixed; }
+  0% {
+    background: black url($asakusa) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  20% {
+    background: red url($auckland) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  40% {
+    background: green url($samarkand) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  60% {
+    background: yellow url($montreal) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  80% {
+    background: blue url($dublin) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  100% {
+    background: black url($asakusa) center top no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+#antonin-charrier {
+  font-size: 48px;
+  text-align: right;
 }

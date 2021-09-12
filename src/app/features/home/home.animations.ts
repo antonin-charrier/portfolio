@@ -1,12 +1,18 @@
-import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
+
+const bgPolygon = 'polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%)';
+const bgPolygonLarge = 'polygon(15% 0, 100% 0, 100% 100%, 0% 100%, 0 15%)';
+const bgPolygonSmall = 'polygon(90% 0, 100% 0, 100% 100%, 80% 100%, 80% 100%)';
 
 export const HomeAnimations = [
   trigger('mainExpand', [
     state('expanded', style({
-      clipPath: 'polygon(0 0, 0 800%, 90% 0)'
+      clipPath: bgPolygonSmall,
+      shapeOutside: bgPolygonSmall
     })),
     state('retracted', style({
-      clipPath: 'polygon(0 0, 0 80%, 80% 0)'
+      clipPath: bgPolygon,
+      shapeOutside: bgPolygon
     })),
     transition('expanded => retracted', [
       animate('.2s linear')
@@ -17,10 +23,12 @@ export const HomeAnimations = [
   ]),
   trigger('bgExpand', [
     state('expanded', style({
-      clipPath: 'polygon(0 0, 0 20%, 20% 0)'
+      clipPath: bgPolygonLarge,
+      shapeOutside: bgPolygonLarge
     })),
     state('retracted', style({
-      clipPath: 'polygon(0 0, 0 80%, 80% 0)'
+      clipPath: bgPolygon,
+      shapeOutside: bgPolygon
     })),
     transition('expanded => retracted', [
       animate('.2s linear')
