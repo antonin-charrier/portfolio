@@ -1,6 +1,6 @@
 <div id="polygon-container">
   <div id="polygon-background"
-    [@bgPolygonExpandShrink]="currentDisplay"
+    [@backgroundExpandShrink]="currentDisplay"
     [ngClass]="{ 'home-slideshow' : currentDisplay === 'background' }"
     (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()"></div>
   <div id="polygon-main"
@@ -17,7 +17,8 @@
      </li>
     </ul>
   </div>
-  <div id="polygon-content">
+  <div id="polygon-content"
+    [@contentExpandShrink]="currentDisplay">
     <router-outlet></router-outlet>
   </div>
 </div>

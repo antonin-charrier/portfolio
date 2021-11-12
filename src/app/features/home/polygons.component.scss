@@ -34,6 +34,20 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   padding-top: 32px;
 }
 
+#polygon-content {
+  height:100%;
+  width:100%;
+  float:left;
+  float:right;
+  color: $dark-accent;
+  background: $dark-primary;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  shape-margin: 20px;
+}
+
 .home-slideshow {
   animation: slideshow 60s cubic-bezier(1,0,0,1) infinite;
 }
@@ -105,11 +119,4 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   a:hover {
     text-decoration: underline;
   }
-}
-
-#polygon-content {
-	width: 100%;
-	height: 100%;
-  color: $dark-accent;
-  background: $dark-primary;
 }
