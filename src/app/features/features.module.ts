@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
+import { PolygonsComponent } from './home/polygons.component';
 import { SharedModule } from '../shared/shared.module';
 import { WipComponent } from './wip/wip.component';
 import { AboutComponent } from './about/about.component';
@@ -12,7 +12,7 @@ import { TechnicalSkillsModule } from './technical-skills/technical-skills.modul
 
 @NgModule({
   declarations: [
-    HomeComponent,
+    PolygonsComponent,
     WipComponent,
     AboutComponent,
     CareerComponent,
@@ -24,6 +24,9 @@ import { TechnicalSkillsModule } from './technical-skills/technical-skills.modul
     HumanSkillsModule,
     ProjectsModule,
     TechnicalSkillsModule
+  ],
+  exports: [
+    PolygonsComponent,
   ]
 })
 export class FeaturesModule { }

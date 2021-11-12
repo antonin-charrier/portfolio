@@ -5,17 +5,16 @@ $auckland: "../../../assets/img/background/asakusa.jpg";
 $samarkand: "../../../assets/img/background/asakusa.jpg";
 $montreal:  "../../../assets/img/background/montreal.jpg";
 $dublin:  "../../../assets/img/background/asakusa.jpg";
-$bg-polygon: polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%);
 
-#home-container {
+#polygon-container {
   overflow:hidden;
   height: 100vh;
   width: 100vw;
 }
 
-#home-background {
-  height:100vh;
-  width:100vw;
+#polygon-background {
+  height:100%;
+  width:100%;
   float:left;
   float:right;
   background: black url($asakusa) center top no-repeat;
@@ -23,14 +22,14 @@ $bg-polygon: polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%);
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  shape-outside: $bg-polygon;
-  clip-path: $bg-polygon;
   shape-margin: 20px;
 }
 
-#triangle-main {
+#polygon-main {
 	width: 100%;
 	height: 100%;
+  text-align: right;
+  color: $light-accent;
   background: $light-primary;
   padding-top: 32px;
 }
@@ -84,7 +83,33 @@ $bg-polygon: polygon(80% 0, 100% 0, 100% 100%, 0% 100%, 0 80%);
   }
 }
 
-#antonin-charrier {
+#home-title {
   font-size: 48px;
-  text-align: right;
+}
+
+#home-subtitle {
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+#home-nav {
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 48px;
+  list-style-type: none;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+#polygon-content {
+	width: 100%;
+	height: 100%;
+  color: $dark-accent;
+  background: $dark-primary;
 }

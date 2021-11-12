@@ -20,14 +20,13 @@ export class MouseStillDirective implements OnInit {
 	constructor(private readonly element: ElementRef) {}
 
 	ngOnInit() {
-		const leave$ = fromEvent(this.element.nativeElement, 'mouseleave').pipe(tap(() => this.isOver = false));
-		const over$ = fromEvent(this.element.nativeElement, 'mouseover').pipe(tap(() => this.isOver = true));
 		const move$ = fromEvent(this.element.nativeElement, 'mousemove');
 		const still$ = NEXT.pipe(delay(this.delay));
 
-		merge(leave$, over$)
-			.pipe(untilDestroyed(this))
-			.subscribe();
+		fromEvent(this.element.nativeElement, 'mouseleave')
+      .pipe(tap(() => this.isOver = false), untilDestroyed(this)).subscribe();
+		fromEvent(this.element.nativeElement, 'mouseover')
+      .pipe(tap(() => this.isOver = true), untilDestroyed(this)).subscribe();
 
     merge(move$, still$)
 			.pipe(

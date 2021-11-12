@@ -1,0 +1,23 @@
+<div id="polygon-container">
+  <div id="polygon-background"
+    [@bgPolygonExpandShrink]="currentDisplay"
+    [ngClass]="{ 'home-slideshow' : currentDisplay === 'background' }"
+    (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()"></div>
+  <div id="polygon-main"
+      (delayed-hover)="mainDelayedEnter()" [hoverDelay]="250" (mouseleave)="mainLeave()">
+    <div id="title-container" *ngIf="currentDisplay !== 'background'">
+      <p id="home-title">Antonin Charrier</p>
+      <p id="home-subtitle">Mobile developer</p>
+    </div>
+    <ul id="home-nav" [@navMenuDisplay]="menuItems.length"
+      *ngIf="currentDisplay !== 'default' && currentDisplay !== 'background'">
+      <li *ngFor="let menuItem of menuItems">
+        <a [routerLink]="menuItem.link" routerLinkActive="active"
+          (click)="linkClick(menuItem)" (mouseover)="linkHover(menuItem)">{{ menuItem.text }}</a>
+     </li>
+    </ul>
+  </div>
+  <div id="polygon-content">
+    <router-outlet></router-outlet>
+  </div>
+</div>

@@ -10,9 +10,7 @@ import { delay, map, switchMap } from 'rxjs/operators';
 	selector: '[delayed-hover]',
 })
 export class DelayedHoverDirective implements OnInit {
-	@Input()
-	delay = 1500;
-
+	@Input() hoverDelay = 1500;
 	@Output('delayed-hover') hoverEvent = new EventEmitter();
 
 	constructor(private readonly element: ElementRef) {}
@@ -28,7 +26,7 @@ export class DelayedHoverDirective implements OnInit {
 					if (!isOver) {
 						return of(false);
 					}
-					return of(true).pipe(delay(this.delay));
+					return of(true).pipe(delay(this.hoverDelay));
 				})
 			)
 			.subscribe(isOver => {
