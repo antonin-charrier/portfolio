@@ -16,6 +16,11 @@
           (click)="linkClick(menuItem)" (mouseover)="linkHover(menuItem)">{{ menuItem.text }}</a>
      </li>
     </ul>
+    <div id="home-link-container">
+      <a id="home-link" [routerLink]="['/']" routerLinkActive="active">
+        <span id="home-link-text">Home</span>
+      </a>
+    </div>
   </div>
   <div id="polygon-content"
     [@contentExpandShrink]="currentDisplay">

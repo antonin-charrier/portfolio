@@ -17,11 +17,15 @@ export class PolygonsComponent {
   ]
 
   public mainDelayedEnter() {
-    this.currentDisplay = 'main';
+    if (this.currentDisplay === 'default' || this.currentDisplay === 'background') {
+      this.currentDisplay = 'main';
+    }
   }
 
   public mainLeave() {
-    this.currentDisplay = 'default';
+    if (this.currentDisplay !== 'hover-content' && this.currentDisplay !== 'full-content') {
+      this.currentDisplay = 'default';
+    }
   }
 
   public bgStill() {
@@ -33,7 +37,9 @@ export class PolygonsComponent {
   }
 
   public linkHover(menuItem: MenuItem) {
-    this.currentDisplay = 'hover-content';
+    if (this.currentDisplay !== 'full-content') {
+      this.currentDisplay = 'hover-content';
+    }
   }
 
   public linkClick(menuItem: MenuItem) {
