@@ -1,30 +1,51 @@
-@import '~@angular/material/theming';
+@use '~@angular/material' as mat;
 
-@include mat-core();
+@import "~@angular/material/theming";
 
-$light-primary-palette: mat-palette($mat-indigo);
-$light-accent-palette:  mat-palette($mat-indigo, 200);
-$light-warn-palette:    mat-palette($mat-red);
-$light-theme:   mat-light-theme($light-primary-palette, $light-accent-palette, $light-warn-palette);
+@include mat.core();
 
-@include angular-material-theme($light-theme);
-
-$app-typography: mat-typography-config(
-  $font-family:   'Roboto, monospace',
-  $headline:      mat-typography-level(28px, 36px, 550),
-  $title:         mat-typography-level(20px, 26px, 200),
-  $subheading-2:  mat-typography-level(20px, 28px, 400),
-  $subheading-1:  mat-typography-level(18px, 24px, 400),
-  $body-1:        mat-typography-level(16px, 24px, 400)
+$primary-palette: (
+ 100: #3c4559,
+ 500: #141e30,
+ 900: #000008,
+ contrast: (
+  100: #e5eeff,
+  500: #e5eeff,
+  900: #e5eeff
+  )
 );
 
-@include angular-material-typography($app-typography);
+$accent-palette: (
+ 100: #6d635e,
+ 500: #423934,
+ 900: #1c130d,
+ contrast: (
+  100: #f2e3e3,
+  500: #f2e3e3,
+  900: #f2e3e3
+ )
+);
 
-$dark-primary-palette: mat-palette($mat-blue-gray);
-$dark-accent-palette:  mat-palette($mat-blue-gray, 200);
-$dark-warn-palette:    mat-palette($mat-deep-orange);
-$dark-theme:   mat-dark-theme($dark-primary-palette, $dark-accent-palette, $dark-warn-palette);
+$primary: mat.define-palette($primary-palette, 500, 100, 900);
+$accent: mat.define-palette($accent-palette, 500, 100, 900);
 
-.dark-theme {
-  @include angular-material-theme($dark-theme);
+
+$theme: mat.define-light-theme((
+  color: (
+    primary: $primary,
+    accent: $accent
+  )
+));
+
+@include mat.all-component-themes($theme);
+
+:root {
+  --color-primary: #{mat-color($primary)};
+  --color-primary-light: #{mat-color($primary, 100)};
+  --color-primary-dark: #{mat-color($primary, 900)};
+  --color-primary-contrast: #{mat-contrast($primary, 500)};
+  --color-accent: #{mat-color($accent)};
+  --color-accent-light: #{mat-color($accent, 100)};
+  --color-accent-dark: #{mat-color($accent, 900)};
+  --color-accent-contrast: #{mat-contrast($accent, 500)};
 }

@@ -29,8 +29,9 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 	width: 100%;
 	height: 100%;
   text-align: right;
-  color: $light-accent;
-  background: $light-primary;
+  color: var(--color-primary-contrast);
+  background: var(--color-primary);
+  font-family: Montserrat;
   padding-top: 32px;
 }
 
@@ -39,8 +40,9 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   width:100%;
   float:left;
   float:right;
-  color: $dark-accent;
-  background: $dark-primary;
+  color: var(--color-primary-contrast);
+  background: var(--color-primary);
+  font-family: Montserrat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -101,9 +103,14 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   font-size: 48px;
 }
 
+#title-container {
+  padding-right: var(--menuPaddingRight);
+}
+
 #home-subtitle {
   font-size: 24px;
   margin-top: 24px;
+  color: var(--color-accent-light);
 }
 
 #home-nav {
@@ -111,6 +118,7 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   line-height: 48px;
   margin-top: 48px;
   list-style-type: none;
+  padding-right: var(--menuPaddingRight);
 
   a {
     color: inherit;
@@ -119,4 +127,10 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   a:hover {
     text-decoration: underline;
   }
+}
+
+#home-link-container {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
 }

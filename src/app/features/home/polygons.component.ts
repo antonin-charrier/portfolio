@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
+import { Router } from '@angular/router';
 import { PolygonsAnimations } from './polygons.animations';
 
 @Component({
@@ -8,6 +9,14 @@ import { PolygonsAnimations } from './polygons.animations';
   animations: PolygonsAnimations
 })
 export class PolygonsComponent {
+  @HostBinding("style.--menuPaddingRight")
+  menuPaddingRight: string = '50px';
+
+  constructor(
+    private router: Router
+  ) { }
+
+  private isMainBeingAnimated = false;
   public currentDisplay: CurrentDisplay = 'default';
   public menuItems =  [
     { link: '/about', text: 'About ⮞' },
@@ -19,6 +28,10 @@ export class PolygonsComponent {
   public mainDelayedEnter() {
     if (this.currentDisplay === 'default' || this.currentDisplay === 'background') {
       this.currentDisplay = 'main';
+      this.isMainBeingAnimated = true;
+      setTimeout(() => {
+        this.isMainBeingAnimated = false;
+      }, 300);
     }
   }
 
@@ -37,13 +50,28 @@ export class PolygonsComponent {
   }
 
   public linkHover(menuItem: MenuItem) {
+    if (this.isMainBeingAnimated) return;
+
     if (this.currentDisplay !== 'full-content') {
       this.currentDisplay = 'hover-content';
     }
   }
 
+  public linkUnhover(menuItem: MenuItem) {
+    if (this.isMainBeingAnimated) return;
+
+    if (this.currentDisplay !== 'full-content') {
+      this.currentDisplay = 'main';
+    }
+  }
+
   public linkClick(menuItem: MenuItem) {
     this.currentDisplay = 'full-content';
+  }
+
+  public home() {
+    this.router.navigate(['/']);
+    this.currentDisplay = 'main';
   }
 }
 

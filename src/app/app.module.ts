@@ -6,12 +6,8 @@ import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { FeaturesModule } from './features/features.module';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
-import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-export const HttpLoaderFactory = (httpClient: HttpClient) =>
-  new TranslateHttpLoader(httpClient, '../assets/i18n/', '.json');
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -23,14 +19,7 @@ export const HttpLoaderFactory = (httpClient: HttpClient) =>
     FeaturesModule,
     SharedModule,
     CoreModule,
-    TranslateModule.forRoot({
-      loader: {
-        provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
-        deps: [HttpClient]
-      },
-      defaultLanguage: 'fr'
-    })
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
