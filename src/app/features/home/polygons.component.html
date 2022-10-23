@@ -5,7 +5,7 @@
     (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()"></div>
   <div id="polygon-main"
       (delayed-hover)="mainDelayedEnter()" [hoverDelay]="100" (mouseleave)="mainLeave()">
-    <div id="title-container" *ngIf="currentDisplay !== 'background'">
+    <div id="title-container">
       <p id="home-title">Antonin Charrier</p>
       <p id="home-subtitle">Freelance developer</p>
     </div>
@@ -17,15 +17,15 @@
           (mouseout)="linkUnhover(menuItem)">{{ menuItem.text }}</a>
      </li>
     </ul>
-    <div id="home-link-container" *ngIf="currentDisplay == 'full-content'">
+    <div id="home-link-container" *ngIf="currentDisplay === 'full-content'">
       <button id="home-link" mat-fab color="accent"
         aria-label="Home" (click)="home()">
-        <mat-icon >home</mat-icon>
+        <mat-icon>home</mat-icon>
       </button>
     </div>
   </div>
-  <div id="polygon-content"
-    [@contentExpandShrink]="currentDisplay">
+  <div id="polygon-content" [@contentExpandShrink]="currentDisplay"
+    *ngIf="currentDisplay === 'full-content'">
     <router-outlet></router-outlet>
   </div>
 </div>

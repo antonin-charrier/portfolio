@@ -1,184 +1,235 @@
 import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
 
-const backgroundDefaultClipPath =
-  'polygon(40% 0, 100% 0, 100% 100%, 0% 100%, 0% 60%)';
-const backgroundExpandedClipPath =
+export const duration = {
+  defaultMain1: 55,
+  defaultMain2: 95,
+  mainFull1: 170,
+  mainFull2: 30,
+  bgDefaultTotal: 150,
+}
+
+// Mode 'background'
+const bgBackgroundClipPath =
   'polygon(5% 0, 100% 0, 100% 100%, 0% 100%, 0% 5%)';
-const backgroundMainInterClipPath =
+const contentBackgroundClipPathAndShapeOutside = 'polygon(0 0, 0 0, 0 100%, 0 100%)';
+
+// Mode 'default'
+const bgDefaultClipPath =
+  'polygon(40% 0, 100% 0, 100% 100%, 0% 100%, 0% 60%)';
+const bgDefaultShapeOutside =
+  'polygon(calc(40% - var(--menuPaddingRight)) 0, 100% 0,' +
+  '100% 100%, 0% 100%, calc(0% - var(--menuPaddingRight)) 60%)';
+const contentDefaultClipPathAndShapeOutside = 'polygon(0 0, 40% 0, 0 60%, 0 60%)';
+
+// Intermediate between mode 'default' and mode 'main'
+const bgDefaultMainInterClipPath =
   'polygon(45% 0, 100% 0, 100% 100%, 0% 100%, 0% 100%)';
-const backgroundMainClipPath =
+const bgDefaultMainInterShapeOutside =
+  'polygon(calc(45% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%,' +
+  'calc(0% - var(--menuPaddingRight)) 100%, calc(0% - var(--menuPaddingRight)) 100%)';
+const contentDefaultMainInterClipPathAndShapeOutside = 'polygon(0 0, 50% 0, 0% 100%, 0 100%)';
+
+// Mode 'main'
+const bgMainClipPath =
   'polygon(50% 0, 100% 0, 100% 100%, 40% 100%, 40% 100%)';
-const backgroundShrinkedClipPath =
-  'polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 100%)';
+const bgMainShapeOutside =
+  'polygon(calc(50% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%,' +
+  'calc(40% - var(--menuPaddingRight)) 100%, calc(40% - var(--menuPaddingRight)) 100%)';
+const contentMainClipPathAndShapeOutside = 'polygon(0 0, 60% 0, 40% 100%, 0 100%)';
 
-const backgroundDefaultShapeOutside =
-  'polygon(calc(40% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%, 0% 100%, calc(0% - var(--menuPaddingRight)) 60%)';
-const backgroundMainInterShapeOutside =
-  'polygon(calc(45% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%, calc(0% - var(--menuPaddingRight)) 100%, calc(0% - var(--menuPaddingRight)) 100%)';
-const backgroundMainShapeOutside =
-  'polygon(calc(50% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%, calc(40% - var(--menuPaddingRight)) 100%, calc(40% - var(--menuPaddingRight)) 100%)';
-const backgroundShrinkedShapeOutside =
-  'polygon(calc(100% - var(--menuPaddingRight)) 0, calc(100% - var(--menuPaddingRight)) 0, calc(100% - var(--menuPaddingRight)) 100%, calc(100% - var(--menuPaddingRight)) 100%, calc(100% - var(--menuPaddingRight)) 100%)';
+// Intermediate between mode 'main' and mode 'full-content'
+const bgMainFullInterClipPath =
+  'polygon(100% 0, 110% 0, 100% 100%, 90% 100%, 90% 100%)';
+const bgMainFullInterShapeOutside =
+  'polygon(calc(100% - var(--menuPaddingRight)) 0,' +
+  'calc(110% - var(--menuPaddingRight)) 0, calc(100% - var(--menuPaddingRight)) 100%,' +
+  'calc(90% - var(--menuPaddingRight)) 100%, calc(90% - var(--menuPaddingRight)) 100%)';
+const contentFullInterClipPathAndShapeOutside = 'polygon(0 0, 100% 0, 80% 100%, 0 100%)';
 
+// Mode 'full-content'
+const bgFullClipPath =
+  'polygon(110% 0, 120% 0, 110% 100%, 100% 100%, 100% 100%)';
+const bgFullShapeOutside =
+  'polygon(calc(110% - var(--menuPaddingRight)) 0,' +
+  'calc(120% - var(--menuPaddingRight)) 0, calc(110% - var(--menuPaddingRight)) 100%,' +
+  'calc(100% - var(--menuPaddingRight)) 100%, calc(100% - var(--menuPaddingRight)) 100%)';
+const contentFullClipPathAndShapeOutside = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
 
-const contentShrinkedClipPath = 'polygon(0 0, 0 0, 0 100%, 0 100%)';
-const contentHoverInterClipPath = 'polygon(0 0, 20% 0, 0% 100%, 0 100%)';
-const contentHoverClipPath = 'polygon(0 0, 60% 0, 40% 100%, 0 100%)';
-const contentFullInterClipPath = 'polygon(0 0, 100% 0, 80% 100%, 0 100%)';
-const contentFullClipPath = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
-
-const backgroundDefaultToMainTransition = [
+const bgDefaultToMainTransition = [
   style({
-    clipPath: backgroundDefaultClipPath,
-    shapeOutside: backgroundDefaultShapeOutside
+    clipPath: bgDefaultClipPath,
+    shapeOutside: bgDefaultShapeOutside
   }),
-  animate('.1s linear',
+  animate(duration.defaultMain1 + 'ms linear',
   style({
-    clipPath: backgroundMainInterClipPath,
-    shapeOutside: backgroundMainInterShapeOutside
+    clipPath: bgDefaultMainInterClipPath,
+    shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate('.15s linear',
+  animate(duration.defaultMain2 + 'ms linear',
   style({
-    clipPath: backgroundMainClipPath,
-    shapeOutside: backgroundMainShapeOutside
+    clipPath: bgMainClipPath,
+    shapeOutside: bgMainShapeOutside
   }))
 ];
-const backgroundMainToDefaultTransition = [
+const contentDefaultToMainTransition = [
   style({
-    clipPath: backgroundMainClipPath,
-    shapeOutside: backgroundMainShapeOutside
+    clipPath: contentDefaultClipPathAndShapeOutside,
+    shapeOutside: contentDefaultClipPathAndShapeOutside
   }),
-  animate('.15s linear',
+  animate(duration.defaultMain1 + 'ms linear',
   style({
-    clipPath: backgroundMainInterClipPath,
-    shapeOutside: backgroundMainInterShapeOutside
+    clipPath: contentDefaultMainInterClipPathAndShapeOutside,
+    shapeOutside: contentDefaultMainInterClipPathAndShapeOutside
   })),
-  animate('.1s linear',
+  animate(duration.defaultMain2 + 'ms linear',
   style({
-    clipPath: backgroundDefaultClipPath,
-    shapeOutside: backgroundDefaultShapeOutside
+    clipPath: contentMainClipPathAndShapeOutside,
+    shapeOutside: contentMainClipPathAndShapeOutside
   }))
 ];
-const contentShrinkedToHoverTransition = [
+const bgMainToDefaultTransition = [
   style({
-    clipPath: contentShrinkedClipPath,
-    shapeOutside: contentShrinkedClipPath
+    clipPath: bgMainClipPath,
+    shapeOutside: bgMainShapeOutside
   }),
-  animate('.05s linear',
+  animate(duration.defaultMain2 + 'ms linear',
   style({
-    clipPath: contentHoverInterClipPath,
-    shapeOutside: contentHoverInterClipPath
+    clipPath: bgDefaultMainInterClipPath,
+    shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate('.15s linear',
+  animate(duration.defaultMain1 + 'ms linear',
   style({
-    clipPath: contentHoverClipPath,
-    shapeOutside: contentHoverClipPath
+    clipPath: bgDefaultClipPath,
+    shapeOutside: bgDefaultShapeOutside
   }))
 ];
-const contentHoverToShrinkedTransition = [
+const contentMainToDefaultTransition = [
   style({
-    clipPath: contentHoverClipPath,
-    shapeOutside: contentHoverClipPath
+    clipPath: contentMainClipPathAndShapeOutside,
+    shapeOutside: contentMainClipPathAndShapeOutside
   }),
-  animate('.15s linear',
+  animate(duration.defaultMain2 + 'ms linear',
   style({
-    clipPath: contentHoverInterClipPath,
-    shapeOutside: contentHoverInterClipPath
+    clipPath: contentDefaultMainInterClipPathAndShapeOutside,
+    shapeOutside: contentDefaultMainInterClipPathAndShapeOutside
   })),
-  animate('.05s linear',
+  animate(duration.defaultMain1 + 'ms linear',
   style({
-    clipPath: contentShrinkedClipPath,
-    shapeOutside: contentShrinkedClipPath
+    clipPath: contentDefaultClipPathAndShapeOutside,
+    shapeOutside: contentDefaultClipPathAndShapeOutside
   }))
 ];
-const contentHoverToFullTransition = [
+const bgMainToFullTransition = [
   style({
-    clipPath: contentHoverClipPath,
-    shapeOutside: contentHoverClipPath
+    clipPath: bgMainClipPath,
+    shapeOutside: bgMainShapeOutside
   }),
-  animate('.25s linear',
+  animate(duration.mainFull1 + 'ms linear',
   style({
-    clipPath: contentFullInterClipPath,
-    shapeOutside: contentFullInterClipPath
+    clipPath: bgMainFullInterClipPath,
+    shapeOutside: bgMainFullInterShapeOutside
   })),
-  animate('.05s linear',
+  animate(duration.mainFull2 + 'ms linear',
   style({
-    clipPath: contentFullClipPath,
-    shapeOutside: contentFullClipPath
+    clipPath: bgFullClipPath,
+    shapeOutside: bgFullShapeOutside
   }))
 ];
-const contentFullToHoverTransition = [
+const contentMainToFullTransition = [
   style({
-    clipPath: contentFullClipPath,
-    shapeOutside: contentFullClipPath
+    clipPath: contentMainClipPathAndShapeOutside,
+    shapeOutside: contentMainClipPathAndShapeOutside
   }),
-  animate('.05s linear',
+  animate(duration.mainFull1 + 'ms linear',
   style({
-    clipPath: contentFullInterClipPath,
-    shapeOutside: contentFullInterClipPath
+    clipPath: contentFullInterClipPathAndShapeOutside,
+    shapeOutside: contentFullInterClipPathAndShapeOutside
   })),
-  animate('.25s linear',
+  animate(duration.mainFull2 + 'ms linear',
   style({
-    clipPath: contentHoverClipPath,
-    shapeOutside: contentHoverClipPath
+    clipPath: contentFullClipPathAndShapeOutside,
+    shapeOutside: contentFullClipPathAndShapeOutside
+  }))
+];
+const bgFullToMainTransition = [
+  style({
+    clipPath: bgFullClipPath,
+    shapeOutside: bgFullShapeOutside
+  }),
+  animate(duration.mainFull2 + 'ms linear',
+  style({
+    clipPath: bgMainFullInterClipPath,
+    shapeOutside: bgMainFullInterShapeOutside
+  })),
+  animate(duration.mainFull1 + 'ms linear',
+  style({
+    clipPath: bgMainClipPath,
+    shapeOutside: bgMainShapeOutside
+  }))
+];
+const contentFullToMainTransition = [
+  style({
+    clipPath: contentFullClipPathAndShapeOutside,
+    shapeOutside: contentFullClipPathAndShapeOutside
+  }),
+  animate(duration.mainFull2 + 'ms linear',
+  style({
+    clipPath: contentFullInterClipPathAndShapeOutside,
+    shapeOutside: contentFullInterClipPathAndShapeOutside
+  })),
+  animate(duration.mainFull1 + 'ms linear',
+  style({
+    clipPath: contentMainClipPathAndShapeOutside,
+    shapeOutside: contentMainClipPathAndShapeOutside
   }))
 ];
 
 export const PolygonsAnimations = [
   trigger('backgroundExpandShrink', [
     state('main', style({
-      clipPath: backgroundMainClipPath,
-      shapeOutside: backgroundMainShapeOutside
+      clipPath: bgMainClipPath,
+      shapeOutside: bgMainShapeOutside
     })),
     state('default', style({
-      clipPath: backgroundDefaultClipPath,
-      shapeOutside: backgroundDefaultShapeOutside
+      clipPath: bgDefaultClipPath,
+      shapeOutside: bgDefaultShapeOutside
     })),
     state('background', style({
-      clipPath: backgroundExpandedClipPath,
-      shapeOutside: backgroundExpandedClipPath
-    })),
-    state('hover-content', style({
-      clipPath: backgroundMainClipPath,
-      shapeOutside: backgroundMainShapeOutside
+      clipPath: bgBackgroundClipPath,
+      shapeOutside: bgBackgroundClipPath
     })),
     state('full-content', style({
-      clipPath: backgroundShrinkedClipPath,
-      shapeOutside: backgroundShrinkedShapeOutside
+      clipPath: bgFullClipPath,
+      shapeOutside: bgFullShapeOutside
     })),
-    transition('default => main', backgroundDefaultToMainTransition),
-    transition('main => default', backgroundMainToDefaultTransition),
-    transition('background <=> default', animate('.3s linear')),
-    transition('hover-content <=> main', animate('.1s linear')),
-    transition('full-content <=> hover-content', animate('.1s linear'))
+    transition('default => main', bgDefaultToMainTransition),
+    transition('main => default', bgMainToDefaultTransition),
+    transition('main => full-content', bgMainToFullTransition),
+    transition('full-content => main', bgFullToMainTransition),
+    transition('background <=> default', animate(duration.bgDefaultTotal + 'ms linear'))
   ]),
   trigger('contentExpandShrink', [
     state('main', style({
-      clipPath: contentShrinkedClipPath,
-      shapeOutside: contentShrinkedClipPath
+      clipPath: contentMainClipPathAndShapeOutside,
+      shapeOutside: contentMainClipPathAndShapeOutside
     })),
     state('default', style({
-      clipPath: contentShrinkedClipPath,
-      shapeOutside: contentShrinkedClipPath
+      clipPath: contentDefaultClipPathAndShapeOutside,
+      shapeOutside: contentDefaultClipPathAndShapeOutside
     })),
     state('background', style({
-      clipPath: contentShrinkedClipPath,
-      shapeOutside: contentShrinkedClipPath
-    })),
-    state('hover-content', style({
-      clipPath: contentHoverClipPath,
-      shapeOutside: contentHoverClipPath
+      clipPath: contentBackgroundClipPathAndShapeOutside,
+      shapeOutside: contentBackgroundClipPathAndShapeOutside
     })),
     state('full-content', style({
-      clipPath: contentFullClipPath,
-      shapeOutside: contentFullClipPath
+      clipPath: contentFullClipPathAndShapeOutside,
+      shapeOutside: contentFullClipPathAndShapeOutside
     })),
-    transition('hover-content => full-content', contentHoverToFullTransition),
-    transition('full-content => hover-content', contentFullToHoverTransition),
-    transition('hover-content => main', contentHoverToShrinkedTransition),
-    transition('main => hover-content', contentShrinkedToHoverTransition),
-    transition('background <=> default', animate('.3s linear')),
-    transition('main <=> default', animate('.1s linear'))
+    transition('default => main', contentDefaultToMainTransition),
+    transition('main => default', contentMainToDefaultTransition),
+    transition('main => full-content', contentMainToFullTransition),
+    transition('full-content => main', contentFullToMainTransition),
+    transition('background <=> default', animate(duration.bgDefaultTotal + 'ms linear'))
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
