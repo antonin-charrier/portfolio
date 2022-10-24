@@ -8,16 +8,14 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 
 #polygon-container {
   overflow: hidden;
-  position: relative;
   height: 100vh;
   width: 100vw;
 }
 
 #polygon-background {
-  height:100%;
-  width:100%;
-  float:left;
-  float:right;
+  height: 100%;
+  width: 100%;
+  float: right;
   background: black url($asakusa) center top no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -31,21 +29,17 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 	height: 100%;
   text-align: right;
   color: var(--color-primary-contrast);
-  background: var(--color-primary);
+  background: var(--color-primary-700);
   font-family: Montserrat;
   padding-top: 80px;
 }
 
 #polygon-content {
-  position: absolute;
-  top: 0px;
-  right: 500px;
   height: 100%;
-  width: calc(100% - 500px);
-  float:left;
-  float:right;
+  width: 100%;
+  float: left;
   color: var(--color-primary-contrast);
-  background: var(--color-primary-light);
+  background: var(--color-primary);
   font-family: Montserrat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -111,10 +105,20 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   padding-right: var(--menuPaddingRight);
 }
 
+.relative-right {
+  position: relative;
+  right: var(--menuPaddingRight);
+}
+
 #home-subtitle {
   font-size: 24px;
   margin-top: 32px;
   color: var(--color-accent-light);
+}
+
+.active {
+  color: var(--color-accent-light) !important;
+  pointer-events: none;
 }
 
 #home-nav {
@@ -128,6 +132,7 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
     color: inherit;
     text-decoration: none;
   }
+
   a:hover {
     text-decoration: underline;
   }
@@ -137,4 +142,8 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+
+.polygon-hidden {
+  display: none;
 }

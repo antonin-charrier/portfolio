@@ -7,6 +7,8 @@
 $primary-palette: (
  100: #3c4559,
  500: #141e30,
+ 600: #0e1422,
+ 700: #090e18,
  900: #000008,
  contrast: (
   100: #e5eeff,
@@ -16,13 +18,13 @@ $primary-palette: (
 );
 
 $accent-palette: (
- 100: #6d635e,
- 500: #423934,
- 900: #1c130d,
+ 100: #ccbcb6,
+ 500: #9b8c86,
+ 900: #6d5f59,
  contrast: (
-  100: #f2e3e3,
-  500: #f2e3e3,
-  900: #f2e3e3
+  100: #110f0e,
+  500: #110f0e,
+  900: #110f0e
  )
 );
 
@@ -42,6 +44,8 @@ $theme: mat.define-light-theme((
 :root {
   --color-primary: #{mat-color($primary)};
   --color-primary-light: #{mat-color($primary, 100)};
+  --color-primary-600: #{mat-color($primary, 600)};
+  --color-primary-700: #{mat-color($primary, 700)};
   --color-primary-dark: #{mat-color($primary, 900)};
   --color-primary-contrast: #{mat-contrast($primary, 500)};
   --color-accent: #{mat-color($accent)};

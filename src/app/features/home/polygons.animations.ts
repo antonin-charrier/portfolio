@@ -1,6 +1,8 @@
 import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
 
-export const duration = {
+//#region Background
+
+export const backgroundDuration = {
   defaultMain1: 55,
   defaultMain2: 95,
   mainFull1: 170,
@@ -11,7 +13,6 @@ export const duration = {
 // Mode 'background'
 const bgBackgroundClipPath =
   'polygon(5% 0, 100% 0, 100% 100%, 0% 100%, 0% 5%)';
-const contentBackgroundClipPathAndShapeOutside = 'polygon(0 0, 0 0, 0 100%, 0 100%)';
 
 // Mode 'default'
 const bgDefaultClipPath =
@@ -19,7 +20,6 @@ const bgDefaultClipPath =
 const bgDefaultShapeOutside =
   'polygon(calc(40% - var(--menuPaddingRight)) 0, 100% 0,' +
   '100% 100%, 0% 100%, calc(0% - var(--menuPaddingRight)) 60%)';
-const contentDefaultClipPathAndShapeOutside = 'polygon(0 0, 40% 0, 0 60%, 0 60%)';
 
 // Intermediate between mode 'default' and mode 'main'
 const bgDefaultMainInterClipPath =
@@ -27,7 +27,6 @@ const bgDefaultMainInterClipPath =
 const bgDefaultMainInterShapeOutside =
   'polygon(calc(45% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%,' +
   'calc(0% - var(--menuPaddingRight)) 100%, calc(0% - var(--menuPaddingRight)) 100%)';
-const contentDefaultMainInterClipPathAndShapeOutside = 'polygon(0 0, 50% 0, 0% 100%, 0 100%)';
 
 // Mode 'main'
 const bgMainClipPath =
@@ -35,7 +34,6 @@ const bgMainClipPath =
 const bgMainShapeOutside =
   'polygon(calc(50% - var(--menuPaddingRight)) 0, 100% 0, 100% 100%,' +
   'calc(40% - var(--menuPaddingRight)) 100%, calc(40% - var(--menuPaddingRight)) 100%)';
-const contentMainClipPathAndShapeOutside = 'polygon(0 0, 60% 0, 40% 100%, 0 100%)';
 
 // Intermediate between mode 'main' and mode 'full-content'
 const bgMainFullInterClipPath =
@@ -44,7 +42,6 @@ const bgMainFullInterShapeOutside =
   'polygon(calc(100% - var(--menuPaddingRight)) 0,' +
   'calc(110% - var(--menuPaddingRight)) 0, calc(100% - var(--menuPaddingRight)) 100%,' +
   'calc(90% - var(--menuPaddingRight)) 100%, calc(90% - var(--menuPaddingRight)) 100%)';
-const contentFullInterClipPathAndShapeOutside = 'polygon(0 0, 100% 0, 80% 100%, 0 100%)';
 
 // Mode 'full-content'
 const bgFullClipPath =
@@ -53,38 +50,21 @@ const bgFullShapeOutside =
   'polygon(calc(110% - var(--menuPaddingRight)) 0,' +
   'calc(120% - var(--menuPaddingRight)) 0, calc(110% - var(--menuPaddingRight)) 100%,' +
   'calc(100% - var(--menuPaddingRight)) 100%, calc(100% - var(--menuPaddingRight)) 100%)';
-const contentFullClipPathAndShapeOutside = 'polygon(0 0, 100% 0, 100% 100%, 0 100%)';
 
 const bgDefaultToMainTransition = [
   style({
     clipPath: bgDefaultClipPath,
     shapeOutside: bgDefaultShapeOutside
   }),
-  animate(duration.defaultMain1 + 'ms linear',
+  animate(backgroundDuration.defaultMain1 + 'ms linear',
   style({
     clipPath: bgDefaultMainInterClipPath,
     shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate(duration.defaultMain2 + 'ms linear',
+  animate(backgroundDuration.defaultMain2 + 'ms linear',
   style({
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
-  }))
-];
-const contentDefaultToMainTransition = [
-  style({
-    clipPath: contentDefaultClipPathAndShapeOutside,
-    shapeOutside: contentDefaultClipPathAndShapeOutside
-  }),
-  animate(duration.defaultMain1 + 'ms linear',
-  style({
-    clipPath: contentDefaultMainInterClipPathAndShapeOutside,
-    shapeOutside: contentDefaultMainInterClipPathAndShapeOutside
-  })),
-  animate(duration.defaultMain2 + 'ms linear',
-  style({
-    clipPath: contentMainClipPathAndShapeOutside,
-    shapeOutside: contentMainClipPathAndShapeOutside
   }))
 ];
 const bgMainToDefaultTransition = [
@@ -92,31 +72,15 @@ const bgMainToDefaultTransition = [
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }),
-  animate(duration.defaultMain2 + 'ms linear',
+  animate(backgroundDuration.defaultMain2 + 'ms linear',
   style({
     clipPath: bgDefaultMainInterClipPath,
     shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate(duration.defaultMain1 + 'ms linear',
+  animate(backgroundDuration.defaultMain1 + 'ms linear',
   style({
     clipPath: bgDefaultClipPath,
     shapeOutside: bgDefaultShapeOutside
-  }))
-];
-const contentMainToDefaultTransition = [
-  style({
-    clipPath: contentMainClipPathAndShapeOutside,
-    shapeOutside: contentMainClipPathAndShapeOutside
-  }),
-  animate(duration.defaultMain2 + 'ms linear',
-  style({
-    clipPath: contentDefaultMainInterClipPathAndShapeOutside,
-    shapeOutside: contentDefaultMainInterClipPathAndShapeOutside
-  })),
-  animate(duration.defaultMain1 + 'ms linear',
-  style({
-    clipPath: contentDefaultClipPathAndShapeOutside,
-    shapeOutside: contentDefaultClipPathAndShapeOutside
   }))
 ];
 const bgMainToFullTransition = [
@@ -124,31 +88,15 @@ const bgMainToFullTransition = [
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }),
-  animate(duration.mainFull1 + 'ms linear',
+  animate(backgroundDuration.mainFull1 + 'ms linear',
   style({
     clipPath: bgMainFullInterClipPath,
     shapeOutside: bgMainFullInterShapeOutside
   })),
-  animate(duration.mainFull2 + 'ms linear',
+  animate(backgroundDuration.mainFull2 + 'ms linear',
   style({
     clipPath: bgFullClipPath,
     shapeOutside: bgFullShapeOutside
-  }))
-];
-const contentMainToFullTransition = [
-  style({
-    clipPath: contentMainClipPathAndShapeOutside,
-    shapeOutside: contentMainClipPathAndShapeOutside
-  }),
-  animate(duration.mainFull1 + 'ms linear',
-  style({
-    clipPath: contentFullInterClipPathAndShapeOutside,
-    shapeOutside: contentFullInterClipPathAndShapeOutside
-  })),
-  animate(duration.mainFull2 + 'ms linear',
-  style({
-    clipPath: contentFullClipPathAndShapeOutside,
-    shapeOutside: contentFullClipPathAndShapeOutside
   }))
 ];
 const bgFullToMainTransition = [
@@ -156,33 +104,70 @@ const bgFullToMainTransition = [
     clipPath: bgFullClipPath,
     shapeOutside: bgFullShapeOutside
   }),
-  animate(duration.mainFull2 + 'ms linear',
+  animate(backgroundDuration.mainFull2 + 'ms linear',
   style({
     clipPath: bgMainFullInterClipPath,
     shapeOutside: bgMainFullInterShapeOutside
   })),
-  animate(duration.mainFull1 + 'ms linear',
+  animate(backgroundDuration.mainFull1 + 'ms linear',
   style({
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }))
 ];
-const contentFullToMainTransition = [
+
+//#endregion Background
+
+//#region Content
+
+export const contentDuration = {
+  shrinkedExpanded1: 20,
+  shrinkedExpanded2: 130
+}
+
+const contentShrinkedClipPath =
+  'polygon(-10% 0, 0 0, -10% 100%, -20% 100%)';
+
+const contentShrinkedExpandedInterClipPath =
+  'polygon(0 0, 10% 0, 0 100%, -10% 100%)';
+
+const contentExpandedClipPath =
+  'polygon(0 0, 75% 0, 65% 100%, -10% 100%)';
+
+const contentShrinkedToExpandedTransition = [
   style({
-    clipPath: contentFullClipPathAndShapeOutside,
-    shapeOutside: contentFullClipPathAndShapeOutside
+    clipPath: contentShrinkedClipPath,
+    shapeOutside: contentShrinkedClipPath
   }),
-  animate(duration.mainFull2 + 'ms linear',
+  animate(contentDuration.shrinkedExpanded1 + 'ms linear',
   style({
-    clipPath: contentFullInterClipPathAndShapeOutside,
-    shapeOutside: contentFullInterClipPathAndShapeOutside
+    clipPath: contentShrinkedExpandedInterClipPath,
+    shapeOutside: contentShrinkedExpandedInterClipPath
   })),
-  animate(duration.mainFull1 + 'ms linear',
+  animate(contentDuration.shrinkedExpanded2 + 'ms linear',
   style({
-    clipPath: contentMainClipPathAndShapeOutside,
-    shapeOutside: contentMainClipPathAndShapeOutside
+    clipPath: contentExpandedClipPath,
+    shapeOutside: contentExpandedClipPath
   }))
 ];
+const contentExpandedToShrinkedTransition = [
+  style({
+    clipPath: contentExpandedClipPath,
+    shapeOutside: contentExpandedClipPath
+  }),
+  animate(contentDuration.shrinkedExpanded2 + 'ms linear',
+  style({
+    clipPath: contentShrinkedExpandedInterClipPath,
+    shapeOutside: contentShrinkedExpandedInterClipPath
+  })),
+  animate(contentDuration.shrinkedExpanded1 + 'ms linear',
+  style({
+    clipPath: contentShrinkedClipPath,
+    shapeOutside: contentShrinkedClipPath
+  }))
+];
+
+//#endregion Content
 
 export const PolygonsAnimations = [
   trigger('backgroundExpandShrink', [
@@ -206,30 +191,19 @@ export const PolygonsAnimations = [
     transition('main => default', bgMainToDefaultTransition),
     transition('main => full-content', bgMainToFullTransition),
     transition('full-content => main', bgFullToMainTransition),
-    transition('background <=> default', animate(duration.bgDefaultTotal + 'ms linear'))
+    transition('background <=> default', animate(backgroundDuration.bgDefaultTotal + 'ms linear'))
   ]),
   trigger('contentExpandShrink', [
-    state('main', style({
-      clipPath: contentMainClipPathAndShapeOutside,
-      shapeOutside: contentMainClipPathAndShapeOutside
+    state('shrinked', style({
+      clipPath: contentShrinkedClipPath,
+      shapeOutside: contentShrinkedClipPath
     })),
-    state('default', style({
-      clipPath: contentDefaultClipPathAndShapeOutside,
-      shapeOutside: contentDefaultClipPathAndShapeOutside
+    state('expanded', style({
+      clipPath: contentExpandedClipPath,
+      shapeOutside: contentExpandedClipPath
     })),
-    state('background', style({
-      clipPath: contentBackgroundClipPathAndShapeOutside,
-      shapeOutside: contentBackgroundClipPathAndShapeOutside
-    })),
-    state('full-content', style({
-      clipPath: contentFullClipPathAndShapeOutside,
-      shapeOutside: contentFullClipPathAndShapeOutside
-    })),
-    transition('default => main', contentDefaultToMainTransition),
-    transition('main => default', contentMainToDefaultTransition),
-    transition('main => full-content', contentMainToFullTransition),
-    transition('full-content => main', contentFullToMainTransition),
-    transition('background <=> default', animate(duration.bgDefaultTotal + 'ms linear'))
+    transition('shrinked => expanded', contentShrinkedToExpandedTransition),
+    transition('expanded => shrinked', contentExpandedToShrinkedTransition)
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
