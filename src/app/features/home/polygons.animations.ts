@@ -118,57 +118,6 @@ const bgFullToMainTransition = [
 
 //#endregion Background
 
-//#region Content
-
-export const contentDuration = {
-  shrinkedExpanded1: 20,
-  shrinkedExpanded2: 130
-}
-
-const contentShrinkedClipPath =
-  'polygon(-10% 0, 0 0, -10% 100%, -20% 100%)';
-
-const contentShrinkedExpandedInterClipPath =
-  'polygon(0 0, 10% 0, 0 100%, -10% 100%)';
-
-const contentExpandedClipPath =
-  'polygon(0 0, 75% 0, 65% 100%, -10% 100%)';
-
-const contentShrinkedToExpandedTransition = [
-  style({
-    clipPath: contentShrinkedClipPath,
-    shapeOutside: contentShrinkedClipPath
-  }),
-  animate(contentDuration.shrinkedExpanded1 + 'ms linear',
-  style({
-    clipPath: contentShrinkedExpandedInterClipPath,
-    shapeOutside: contentShrinkedExpandedInterClipPath
-  })),
-  animate(contentDuration.shrinkedExpanded2 + 'ms linear',
-  style({
-    clipPath: contentExpandedClipPath,
-    shapeOutside: contentExpandedClipPath
-  }))
-];
-const contentExpandedToShrinkedTransition = [
-  style({
-    clipPath: contentExpandedClipPath,
-    shapeOutside: contentExpandedClipPath
-  }),
-  animate(contentDuration.shrinkedExpanded2 + 'ms linear',
-  style({
-    clipPath: contentShrinkedExpandedInterClipPath,
-    shapeOutside: contentShrinkedExpandedInterClipPath
-  })),
-  animate(contentDuration.shrinkedExpanded1 + 'ms linear',
-  style({
-    clipPath: contentShrinkedClipPath,
-    shapeOutside: contentShrinkedClipPath
-  }))
-];
-
-//#endregion Content
-
 export const PolygonsAnimations = [
   trigger('backgroundExpandShrink', [
     state('main', style({
@@ -192,18 +141,6 @@ export const PolygonsAnimations = [
     transition('main => full-content', bgMainToFullTransition),
     transition('full-content => main', bgFullToMainTransition),
     transition('background <=> default', animate(backgroundDuration.bgDefaultTotal + 'ms linear'))
-  ]),
-  trigger('contentExpandShrink', [
-    state('shrinked', style({
-      clipPath: contentShrinkedClipPath,
-      shapeOutside: contentShrinkedClipPath
-    })),
-    state('expanded', style({
-      clipPath: contentExpandedClipPath,
-      shapeOutside: contentExpandedClipPath
-    })),
-    transition('shrinked => expanded', contentShrinkedToExpandedTransition),
-    transition('expanded => shrinked', contentExpandedToShrinkedTransition)
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [

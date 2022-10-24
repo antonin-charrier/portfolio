@@ -34,18 +34,25 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   padding-top: 80px;
 }
 
-#polygon-content {
-  height: 100%;
-  width: 100%;
-  float: left;
-  color: var(--color-primary-contrast);
-  background: var(--color-primary);
-  font-family: Montserrat;
+.main-right {
+  clip-path: polygon(75% 0, 100% 0, 100% 100%, 65% 100%);
+  shape-outside: polygon(calc(75% - var(--menuPaddingRight)) 0,
+    100% 0, 100% 100%, calc(65% - var(--menuPaddingRight)) 100%);
+  float: right;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   shape-margin: 20px;
+}
+
+#polygon-content {
+  height: 100%;
+  width: 100%;
+  color: var(--color-primary-contrast);
+  background: var(--color-primary);
+  font-family: Montserrat;
+  padding: 50px;
 }
 
 .home-slideshow {

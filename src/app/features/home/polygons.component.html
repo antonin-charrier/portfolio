@@ -1,26 +1,18 @@
 <div id="polygon-container">
-  <div id="polygon-background" [@backgroundExpandShrink]="currentDisplay"
-    [ngClass]="{ 'home-slideshow' : currentDisplay === 'background',
-    'polygon-hidden': currentDisplay === 'full-content' && !isBeingAnimated }"
+  <div id="polygon-background" [@backgroundExpandShrink]="currentBackgroundDisplay"
+    [ngClass]="{ 'home-slideshow' : currentBackgroundDisplay === 'background',
+    'polygon-hidden': currentBackgroundDisplay === 'full-content' && !isBeingAnimated }"
     (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()">
-    <div style="height: 80px; width: 80opx; color: red;">
-
-    </div>
   </div>
-  <div id="polygon-content" [@contentExpandShrink]="currentContentDisplay"
-    [ngClass]="{ 'polygon-hidden': currentDisplay !== 'full-content' || isBeingAnimated }">
-    <router-outlet></router-outlet>
-  </div>
-  <div id="polygon-main"
-    (delayed-hover)="mainDelayedEnter()" [hoverDelay]="100" (mouseleave)="mainLeave()">
-    <div id="title-container"
-      [ngClass]="{'relative-right': currentContentDisplay === 'expanded'}">
+  <div id="polygon-main" (delayed-hover)="mainDelayedEnter()"
+    [hoverDelay]="100" (mouseleave)="mainLeave()"
+    [ngClass]="{'main-right': currentMainDisplay === 'right'}">
+    <div id="title-container">
       <p id="home-title">Antonin Charrier</p>
       <p id="home-subtitle">Freelance developer</p>
     </div>
     <ul id="home-nav" [@navMenuDisplay]="menuItems.length"
-      *ngIf="currentDisplay !== 'default' && currentDisplay !== 'background'"
-      [ngClass]="{'relative-right': currentContentDisplay === 'expanded'}">
+      *ngIf="currentBackgroundDisplay !== 'default' && currentBackgroundDisplay !== 'background'">
       <li *ngFor="let menuItem of menuItems">
         <a [routerLink]="menuItem.link" [routerLinkActive]="['active']"
           [routerLinkActiveOptions]="{exact: true}"
@@ -28,11 +20,15 @@
      </li>
     </ul>
     <div id="home-link-container"
-      *ngIf="currentDisplay === 'full-content'">
+      *ngIf="currentBackgroundDisplay === 'full-content'">
       <button id="home-link" mat-fab color="accent"
         aria-label="Home" (click)="home()">
         <mat-icon>home</mat-icon>
       </button>
     </div>
+  </div>
+  <div id="polygon-content" [ngClass]="{ 'polygon-hidden':
+    currentBackgroundDisplay !== 'full-content' || isBeingAnimated }">
+    <router-outlet></router-outlet>
   </div>
 </div>

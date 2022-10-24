@@ -26,8 +26,8 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public isBeingAnimated = false;
-  public currentDisplay: CurrentDisplay = 'default';
-  public currentContentDisplay: CurrentContentDisplay = 'shrinked';
+  public currentBackgroundDisplay: CurrentBackgroundDisplay = 'default';
+  public currentMainDisplay: CurrentMainDisplay = 'left';
   public menuItems =  [
     { link: '/about', text: 'About ⮞' },
     { link: '/projects', text: 'Projects ⮞' },
@@ -36,60 +36,60 @@ export class PolygonsComponent implements AfterViewInit {
   ]
 
   public mainDelayedEnter() {
-    if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
-      this.updateDisplay('main', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBackgroundDisplay === 'default' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('main', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
     }
   }
 
   public mainLeave() {
-    if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
-      this.updateDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBackgroundDisplay === 'main' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
     }
   }
 
   public bgStill() {
-    if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
-      this.updateDisplay('background', backgroundDuration.bgDefaultTotal);
+    if (this.currentBackgroundDisplay === 'default' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('background', backgroundDuration.bgDefaultTotal);
     }
   }
 
   public bgMove() {
-    if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
-      this.updateDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBackgroundDisplay === 'main' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
     }
-    if (this.currentDisplay === 'background' && !this.isBeingAnimated) {
-      this.updateDisplay('default', backgroundDuration.bgDefaultTotal);
+    if (this.currentBackgroundDisplay === 'background' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default', backgroundDuration.bgDefaultTotal);
     }
   }
 
   public linkClick() {
-    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2;
-    this.updateDisplay('full-content', animationDuration);
+    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
+    this.updateBackgroundDisplay('full-content', animationDuration);
     setTimeout(() => {
-      this.currentContentDisplay = 'expanded';
-    }, animationDuration);
+      this.currentMainDisplay = 'right';
+    }, animationDuration + 100);
   }
 
   public home() {
-    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2;
+    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
     this.router.navigate(['/']);
-    this.updateDisplay('main', animationDuration);
+    this.currentMainDisplay = 'left';
     setTimeout(() => {
-      this.currentContentDisplay = 'shrinked';
-    }, animationDuration);
+      this.updateBackgroundDisplay('main', animationDuration);
+    }, 100);
   }
 
-  private updateDisplay(newDisplay: CurrentDisplay, backgroundDuration: number = 1000) {
+  private updateBackgroundDisplay(newDisplay: CurrentBackgroundDisplay, backgroundDuration: number = 1000) {
     this.isBeingAnimated = true;
-    this.currentDisplay = newDisplay;
+    this.currentBackgroundDisplay = newDisplay;
     setTimeout(() => {
       this.isBeingAnimated = false;
     }, backgroundDuration);
   }
 }
 
-export type CurrentDisplay = 'default' | 'background' | 'main' | 'full-content';
-export type CurrentContentDisplay = 'shrinked' | 'expanded';
+export type CurrentBackgroundDisplay = 'default' | 'background' | 'main' | 'full-content';
+export type CurrentMainDisplay = 'left' | 'right';
 export interface MenuItem {
   link: string;
   text: string;
