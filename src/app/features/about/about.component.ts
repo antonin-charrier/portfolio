@@ -2,14 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { RouteAnimations } from 'src/app/shared/animations/route-animations';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  selector: 'app-about',
+  templateUrl: './about.component.html',
+  styleUrls: ['./about.component.scss'],
   animations: [
     RouteAnimations
   ]
 })
-export class ContactComponent implements OnInit {
+export class AboutComponent implements OnInit {
 
   constructor() { }
 

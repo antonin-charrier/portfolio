@@ -6,7 +6,8 @@
   </div>
   <div id="polygon-main" (delayed-hover)="mainDelayedEnter()"
     [hoverDelay]="100" (mouseleave)="mainLeave()"
-    [ngClass]="{'main-right': currentMainDisplay === 'right'}">
+    [ngClass]="{'main-right': currentMainDisplay !== 'left'}"
+    [@mainExpandShrink]="currentMainDisplay">
     <div id="title-container">
       <p id="home-title">Antonin Charrier</p>
       <p id="home-subtitle">Freelance developer</p>
@@ -28,7 +29,8 @@
     </div>
   </div>
   <div id="polygon-content" [ngClass]="{ 'polygon-hidden':
-    currentBackgroundDisplay !== 'full-content' || isBeingAnimated }">
+    currentBackgroundDisplay !== 'full-content' || isBeingAnimated }"
+    [@routeAnimations]="getRouteAnimationData()">
     <router-outlet></router-outlet>
   </div>
 </div>

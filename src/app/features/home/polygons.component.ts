@@ -1,13 +1,15 @@
 import { Location } from '@angular/common';
 import { Component, HostBinding, AfterViewInit } from '@angular/core';
-import { Router } from '@angular/router';
-import { PolygonsAnimations, backgroundDuration } from './polygons.animations';
+import { ChildrenOutletContexts, Router } from '@angular/router';
+import { PolygonsAnimations, backgroundDuration, mainDuration } from './polygons.animations';
 
 @Component({
   selector: 'app-polygons',
   templateUrl: './polygons.component.html',
   styleUrls: ['./polygons.component.scss'],
-  animations: PolygonsAnimations
+  animations: [
+    PolygonsAnimations
+  ]
 })
 export class PolygonsComponent implements AfterViewInit {
   @HostBinding("style.--menuPaddingRight")
@@ -15,7 +17,8 @@ export class PolygonsComponent implements AfterViewInit {
 
   constructor(
     private router: Router,
-    private location: Location
+    private location: Location,
+    private contexts: ChildrenOutletContexts
   ) { }
 
   ngAfterViewInit(): void {
@@ -63,20 +66,32 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public linkClick() {
-    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
-    this.updateBackgroundDisplay('full-content', animationDuration);
+    if (this.currentBackgroundDisplay === 'full-content' || this.isBeingAnimated) {
+      return;
+    }
+
+    const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
+    this.updateBackgroundDisplay('full-content', contentAnimationDuration);
     setTimeout(() => {
-      this.currentMainDisplay = 'right';
-    }, animationDuration + 100);
+      this.currentMainDisplay = 'right-start';
+      const mainAnimationDuration = mainDuration.clip;
+      setTimeout(() => {
+        this.currentMainDisplay = 'right-end';
+      }, mainAnimationDuration);
+    }, contentAnimationDuration + 0);
   }
 
   public home() {
-    const animationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
+    const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
     this.router.navigate(['/']);
-    this.currentMainDisplay = 'left';
+    const mainAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;
+    this.currentMainDisplay = 'right-start';
     setTimeout(() => {
-      this.updateBackgroundDisplay('main', animationDuration);
-    }, 100);
+      this.currentMainDisplay = 'left';
+      setTimeout(() => {
+        this.updateBackgroundDisplay('main', contentAnimationDuration);
+      }, 0);
+    }, mainAnimationDuration);
   }
 
   private updateBackgroundDisplay(newDisplay: CurrentBackgroundDisplay, backgroundDuration: number = 1000) {
@@ -86,10 +101,14 @@ export class PolygonsComponent implements AfterViewInit {
       this.isBeingAnimated = false;
     }, backgroundDuration);
   }
+
+  public getRouteAnimationData() {
+    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+  }
 }
 
 export type CurrentBackgroundDisplay = 'default' | 'background' | 'main' | 'full-content';
-export type CurrentMainDisplay = 'left' | 'right';
+export type CurrentMainDisplay = 'left' | 'right-start' | 'right-end';
 export interface MenuItem {
   link: string;
   text: string;

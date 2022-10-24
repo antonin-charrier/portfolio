@@ -118,6 +118,105 @@ const bgFullToMainTransition = [
 
 //#endregion Background
 
+//#region Main
+
+export const mainDuration = {
+  clip: 1,
+  leftRight1: 30,
+  leftRight2: 195
+}
+
+const mainRightFloat = 'right';
+const mainLeftFloat = 'inherit';
+
+const mainLeftClipPath = 'none';
+const mainLeftShapeOutside = 'none';
+
+const mainRightStartClipPath =
+  'polygon(0 0, 100% 0, 100% 100%, -10% 100%)';
+const mainRightStartShapeOutside =
+  'polygon(calc(0 - var(--menuPaddingRight)) 0, 100% 0, ' +
+  '100% 100%, calc(-10% - var(--menuPaddingRight)) 100%';
+
+const mainRightInterClipPath =
+  'polygon(10% 0, 100% 0, 100% 100%, 0% 100%)';
+const mainRightInterShapeOutside =
+  'polygon(calc(10% - var(--menuPaddingRight)) 0, 100% 0, ' +
+  '100% 100%, calc(0% - var(--menuPaddingRight)) 100%';
+
+const mainRightEndClipPath =
+  'polygon(75% 0, 100% 0, 100% 100%, 65% 100%)';
+const mainRightEndShapeOutside =
+  'polygon(calc(75% - var(--menuPaddingRight)) 0, 100% 0, ' +
+  '100% 100%, calc(65% - var(--menuPaddingRight)) 100%';
+
+const mainLeftToRightSlideTransition = [
+  style({
+    clipPath: mainRightStartClipPath,
+    shapeOutside: mainRightStartShapeOutside,
+    float: mainRightFloat
+  }),
+  animate(mainDuration.leftRight1 + 'ms linear',
+  style({
+    clipPath: mainRightInterClipPath,
+    shapeOutside: mainRightInterShapeOutside,
+    float: mainRightFloat
+  })),
+  animate(mainDuration.leftRight2 + 'ms linear',
+  style({
+    clipPath: mainRightEndClipPath,
+    shapeOutside: mainRightEndShapeOutside,
+    float: mainRightFloat
+  }))
+];
+const mainRightToLeftSlideTransition = [
+  style({
+    clipPath: mainRightEndClipPath,
+    shapeOutside: mainRightEndShapeOutside,
+    float: mainRightFloat
+  }),
+  animate(mainDuration.leftRight2 + 'ms linear',
+  style({
+    clipPath: mainRightInterClipPath,
+    shapeOutside: mainRightInterShapeOutside,
+    float: mainRightFloat
+  })),
+  animate(mainDuration.leftRight1 + 'ms linear',
+  style({
+    clipPath: mainRightStartClipPath,
+    shapeOutside: mainRightStartShapeOutside,
+    float: mainRightFloat
+  }))
+];
+const mainLeftToRightClipTransition = [
+  style({
+    clipPath: mainLeftClipPath,
+    shapeOutside: mainLeftShapeOutside,
+    float: mainLeftFloat
+  }),
+  animate(mainDuration.clip + 'ms linear'),
+  style({
+    clipPath: mainRightStartClipPath,
+    shapeOutside: mainRightStartShapeOutside,
+    float: mainRightFloat
+  }),
+];
+const mainRightToLeftClipTransition = [
+  style({
+    clipPath: mainRightStartClipPath,
+    shapeOutside: mainRightStartShapeOutside,
+    float: mainRightFloat
+  }),
+  animate(mainDuration.clip + 'ms linear',
+  style({
+    clipPath: mainLeftClipPath,
+    shapeOutside: mainLeftShapeOutside,
+    float: mainLeftFloat
+  }))
+];
+
+//#endregion Main
+
 export const PolygonsAnimations = [
   trigger('backgroundExpandShrink', [
     state('main', style({
@@ -141,6 +240,24 @@ export const PolygonsAnimations = [
     transition('main => full-content', bgMainToFullTransition),
     transition('full-content => main', bgFullToMainTransition),
     transition('background <=> default', animate(backgroundDuration.bgDefaultTotal + 'ms linear'))
+  ]),
+  trigger('mainExpandShrink', [
+    state('left', style({
+      clipPath: mainLeftClipPath,
+      shapeOutside: mainLeftShapeOutside
+    })),
+    state('right-start', style({
+      clipPath: mainRightStartClipPath,
+      shapeOutside: mainRightStartShapeOutside
+    })),
+    state('right-end', style({
+      clipPath: mainRightEndClipPath,
+      shapeOutside: mainRightEndShapeOutside
+    })),
+    transition('left => right-start', mainLeftToRightClipTransition),
+    transition('right-start => left', mainRightToLeftClipTransition),
+    transition('right-start => right-end', mainLeftToRightSlideTransition),
+    transition('right-end => right-start', mainRightToLeftSlideTransition)
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
