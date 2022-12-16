@@ -3,9 +3,9 @@
 .burger-menu-bun {
   width: 30px;
   height: 5px;
-  background-color: var(--color-accent);
   border-radius: 5px;
   margin-left: auto;
+  background-color: var(--color-primary-700);
 }
 
 #burger-menu {
@@ -16,5 +16,11 @@
 
   *:first-child {
     margin-top: 0px;
+  }
+
+  &.full-content {
+    * {
+      background-color: var(--color-accent) !important;
+    }
   }
 }

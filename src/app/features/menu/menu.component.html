@@ -1,5 +1,5 @@
-<div id="burger-menu" aria-label="Menu" (click)="menu()"
-  (mouseenter)="menuEnter()" (mouseleave)="menuLeave()">
+<div id="burger-menu" aria-label="Menu" [ngClass]="{ 'full-content' : fullContent }"
+  (click)="menu()" (mouseenter)="menuEnter()" (mouseleave)="menuLeave()">
   <div class="burger-menu-bun top" [@topHover]="isMenuHovered"></div>
   <div class="burger-menu-bun middle" [@middleHover]="isMenuHovered"></div>
   <div class="burger-menu-bun bottom" [@bottomHover]="isMenuHovered"></div>

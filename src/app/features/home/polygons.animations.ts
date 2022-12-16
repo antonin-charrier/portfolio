@@ -290,5 +290,48 @@ export const PolygonsAnimations = [
         right: '-50px'
       }))
     ])
+  ]),
+  trigger('homeButtonClick', [
+    state('left', style({
+      transform: 'scale(1.8)'
+    })),
+    state('right-start', style({
+      transform: 'scale(1.8) rotate(180deg)'
+    })),
+    state('right-end', style({
+      transform: 'scale(1.8)'
+    })),
+    transition('right-end => right-start', [
+      style({
+        transform: 'scale(1.8)'
+      }),
+      animate('.15s ease-in-out', style({
+        transform: 'scale(1.8) rotate(180deg)'
+      }))
+    ]),
+    transition('right-start => left', [
+      style({
+        transform: 'scale(1.8) rotate(180deg)'
+      }),
+      animate('.15s ease-in-out', style({
+        transform: 'scale(1.8)'
+      }))
+    ]),
+    transition('left => right-start', [
+      style({
+        transform: 'scale(1.8)'
+      }),
+      animate('.15s ease-in-out', style({
+        transform: 'scale(1.8)'
+      }))
+    ]),
+    transition('right-start => right-end', [
+      style({
+        transform: 'scale(1.8)'
+      }),
+      animate('.15s ease-in-out', style({
+        transform: 'scale(1.8)'
+      }))
+    ])
   ])
 ];

@@ -126,7 +126,10 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 .active {
   color: var(--color-accent-light) !important;
   pointer-events: none;
-  font-size: 1.5em;
+
+  &::after {
+    transform: rotate(180deg);
+  }
 }
 
 #home-nav {
@@ -139,11 +142,19 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   a {
     color: inherit;
     text-decoration: none;
+    display: block;
+    transition: transform .15s;
+
+    &::after {
+      content: '⮞';
+      margin-left: 8px;
+      transition: transform .4s;
+      display: inline-block;
+    }
   }
 
   a:hover {
-    text-decoration: underline;
-    font-size: 1.3em;
+    transform: translateX(-16px);
   }
 }
 
@@ -155,9 +166,13 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   position: absolute;
   top: 50px;
   right: 50px;
+  cursor: pointer;
+  transform: scale(1.8);
+  transition: transform .15s;
+  color: var(--color-primary-contrast);
 
-  :hover {
-    color: var(--color-accent-light);
+  &:hover {
+    transform: translateX(-16px) scale(1.8);
   }
 }
 

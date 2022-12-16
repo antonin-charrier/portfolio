@@ -11,32 +11,32 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1135479688738218945" datatype="html">
-        <source>About ⮞</source>
-        <target>À propos ⮞</target>
+        <source>About</source>
+        <target>À propos</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6360607051191258442" datatype="html">
-        <source>Projects ⮞</source>
-        <target>Projets ⮞</target>
+        <source>Projects</source>
+        <target>Projets</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6277883001533927163" datatype="html">
-        <source>Hobbies ⮞</source>
-        <target>Loisirs ⮞</target>
+        <source>Hobbies</source>
+        <target>Loisirs</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1167806620240891238" datatype="html">
-        <source>Contact ⮞</source>
-        <target>Contact ⮞</target>
+        <source>Contact</source>
+        <target>Contact</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">40</context>

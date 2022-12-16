@@ -10,28 +10,28 @@
         </context-group>
       </trans-unit>
       <trans-unit id="1135479688738218945" datatype="html">
-        <source>About ⮞</source>
+        <source>About</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">37</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6360607051191258442" datatype="html">
-        <source>Projects ⮞</source>
+        <source>Projects</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">38</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6277883001533927163" datatype="html">
-        <source>Hobbies ⮞</source>
+        <source>Hobbies</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1167806620240891238" datatype="html">
-        <source>Contact ⮞</source>
+        <source>Contact</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
           <context context-type="linenumber">40</context>

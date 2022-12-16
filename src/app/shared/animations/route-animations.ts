@@ -44,11 +44,11 @@ export const RouteAnimation =
         scale: '0,1',
         opacity: '0%'
       }),
-      animate('3000ms ease-out', style({
-        transform: 'scale(100%)',
-        scale: '1',
-        opacity: '100%'
-      }))
+      // animate('3000ms ease-out', style({
+      //   transform: 'scale(100%)',
+      //   scale: '1',
+      //   opacity: '100%'
+      // }))
     ]),
     transition(':leave', [
       style({
@@ -56,10 +56,10 @@ export const RouteAnimation =
         scale: '1',
         opacity: '100%'
       }),
-      animate('3000ms ease-out', style({
-        transform: 'scale(1%)',
-        scale: '0,1',
-        opacity: '0%'
-      }))
+      // animate('3000ms ease-out', style({
+      //   transform: 'scale(1%)',
+      //   scale: '0,1',
+      //   opacity: '0%'
+      // }))
     ]),
   ]);

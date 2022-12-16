@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MenuAnimations } from './menu.animations';
 
 @Component({
@@ -10,6 +10,7 @@ import { MenuAnimations } from './menu.animations';
   ]
 })
 export class MenuComponent {
+  @Input() fullContent = false;
   public isMenuOpen = false;
   public isMenuHovered = false;
 

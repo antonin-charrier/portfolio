@@ -34,10 +34,10 @@ export class PolygonsComponent implements AfterViewInit {
   public currentBackgroundDisplay: CurrentBackgroundDisplay = 'default';
   public currentMainDisplay: CurrentMainDisplay = 'left';
   public navItems =  [
-    { link: '/about', text: $localize`About ⮞` },
-    { link: '/projects', text: $localize`Projects ⮞` },
-    { link: '/hobbies', text: $localize`Hobbies ⮞` },
-    { link: '/contact', text: $localize`Contact ⮞` },
+    { link: '/about', text: $localize`About` },
+    { link: '/projects', text: $localize`Projects` },
+    { link: '/hobbies', text: $localize`Hobbies` },
+    { link: '/contact', text: $localize`Contact` },
   ]
 
   public mainDelayedEnter() {

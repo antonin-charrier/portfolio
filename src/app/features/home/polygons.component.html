@@ -27,10 +27,9 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<button mat-icon-button color="accent" aria-label="Home"
-  matTooltip="Home" matTooltipPosition="before"
+<mat-icon aria-label="Home"
   *ngIf="currentBackgroundDisplay === 'full-content' && !isBeingAnimated"
-  id="home-button" [@homeButton] (click)="home()">
-  <mat-icon>home</mat-icon>
-</button>
-<app-menu id="burger-menu"></app-menu>
+  id="home-button" [@homeButton] (click)="home()"
+  [@homeButtonClick]="currentMainDisplay">arrow_back</mat-icon>
+<app-menu id="burger-menu"
+  [fullContent]="currentBackgroundDisplay === 'full-content' && !isBeingAnimated"></app-menu>
