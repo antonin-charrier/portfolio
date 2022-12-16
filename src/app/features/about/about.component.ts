@@ -1,19 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { RouteAnimations } from 'src/app/shared/animations/route-animations';
+import { Component } from '@angular/core';
+import { RouteComponent } from 'src/app/shared/components/route/route.component';
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss'],
-  animations: [
-    RouteAnimations
-  ]
+  styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class AboutComponent extends RouteComponent {}

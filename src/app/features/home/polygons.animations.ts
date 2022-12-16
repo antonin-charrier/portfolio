@@ -56,13 +56,11 @@ const bgDefaultToMainTransition = [
     clipPath: bgDefaultClipPath,
     shapeOutside: bgDefaultShapeOutside
   }),
-  animate(backgroundDuration.defaultMain1 + 'ms linear',
-  style({
+  animate(backgroundDuration.defaultMain1 + 'ms linear', style({
     clipPath: bgDefaultMainInterClipPath,
     shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate(backgroundDuration.defaultMain2 + 'ms linear',
-  style({
+  animate(backgroundDuration.defaultMain2 + 'ms linear', style({
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }))
@@ -72,13 +70,11 @@ const bgMainToDefaultTransition = [
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }),
-  animate(backgroundDuration.defaultMain2 + 'ms linear',
-  style({
+  animate(backgroundDuration.defaultMain2 + 'ms linear', style({
     clipPath: bgDefaultMainInterClipPath,
     shapeOutside: bgDefaultMainInterShapeOutside
   })),
-  animate(backgroundDuration.defaultMain1 + 'ms linear',
-  style({
+  animate(backgroundDuration.defaultMain1 + 'ms linear', style({
     clipPath: bgDefaultClipPath,
     shapeOutside: bgDefaultShapeOutside
   }))
@@ -88,13 +84,11 @@ const bgMainToFullTransition = [
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }),
-  animate(backgroundDuration.mainFull1 + 'ms linear',
-  style({
+  animate(backgroundDuration.mainFull1 + 'ms linear', style({
     clipPath: bgMainFullInterClipPath,
     shapeOutside: bgMainFullInterShapeOutside
   })),
-  animate(backgroundDuration.mainFull2 + 'ms linear',
-  style({
+  animate(backgroundDuration.mainFull2 + 'ms linear', style({
     clipPath: bgFullClipPath,
     shapeOutside: bgFullShapeOutside
   }))
@@ -104,13 +98,11 @@ const bgFullToMainTransition = [
     clipPath: bgFullClipPath,
     shapeOutside: bgFullShapeOutside
   }),
-  animate(backgroundDuration.mainFull2 + 'ms linear',
-  style({
+  animate(backgroundDuration.mainFull2 + 'ms linear', style({
     clipPath: bgMainFullInterClipPath,
     shapeOutside: bgMainFullInterShapeOutside
   })),
-  animate(backgroundDuration.mainFull1 + 'ms linear',
-  style({
+  animate(backgroundDuration.mainFull1 + 'ms linear', style({
     clipPath: bgMainClipPath,
     shapeOutside: bgMainShapeOutside
   }))
@@ -156,14 +148,12 @@ const mainLeftToRightSlideTransition = [
     shapeOutside: mainRightStartShapeOutside,
     float: mainRightFloat
   }),
-  animate(mainDuration.leftRight1 + 'ms linear',
-  style({
+  animate(mainDuration.leftRight1 + 'ms linear', style({
     clipPath: mainRightInterClipPath,
     shapeOutside: mainRightInterShapeOutside,
     float: mainRightFloat
   })),
-  animate(mainDuration.leftRight2 + 'ms linear',
-  style({
+  animate(mainDuration.leftRight2 + 'ms linear', style({
     clipPath: mainRightEndClipPath,
     shapeOutside: mainRightEndShapeOutside,
     float: mainRightFloat
@@ -175,14 +165,12 @@ const mainRightToLeftSlideTransition = [
     shapeOutside: mainRightEndShapeOutside,
     float: mainRightFloat
   }),
-  animate(mainDuration.leftRight2 + 'ms linear',
-  style({
+  animate(mainDuration.leftRight2 + 'ms linear', style({
     clipPath: mainRightInterClipPath,
     shapeOutside: mainRightInterShapeOutside,
     float: mainRightFloat
   })),
-  animate(mainDuration.leftRight1 + 'ms linear',
-  style({
+  animate(mainDuration.leftRight1 + 'ms linear', style({
     clipPath: mainRightStartClipPath,
     shapeOutside: mainRightStartShapeOutside,
     float: mainRightFloat
@@ -194,12 +182,11 @@ const mainLeftToRightClipTransition = [
     shapeOutside: mainLeftShapeOutside,
     float: mainLeftFloat
   }),
-  animate(mainDuration.clip + 'ms linear'),
-  style({
+  animate(mainDuration.clip + 'ms linear', style({
     clipPath: mainRightStartClipPath,
     shapeOutside: mainRightStartShapeOutside,
     float: mainRightFloat
-  }),
+  }))
 ];
 const mainRightToLeftClipTransition = [
   style({
@@ -207,8 +194,7 @@ const mainRightToLeftClipTransition = [
     shapeOutside: mainRightStartShapeOutside,
     float: mainRightFloat
   }),
-  animate(mainDuration.clip + 'ms linear',
-  style({
+  animate(mainDuration.clip + 'ms linear', style({
     clipPath: mainLeftClipPath,
     shapeOutside: mainLeftShapeOutside,
     float: mainLeftFloat
@@ -266,7 +252,7 @@ export const PolygonsAnimations = [
           opacity: 1,
           transform: 'translateX(0)'
         }),
-        stagger('.05s linear', animate('.1s linear', style({
+        stagger('.1s linear', animate('.15s linear', style({
           opacity: 0,
           transform: 'translateX(-100px)'
         })))
@@ -276,11 +262,33 @@ export const PolygonsAnimations = [
           opacity: 0,
           transform: 'translateX(-100px)'
         }),
-        stagger('.05s linear', animate('.1s linear', style({
+        stagger('.1s linear', animate('.15s linear', style({
           opacity: 1,
           transform: 'translateX(0)'
         })))
       ], { optional: true })
+    ])
+  ]),
+  trigger('homeButton', [
+    transition(':enter', [
+      style({
+        opacity: 0,
+        right: '-50px'
+      }),
+      animate('.2s ease-out', style({
+        opacity: 1,
+        right: '50px'
+      }))
+    ]),
+    transition(':leave', [
+      style({
+        opacity: 1,
+        right: '50px'
+      }),
+      animate('.2s ease-out', style({
+        opacity: 0,
+        right: '-50px'
+      }))
     ])
   ])
 ];

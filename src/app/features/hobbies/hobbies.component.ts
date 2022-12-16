@@ -1,19 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { RouteAnimations } from 'src/app/shared/animations/route-animations';
+import { Component } from '@angular/core';
+import { RouteComponent } from 'src/app/shared/components/route/route.component';
 
 @Component({
   selector: 'app-hobbies',
   templateUrl: './hobbies.component.html',
-  styleUrls: ['./hobbies.component.scss'],
-  animations: [
-    RouteAnimations
-  ]
+  styleUrls: ['./hobbies.component.scss']
 })
-export class HobbiesComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class HobbiesComponent extends RouteComponent {}

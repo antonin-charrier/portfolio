@@ -6,10 +6,10 @@ import { HobbiesComponent } from './features/hobbies/hobbies.component';
 import { ProjectsComponent } from './features/projects/projects.component';
 
 const routes: Routes = [
-  { path: 'about', component: AboutComponent},
-  { path: 'projects', component: ProjectsComponent},
-  { path: 'hobbies', component: HobbiesComponent},
-  { path: 'contact', component: ContactComponent}
+  { path: 'about', component: AboutComponent, data: { animation: 'aboutPage' } },
+  { path: 'projects', component: ProjectsComponent, data: { animation: 'projectsPage' } },
+  { path: 'hobbies', component: HobbiesComponent, data: { animation: 'hobbiesPage' } },
+  { path: 'contact', component: ContactComponent, data: { animation: 'contactPage' } }
 
 ];
 

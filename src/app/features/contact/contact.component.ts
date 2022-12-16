@@ -1,19 +1,9 @@
-import { Component, OnInit } from '@angular/core';
-import { RouteAnimations } from 'src/app/shared/animations/route-animations';
+import { Component } from '@angular/core';
+import { RouteComponent } from 'src/app/shared/components/route/route.component';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
-  animations: [
-    RouteAnimations
-  ]
+  styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
-}
+export class ContactComponent extends RouteComponent {}

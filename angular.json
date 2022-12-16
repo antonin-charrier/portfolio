@@ -7,6 +7,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "new-portfolio": {
+      "i18n": {
+        "sourceLocale": "en-GB",
+        "locales": {
+          "fr-FR": "src/assets/i18n/messages.fr-FR.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -58,7 +64,8 @@
               "src/assets/styles/theme.scss"
             ],
             "scripts": [],
-            "aot": true
+            "aot": true,
+            "localize": ["en-GB"]
           },
           "configurations": {
             "production": {
@@ -70,8 +77,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "3kb",
+                  "maximumError": "6kb"
                 }
               ],
               "fileReplacements": [

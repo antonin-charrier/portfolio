@@ -9,11 +9,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DelayedHoverDirective } from './directives/delayed-hover.directive';
 import { MouseStillDirective } from './directives/mouse-still.directive';
+import { RouteComponent } from './components/route/route.component';
 
 @NgModule({
   declarations: [
     DelayedHoverDirective,
-    MouseStillDirective
+    MouseStillDirective,
+    RouteComponent
   ],
   imports: [
     CommonModule,

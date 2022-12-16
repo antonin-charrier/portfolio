@@ -10,23 +10,16 @@
     [@mainExpandShrink]="currentMainDisplay">
     <div id="title-container">
       <p id="home-title">Antonin Charrier</p>
-      <p id="home-subtitle">Freelance developer</p>
+      <p id="home-subtitle" i18n>Freelance developer</p>
     </div>
-    <ul id="home-nav" [@navMenuDisplay]="menuItems.length"
+    <ul id="home-nav" [@navMenuDisplay]="navItems.length"
       *ngIf="currentBackgroundDisplay !== 'default' && currentBackgroundDisplay !== 'background'">
-      <li *ngFor="let menuItem of menuItems">
-        <a [routerLink]="menuItem.link" [routerLinkActive]="['active']"
-          [routerLinkActiveOptions]="{exact: true}"
-          (click)="linkClick()">{{ menuItem.text }}</a>
+      <li *ngFor="let navItem of navItems">
+        <a [routerLink]="navItem.link" [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{ exact: true }"
+          (click)="linkClick()">{{ navItem.text }}</a>
      </li>
     </ul>
-    <div id="home-link-container"
-      *ngIf="currentBackgroundDisplay === 'full-content'">
-      <button id="home-link" mat-fab color="accent"
-        aria-label="Home" (click)="home()">
-        <mat-icon>home</mat-icon>
-      </button>
-    </div>
   </div>
   <div id="polygon-content" [ngClass]="{ 'polygon-hidden':
     currentBackgroundDisplay !== 'full-content' || isBeingAnimated }"
@@ -34,3 +27,13 @@
     <router-outlet></router-outlet>
   </div>
 </div>
+<button mat-icon-button color="accent" aria-label="Home"
+  matTooltip="Home" matTooltipPosition="before"
+  *ngIf="currentBackgroundDisplay === 'full-content' && !isBeingAnimated"
+  id="home-button" [@homeButton] (click)="home()">
+  <mat-icon>home</mat-icon>
+</button>
+<button id="burger-menu" mat-fab color="accent"
+  aria-label="Menu" (click)="home()">
+  <mat-icon>menu</mat-icon>
+</button>

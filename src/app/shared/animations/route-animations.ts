@@ -1,47 +1,65 @@
-import { animate, group, query, style, transition, trigger } from '@angular/animations';
+import { animate, animateChild, group, query, sequence, stagger, style, transition, trigger } from '@angular/animations';
 
 export const animationDuration = {
-  enter: 300,
-  leave: 300
+  enter: 3000,
+  leave: 3000
 }
 
 export const RouteAnimations =
   trigger('routeAnimations', [
-    transition('* <=> *', [
-      query(':enter, :leave', [
-        style({
-          position: 'absolute'
-        })
-      ], { optional: true }),
-      query(':enter', [
-        style({
-          transform: 'scale(0.9)',
-          opacity: 0
-        })
-      ], { optional: true }),
-      query(':leave', [
-        style({
-          transform: 'scale(1)',
-          opacity: 1
-        })
-      ], { optional: true }),
-      group([
-        query(':leave', [
-          animate(animationDuration.enter + 'ms ease-in', style({
-            transform: 'scale(0.9)',
-            opacity: 0
-          }))
-        ], { optional: true }),
-        query(':enter', [
-          animate(animationDuration.enter + 'ms ease-in', style({
-            transform: 'scale(0.9)',
-            opacity: 0
-          })),
-          animate(animationDuration.enter + 'ms ease-in', style({
-            transform: 'scale(1)',
-            opacity: 1
-          }))
-        ], { optional: true })
+    transition('contactPage <=> aboutPage', [
+      // style({ }),
+      // query(':enter, :leave', [
+      //   style({
+      //   })
+      // ]),
+      // query(':enter', [
+      //   style({
+
+      //   })
+      // ]),
+      query('@routeAnimation', [
+        animateChild()
       ]),
+      // group([
+      //   query(':leave', [
+      //     animate('3000ms ease-out', style({
+
+      //     }))
+      //   ]),
+      //   query(':enter', [
+      //     animate('3000ms ease-out', style({
+
+      //     }))
+      //   ])
+      // ]),
     ])
+  ]);
+
+export const RouteAnimation =
+  trigger('routeAnimation', [
+    transition(':enter', [
+      style({
+        transform: 'scale(1%)',
+        scale: '0,1',
+        opacity: '0%'
+      }),
+      animate('3000ms ease-out', style({
+        transform: 'scale(100%)',
+        scale: '1',
+        opacity: '100%'
+      }))
+    ]),
+    transition(':leave', [
+      style({
+        transform: 'scale(100%)',
+        scale: '1',
+        opacity: '100%'
+      }),
+      animate('3000ms ease-out', style({
+        transform: 'scale(1%)',
+        scale: '0,1',
+        opacity: '0%'
+      }))
+    ]),
   ]);

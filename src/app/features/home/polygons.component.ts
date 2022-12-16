@@ -1,6 +1,7 @@
 import { Location } from '@angular/common';
 import { Component, HostBinding, AfterViewInit } from '@angular/core';
 import { ChildrenOutletContexts, Router } from '@angular/router';
+import { RouteAnimations } from 'src/app/shared/animations/route-animations';
 import { PolygonsAnimations, backgroundDuration, mainDuration } from './polygons.animations';
 
 @Component({
@@ -8,7 +9,8 @@ import { PolygonsAnimations, backgroundDuration, mainDuration } from './polygons
   templateUrl: './polygons.component.html',
   styleUrls: ['./polygons.component.scss'],
   animations: [
-    PolygonsAnimations
+    PolygonsAnimations,
+    RouteAnimations
   ]
 })
 export class PolygonsComponent implements AfterViewInit {
@@ -31,11 +33,11 @@ export class PolygonsComponent implements AfterViewInit {
   public isBeingAnimated = false;
   public currentBackgroundDisplay: CurrentBackgroundDisplay = 'default';
   public currentMainDisplay: CurrentMainDisplay = 'left';
-  public menuItems =  [
-    { link: '/about', text: 'About ⮞' },
-    { link: '/projects', text: 'Projects ⮞' },
-    { link: '/hobbies', text: 'Hobbies ⮞' },
-    { link: '/contact', text: 'Contact ⮞' },
+  public navItems =  [
+    { link: '/about', text: $localize`About ⮞` },
+    { link: '/projects', text: $localize`Projects ⮞` },
+    { link: '/hobbies', text: $localize`Hobbies ⮞` },
+    { link: '/contact', text: $localize`Contact ⮞` },
   ]
 
   public mainDelayedEnter() {
@@ -102,14 +104,14 @@ export class PolygonsComponent implements AfterViewInit {
     }, backgroundDuration);
   }
 
-  public getRouteAnimationData() {
-    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+  getRouteAnimationData() {
+    this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
 }
 
 export type CurrentBackgroundDisplay = 'default' | 'background' | 'main' | 'full-content';
 export type CurrentMainDisplay = 'left' | 'right-start' | 'right-end';
-export interface MenuItem {
+export interface NavItem {
   link: string;
   text: string;
 }
