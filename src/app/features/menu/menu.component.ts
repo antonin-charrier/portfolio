@@ -11,18 +11,29 @@ import { MenuAnimations } from './menu.animations';
 })
 export class MenuComponent {
   @Input() fullContent = false;
-  public isMenuOpen = false;
-  public isMenuHovered = false;
+  public menuState: 'closed' | 'hovered' | 'open' = 'closed';
 
-  public menu() {
-    this.isMenuOpen = !this.isMenuOpen;
+  public openMenu() {
+    if (this.menuState === 'open') {
+      this.menuState = 'hovered';
+    } else {
+      this.menuState = 'open';
+    }
   }
 
-  public menuEnter()  {
-    this.isMenuHovered = true;
+  public menuEnter() {
+    if (this.menuState === 'open') {
+      return;
+    }
+
+    this.menuState = 'hovered';
   }
 
   public menuLeave()  {
-    this.isMenuHovered = false;
+    if (this.menuState === 'open') {
+      return;
+    }
+
+    this.menuState = 'closed';
   }
 }
