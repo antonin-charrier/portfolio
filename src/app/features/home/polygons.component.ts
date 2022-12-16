@@ -84,6 +84,10 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public home() {
+    if (this.currentBackgroundDisplay !== 'full-content' || this.isBeingAnimated) {
+      return;
+    }
+
     const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
     this.router.navigate(['/']);
     const mainAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;

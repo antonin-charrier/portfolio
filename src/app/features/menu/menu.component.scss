@@ -1,0 +1,20 @@
+@import '../../../assets/styles/variables.scss';
+
+.burger-menu-bun {
+  width: 30px;
+  height: 5px;
+  background-color: var(--color-accent);
+  border-radius: 5px;
+  margin-left: auto;
+}
+
+#burger-menu {
+  cursor: pointer;
+  * {
+    margin-top: 5px;
+  }
+
+  *:first-child {
+    margin-top: 0px;
+  }
+}
