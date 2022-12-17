@@ -4,7 +4,7 @@
   },
   "hosting": {
     "site": "antonin-charrier-redesign",
-    "public": "dist/new-portfolio",
+    "public": "dist/new-portfolio/en-GB",
     "ignore": [
       "firebase.json",
       "**/.*",
