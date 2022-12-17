@@ -269,13 +269,13 @@ export const PolygonsAnimations = [
       ], { optional: true })
     ])
   ]),
-  trigger('homeButton', [
+  trigger('homeButtonContainer', [
     transition(':enter', [
       style({
         opacity: 0,
         right: '-50px'
       }),
-      animate('.2s ease-out', style({
+      animate('.15s ease-out', style({
         opacity: 1,
         right: '50px'
       }))
@@ -285,7 +285,7 @@ export const PolygonsAnimations = [
         opacity: 1,
         right: '50px'
       }),
-      animate('.2s ease-out', style({
+      animate('.15s ease-out', style({
         opacity: 0,
         right: '-50px'
       }))
@@ -314,7 +314,7 @@ export const PolygonsAnimations = [
         transform: 'scale(1.8) rotate(180deg)'
       }),
       animate('.15s ease-in-out', style({
-        transform: 'scale(1.8)'
+        transform: 'scale(1.8) rotate(180deg)'
       }))
     ]),
     transition('left => right-start', [

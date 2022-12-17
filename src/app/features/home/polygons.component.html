@@ -8,12 +8,14 @@
     [hoverDelay]="100" (mouseleave)="mainLeave()"
     [ngClass]="{'main-right': currentMainDisplay !== 'left'}"
     [@mainExpandShrink]="currentMainDisplay">
-    <div id="title-container">
+    <div id="title-container"
+      [ngClass]="{ 'flex': currentBackgroundDisplay === 'full-content' && !isBeingAnimated }">
       <p id="home-title">Antonin Charrier</p>
       <p id="home-subtitle" i18n>Freelance developer</p>
     </div>
     <ul id="home-nav" [@navMenuDisplay]="navItems.length"
-      *ngIf="currentBackgroundDisplay !== 'default' && currentBackgroundDisplay !== 'background'">
+      *ngIf="currentBackgroundDisplay !== 'default' && currentBackgroundDisplay !== 'background'"
+      [ngClass]="{ 'flex': currentBackgroundDisplay === 'full-content' && !isBeingAnimated }">
       <li *ngFor="let navItem of navItems">
         <a [routerLink]="navItem.link" [routerLinkActive]="['active']"
           [routerLinkActiveOptions]="{ exact: true }"
@@ -27,9 +29,10 @@
     <router-outlet></router-outlet>
   </div>
 </div>
-<mat-icon aria-label="Home"
-  *ngIf="currentBackgroundDisplay === 'full-content' && !isBeingAnimated"
-  id="home-button" [@homeButton] (click)="home()"
-  [@homeButtonClick]="currentMainDisplay">arrow_back</mat-icon>
+<div id="home-button-container" [@homeButtonContainer]
+  *ngIf="currentBackgroundDisplay === 'full-content' && !isBeingAnimated">
+  <mat-icon aria-label="Home" id="home-button" (click)="home()"
+    [@homeButtonClick]="currentMainDisplay">arrow_back</mat-icon>
+</div>
 <app-menu id="burger-menu"
   [fullContent]="currentBackgroundDisplay === 'full-content' && !isBeingAnimated"></app-menu>

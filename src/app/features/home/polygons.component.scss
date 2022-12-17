@@ -110,6 +110,15 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 
 #title-container {
   padding-right: var(--menuPaddingRight);
+
+  &.flex {
+    p {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  }
+
 }
 
 .relative-right {
@@ -139,6 +148,15 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   list-style-type: none;
   padding-right: var(--menuPaddingRight);
 
+
+  &.flex {
+    li {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+  }
+
   a {
     color: inherit;
     text-decoration: none;
@@ -162,18 +180,21 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   display: none;
 }
 
-#home-button {
+#home-button-container {
   position: absolute;
   top: 50px;
   right: 50px;
-  cursor: pointer;
-  transform: scale(1.8);
   transition: transform .15s;
-  color: var(--color-primary-contrast);
 
   &:hover {
-    transform: translateX(-16px) scale(1.8);
+    transform: translateX(-16px);
   }
+}
+
+#home-button {
+  cursor: pointer;
+  transform: scale(1.8);
+  color: var(--color-primary-contrast);
 }
 
 #burger-menu {

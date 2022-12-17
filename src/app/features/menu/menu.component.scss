@@ -3,7 +3,7 @@
 .burger-menu-bun {
   width: 30px;
   height: 5px;
-  border-radius: 5px;
+  clip-path: polygon(1px 0, 100% 0%, calc(100% - .5px) 100%, 0% 100%);
   margin-left: auto;
   background-color: var(--color-primary-700);
 }
