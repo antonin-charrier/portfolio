@@ -1,5 +1,5 @@
 import { Location } from '@angular/common';
-import { Component, HostBinding, AfterViewInit } from '@angular/core';
+import { Component, HostBinding, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ChildrenOutletContexts, Router } from '@angular/router';
 import { RouteAnimations } from 'src/app/shared/animations/route-animations';
 import { PolygonsAnimations, backgroundDuration, mainDuration } from './polygons.animations';
@@ -20,7 +20,8 @@ export class PolygonsComponent implements AfterViewInit {
   constructor(
     private router: Router,
     private location: Location,
-    private contexts: ChildrenOutletContexts
+    private contexts: ChildrenOutletContexts,
+    private detector: ChangeDetectorRef
   ) { }
 
   ngAfterViewInit(): void {
@@ -103,6 +104,7 @@ export class PolygonsComponent implements AfterViewInit {
   private updateBackgroundDisplay(newDisplay: CurrentBackgroundDisplay, backgroundDuration: number = 1000) {
     this.isBeingAnimated = true;
     this.currentBackgroundDisplay = newDisplay;
+    this.detector.detectChanges();
     setTimeout(() => {
       this.isBeingAnimated = false;
     }, backgroundDuration);

@@ -3,13 +3,13 @@
 .burger-menu-bun {
   width: 30px;
   height: 5px;
-  clip-path: polygon(1px 0, 100% 0%, calc(100% - .5px) 100%, 0% 100%);
-  margin-left: auto;
   background-color: var(--color-primary-700);
 }
 
 #burger-menu {
-  cursor: pointer;
+  transition: .1s ease-in-out;
+  transform: skew(-10deg);
+
   * {
     margin-top: 5px;
   }
@@ -21,6 +21,93 @@
   &.full-content {
     * {
       background-color: var(--color-accent) !important;
+    }
+  }
+
+  &.closed {
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  &.open {
+    pointer-events: none;
+    transform: translateX(-50px) skew(-10deg);
+  }
+}
+
+#menu-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+
+  .menu-items-list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    .menu-link {
+      height: 64px;
+      color: var(--color-primary-700);
+      background-color: transparent !important;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      cursor: pointer;
+      pointer-events: auto;
+      text-decoration: none;
+      transition: transform .08s ease-in-out;
+      transform: skew(10deg);
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        border: 1px solid var(--color-primary-700);
+        width: 180px;
+        right: 20px;
+        top: 60px;
+      }
+
+      // &:last-child::after {
+      //   display: none;
+      // }
+
+      .text {
+        font-size: 20px;
+      }
+
+      .icon {
+        height: 40px;
+        margin-right: 16px;
+      }
+
+      .open-in-new {
+        transform: scale(0.65) translate(-4px, -16px);
+      }
+
+      &:hover {
+        transform: skew(10deg) translateX(-16px);
+        color: var(--color-primary);
+      }
+    }
+  }
+}
+
+
+#close-menu-container {
+  text-align: right;
+  transform: skew(10deg);
+
+  #close-menu {
+    cursor: pointer;
+    pointer-events: auto;
+    color: var(--color-primary-700);
+    transition: .2s ease-in-out;
+    transform: scale(1.5) rotate(0deg);
+
+    &:hover {
+      transform: scale(1.5) rotate(90deg);
     }
   }
 }

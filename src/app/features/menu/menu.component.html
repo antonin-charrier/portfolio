@@ -1,6 +1,26 @@
-<div id="burger-menu" aria-label="Menu" [ngClass]="{ 'full-content' : fullContent }"
-  (click)="openMenu()" (mouseenter)="menuEnter()" (mouseleave)="menuLeave()">
+<div id="burger-menu" aria-label="Menu" (click)="openMenu()"
+   (mouseenter)="menuEnter()" (mouseleave)="menuLeave()"
+   [ngClass]="{
+    'full-content' : fullContent,
+    'closed' : menuState !== 'open',
+    'open' : menuState === 'open'
+  }">
   <div class="burger-menu-bun top" [@topMenu]="menuState"></div>
-  <div class="burger-menu-bun middle" [@middleMenu]="menuState"></div>
+  <div class="burger-menu-bun middle" [@middleMenu]="menuState">
+    <div id="menu-content" *ngIf="menuState === 'open'">
+      <div id="close-menu-container">
+        <mat-icon aria-label="Close" id="close-menu" #closeMenuBtn
+        (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
+      </div>
+      <div class="menu-items-list" [@linkItems]="menuItems.length">
+        <a *ngFor="let menuItem of menuItems" [href]="menuItem.href" target="_blank" class="menu-link"
+        (mouseenter)="linkEnter(menuItem.img)" (mouseleave)="linkLeave()">
+          <span class="text">{{ menuItem.text }}</span>
+          <mat-icon aria-label="Open in new tab" class="open-in-new">open_in_new</mat-icon>
+            <img class="icon" [src]="src(menuItem.img)">
+        </a>
+      </div>
+    </div>
+  </div>
   <div class="burger-menu-bun bottom" [@bottomMenu]="menuState"></div>
 </div>
