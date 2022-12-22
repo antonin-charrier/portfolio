@@ -1,10 +1,12 @@
-import { Component, ElementRef, Input, Renderer2, ViewChild, ViewContainerRef, ChangeDetectorRef } from '@angular/core';
+import { Component, ElementRef, Input, Renderer2, ViewChild, ViewContainerRef, ChangeDetectorRef, Inject, LOCALE_ID } from '@angular/core';
 import { MenuAnimations } from './menu.animations';
 
+export type Link = 'none' | 'malt' | 'linkedin' | 'github' | 'email' | 'croissant' | 'tea';
 export interface MenuItem {
-  img: 'none' | 'malt' | 'linkedin' | 'github' | 'email',
+  img: Link,
   text: string,
-  href: string
+  href: string,
+  target: '_blank' | '_self';
 };
 
 @Component({
@@ -19,12 +21,14 @@ export class MenuComponent {
   @Input() fullContent = false;
   @ViewChild('closeMenuBtn') closeMenuBtn!: ElementRef;
   public menuState: 'closed' | 'hovered' | 'open' = 'closed';
-  public linkHovered: 'none' | 'malt' | 'linkedin' | 'github' | 'email' = 'none';
+  public linkHovered: Link = 'none';
   private isMenuHovered = false;
   private canCloseMenu = false;
   public menuItems: MenuItem[] = [];
 
   constructor(
+    @Inject(LOCALE_ID)
+    private locale: string,
     private renderer: Renderer2,
     private viewRef: ViewContainerRef,
     private detector: ChangeDetectorRef
@@ -97,7 +101,7 @@ export class MenuComponent {
     this.menuState = 'closed';
   }
 
-  public linkEnter(link: 'none' | 'malt' | 'linkedin' | 'github' | 'email') {
+  public linkEnter(link: Link) {
     this.linkHovered = link;
   }
 
@@ -105,11 +109,11 @@ export class MenuComponent {
     this.linkHovered = 'none';
   }
 
-  public isHovered(link: 'none' | 'malt' | 'linkedin' | 'github' | 'email') {
+  public isHovered(link: Link) {
     return this.linkHovered === link;
   }
 
-  public src(link: 'none' | 'malt' | 'linkedin' | 'github' | 'email') {
+  public src(link: Link) {
     if (link === 'none') {
       return '';
     }
@@ -138,23 +142,44 @@ export class MenuComponent {
       {
         img: 'malt',
         text: 'Malt',
-        href: 'https://www.malt.fr/profile/antonincharrier'
+        href: 'https://www.malt.fr/profile/antonincharrier',
+        target: '_blank'
       },
       {
         img: 'linkedin',
         text: 'LinkedIn',
-        href: 'https://www.linkedin.com/in/antonin-charrier'
+        href: 'https://www.linkedin.com/in/antonin-charrier',
+        target: '_blank'
       },
       {
         img: 'github',
         text: 'GitHub',
-        href: 'https://github.com/antonin-charrier'
+        href: 'https://github.com/antonin-charrier',
+        target: '_blank'
       },
       {
         img: 'email',
         text: 'Email me',
-        href: 'mailto: contact@antonin-charrier.com'
+        href: 'mailto: contact@antonin-charrier.com',
+        target: '_blank'
       }
     ];
+
+    console.log(window.location);
+    if (this.locale && this.locale === 'en-GB') {
+      this.menuItems.push({
+        img: 'croissant',
+        text: 'En français',
+        href: `${window.location.origin}/fr-FR`,
+        target: '_self'
+      });
+    } else {
+      this.menuItems.push({
+        img: 'tea',
+        text: 'In English',
+        href: `${window.location.origin}/en-GB`,
+        target: '_self'
+      });
+    }
   }
 }

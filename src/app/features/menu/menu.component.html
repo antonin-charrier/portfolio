@@ -14,11 +14,11 @@
         (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
       </div>
       <div class="menu-items-list" [@linkItems]="menuItems.length">
-        <a *ngFor="let menuItem of menuItems" [href]="menuItem.href" target="_blank" class="menu-link"
-        (mouseenter)="linkEnter(menuItem.img)" (mouseleave)="linkLeave()">
+        <a *ngFor="let menuItem of menuItems" [href]="menuItem.href" [target]="menuItem.target"
+          class="menu-link" (mouseenter)="linkEnter(menuItem.img)" (mouseleave)="linkLeave()">
           <span class="text">{{ menuItem.text }}</span>
-          <mat-icon aria-label="Open in new tab" class="open-in-new">open_in_new</mat-icon>
-            <img class="icon" [src]="src(menuItem.img)">
+          <mat-icon *ngIf="menuItem.target == '_blank'" aria-label="Open in new tab" class="open-in-new">open_in_new</mat-icon>
+          <img class="icon" [src]="src(menuItem.img)">
         </a>
       </div>
     </div>

@@ -5,7 +5,7 @@ export const openTransformX = 100;
 export const closedWidth = 30;
 export const openWidth = 300;
 export const closedHeight = 5;
-export const openMiddleHeight = 420;
+export const openMiddleHeight = 400;
 export const skew = 10;
 
 export const MenuAnimations = [
