@@ -10,11 +10,11 @@
   transition: .1s ease-in-out;
   transform: skew(-10deg);
 
-  * {
+  .burger-menu-bun {
     margin-top: 5px;
   }
 
-  *:first-child {
+  .burger-menu-bun:first-child {
     margin-top: 0px;
   }
 
@@ -67,7 +67,7 @@
         border: 1px solid var(--color-primary-contrast);
         width: 170px;
         right: 36px;
-        top: 43px;
+        top: 40px;
       }
 
       .text {
@@ -96,27 +96,44 @@
     }
   }
 
-  #close-menu-container {
-    text-align: right;
+  #menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     transform: skew(10deg);
+    margin-bottom: 16px;
 
-    #close-menu {
+    .clickable-icon {
       cursor: pointer;
       pointer-events: auto;
       color: var(--color-primary-contrast);
+
+      &:hover {
+        color: var(--color-accent-light);
+      }
+    }
+
+    #share-button {
+      transition: .1s ease-in-out;
+      transform: scale(1.3) translateX(0px);
+
+      &:hover {
+        transform: scale(1.3) translateX(8px);
+      }
+    }
+
+    #close-menu {
       transition: .2s ease-in-out;
       transform: scale(1.5) rotate(0deg);
 
       &:hover {
         transform: scale(1.5) rotate(90deg);
-        color: var(--color-accent-light);
       }
     }
   }
 
 
   &.full-content {
-
     .menu-items-list {
       .menu-link {
         color: var(--color-primary-700);
@@ -135,8 +152,8 @@
       }
     }
 
-    #close-menu-container {
-      #close-menu {
+    #menu-header {
+      .clickable-icon {
         color: var(--color-primary-700);
 
         &:hover {

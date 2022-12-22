@@ -165,7 +165,6 @@ export class MenuComponent {
       }
     ];
 
-    console.log(window.location);
     if (this.locale && this.locale === 'en-GB') {
       this.menuItems.push({
         img: 'croissant',
@@ -181,5 +180,17 @@ export class MenuComponent {
         target: '_self'
       });
     }
+  }
+
+  private currentUrl() {
+    return `${window.location.origin}/${this.locale && this.locale === 'en-GB' ? 'en-GB' : 'fr-FR'}`;
+  }
+
+  public share() {
+    window.navigator.share({
+      title: 'Antonin Charrier - portfolio',
+      text: $localize`Check out Antonin's portfolio here:`,
+      url: this.currentUrl()
+    });
   }
 }

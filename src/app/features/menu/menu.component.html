@@ -9,9 +9,11 @@
   <div class="burger-menu-bun middle" [@middleMenu]="menuState">
     <div id="menu-content" *ngIf="menuState === 'open'"
       [ngClass]="{ 'full-content' : fullContent }">
-      <div id="close-menu-container">
-        <mat-icon aria-label="Close" id="close-menu" #closeMenuBtn
-        (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
+      <div id="menu-header">
+        <mat-icon aria-label="Share" id="share-button" class="clickable-icon"
+          (click)="share(); $event.stopPropagation()">share</mat-icon>
+        <mat-icon aria-label="Close" id="close-menu" class="clickable-icon" #closeMenuBtn
+          (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
       </div>
       <div class="menu-items-list" [@linkItems]="menuItems.length">
         <a *ngFor="let menuItem of menuItems" [href]="menuItem.href" [target]="menuItem.target"
