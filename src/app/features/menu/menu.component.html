@@ -6,8 +6,9 @@
     'open' : menuState === 'open'
   }">
   <div class="burger-menu-bun top" [@topMenu]="menuState"></div>
-  <div class="burger-menu-bun middle" [@middleMenu]="menuState">
-    <div id="menu-content" *ngIf="menuState === 'open'"
+  <div class="burger-menu-bun middle" [@middleMenu]="menuState"
+    (@middleMenu.done)="middleDone()">
+    <div id="menu-content" *ngIf="menuState === 'open' && !isMenuBeingAnimated"
       [ngClass]="{ 'full-content' : fullContent }">
       <div id="menu-header">
         <mat-icon i18n-aria-label aria-label="Share" id="share-button" class="clickable-icon"

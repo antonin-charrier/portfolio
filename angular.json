@@ -59,9 +59,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/styles.scss",
-              "src/assets/styles/variables.scss",
-              "src/assets/styles/theme.scss"
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
+              "src/styles/theme.scss"
             ],
             "scripts": [],
             "aot": true,
@@ -176,9 +176,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/styles.scss",
-              "src/assets/styles/variables.scss",
-              "src/assets/styles/theme.scss"
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
+              "src/styles/theme.scss"
             ],
             "scripts": []
           }

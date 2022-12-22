@@ -32,7 +32,7 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public isBeingAnimated = false;
-  public currentBackgroundDisplay: CurrentBackgroundDisplay = 'default';
+  public currentBgDisplay: CurrentBgDisplay = 'default';
   public currentMainDisplay: CurrentMainDisplay = 'left';
   public navItems =  [
     { link: '/about', text: $localize`About` },
@@ -42,39 +42,48 @@ export class PolygonsComponent implements AfterViewInit {
   ]
 
   public mainDelayedEnter() {
-    if (this.currentBackgroundDisplay === 'default' && !this.isBeingAnimated) {
-      this.updateBackgroundDisplay('main', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBgDisplay === 'default' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('main');
     }
   }
 
   public mainLeave() {
-    if (this.currentBackgroundDisplay === 'main' && !this.isBeingAnimated) {
-      this.updateBackgroundDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBgDisplay === 'main' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default');
     }
   }
 
   public bgStill() {
-    if (this.currentBackgroundDisplay === 'default' && !this.isBeingAnimated) {
-      this.updateBackgroundDisplay('background', backgroundDuration.bgDefaultTotal);
+    if (this.currentBgDisplay === 'default' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('background');
     }
   }
 
   public bgMove() {
-    if (this.currentBackgroundDisplay === 'main' && !this.isBeingAnimated) {
-      this.updateBackgroundDisplay('default', backgroundDuration.defaultMain1 + backgroundDuration.defaultMain2);
+    if (this.currentBgDisplay === 'main' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default');
     }
-    if (this.currentBackgroundDisplay === 'background' && !this.isBeingAnimated) {
-      this.updateBackgroundDisplay('default', backgroundDuration.bgDefaultTotal);
+    if (this.currentBgDisplay === 'background' && !this.isBeingAnimated) {
+      this.updateBackgroundDisplay('default');
     }
   }
 
   public linkClick() {
-    if (this.currentBackgroundDisplay === 'full-content' || this.isBeingAnimated) {
+    if (this.isBeingAnimated) {
+      return;
+    }
+
+    if (this.currentBgDisplay === 'full-content') {
+      const closeAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;
+      this.currentMainDisplay = 'right-start';
+      setTimeout(() => {
+        this.currentMainDisplay = 'right-end';
+      }, closeAnimationDuration);
       return;
     }
 
     const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
-    this.updateBackgroundDisplay('full-content', contentAnimationDuration);
+    this.updateBackgroundDisplay('full-content');
     setTimeout(() => {
       this.currentMainDisplay = 'right-start';
       const mainAnimationDuration = mainDuration.clip;
@@ -85,29 +94,29 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public home() {
-    if (this.currentBackgroundDisplay !== 'full-content' || this.isBeingAnimated) {
+    if (this.currentBgDisplay !== 'full-content' || this.isBeingAnimated) {
       return;
     }
 
-    const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
     this.router.navigate(['/']);
     const mainAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;
     this.currentMainDisplay = 'right-start';
     setTimeout(() => {
       this.currentMainDisplay = 'left';
       setTimeout(() => {
-        this.updateBackgroundDisplay('main', contentAnimationDuration);
+        this.updateBackgroundDisplay('main');
       }, 0);
     }, mainAnimationDuration);
   }
 
-  private updateBackgroundDisplay(newDisplay: CurrentBackgroundDisplay, backgroundDuration: number = 1000) {
+  private updateBackgroundDisplay(newDisplay: CurrentBgDisplay) {
     this.isBeingAnimated = true;
-    this.currentBackgroundDisplay = newDisplay;
+    this.currentBgDisplay = newDisplay;
     this.detector.detectChanges();
-    setTimeout(() => {
-      this.isBeingAnimated = false;
-    }, backgroundDuration);
+  }
+
+  public bgDone() {
+    this.isBeingAnimated = false;
   }
 
   getRouteAnimationData() {
@@ -115,7 +124,7 @@ export class PolygonsComponent implements AfterViewInit {
   }
 }
 
-export type CurrentBackgroundDisplay = 'default' | 'background' | 'main' | 'full-content';
+export type CurrentBgDisplay = 'default' | 'background' | 'main' | 'full-content';
 export type CurrentMainDisplay = 'left' | 'right-start' | 'right-end';
 export interface NavItem {
   link: string;

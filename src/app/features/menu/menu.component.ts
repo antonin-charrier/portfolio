@@ -23,8 +23,8 @@ export class MenuComponent {
   public menuState: 'closed' | 'hovered' | 'open' = 'closed';
   public linkHovered: Link = 'none';
   private isMenuHovered = false;
-  private canCloseMenu = false;
   public menuItems: MenuItem[] = [];
+  public isMenuBeingAnimated = false;
 
   constructor(
     @Inject(LOCALE_ID)
@@ -52,27 +52,28 @@ export class MenuComponent {
     return children.some(c => this.childrenContain(target, Array.from(c.children)));
   }
 
+  public middleDone() {
+    this.isMenuBeingAnimated = false;
+  }
+
   public openMenu() {
     if (this.menuState === 'open') {
       return;
     }
 
+    this.isMenuBeingAnimated = true;
     this.menuState = 'open';
     this.detector.detectChanges();
     this.fillMenu();
-
-    this.canCloseMenu = false;
-    setTimeout(() => {
-      this.canCloseMenu = true;
-    }, 100);
   }
 
   public closeMenu() {
-    if (this.menuState !== 'open' || !this.canCloseMenu) {
+    if (this.menuState !== 'open' || this.isMenuBeingAnimated) {
       return;
     }
 
     this.menuItems = [];
+    this.isMenuBeingAnimated = true;
     this.detector.detectChanges();
     this.menuState = 'hovered';
     this.isMenuHovered = false;
