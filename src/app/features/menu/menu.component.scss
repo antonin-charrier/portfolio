@@ -44,9 +44,10 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+    gap: 16px;
 
     .menu-link {
-      height: 64px;
+      height: 48px;
       color: var(--color-primary-contrast);
       background-color: transparent !important;
       display: flex;
@@ -64,9 +65,9 @@
         content: '';
         position: absolute;
         border: 1px solid var(--color-primary-contrast);
-        width: 180px;
-        right: 20px;
-        top: 60px;
+        width: 170px;
+        right: 36px;
+        top: 43px;
       }
 
       .text {
@@ -85,6 +86,10 @@
       &:hover {
         transform: skew(10deg) translateX(-16px);
         color: var(--color-accent-light);
+
+        &::after {
+          border-color: var(--color-accent-light);
+        }
       }
     }
   }
@@ -120,18 +125,21 @@
 
         &:hover {
           color: var(--color-primary);
+
+          &::after {
+            border-color: var(--color-primary);
+          }
         }
       }
     }
 
     #close-menu-container {
-
       #close-menu {
         color: var(--color-primary-700);
-      }
 
-      &:hover {
-        color: var(--color-primary);
+        &:hover {
+          color: var(--color-primary);
+        }
       }
     }
   }
