@@ -7,7 +7,8 @@
   }">
   <div class="burger-menu-bun top" [@topMenu]="menuState"></div>
   <div class="burger-menu-bun middle" [@middleMenu]="menuState">
-    <div id="menu-content" *ngIf="menuState === 'open'">
+    <div id="menu-content" *ngIf="menuState === 'open'"
+      [ngClass]="{ 'full-content' : fullContent }">
       <div id="close-menu-container">
         <mat-icon aria-label="Close" id="close-menu" #closeMenuBtn
         (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>

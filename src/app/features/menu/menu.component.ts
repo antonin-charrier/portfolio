@@ -114,7 +114,23 @@ export class MenuComponent {
       return '';
     }
 
-    return `assets/icons/${link}${this.isHovered(link) ? '_light' : ''}.png`;
+    let fileName = '';
+
+    if (this.fullContent) {
+      if (this.isHovered(link)) {
+        fileName = link + '_primary_500';
+      } else {
+        fileName = link + '_primary_700';
+      }
+    } else {
+      if (this.isHovered(link)) {
+        fileName = link + '_accent_100';
+      } else {
+        fileName = link + '_primary_contrast_500';
+      }
+    }
+
+    return `assets/icons/${fileName}.png`;
   }
 
   private fillMenu() {
