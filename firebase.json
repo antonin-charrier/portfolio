@@ -21,6 +21,21 @@
         "source": "/",
         "destination": "/en-GB",
         "type": 301
+      },
+      {
+        "source": "/:route*",
+        "destination": "/en-GB/#/:route",
+        "type": 301
+      },
+      {
+        "source": "/en-GB/:route*",
+        "destination": "/en-GB/#/:route",
+        "type": 301
+      },
+      {
+        "source": "/fr-FR/:route*",
+        "destination": "/fr-FR/#/:route",
+        "type": 301
       }
     ]
   }
