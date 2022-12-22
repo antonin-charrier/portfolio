@@ -8,7 +8,8 @@
     "croissant": "set NODE_OPTIONS=--openssl-legacy-provider && ng serve --open --configuration=fr-FR",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && ng build",
     "watch": "set NODE_OPTIONS=--openssl-legacy-provider && ng build --watch --configuration development",
-    "test": "set NODE_OPTIONS=--openssl-legacy-provider && ng test"
+    "test": "set NODE_OPTIONS=--openssl-legacy-provider && ng test",
+    "i18n": "set NODE_OPTIONS=--openssl-legacy-provider && ng extract-i18n --output-path src/assets/i18n"
   },
   "private": true,
   "dependencies": {

@@ -31,7 +31,7 @@
 </div>
 <div id="home-button-container" [@homeButtonContainer]
   *ngIf="currentBackgroundDisplay === 'full-content' && !isBeingAnimated">
-  <mat-icon aria-label="Home" id="home-button" (click)="home()"
+  <mat-icon i18n-aria-label aria-label="Home" id="home-button" (click)="home()"
     [@homeButtonClick]="currentMainDisplay">arrow_back</mat-icon>
 </div>
 <app-menu id="burger-menu"

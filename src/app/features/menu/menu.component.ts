@@ -141,25 +141,25 @@ export class MenuComponent {
     this.menuItems = [
       {
         img: 'malt',
-        text: 'Malt',
+        text: $localize`Malt`,
         href: 'https://www.malt.fr/profile/antonincharrier',
         target: '_blank'
       },
       {
         img: 'linkedin',
-        text: 'LinkedIn',
+        text: $localize`LinkedIn`,
         href: 'https://www.linkedin.com/in/antonin-charrier',
         target: '_blank'
       },
       {
         img: 'github',
-        text: 'GitHub',
+        text: $localize`GitHub`,
         href: 'https://github.com/antonin-charrier',
         target: '_blank'
       },
       {
         img: 'email',
-        text: 'Email me',
+        text: $localize`Email me`,
         href: 'mailto: contact@antonin-charrier.com',
         target: '_blank'
       }
@@ -188,8 +188,8 @@ export class MenuComponent {
 
   public share() {
     window.navigator.share({
-      title: 'Antonin Charrier - portfolio',
-      text: $localize`Check out Antonin's portfolio here:`,
+      title: $localize`Antonin Charrier's portfolio`,
+      text: $localize`Check out Antonin's personal portfolio right here:`,
       url: this.currentUrl()
     });
   }

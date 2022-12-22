@@ -64,7 +64,8 @@
               "src/assets/styles/theme.scss"
             ],
             "scripts": [],
-            "aot": true
+            "aot": true,
+            "i18nMissingTranslation": "warning"
           },
           "configurations": {
             "production": {

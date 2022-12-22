@@ -1,4 +1,4 @@
-<div id="burger-menu" aria-label="Menu" (click)="openMenu()"
+<div id="burger-menu" i18n-aria-label aria-label="Menu" (click)="openMenu()"
    (mouseenter)="menuEnter()" (mouseleave)="menuLeave()"
    [ngClass]="{
     'full-content' : fullContent,
@@ -10,16 +10,17 @@
     <div id="menu-content" *ngIf="menuState === 'open'"
       [ngClass]="{ 'full-content' : fullContent }">
       <div id="menu-header">
-        <mat-icon aria-label="Share" id="share-button" class="clickable-icon"
+        <mat-icon i18n-aria-label aria-label="Share" id="share-button" class="clickable-icon"
           (click)="share(); $event.stopPropagation()">share</mat-icon>
-        <mat-icon aria-label="Close" id="close-menu" class="clickable-icon" #closeMenuBtn
-          (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
+        <mat-icon i18n-aria-label aria-label="Close" id="close-menu" class="clickable-icon"
+          #closeMenuBtn (click)="closeMenu(); $event.stopPropagation()">close</mat-icon>
       </div>
       <div class="menu-items-list" [@linkItems]="menuItems.length">
         <a *ngFor="let menuItem of menuItems" [href]="menuItem.href" [target]="menuItem.target"
           class="menu-link" (mouseenter)="linkEnter(menuItem.img)" (mouseleave)="linkLeave()">
           <span class="text">{{ menuItem.text }}</span>
-          <mat-icon *ngIf="menuItem.target == '_blank'" aria-label="Open in new tab" class="open-in-new">open_in_new</mat-icon>
+          <mat-icon *ngIf="menuItem.target == '_blank'" i18n-aria-label
+            aria-label="Open in new tab" class="open-in-new">open_in_new</mat-icon>
           <img class="icon" [src]="src(menuItem.img)">
         </a>
       </div>

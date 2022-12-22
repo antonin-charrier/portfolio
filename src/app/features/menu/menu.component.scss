@@ -1,17 +1,14 @@
 @import '../../../assets/styles/variables.scss';
 
-.burger-menu-bun {
-  width: 30px;
-  height: 5px;
-  background-color: var(--color-primary-700);
-}
-
 #burger-menu {
   transition: .1s ease-in-out;
   transform: skew(-10deg);
 
   .burger-menu-bun {
     margin-top: 5px;
+    width: 30px;
+    height: 5px;
+    background-color: var(--color-primary-700);
   }
 
   .burger-menu-bun:first-child {
@@ -19,7 +16,7 @@
   }
 
   &.full-content {
-    * {
+    .burger-menu-bun {
       background-color: var(--color-accent) !important;
     }
   }
