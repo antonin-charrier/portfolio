@@ -23,11 +23,6 @@
         "type": 301
       },
       {
-        "source": "/:route*",
-        "destination": "/en-GB/#/:route",
-        "type": 301
-      },
-      {
         "source": "/en-GB/:route*",
         "destination": "/en-GB/#/:route",
         "type": 301
