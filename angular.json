@@ -65,7 +65,7 @@
             ],
             "scripts": [],
             "aot": true,
-            "localize": ["en-GB"]
+            "localize": true
           },
           "configurations": {
             "production": {
