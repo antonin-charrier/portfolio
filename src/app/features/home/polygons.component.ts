@@ -2,7 +2,7 @@ import { Location } from '@angular/common';
 import { Component, HostBinding, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { ChildrenOutletContexts, Router } from '@angular/router';
 import { RouteAnimations } from 'src/app/shared/animations/route-animations';
-import { PolygonsAnimations, backgroundDuration, mainDuration } from './polygons.animations';
+import { PolygonsAnimations, cmDuration } from './polygons.animations';
 
 @Component({
   selector: 'app-polygons',
@@ -32,8 +32,7 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   public isBeingAnimated = false;
-  public currentBgDisplay: CurrentBgDisplay = 'default';
-  public currentMainDisplay: CurrentMainDisplay = 'left';
+  public currentDisplay: CurrentDisplay = 'default';
   public navItems =  [
     { link: '/about', text: $localize`About` },
     { link: '/projects', text: $localize`Projects` },
@@ -42,28 +41,28 @@ export class PolygonsComponent implements AfterViewInit {
   ]
 
   public mainDelayedEnter() {
-    if (this.currentBgDisplay === 'default' && !this.isBeingAnimated) {
+    if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('main');
     }
   }
 
   public mainLeave() {
-    if (this.currentBgDisplay === 'main' && !this.isBeingAnimated) {
+    if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('default');
     }
   }
 
   public bgStill() {
-    if (this.currentBgDisplay === 'default' && !this.isBeingAnimated) {
+    if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('background');
     }
   }
 
   public bgMove() {
-    if (this.currentBgDisplay === 'main' && !this.isBeingAnimated) {
+    if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('default');
     }
-    if (this.currentBgDisplay === 'background' && !this.isBeingAnimated) {
+    if (this.currentDisplay === 'background' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('default');
     }
   }
@@ -73,49 +72,25 @@ export class PolygonsComponent implements AfterViewInit {
       return;
     }
 
-    if (this.currentBgDisplay === 'full-content') {
-      const closeAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;
-      this.currentMainDisplay = 'right-start';
-      setTimeout(() => {
-        this.currentMainDisplay = 'right-end';
-      }, closeAnimationDuration);
-      return;
-    }
-
-    const contentAnimationDuration = backgroundDuration.mainFull1 + backgroundDuration.mainFull2 + 100;
     this.updateBackgroundDisplay('full-content');
-    setTimeout(() => {
-      this.currentMainDisplay = 'right-start';
-      const mainAnimationDuration = mainDuration.clip;
-      setTimeout(() => {
-        this.currentMainDisplay = 'right-end';
-      }, mainAnimationDuration);
-    }, contentAnimationDuration + 0);
   }
 
   public home() {
-    if (this.currentBgDisplay !== 'full-content' || this.isBeingAnimated) {
+    if (this.currentDisplay !== 'full-content' || this.isBeingAnimated) {
       return;
     }
 
     this.router.navigate(['/']);
-    const mainAnimationDuration = mainDuration.leftRight1 + mainDuration.leftRight2;
-    this.currentMainDisplay = 'right-start';
-    setTimeout(() => {
-      this.currentMainDisplay = 'left';
-      setTimeout(() => {
-        this.updateBackgroundDisplay('main');
-      }, 0);
-    }, mainAnimationDuration);
+    this.updateBackgroundDisplay('main');
   }
 
-  private updateBackgroundDisplay(newDisplay: CurrentBgDisplay) {
+  private updateBackgroundDisplay(newDisplay: CurrentDisplay) {
     this.isBeingAnimated = true;
-    this.currentBgDisplay = newDisplay;
+    this.currentDisplay = newDisplay;
     this.detector.detectChanges();
   }
 
-  public bgDone() {
+  public contentMainDone() {
     this.isBeingAnimated = false;
   }
 
@@ -124,8 +99,7 @@ export class PolygonsComponent implements AfterViewInit {
   }
 }
 
-export type CurrentBgDisplay = 'default' | 'background' | 'main' | 'full-content';
-export type CurrentMainDisplay = 'left' | 'right-start' | 'right-end';
+export type CurrentDisplay = 'default' | 'background' | 'main' | 'full-content';
 export interface NavItem {
   link: string;
   text: string;
