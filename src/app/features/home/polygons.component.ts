@@ -39,25 +39,18 @@ export class PolygonsComponent implements AfterViewInit {
     if (currentRoute && currentRoute !== '/') {
       this.linkClick();
     }
-    this.updateIsMenuDisplayed();
-  }
-
-  updateIsMenuDisplayed() {
-    this.isMenuDisplayed = ['main', 'full-content'].includes(this.currentDisplay);
   }
 
   public mainDelayedEnter() {
     if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('main');
     }
-    this.updateIsMenuDisplayed();
   }
 
   public mainLeave() {
     if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('default');
     }
-    this.updateIsMenuDisplayed();
   }
 
   public bgStill() {
@@ -100,16 +93,17 @@ export class PolygonsComponent implements AfterViewInit {
     this.isBeingAnimated = true;
     this.currentDisplay = newDisplay;
     this.detector.detectChanges();
+    this.isMenuDisplayed = ['main', 'full-content'].includes(this.currentDisplay);
   }
 
-  public contentMainDone() {
+  public contentMainStart(e: any) {
+    // console.log(e);
+  }
+
+  public contentMainDone(e: any) {
+    // console.log(e);
     this.isBeingAnimated = false;
   }
-
-  public click(e: any) {
-    console.log(e);
-  }
-
   public getRouteAnimationData() {
     this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
