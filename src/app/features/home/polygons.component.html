@@ -15,17 +15,17 @@
         <p id="home-title">Antonin Charrier</p>
         <p id="home-subtitle" i18n>Freelance developer</p>
       </div>
-      <ul id="home-nav" [@navMenuDisplay]="navItems.length"
-        *ngIf="currentDisplay !== 'default' && currentDisplay !== 'background'"
+      <ul id="home-nav" [@navMenuDisplay]="navItems.length" *ngIf="isMenuDisplayed"
         [ngClass]="{ 'flex': currentDisplay === 'full-content' && !isBeingAnimated }">
         <li *ngFor="let navItem of navItems">
           <a [routerLink]="navItem.link" [routerLinkActive]="['active']"
             [routerLinkActiveOptions]="{ exact: true }"
             (click)="linkClick()">{{ navItem.text }}</a>
-      </li>
+        </li>
       </ul>
     </div>
   </div>
+</div>
 
 <div id="home-button-container" [@homeButtonContainer]
   *ngIf="currentDisplay === 'full-content' && !isBeingAnimated">

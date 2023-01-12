@@ -24,32 +24,40 @@ export class PolygonsComponent implements AfterViewInit {
     private detector: ChangeDetectorRef
   ) { }
 
-  ngAfterViewInit(): void {
-    const currentRoute = this.location.path();
-    if (currentRoute && currentRoute !== '/') {
-      this.linkClick();
-    }
-  }
-
   public isBeingAnimated = false;
+  public isMenuDisplayed = false;
   public currentDisplay: CurrentDisplay = 'default';
   public navItems =  [
     { link: '/about', text: $localize`About` },
     { link: '/projects', text: $localize`Projects` },
     { link: '/hobbies', text: $localize`Hobbies` },
     { link: '/contact', text: $localize`Contact` },
-  ]
+  ];
+
+  ngAfterViewInit(): void {
+    const currentRoute = this.location.path();
+    if (currentRoute && currentRoute !== '/') {
+      this.linkClick();
+    }
+    this.updateIsMenuDisplayed();
+  }
+
+  updateIsMenuDisplayed() {
+    this.isMenuDisplayed = ['main', 'full-content'].includes(this.currentDisplay);
+  }
 
   public mainDelayedEnter() {
     if (this.currentDisplay === 'default' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('main');
     }
+    this.updateIsMenuDisplayed();
   }
 
   public mainLeave() {
     if (this.currentDisplay === 'main' && !this.isBeingAnimated) {
       this.updateBackgroundDisplay('default');
     }
+    this.updateIsMenuDisplayed();
   }
 
   public bgStill() {
@@ -92,6 +100,14 @@ export class PolygonsComponent implements AfterViewInit {
 
   public contentMainDone() {
     this.isBeingAnimated = false;
+  }
+
+  public navMenuStart() {
+    this.detector.detectChanges();
+  }
+
+  public navMenuDone() {
+    this.detector.detectChanges();
   }
 
   getRouteAnimationData() {

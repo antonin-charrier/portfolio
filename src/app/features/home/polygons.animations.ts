@@ -1,4 +1,4 @@
-import { animate, query, stagger, state, style, transition, trigger } from '@angular/animations';
+import { animate, animateChild, query, stagger, state, style, transition, trigger } from '@angular/animations';
 
 //#region Background
 
@@ -28,9 +28,18 @@ export const PolygonsAnimations = [
     state('full-content', style({
       left: cmFullLeft
     })),
-    transition('background <=> default', animate(`${cmDuration.bgDefault}ms linear`)),
-    transition('default <=> main', animate(`${cmDuration.defaultMain}ms linear`)),
-    transition('main <=> full-content', animate(`${cmDuration.mainFull}ms linear`))
+    transition('background <=> default', [
+      query("@*", [animateChild()], {optional: true}),
+      animate(`${cmDuration.bgDefault}ms linear`)
+    ]),
+    transition('default <=> main', [
+      query("@*", [animateChild()], {optional: true}),
+      animate(`${cmDuration.defaultMain}ms linear`)
+    ]),
+    transition('main <=> full-content', [
+      query("@*", [animateChild()], {optional: true}),
+      animate(`${cmDuration.mainFull}ms linear`)
+    ])
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
@@ -39,7 +48,7 @@ export const PolygonsAnimations = [
           opacity: 1,
           transform: 'translateX(0)'
         }),
-        stagger('.1s linear', animate('.15s linear', style({
+        stagger('.08s linear', animate('.1s linear', style({
           opacity: 0,
           transform: 'translateX(-100px)'
         })))
@@ -49,7 +58,7 @@ export const PolygonsAnimations = [
           opacity: 0,
           transform: 'translateX(-100px)'
         }),
-        stagger('.1s linear', animate('.15s linear', style({
+        stagger('.08s linear', animate('.1s linear', style({
           opacity: 1,
           transform: 'translateX(0)'
         })))
