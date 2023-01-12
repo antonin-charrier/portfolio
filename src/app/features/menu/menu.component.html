@@ -1,13 +1,12 @@
 <div id="burger-menu" i18n-aria-label aria-label="Menu" (click)="openMenu()"
    (mouseenter)="menuEnter()" (mouseleave)="menuLeave()"
    [ngClass]="{
-    'full-content' : fullContent,
     'closed' : menuState !== 'open',
     'open' : menuState === 'open'
   }">
-  <div class="burger-menu-bun top" [@topMenu]="menuState"></div>
+  <div class="burger-menu-bun top" [@topMenu]="menuState" [@menuColor]="fullContent"></div>
   <div class="burger-menu-bun middle" [@middleMenu]="menuState"
-    (@middleMenu.done)="middleDone()">
+    (@middleMenu.done)="middleDone()" [@menuColor]="fullContent">
     <div id="menu-content" *ngIf="menuState === 'open' && !isMenuBeingAnimated"
       [ngClass]="{ 'full-content' : fullContent }">
       <div id="menu-header">
@@ -27,5 +26,5 @@
       </div>
     </div>
   </div>
-  <div class="burger-menu-bun bottom" [@bottomMenu]="menuState"></div>
+  <div class="burger-menu-bun bottom" [@bottomMenu]="menuState" [@menuColor]="fullContent"></div>
 </div>

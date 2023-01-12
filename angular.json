@@ -61,7 +61,8 @@
             "styles": [
               "src/styles/styles.scss",
               "src/styles/variables.scss",
-              "src/styles/theme.scss"
+              "src/styles/theme.scss",
+              "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
             "scripts": [],
             "aot": true,
@@ -178,7 +179,8 @@
             "styles": [
               "src/styles/styles.scss",
               "src/styles/variables.scss",
-              "src/styles/theme.scss"
+              "src/styles/theme.scss",
+              "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
             "scripts": []
           }

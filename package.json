@@ -26,6 +26,7 @@
     "@angular/router": "~12.2.0",
     "@ngneat/until-destroy": "^8.1.4",
     "firebase": "^9.12.1",
+    "material-design-icons": "^3.0.1",
     "rxfire": "^6.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",

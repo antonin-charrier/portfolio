@@ -9,6 +9,17 @@ export const openMiddleHeight = 400;
 export const skew = 10;
 
 export const MenuAnimations = [
+  trigger('menuColor', [
+    state('0', style({
+      backgroundColor: '#090e18'
+    })),
+    state('1', style({
+      backgroundColor: '#9b8c86'
+    })),
+    transition('0 <=> 1', [
+      animate('.3s ease-in-out')
+    ]),
+  ]),
   trigger('topMenu', [
     state('closed', style({
       width: `${closedWidth}px`,

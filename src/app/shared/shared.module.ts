@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DelayedHoverDirective } from './directives/delayed-hover.directive';
 import { MouseStillDirective } from './directives/mouse-still.directive';
 import { RouteComponent } from './components/route/route.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { RouteComponent } from './components/route/route.component';
     LayoutModule,
     ScrollingModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   exports: [
     MaterialModule,
@@ -36,7 +38,8 @@ import { RouteComponent } from './components/route/route.component';
     BrowserModule,
     BrowserAnimationsModule,
     DelayedHoverDirective,
-    MouseStillDirective
+    MouseStillDirective,
+    MatIconModule
   ]
 })
 export class SharedModule { }
