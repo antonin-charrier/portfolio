@@ -93,6 +93,10 @@ export class PolygonsComponent implements AfterViewInit {
   }
 
   private updateBackgroundDisplay(newDisplay: CurrentDisplay) {
+    if (newDisplay === this.currentDisplay) {
+      return;
+    }
+
     this.isBeingAnimated = true;
     this.currentDisplay = newDisplay;
     this.detector.detectChanges();
@@ -102,15 +106,11 @@ export class PolygonsComponent implements AfterViewInit {
     this.isBeingAnimated = false;
   }
 
-  public navMenuStart() {
-    this.detector.detectChanges();
+  public click(e: any) {
+    console.log(e);
   }
 
-  public navMenuDone() {
-    this.detector.detectChanges();
-  }
-
-  getRouteAnimationData() {
+  public getRouteAnimationData() {
     this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
 }

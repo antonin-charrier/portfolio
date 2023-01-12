@@ -1,4 +1,4 @@
-import { animate, animateChild, query, stagger, state, style, transition, trigger } from '@angular/animations';
+import { animate, animateChild, query, stagger, state, style, transition, trigger, group } from '@angular/animations';
 
 //#region Background
 
@@ -68,21 +68,25 @@ export const PolygonsAnimations = [
   trigger('homeButtonContainer', [
     transition(':enter', [
       style({
-        opacity: 0,
         right: '-50px'
       }),
       animate('.15s ease-out', style({
-        opacity: 1,
         right: '50px'
       }))
     ]),
     transition(':leave', [
+      query('#home-button', [
+        style({
+          transform: 'scale(1.8)'
+        }),
+         animate('.2s linear', style({
+          transform: 'scale(1.8) rotate(180deg)'
+        }))
+      ], { optional: true }),
       style({
-        opacity: 1,
         right: '50px'
       }),
-      animate('.15s ease-out', style({
-        opacity: 0,
+      animate('.2s ease-out', style({
         right: '-50px'
       }))
     ])
