@@ -4,8 +4,7 @@
     (mouse-still)="bgStill()" [delay]="2000" (mousemove)="bgMove()">
   </div>
   <div id="polygon-content-main" [@contentMainMove]="currentDisplay"
-    (@contentMainMove.start)="contentMainStart($event)"
-    (@contentMainMove.done)="contentMainDone($event)">
+    (@contentMainMove.done)="contentMainDone()">
     <div id="polygon-content" [@routeAnimations]="getRouteAnimationData()">
       <router-outlet></router-outlet>
     </div>
@@ -13,14 +12,14 @@
       [hoverDelay]="100" (mouseleave)="mainLeave()" [@mainSkew]="currentDisplay">
       <div id="title-container"
         [ngClass]="{ 'flex': currentDisplay === 'full-content' && !isBeingAnimated }">
-        <p id="home-title" [@menuSkew]="currentDisplay">Antonin Charrier</p>
-        <p id="home-subtitle" [@menuSkew]="currentDisplay" i18n>Freelance developer</p>
+        <p id="home-title" [@mainItemsSkew]="currentDisplay">Antonin Charrier</p>
+        <p id="home-subtitle" [@mainItemsSkew]="currentDisplay" i18n>Freelance developer</p>
       </div>
       <ul id="home-nav" [@navMenuDisplay]="navItems.length" *ngIf="isMenuDisplayed"
         [ngClass]="{ 'flex': currentDisplay === 'full-content' && !isBeingAnimated }">
         <li *ngFor="let navItem of navItems">
           <a [routerLink]="navItem.link" [routerLinkActive]="['active']"
-            [routerLinkActiveOptions]="{ exact: true }" [@menuSkew]="currentDisplay"
+            [routerLinkActiveOptions]="{ exact: true }" [@mainItemsSkew]="currentDisplay"
             (click)="linkClick()">{{ navItem.text }}</a>
         </li>
       </ul>
@@ -32,4 +31,5 @@
   *ngIf="currentDisplay === 'full-content' && !isBeingAnimated">
   <mat-icon i18n-aria-label aria-label="Home" id="home-button" (click)="home()">arrow_back</mat-icon>
 </div>
-<app-menu id="burger-menu" [fullContent]="currentDisplay === 'full-content'"></app-menu>
+<app-menu id="burger-menu" *ngIf="currentDisplay !== 'background'" [@burgerMenu]
+  [fullContent]="currentDisplay === 'full-content'"></app-menu>

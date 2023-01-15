@@ -84,7 +84,7 @@ export const PolygonsAnimations = [
       ])
     ])
   ]),
-  trigger('menuSkew', [
+  trigger('mainItemsSkew', [
     state('background', style({
       transform: `skew(${defaultSkew})`
     })),
@@ -154,6 +154,24 @@ export const PolygonsAnimations = [
       }),
       animate('.2s ease-out', style({
         right: '-50px'
+      }))
+    ])
+  ]),
+  trigger('burgerMenu', [
+    transition(':enter', [
+      style({
+        right: '-20px'
+      }),
+      animate('.3s ease-out', style({
+        right: '50px'
+      }))
+    ]),
+    transition(':leave', [
+      style({
+        right: '50px'
+      }),
+      animate('.3s ease-out', style({
+        right: '-20px'
       }))
     ])
   ])

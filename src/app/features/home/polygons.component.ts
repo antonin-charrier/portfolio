@@ -96,14 +96,14 @@ export class PolygonsComponent implements AfterViewInit {
     this.isMenuDisplayed = ['main', 'full-content'].includes(this.currentDisplay);
   }
 
-  public contentMainStart(e: any) {
-    // console.log(e);
+  public logEvent(e: any) {
+    console.log(e);
   }
 
-  public contentMainDone(e: any) {
-    // console.log(e);
+  public contentMainDone() {
     this.isBeingAnimated = false;
   }
+
   public getRouteAnimationData() {
     this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
