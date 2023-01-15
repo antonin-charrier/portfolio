@@ -107,6 +107,20 @@ export const PolygonsAnimations = [
       animate(`${cmDuration.mainFull / 5}ms ease-in-out`)
     ])
   ]),
+  trigger('routeSlide', [
+    transition('* <=> *', [
+      group([
+        query(':enter', [
+          style({transform: 'translateY({{ enter }})'}),
+          animate('3s ease-in-out', style({transform: 'translateY(0%)'}))
+        ], {optional: true}),
+        query(':leave', [
+          style({transform: 'translateY(0%)'}),
+          animate('3s ease-in-out', style({transform: 'translateY({{ leave }})'}))
+        ], {optional: true}),
+      ])
+    ]),
+  ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
       query(':leave', [

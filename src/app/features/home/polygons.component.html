@@ -5,7 +5,7 @@
   </div>
   <div id="polygon-content-main" [@contentMainMove]="currentDisplay"
     (@contentMainMove.done)="contentMainDone()">
-    <div id="polygon-content" [@routeAnimations]="getRouteAnimationData()">
+    <div id="polygon-content" [@routeSlide]="routeTrigger$ | async">
       <router-outlet></router-outlet>
     </div>
     <div id="polygon-main" (delayed-hover)="mainDelayedEnter()"
@@ -20,7 +20,7 @@
         <li *ngFor="let navItem of navItems">
           <a [routerLink]="navItem.link" [routerLinkActive]="['active']"
             [routerLinkActiveOptions]="{ exact: true }" [@mainItemsSkew]="currentDisplay"
-            (click)="linkClick()">{{ navItem.text }}</a>
+            (click)="linkClick(navItem.link)">{{ navItem.text }}</a>
         </li>
       </ul>
     </div>

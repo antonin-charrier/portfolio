@@ -7,6 +7,7 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { AboutComponent } from './about/about.component';
 import { MenuComponent } from './menu/menu.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MenuComponent } from './menu/menu.component';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    CoreModule
   ],
   exports: [
     PolygonsComponent,

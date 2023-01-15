@@ -1,43 +1,65 @@
 import { Location } from '@angular/common';
 import { Component, HostBinding, AfterViewInit, ChangeDetectorRef } from '@angular/core';
-import { ChildrenOutletContexts, Router } from '@angular/router';
-import { RouteAnimations } from 'src/app/shared/animations/route-animations';
-import { PolygonsAnimations, cmDuration } from './polygons.animations';
+import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
+import { startWith, pairwise, map, share } from 'rxjs/operators'
+import { LinksService } from 'src/app/core/services/links.service';
+import { PolygonsAnimations } from './polygons.animations';
 
 @Component({
   selector: 'app-polygons',
   templateUrl: './polygons.component.html',
   styleUrls: ['./polygons.component.scss'],
   animations: [
-    PolygonsAnimations,
-    RouteAnimations
+    PolygonsAnimations
   ]
 })
 export class PolygonsComponent implements AfterViewInit {
   @HostBinding("style.--menuPaddingRight")
-  menuPaddingRight: string = '50px';
+  public menuPaddingRight: string = '50px';
+  public isBeingAnimated = false;
+  public isMenuDisplayed = false;
+  public currentDisplay: CurrentDisplay = 'default';
+  public linkChange$: Observable<number>;
+  public next$: Observable<number>;
+  public prev$: Observable<number>;
+  public routeTrigger$: Observable<object>;
+  public navItems : { link: string, text: string }[];
 
   constructor(
     private router: Router,
     private location: Location,
-    private contexts: ChildrenOutletContexts,
-    private detector: ChangeDetectorRef
-  ) { }
+    private detector: ChangeDetectorRef,
+    private linksService: LinksService
+  ) {
+    this.linkChange$ = this.linksService.linkChange$;
+    this.navItems = this.linksService.navItems;
+    this.prev$ = this.linkChange$.pipe(
+      map(index => index === 0 ? index : index - 1),
+      share()
+    );
+    this.next$ = this.linkChange$.pipe(
+      map(index => index === this.navItems.length - 1 ? index : index + 1),
+      share()
+    );
 
-  public isBeingAnimated = false;
-  public isMenuDisplayed = false;
-  public currentDisplay: CurrentDisplay = 'default';
-  public navItems =  [
-    { link: '/about', text: $localize`About` },
-    { link: '/projects', text: $localize`Projects` },
-    { link: '/hobbies', text: $localize`Hobbies` },
-    { link: '/contact', text: $localize`Contact` },
-  ];
+    this.routeTrigger$ = this.linkChange$.pipe(
+      startWith(0),
+      pairwise(),
+      map(([prev, curr]) => ({
+        value: curr,
+        params: {
+          enter: prev > curr ? 'min(-100vh, -100%)' : 'max(100vh, 100%)',
+          leave: prev > curr ? 'max(100vh, 100%)' : 'min(-100vh, -100%)'
+        }
+      })),
+    );
+  }
 
   ngAfterViewInit(): void {
     const currentRoute = this.location.path();
     if (currentRoute && currentRoute !== '/') {
-      this.linkClick();
+      this.linkClick(currentRoute);
     }
   }
 
@@ -68,7 +90,7 @@ export class PolygonsComponent implements AfterViewInit {
     }
   }
 
-  public linkClick() {
+  public linkClick(link: string) {
     if (this.isBeingAnimated) {
       return;
     }
@@ -102,10 +124,6 @@ export class PolygonsComponent implements AfterViewInit {
 
   public contentMainDone() {
     this.isBeingAnimated = false;
-  }
-
-  public getRouteAnimationData() {
-    this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
   }
 }
 
