@@ -161,7 +161,7 @@ export class MenuComponent {
       {
         img: 'email',
         text: $localize`Email me`,
-        href: 'mailto: contact@antonin-charrier.com',
+        href: 'mailto:contact@antonin-charrier.com',
         target: '_blank'
       }
     ];
