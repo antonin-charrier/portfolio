@@ -4,17 +4,17 @@ import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { startWith, pairwise, map, share } from 'rxjs/operators'
 import { LinksService } from 'src/app/core/services/links.service';
-import { PolygonsAnimations } from './polygons.animations';
+import { HomeAnimations } from './home.animations';
 
 @Component({
-  selector: 'app-polygons',
-  templateUrl: './polygons.component.html',
-  styleUrls: ['./polygons.component.scss'],
+  selector: 'app-home',
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'],
   animations: [
-    PolygonsAnimations
+    HomeAnimations
   ]
 })
-export class PolygonsComponent implements AfterViewInit {
+export class HomeComponent implements AfterViewInit {
   @HostBinding("style.--menuPaddingRight")
   public menuPaddingRight: string = '50px';
   public isBeingAnimated = false;

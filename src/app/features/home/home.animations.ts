@@ -14,7 +14,7 @@ const defaultSkew = '30deg';
 const mainSkew = '10deg';
 const fullSkew = '0deg';
 
-export const PolygonsAnimations = [
+export const HomeAnimations = [
   trigger('contentMainMove', [
     state('background', style({
       left: cmBgLeft

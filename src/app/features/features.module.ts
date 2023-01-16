@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { PolygonsComponent } from './home/polygons.component';
+import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
 import { ContactComponent } from './contact/contact.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
@@ -11,7 +11,7 @@ import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
-    PolygonsComponent,
+    HomeComponent,
     ContactComponent,
     HobbiesComponent,
     ProjectsComponent,
@@ -24,7 +24,7 @@ import { CoreModule } from '../core/core.module';
     CoreModule
   ],
   exports: [
-    PolygonsComponent,
+    HomeComponent,
     ContactComponent
   ]
 })
