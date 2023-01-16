@@ -5,12 +5,11 @@ export const cmDuration = {
   defaultMain: 150,
   mainFull: 300
 }
-const contentWidth = '70vw';
-const mainWidth = '40vw';
-const cmDefaultLeft = `calc(-${contentWidth} - 10vw)`;
-const cmBgLeft = `calc(-${contentWidth} - ${mainWidth})`;
-const cmMainLeft = `-${contentWidth}`;
-const cmFullLeft = '0vw';
+const mainWidth = '40%';
+const cmDefaultLeft = `-70vw`;
+const cmBgLeft = `-30vw`;
+const cmMainLeft = `-65vw`;
+const cmFullLeft = '0%';
 const defaultSkew = '30deg';
 const mainSkew = '10deg';
 const fullSkew = '0deg';
@@ -62,7 +61,7 @@ export const PolygonsAnimations = [
       transform: `skew(-${mainSkew})`
     })),
     state('full-content', style({
-      width: `calc(${mainWidth} - 10vw)`,
+      width: `30%`,
       transform: `skew(-${fullSkew})`
     })),
     transition('background <=> default', [
@@ -112,11 +111,11 @@ export const PolygonsAnimations = [
       group([
         query(':enter', [
           style({transform: 'translateY({{ enter }})'}),
-          animate('3s ease-in-out', style({transform: 'translateY(0%)'}))
+          animate('.3s ease-in-out', style({transform: 'translateY(0%)'}))
         ], {optional: true}),
         query(':leave', [
           style({transform: 'translateY(0%)'}),
-          animate('3s ease-in-out', style({transform: 'translateY({{ leave }})'}))
+          animate('.3s ease-in-out', style({transform: 'translateY({{ leave }})'}))
         ], {optional: true}),
       ])
     ]),

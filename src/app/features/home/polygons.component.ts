@@ -49,8 +49,8 @@ export class PolygonsComponent implements AfterViewInit {
       map(([prev, curr]) => ({
         value: curr,
         params: {
-          enter: prev > curr ? 'min(-100vh, -100%)' : 'max(100vh, 100%)',
-          leave: prev > curr ? 'max(100vh, 100%)' : 'min(-100vh, -100%)'
+          enter: prev > curr ? '-100vh' : '100vh',
+          leave: prev > curr ? '100vh' : '-100vh'
         }
       })),
     );

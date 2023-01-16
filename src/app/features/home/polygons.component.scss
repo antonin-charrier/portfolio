@@ -8,14 +8,14 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 
 #polygon-container {
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 #polygon-background {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   float: right;
   background: black url($asakusa) center top no-repeat;
   background-size: cover;
@@ -23,12 +23,12 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
   &.home-slideshow {
     animation: slideshow 60s cubic-bezier(1,0,0,1) infinite;
 
-    &:after {
+    &::after {
       opacity: 0;
     }
   }
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 0;
@@ -42,6 +42,8 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 }
 
 #polygon-content-main {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: -100vw;
   display: flex;
@@ -49,8 +51,8 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 }
 
 #polygon-content {
-  height: 100vh;
-  width: 70vw;
+  height: 100%;
+  width: 70%;
   color: var(--color-primary-contrast);
   background: var(--color-primary);
   font-family: Montserrat;
@@ -58,8 +60,8 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 }
 
 #polygon-main {
-  height: 100vh;
-  width: 40vw;
+  height: 100%;
+  width: 40%;
   text-align: right;
   color: var(--color-primary-contrast);
   background: var(--color-primary-700);
