@@ -1,4 +1,25 @@
 <div>
   <h1>Contact</h1>
-  <p class="justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <p class="justify" i18n>
+    An opportunity, a question about my work? Please do not hesitate to send me an email or to make a phone call!
+    <br>
+    You can also add me on LinkedIn or propose a project directly on Malt.
+  </p>
+  <div id="contact-details">
+    <div class="contact-details-item" id="email">
+      <img class="icon" [src]="'assets/icons/email_primary_contrast_500.png'">
+      <div class="title">Email address</div>
+      <div class="text">contact@antonin-charrier.com</div>
+      <mat-icon i18n-aria-label aria-label="Copy my email address to the clipboard"
+        class="copy-icon">content_copy</mat-icon>
+      <a href="mailto:contact@antonin-charrier.com" (click)="animateEmail()">
+        <button class="action-button" [@email]="emailState"
+        (@email.start)="logEvent($event)" (@email.done)="logEvent($event)">
+          <mat-icon i18n-aria-label aria-label="send an email"
+            class="copy-icon">send</mat-icon>
+          <span i18n>Send an email</span>
+        </button>
+      </a>
+    </div>
+  </div>
 </div>

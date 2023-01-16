@@ -5,17 +5,16 @@ export const cmDuration = {
   defaultMain: 150,
   mainFull: 300
 }
-const contentWidth = '70vw';
-const mainWidth = '40vw';
-const cmDefaultLeft = `calc(-${contentWidth} - 10vw)`;
-const cmBgLeft = `calc(-${contentWidth} - ${mainWidth})`;
-const cmMainLeft = `-${contentWidth}`;
-const cmFullLeft = '0vw';
+const mainWidth = '40%';
+const cmDefaultLeft = `-70vw`;
+const cmBgLeft = `-30vw`;
+const cmMainLeft = `-65vw`;
+const cmFullLeft = '0%';
 const defaultSkew = '30deg';
 const mainSkew = '10deg';
 const fullSkew = '0deg';
 
-export const PolygonsAnimations = [
+export const HomeAnimations = [
   trigger('contentMainMove', [
     state('background', style({
       left: cmBgLeft
@@ -62,7 +61,7 @@ export const PolygonsAnimations = [
       transform: `skew(-${mainSkew})`
     })),
     state('full-content', style({
-      width: `calc(${mainWidth} - 10vw)`,
+      width: `30%`,
       transform: `skew(-${fullSkew})`
     })),
     transition('background <=> default', [
@@ -84,7 +83,7 @@ export const PolygonsAnimations = [
       ])
     ])
   ]),
-  trigger('menuSkew', [
+  trigger('mainItemsSkew', [
     state('background', style({
       transform: `skew(${defaultSkew})`
     })),
@@ -106,6 +105,20 @@ export const PolygonsAnimations = [
     transition('main <=> full-content', [
       animate(`${cmDuration.mainFull / 5}ms ease-in-out`)
     ])
+  ]),
+  trigger('routeSlide', [
+    transition('* <=> *', [
+      group([
+        query(':enter', [
+          style({transform: 'translateY({{ enter }})'}),
+          animate('.3s ease-in-out', style({transform: 'translateY(0%)'}))
+        ], {optional: true}),
+        query(':leave', [
+          style({transform: 'translateY(0%)'}),
+          animate('.3s ease-in-out', style({transform: 'translateY({{ leave }})'}))
+        ], {optional: true}),
+      ])
+    ]),
   ]),
   trigger('navMenuDisplay', [
     transition('* => *', [
@@ -154,6 +167,24 @@ export const PolygonsAnimations = [
       }),
       animate('.2s ease-out', style({
         right: '-50px'
+      }))
+    ])
+  ]),
+  trigger('burgerMenu', [
+    transition(':enter', [
+      style({
+        right: '-20px'
+      }),
+      animate('.3s ease-out', style({
+        right: '50px'
+      }))
+    ]),
+    transition(':leave', [
+      style({
+        right: '50px'
+      }),
+      animate('.3s ease-out', style({
+        right: '-20px'
       }))
     ])
   ])

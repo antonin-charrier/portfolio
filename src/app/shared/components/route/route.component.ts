@@ -1,23 +1,23 @@
-import { Component, HostBinding, Input } from '@angular/core';
-import { ChildrenOutletContexts } from '@angular/router';
-import { RouteAnimation } from '../../animations/route-animations';
+import { Component } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { LinksService } from 'src/app/core/services/links.service';
 
 @Component({
   selector: 'app-route',
   templateUrl: './route.component.html',
-  styleUrls: ['./route.component.scss'],
-  animations: [
-    RouteAnimation
-  ]
+  styleUrls: ['./route.component.scss']
 })
 export class RouteComponent {
-  @HostBinding('@routeAnimation') routeAnimation = true;
+  public currentLink: { link: string, text: string };
 
   constructor(
-    private contexts: ChildrenOutletContexts
-  ) { }
-
-  getRouteAnimationData() {
-    return this.contexts.getContext('primary')?.route?.snapshot?.data?.['animation'];
+    private route: ActivatedRoute,
+    private linksService: LinksService
+  ) {
+    const currentLinkRef = this.route.snapshot.routeConfig?.path;
+    this.currentLink = this.linksService.navItems.find(l => l.link === currentLinkRef)
+      ?? { link: 'none', text: 'none'};
+    const index = this.linksService.navItems.indexOf(this.currentLink);
+    this.linksService.linkChange$.next(index);
   }
 }

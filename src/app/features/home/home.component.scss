@@ -8,23 +8,42 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 
 #polygon-container {
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
 }
 
 #polygon-background {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   float: right;
   background: black url($asakusa) center top no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+
+  &.home-slideshow {
+    animation: slideshow 60s cubic-bezier(1,0,0,1) infinite;
+
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-image: linear-gradient(135deg, #ccbcb600 calc(100% - 250px), #ccbcb670 calc(100% - 125px), #ccbcb6cc 100%);
+    transition: opacity .3s ease-in-out;
+  }
 }
 
 #polygon-content-main {
+  width: 100%;
+  height: 100%;
   position: absolute;
   left: -100vw;
   display: flex;
@@ -32,26 +51,23 @@ $dublin:  "../../../assets/img/background/asakusa.jpg";
 }
 
 #polygon-content {
-  height: 100vh;
-  width: 70vw;
+  height: 100%;
+  width: 70%;
   color: var(--color-primary-contrast);
   background: var(--color-primary);
   font-family: Montserrat;
+  position: relative;
 }
 
 #polygon-main {
-  height: 100vh;
-  width: 40vw;
+  height: 100%;
+  width: 40%;
   text-align: right;
   color: var(--color-primary-contrast);
   background: var(--color-primary-700);
   font-family: Montserrat;
   padding-top: 150px;
   transform-origin: top left;
-}
-
-.home-slideshow {
-  animation: slideshow 60s cubic-bezier(1,0,0,1) infinite;
 }
 
 @keyframes slideshow {
