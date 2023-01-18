@@ -1,9 +1,4 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Component, ViewChild } from '@angular/core';
-import { MatSidenav } from '@angular/material/sidenav';
-import { TranslateService } from '@ngx-translate/core';
-import { DisplayService } from './core/services/display.service';
-import { ThemeService } from './core/services/theme.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,68 +6,55 @@ import { ThemeService } from './core/services/theme.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private _isDarkTheme = false;
-  public linkedProjects: string[] = [];
-  public linkedTechnicalSkills: string[] = [];
-  public linkedHumanSkills: string[] = [];
-  public isMenuOpened = false;
-
-  @ViewChild('sidenav') sidenav: MatSidenav | undefined;
-
-  constructor(
-    private translateService: TranslateService,
-    private breakpointObserver: BreakpointObserver,
-    private displayService: DisplayService,
-    private themeService: ThemeService
-  ) {
-    this.translateService.setDefaultLang('fr');
-    this.translateService.use('fr');
-  }
-
-  get isDarkTheme(): boolean {
-    return this._isDarkTheme;
-  }
-
-  ngOnInit() {
-    const lang = localStorage.getItem('lang');
-    if (lang) {
-      this.translateService.use(lang);
+  public links = [
+    {
+      img: 'malt',
+      text: $localize`Malt`,
+      href: 'https://www.malt.fr/profile/antonincharrier'
+    },
+    {
+      img: 'linkedin',
+      text: $localize`LinkedIn`,
+      href: 'https://www.linkedin.com/in/antonin-charrier'
+    },
+    {
+      img: 'github',
+      text: $localize`GitHub`,
+      href: 'https://github.com/antonin-charrier'
+    },
+    {
+      img: 'email',
+      text: $localize`Email me`,
+      href: 'mailto:contact@antonin-charrier.com'
     }
-    const darkTheme = localStorage.getItem('darkTheme');
-    if (darkTheme && darkTheme === 'true') {
-      this.themeService.isDarkTheme.next(true);
-    }
+  ];
+  public linkHovered: string = 'none';
 
-    this._isDarkTheme = this.themeService.isDarkTheme.value;
-    this.themeService.isDarkTheme.subscribe((value: boolean) => this._isDarkTheme = value);
-
-    this.displayService.detectBreakpoints(this.breakpointObserver);
-    this.displayService.breakpoint.subscribe(newDisplay => {
-      if (!this.sidenav) {
-        return;
-      }
-
-      switch (newDisplay) {
-        case Breakpoints.HandsetPortrait:
-        case Breakpoints.HandsetLandscape:
-        case Breakpoints.TabletPortrait:
-          this.sidenav.mode = 'over';
-          this.sidenav.close();
-          break;
-        case Breakpoints.TabletLandscape:
-        case Breakpoints.WebPortrait:
-        case Breakpoints.WebLandscape:
-          this.sidenav.mode = 'side';
-          this.sidenav.open();
-          break;
-      }
-    });
+  public linkEnter(link: string) {
+    this.linkHovered = link;
   }
 
-  onActivate(component: any) {
-    if (this.sidenav?.mode === 'over') { this.sidenav?.close(); }
-    this.linkedProjects = component.linkedProjects ? component.linkedProjects : [];
-    this.linkedTechnicalSkills = component.linkedTechnicalSkills ? component.linkedTechnicalSkills : [];
-    this.linkedHumanSkills = component.linkedHumanSkills ? component.linkedHumanSkills : [];
+  public linkLeave()  {
+    this.linkHovered = 'none';
+  }
+
+  public isHovered(link: string) {
+    return this.linkHovered === link;
+  }
+
+  public src(link: string) {
+    if (link === 'none') {
+      return '';
+    }
+
+    let fileName = '';
+
+    if (this.isHovered(link)) {
+      fileName = link + '_accent_100';
+    } else {
+      fileName = link + '_primary_contrast_500';
+    }
+
+    return `assets/icons/${fileName}.png`;
   }
 }

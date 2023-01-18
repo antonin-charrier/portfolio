@@ -2,28 +2,30 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { SharedModule } from '../shared/shared.module';
-import { WipComponent } from './wip/wip.component';
-import { AboutComponent } from './about/about.component';
-import { CareerComponent } from './career/career.component';
+import { ContactComponent } from './contact/contact.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
-import { HumanSkillsModule } from './human-skills/human-skills.module';
-import { ProjectsModule } from './projects/projects.module';
-import { TechnicalSkillsModule } from './technical-skills/technical-skills.module';
+import { ProjectsComponent } from './projects/projects.component';
+import { AboutComponent } from './about/about.component';
+import { MenuComponent } from './menu/menu.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   declarations: [
     HomeComponent,
-    WipComponent,
+    ContactComponent,
+    HobbiesComponent,
+    ProjectsComponent,
     AboutComponent,
-    CareerComponent,
-    HobbiesComponent
+    MenuComponent
   ],
   imports: [
     CommonModule,
     SharedModule,
-    HumanSkillsModule,
-    ProjectsModule,
-    TechnicalSkillsModule
+    CoreModule
+  ],
+  exports: [
+    HomeComponent,
+    ContactComponent
   ]
 })
 export class FeaturesModule { }

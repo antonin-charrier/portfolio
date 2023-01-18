@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-GB" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="6336677888317296022" datatype="html">
+        <source>Hi there! I&apos;m Antonin</source>
+        <target>Salut ! Moi c&apos;est Antonin</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5927197850429673935" datatype="html">
+        <source>I am a freelance full-stack developper who enjoys building web and mobile applications</source>
+        <target>Je suis un développeur freelance qui aime créer des applications web et mobile</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3281697153580431756" datatype="html">
+        <source>After more than five years working in the biggest IT company, I decided to go freelance to discover new grounds.</source>
+        <target>Après plus de cinq ans à travailler dans la plus grosse ESN, j&apos;ai décidé de partir en freelance afin de découvrir de nouvelles choses.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7821274805789691918" datatype="html">
+        <source>During my time at Capgemini, I developped skills in .NET back-end, Angular front-end and Android mobile applications (both native and Xamarin).</source>
+        <target>Durant mon temps chez Capgemini, j&apos;ai développé des compétences en back-end .NET, en front-end Angular et en applications mobile Android (à la fois en natif et en Xamarin).</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/about/about.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1411730500785678959" datatype="html">
+        <source>Freelance developer</source>
+        <target>Développeur freelance</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2821179408673282599" datatype="html">
+        <source>Home</source>
+        <target>Accueil</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1726363342938046830" datatype="html">
+        <source>About</source>
+        <target>À propos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7091571651222742304" datatype="html">
+        <source>Projects</source>
+        <target>Projets</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5242666957552704871" datatype="html">
+        <source>Hobbies</source>
+        <target>Loisirs</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7922989125096435449" datatype="html">
+        <source>Contact</source>
+        <target>Contact</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/home/polygons.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2102825898069375693" datatype="html">
+        <source>Menu</source>
+        <target>Menu</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7419704019640008953" datatype="html">
+        <source>Share</source>
+        <target>Partager</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7819314041543176992" datatype="html">
+        <source>Close</source>
+        <target>Fermer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6371588679924903737" datatype="html">
+        <source>Open in new tab</source>
+        <target>Ouvrir dans un nouvel onglet</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="246909511130458143" datatype="html">
+        <source>Malt</source>
+        <source>Malt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4440081753597585133" datatype="html">
+        <source>LinkedIn</source>
+        <source>LinkedIn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">150</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1534029177398918729" datatype="html">
+        <source>GitHub</source>
+        <source>GitHub</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">156</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6583711458765427907" datatype="html">
+        <source>Email me</source>
+        <source>Contactez-moi</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">162</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="9222413975351439494" datatype="html">
+        <source>Antonin Charrier&apos;s portfolio</source>
+        <target>Portfolio d&apos;Antonin Charrier</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7906583094319384535" datatype="html">
+        <source>Check out Antonin&apos;s personal portfolio right here:</source>
+        <target>Découvrez le portfolio personnel d&apos;Antonin ici :</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/features/menu/menu.component.ts</context>
+          <context context-type="linenumber">192</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

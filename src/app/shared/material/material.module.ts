@@ -8,10 +8,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { MatDialogModule } from '@angular/material/dialog';
-import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
-import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   declarations: [],
@@ -27,10 +24,7 @@ import { MatRippleModule } from '@angular/material/core';
     MatListModule,
     MatMenuModule,
     MatTooltipModule,
-    MatDialogModule,
-    MatSlideToggleModule,
-    MatCardModule,
-    MatRippleModule
+    MatCardModule
   ]
 })
 export class MaterialModule { }

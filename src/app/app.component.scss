@@ -1,75 +1,47 @@
-@import "../assets/styles/variables.scss";
+#coming-soon {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-primary);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
 
-#content {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-}
-
-#content.dark {
-    background-color: $dark-article-background;
-    color: $white;
-}
-
-#sub-content {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.article-container {
-    max-width: 980px;
-    padding: 48px 16px;
-}
-
-.article-container.mobile {
-    padding: 80px 16px;
-}
-
-#header-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    z-index: 3000;
-    position: fixed;
-}
-
-#header {
+  #name {
+    font-size: 1.2em;
+    color: var(--color-primary-contrast);
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 8px 16px;
-    padding-right: 8px;
-}
+    justify-content: flex-start;
+  }
 
-#header-container.light {
-    background-color: $white;
-}
+  #text {
+    width: 20%;
+    text-align: center;
+    font-size: 2em;
+    color: var(--color-primary-contrast);
+    border: solid 1px var(--color-accent);
+    padding: 48px 0;
+  }
 
-#header-container.dark {
-    background-color: $dark-background;
-}
+  #socials {
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
 
-.profile-name {
-    font: 500 16px/20px Roboto, monospace;
-    margin-bottom: 0;
-}
+    > a {
+      cursor: pointer;
 
-.profile-job {
-    font: 200 16px/20px Roboto, monospace;
-    margin-bottom: 0;
-}
-
-.profile-logo {
-    max-width: 36px;
-    max-height: 36px;
-    margin-left: auto;
-    margin-right: auto;
-
-    img {
-        max-width: 36px;
-        max-height: 36px;
+      > img {
+        width: 24px;
+      }
     }
+  }
 }

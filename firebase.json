@@ -2,21 +2,26 @@
   "database": {
     "rules": "database.rules.json"
   },
-  "hosting": [
-    {
-      "target": "portfolio",
-      "public": "dist/new-portfolio",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        {
-          "source": "**",
-          "destination": "/index.html"
-        }
-      ]
-    }
-  ]
+  "hosting": {
+    "site": "antonin-charrier-redesign",
+    "public": "dist/new-portfolio",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/en-GB",
+        "type": 301
+      }
+    ]
+  }
 }

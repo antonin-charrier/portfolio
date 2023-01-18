@@ -5,21 +5,18 @@ import { RouterModule } from '@angular/router';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ScrollingModule  } from '@angular/cdk/scrolling';
 import { HttpClientModule } from '@angular/common/http';
-import { ArticleHeaderComponent } from './components/article-header/article-header.component';
-import { RedirectsComponent } from './components/redirects/redirects.component';
-import { ResumeComponent } from './dialogs/resume/resume.component';
-import { ExperienceComponent } from './dialogs/experience/experience.component';
-import { ContactInfoComponent } from './dialogs/contact-info/contact-info.component';
-import { TranslateModule } from '@ngx-translate/core';
-import { PdfViewerModule } from 'ng2-pdf-viewer';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DelayedHoverDirective } from './directives/delayed-hover.directive';
+import { MouseStillDirective } from './directives/mouse-still.directive';
+import { RouteComponent } from './components/route/route.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
-    ArticleHeaderComponent,
-    RedirectsComponent,
-    ResumeComponent,
-    ExperienceComponent,
-    ContactInfoComponent
+    DelayedHoverDirective,
+    MouseStillDirective,
+    RouteComponent
   ],
   imports: [
     CommonModule,
@@ -28,8 +25,9 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     HttpClientModule,
     LayoutModule,
     ScrollingModule,
-    TranslateModule,
-    PdfViewerModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatIconModule
   ],
   exports: [
     MaterialModule,
@@ -37,13 +35,11 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     HttpClientModule,
     LayoutModule,
     ScrollingModule,
-    TranslateModule,
-    PdfViewerModule,
-    RedirectsComponent,
-    ResumeComponent,
-    ContactInfoComponent,
-    ExperienceComponent,
-    ArticleHeaderComponent
+    BrowserModule,
+    BrowserAnimationsModule,
+    DelayedHoverDirective,
+    MouseStillDirective,
+    MatIconModule
   ]
 })
 export class SharedModule { }

@@ -7,10 +7,35 @@
   "newProjectRoot": "projects",
   "projects": {
     "new-portfolio": {
+      "i18n": {
+        "sourceLocale": "en-GB",
+        "locales": {
+          "fr-FR": "src/assets/i18n/messages.fr-FR.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
-          "style": "scss"
+          "style": "scss",
+          "skipTests": true
+        },
+        "@schematics/angular:directive": {
+          "skipTests": true
+        },
+        "@schematics/angular:guard": {
+          "skipTests": true
+        },
+        "@schematics/angular:interceptor": {
+          "skipTests": true
+        },
+        "@schematics/angular:pipe": {
+          "skipTests": true
+        },
+        "@schematics/angular:resolver": {
+          "skipTests": true
+        },
+        "@schematics/angular:service": {
+          "skipTests": true
         },
         "@schematics/angular:application": {
           "strict": true
@@ -34,12 +59,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/styles.scss",
-              "src/assets/styles/variables.scss",
-              "src/assets/styles/theme.scss"
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
+              "src/styles/theme.scss",
+              "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
             "scripts": [],
-            "aot": true
+            "aot": true,
+            "i18nMissingTranslation": "warning"
           },
           "configurations": {
             "production": {
@@ -51,8 +78,8 @@
                 },
                 {
                   "type": "anyComponentStyle",
-                  "maximumWarning": "2kb",
-                  "maximumError": "4kb"
+                  "maximumWarning": "3kb",
+                  "maximumError": "6kb"
                 }
               ],
               "fileReplacements": [
@@ -61,7 +88,52 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "localize": true
+            },
+            "en-GB": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "3kb",
+                  "maximumError": "6kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all",
+              "localize": ["en-GB"]
+            },
+            "fr-FR": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "3mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "3kb",
+                  "maximumError": "6kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all",
+              "localize": ["fr-FR"]
             },
             "development": {
               "buildOptimizer": false,
@@ -77,11 +149,11 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
-            "production": {
-              "browserTarget": "new-portfolio:build:production"
+            "en-GB": {
+              "browserTarget": "new-portfolio:build:en-GB"
             },
-            "development": {
-              "browserTarget": "new-portfolio:build:development"
+            "fr-FR": {
+              "browserTarget": "new-portfolio:build:fr-FR"
             }
           },
           "defaultConfiguration": "development"
@@ -105,9 +177,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/assets/styles/styles.scss",
-              "src/assets/styles/variables.scss",
-              "src/assets/styles/theme.scss"
+              "src/styles/styles.scss",
+              "src/styles/variables.scss",
+              "src/styles/theme.scss",
+              "node_modules/material-design-icons/iconfont/material-icons.css"
             ],
             "scripts": []
           }
