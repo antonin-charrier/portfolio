@@ -1,1 +1,10 @@
-<app-home></app-home>
+<div id="coming-soon">
+  <div id="name">Antonin Charrier</div>
+  <div id="text">Coming soon...</div>
+  <div id="socials">
+    <a *ngFor="let link of links" [href]="link.href" target="_blank"
+      (mouseenter)="linkEnter(link.img)" (mouseleave)="linkLeave()">
+      <img class="icon" [src]="src(link.img)">
+    </a>
+  </div>
+</div>
